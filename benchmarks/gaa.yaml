@@ -1,6 +1,5 @@
 iso: gaa
 language: Ga
-direction: Ga -> English
 datasets:
 - finance
 benchmarks:
@@ -8,87 +7,228 @@ benchmarks:
   name: Gemini 3.8 Flash
   track: llm
   url: https://ai.google.dev/gemini-api/docs/models
-  bleu: 37.47
-  chrf: 68.88
-  length_ratio: 1.06
-  documents: 2
-  per_dataset:
-    finance:
+  bleu: 32.62
+  chrf: 65.42
+  n_directions: 2
+  directions:
+    to_en:
       bleu: 37.47
       chrf: 68.88
       length_ratio: 1.06
       documents: 2
-      per_document:
-        finance_2021_gaa:
-          bleu: 39.76
-          chrf: 68.46
-          length_ratio: 1.066
-          hyp_words: 7996
-          ref_words: 7453
-          year: 2021
-        finance_2022_gaa:
-          bleu: 35.18
-          chrf: 69.3
-          length_ratio: 1.051
-          hyp_words: 8357
-          ref_words: 7727
-          year: 2022
-- model: Google/google-translate-free
-  name: Google Translate (free endpoint)
-  track: api
-  url: https://translate.google.com/
-  bleu: 35.68
-  chrf: 66.12
-  length_ratio: 0.99
-  documents: 2
-  per_dataset:
-    finance:
-      bleu: 35.68
-      chrf: 66.12
-      length_ratio: 0.99
+      per_dataset:
+        finance:
+          bleu: 37.47
+          chrf: 68.88
+          length_ratio: 1.06
+          documents: 2
+          per_document:
+            finance_2021_gaa:
+              bleu: 39.76
+              chrf: 68.46
+              length_ratio: 1.066
+              hyp_words: 7996
+              ref_words: 7453
+              year: 2021
+            finance_2022_gaa:
+              bleu: 35.18
+              chrf: 69.3
+              length_ratio: 1.051
+              hyp_words: 8357
+              ref_words: 7727
+              year: 2022
+    from_en:
+      bleu: 27.76
+      chrf: 61.97
+      length_ratio: 1.06
       documents: 2
-      per_document:
-        finance_2021_gaa:
-          bleu: 38.71
-          chrf: 66.53
-          length_ratio: 1.002
-          hyp_words: 7591
-          ref_words: 7453
-          year: 2021
-        finance_2022_gaa:
-          bleu: 32.65
-          chrf: 65.72
-          length_ratio: 0.988
-          hyp_words: 7983
-          ref_words: 7727
-          year: 2022
+      per_dataset:
+        finance:
+          bleu: 27.76
+          chrf: 61.97
+          length_ratio: 1.06
+          documents: 2
+          per_document:
+            finance_2021_gaa:
+              bleu: 31.25
+              chrf: 62.44
+              length_ratio: 1.053
+              hyp_words: 9394
+              ref_words: 8789
+              year: 2021
+            finance_2022_gaa:
+              bleu: 24.27
+              chrf: 61.51
+              length_ratio: 1.073
+              hyp_words: 10089
+              ref_words: 9520
+              year: 2022
 - model: KhayaAI/khaya-translate
   name: Khaya AI
   track: api
   url: https://ghananlp.org/project/khaya-ai/
-  bleu: 30.13
-  chrf: 61.67
-  length_ratio: 1.08
-  documents: 2
-  per_dataset:
-    finance:
+  bleu: 27.36
+  chrf: 60.25
+  n_directions: 2
+  directions:
+    to_en:
       bleu: 30.13
       chrf: 61.67
       length_ratio: 1.08
       documents: 2
-      per_document:
-        finance_2021_gaa:
-          bleu: 31.61
+      per_dataset:
+        finance:
+          bleu: 30.13
           chrf: 61.67
-          length_ratio: 1.093
-          hyp_words: 7805
-          ref_words: 7453
-          year: 2021
-        finance_2022_gaa:
-          bleu: 28.65
-          chrf: 61.67
-          length_ratio: 1.061
-          hyp_words: 8406
-          ref_words: 7727
-          year: 2022
-missing: []
+          length_ratio: 1.08
+          documents: 2
+          per_document:
+            finance_2021_gaa:
+              bleu: 31.61
+              chrf: 61.67
+              length_ratio: 1.093
+              hyp_words: 7805
+              ref_words: 7453
+              year: 2021
+            finance_2022_gaa:
+              bleu: 28.65
+              chrf: 61.67
+              length_ratio: 1.061
+              hyp_words: 8406
+              ref_words: 7727
+              year: 2022
+    from_en:
+      bleu: 24.59
+      chrf: 58.83
+      length_ratio: 1.12
+      documents: 2
+      per_dataset:
+        finance:
+          bleu: 24.59
+          chrf: 58.83
+          length_ratio: 1.12
+          documents: 2
+          per_document:
+            finance_2021_gaa:
+              bleu: 27.02
+              chrf: 59.25
+              length_ratio: 1.143
+              hyp_words: 9836
+              ref_words: 8789
+              year: 2021
+            finance_2022_gaa:
+              bleu: 22.17
+              chrf: 58.4
+              length_ratio: 1.103
+              hyp_words: 9839
+              ref_words: 9520
+              year: 2022
+- model: Google/google-translate-free
+  name: Google Translate (free endpoint)
+  track: api
+  url: https://translate.google.com/
+  bleu: 25.69
+  chrf: 62.39
+  n_directions: 2
+  directions:
+    to_en:
+      bleu: 35.69
+      chrf: 66.11
+      length_ratio: 0.99
+      documents: 2
+      per_dataset:
+        finance:
+          bleu: 35.69
+          chrf: 66.11
+          length_ratio: 0.99
+          documents: 2
+          per_document:
+            finance_2021_gaa:
+              bleu: 38.72
+              chrf: 66.52
+              length_ratio: 1.002
+              hyp_words: 7587
+              ref_words: 7453
+              year: 2021
+            finance_2022_gaa:
+              bleu: 32.65
+              chrf: 65.71
+              length_ratio: 0.988
+              hyp_words: 7979
+              ref_words: 7727
+              year: 2022
+    from_en:
+      bleu: 15.69
+      chrf: 58.67
+      length_ratio: 0.94
+      documents: 2
+      per_dataset:
+        finance:
+          bleu: 15.69
+          chrf: 58.67
+          length_ratio: 0.94
+          documents: 2
+          per_document:
+            finance_2021_gaa:
+              bleu: 14.96
+              chrf: 58.45
+              length_ratio: 0.925
+              hyp_words: 9630
+              ref_words: 8789
+              year: 2021
+            finance_2022_gaa:
+              bleu: 16.41
+              chrf: 58.89
+              length_ratio: 0.959
+              hyp_words: 9957
+              ref_words: 9520
+              year: 2022
+missing:
+- model: facebook/nllb-200-distilled-600M
+  name: NLLB-200 600M (distilled)
+  direction: to_en
+  reason: language not supported
+- model: facebook/nllb-200-distilled-600M
+  name: NLLB-200 600M (distilled)
+  direction: from_en
+  reason: language not supported
+- model: facebook/nllb-200-1.3B
+  name: NLLB-200 1.3B
+  direction: to_en
+  reason: language not supported
+- model: facebook/nllb-200-1.3B
+  name: NLLB-200 1.3B
+  direction: from_en
+  reason: language not supported
+- model: facebook/nllb-200-3.3B
+  name: NLLB-200 3.3B
+  direction: to_en
+  reason: language not supported
+- model: facebook/nllb-200-3.3B
+  name: NLLB-200 3.3B
+  direction: from_en
+  reason: language not supported
+- model: mclanorjeff/NLLB-Twi-Human-Aligned
+  name: NLLB-Twi Human-Aligned (600M + LoRA)
+  direction: to_en
+  reason: language not supported
+- model: mclanorjeff/NLLB-Twi-Human-Aligned
+  name: NLLB-Twi Human-Aligned (600M + LoRA)
+  direction: from_en
+  reason: language not supported
+- model: google/madlad400-3b-mt
+  name: MADLAD-400 3B
+  direction: to_en
+  reason: language not supported
+- model: google/madlad400-3b-mt
+  name: MADLAD-400 3B
+  direction: from_en
+  reason: language not supported
+- model: google/madlad400-10b-mt
+  name: MADLAD-400 10B
+  direction: to_en
+  reason: language not supported
+- model: google/madlad400-10b-mt
+  name: MADLAD-400 10B
+  direction: from_en
+  reason: language not supported

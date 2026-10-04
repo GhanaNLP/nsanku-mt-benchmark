@@ -15,7 +15,7 @@ tags:
 
 # nsanku MT Benchmark
 
-Document-level machine translation benchmark for Ghanaian languages → English.
+Document-level machine translation benchmark for Ghanaian languages ↔ English, scored separately in each direction.
 
 Systems translate whole documents (one paragraph per request) and are scored with **BLEU** and
 **chrF** against human translations. Results are recorded **per dataset** (currently the Ministry of

@@ -1,6 +1,9 @@
 {
- "direction": "<language> -> English",
- "metric": "document-level BLEU (sacreBLEU) + chrF; headline = mean over datasets",
+ "metric": "document-level BLEU (sacreBLEU) + chrF; per direction, per dataset; headline = mean over directions",
+ "directions": {
+  "to_en": "X → English",
+  "from_en": "English → X"
+ },
  "datasets": {
   "finance": {
    "id": "finance",
@@ -36,13 +39,42 @@
    "name": "Google Translate (free endpoint)",
    "track": "api",
    "url": "https://translate.google.com/"
+  },
+  "facebook/nllb-200-distilled-600M": {
+   "name": "NLLB-200 600M (distilled)",
+   "track": "open",
+   "url": "https://huggingface.co/facebook/nllb-200-distilled-600M"
+  },
+  "facebook/nllb-200-1.3B": {
+   "name": "NLLB-200 1.3B",
+   "track": "open",
+   "url": "https://huggingface.co/facebook/nllb-200-1.3B"
+  },
+  "facebook/nllb-200-3.3B": {
+   "name": "NLLB-200 3.3B",
+   "track": "open",
+   "url": "https://huggingface.co/facebook/nllb-200-3.3B"
+  },
+  "mclanorjeff/NLLB-Twi-Human-Aligned": {
+   "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+   "track": "open",
+   "url": "https://huggingface.co/mclanorjeff/NLLB-Twi-Human-Aligned"
+  },
+  "google/madlad400-3b-mt": {
+   "name": "MADLAD-400 3B",
+   "track": "open",
+   "url": "https://huggingface.co/google/madlad400-3b-mt"
+  },
+  "google/madlad400-10b-mt": {
+   "name": "MADLAD-400 10B",
+   "track": "open",
+   "url": "https://huggingface.co/google/madlad400-10b-mt"
   }
  },
  "languages": {
   "ada": {
    "iso": "ada",
    "language": "Dangme",
-   "direction": "Dangme -> English",
    "datasets": [
     "finance"
    ],
@@ -52,32 +84,221 @@
      "name": "Gemini 3.8 Flash",
      "track": "llm",
      "url": "https://ai.google.dev/gemini-api/docs/models",
-     "bleu": 30.5,
-     "chrf": 68.35,
-     "length_ratio": 1.18,
-     "documents": 2,
-     "per_dataset": {
-      "finance": {
+     "bleu": 27.44,
+     "chrf": 60.88,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
        "bleu": 30.5,
        "chrf": 68.35,
        "length_ratio": 1.18,
        "documents": 2,
-       "per_document": {
-        "finance_2022_ada": {
-         "bleu": 32.44,
-         "chrf": 69.22,
-         "length_ratio": 1.153,
-         "hyp_words": 9187,
-         "ref_words": 7727,
-         "year": 2022
-        },
-        "finance_2023_ada": {
-         "bleu": 28.57,
-         "chrf": 67.49,
-         "length_ratio": 1.215,
-         "hyp_words": 10445,
-         "ref_words": 8526,
-         "year": 2023
+       "per_dataset": {
+        "finance": {
+         "bleu": 30.5,
+         "chrf": 68.35,
+         "length_ratio": 1.18,
+         "documents": 2,
+         "per_document": {
+          "finance_2022_ada": {
+           "bleu": 32.44,
+           "chrf": 69.22,
+           "length_ratio": 1.153,
+           "hyp_words": 9187,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_ada": {
+           "bleu": 28.57,
+           "chrf": 67.49,
+           "length_ratio": 1.215,
+           "hyp_words": 10445,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 24.38,
+       "chrf": 53.41,
+       "length_ratio": 0.9,
+       "documents": 2,
+       "per_dataset": {
+        "finance": {
+         "bleu": 24.38,
+         "chrf": 53.41,
+         "length_ratio": 0.9,
+         "documents": 2,
+         "per_document": {
+          "finance_2022_ada": {
+           "bleu": 25.64,
+           "chrf": 54.46,
+           "length_ratio": 0.898,
+           "hyp_words": 12978,
+           "ref_words": 14765,
+           "year": 2022
+          },
+          "finance_2023_ada": {
+           "bleu": 23.12,
+           "chrf": 52.37,
+           "length_ratio": 0.897,
+           "hyp_words": 14746,
+           "ref_words": 16625,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "google/madlad400-10b-mt",
+     "name": "MADLAD-400 10B",
+     "track": "open",
+     "url": "https://huggingface.co/google/madlad400-10b-mt",
+     "bleu": 14.52,
+     "chrf": 45.56,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 18.57,
+       "chrf": 56.74,
+       "length_ratio": 1.48,
+       "documents": 2,
+       "per_dataset": {
+        "finance": {
+         "bleu": 18.57,
+         "chrf": 56.74,
+         "length_ratio": 1.48,
+         "documents": 2,
+         "per_document": {
+          "finance_2022_ada": {
+           "bleu": 20.71,
+           "chrf": 57.17,
+           "length_ratio": 1.372,
+           "hyp_words": 10888,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_ada": {
+           "bleu": 16.42,
+           "chrf": 56.31,
+           "length_ratio": 1.584,
+           "hyp_words": 13734,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 10.46,
+       "chrf": 34.38,
+       "length_ratio": 1.24,
+       "documents": 2,
+       "per_dataset": {
+        "finance": {
+         "bleu": 10.46,
+         "chrf": 34.38,
+         "length_ratio": 1.24,
+         "documents": 2,
+         "per_document": {
+          "finance_2022_ada": {
+           "bleu": 10.9,
+           "chrf": 35.15,
+           "length_ratio": 1.279,
+           "hyp_words": 19254,
+           "ref_words": 14765,
+           "year": 2022
+          },
+          "finance_2023_ada": {
+           "bleu": 10.01,
+           "chrf": 33.62,
+           "length_ratio": 1.207,
+           "hyp_words": 19877,
+           "ref_words": 16625,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "google/madlad400-3b-mt",
+     "name": "MADLAD-400 3B",
+     "track": "open",
+     "url": "https://huggingface.co/google/madlad400-3b-mt",
+     "bleu": 9.25,
+     "chrf": 41.71,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 10.7,
+       "chrf": 52.23,
+       "length_ratio": 2.16,
+       "documents": 2,
+       "per_dataset": {
+        "finance": {
+         "bleu": 10.7,
+         "chrf": 52.23,
+         "length_ratio": 2.16,
+         "documents": 2,
+         "per_document": {
+          "finance_2022_ada": {
+           "bleu": 11.48,
+           "chrf": 53.48,
+           "length_ratio": 1.721,
+           "hyp_words": 14756,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_ada": {
+           "bleu": 9.91,
+           "chrf": 50.98,
+           "length_ratio": 2.606,
+           "hyp_words": 21746,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 7.8,
+       "chrf": 31.2,
+       "length_ratio": 1.3,
+       "documents": 2,
+       "per_dataset": {
+        "finance": {
+         "bleu": 7.8,
+         "chrf": 31.2,
+         "length_ratio": 1.3,
+         "documents": 2,
+         "per_document": {
+          "finance_2022_ada": {
+           "bleu": 8.07,
+           "chrf": 31.44,
+           "length_ratio": 1.348,
+           "hyp_words": 20415,
+           "ref_words": 14765,
+           "year": 2022
+          },
+          "finance_2023_ada": {
+           "bleu": 7.54,
+           "chrf": 30.95,
+           "length_ratio": 1.252,
+           "hyp_words": 20793,
+           "ref_words": 16625,
+           "year": 2023
+          }
+         }
         }
        }
       }
@@ -88,11 +309,73 @@
     {
      "model": "KhayaAI/khaya-translate",
      "name": "Khaya AI",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "KhayaAI/khaya-translate",
+     "name": "Khaya AI",
+     "direction": "from_en",
      "reason": "language not supported"
     },
     {
      "model": "Google/google-translate-free",
      "name": "Google Translate (free endpoint)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "Google/google-translate-free",
+     "name": "Google Translate (free endpoint)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-distilled-600M",
+     "name": "NLLB-200 600M (distilled)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-distilled-600M",
+     "name": "NLLB-200 600M (distilled)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-1.3B",
+     "name": "NLLB-200 1.3B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-1.3B",
+     "name": "NLLB-200 1.3B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-3.3B",
+     "name": "NLLB-200 3.3B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-3.3B",
+     "name": "NLLB-200 3.3B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
+     "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
+     "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "direction": "from_en",
      "reason": "language not supported"
     }
    ]
@@ -100,7 +383,6 @@
   "dag": {
    "iso": "dag",
    "language": "Dagbani",
-   "direction": "Dagbani -> English",
    "datasets": [
     "finance"
    ],
@@ -110,40 +392,87 @@
      "name": "Gemini 3.8 Flash",
      "track": "llm",
      "url": "https://ai.google.dev/gemini-api/docs/models",
-     "bleu": 41.04,
-     "chrf": 71.24,
-     "length_ratio": 1.06,
-     "documents": 3,
-     "per_dataset": {
-      "finance": {
+     "bleu": 34.36,
+     "chrf": 67.38,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
        "bleu": 41.04,
        "chrf": 71.24,
        "length_ratio": 1.06,
        "documents": 3,
-       "per_document": {
-        "finance_2021_dag": {
-         "bleu": 44.24,
-         "chrf": 72.3,
-         "length_ratio": 1.012,
-         "hyp_words": 7710,
-         "ref_words": 7453,
-         "year": 2021
-        },
-        "finance_2022_dag": {
-         "bleu": 41.08,
-         "chrf": 70.81,
-         "length_ratio": 1.05,
-         "hyp_words": 8024,
-         "ref_words": 7727,
-         "year": 2022
-        },
-        "finance_2023_dag": {
-         "bleu": 37.79,
-         "chrf": 70.61,
-         "length_ratio": 1.109,
-         "hyp_words": 9200,
-         "ref_words": 8526,
-         "year": 2023
+       "per_dataset": {
+        "finance": {
+         "bleu": 41.04,
+         "chrf": 71.24,
+         "length_ratio": 1.06,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_dag": {
+           "bleu": 44.24,
+           "chrf": 72.3,
+           "length_ratio": 1.012,
+           "hyp_words": 7710,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_dag": {
+           "bleu": 41.08,
+           "chrf": 70.81,
+           "length_ratio": 1.05,
+           "hyp_words": 8024,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_dag": {
+           "bleu": 37.79,
+           "chrf": 70.61,
+           "length_ratio": 1.109,
+           "hyp_words": 9200,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 27.67,
+       "chrf": 63.53,
+       "length_ratio": 1.01,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 27.67,
+         "chrf": 63.53,
+         "length_ratio": 1.01,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_dag": {
+           "bleu": 30.19,
+           "chrf": 64.28,
+           "length_ratio": 1.05,
+           "hyp_words": 9072,
+           "ref_words": 8805,
+           "year": 2021
+          },
+          "finance_2022_dag": {
+           "bleu": 28.12,
+           "chrf": 63.08,
+           "length_ratio": 0.995,
+           "hyp_words": 9420,
+           "ref_words": 9315,
+           "year": 2022
+          },
+          "finance_2023_dag": {
+           "bleu": 24.7,
+           "chrf": 63.24,
+           "length_ratio": 0.98,
+           "hyp_words": 10326,
+           "ref_words": 10243,
+           "year": 2023
+          }
+         }
         }
        }
       }
@@ -154,40 +483,87 @@
      "name": "Khaya AI",
      "track": "api",
      "url": "https://ghananlp.org/project/khaya-ai/",
-     "bleu": 19.75,
-     "chrf": 54.91,
-     "length_ratio": 1.46,
-     "documents": 3,
-     "per_dataset": {
-      "finance": {
+     "bleu": 14.38,
+     "chrf": 51.31,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
        "bleu": 19.75,
        "chrf": 54.91,
        "length_ratio": 1.46,
        "documents": 3,
-       "per_document": {
-        "finance_2021_dag": {
-         "bleu": 21.22,
-         "chrf": 54.27,
-         "length_ratio": 1.391,
-         "hyp_words": 11755,
-         "ref_words": 7453,
-         "year": 2021
-        },
-        "finance_2022_dag": {
-         "bleu": 20.19,
-         "chrf": 56.26,
-         "length_ratio": 1.47,
-         "hyp_words": 12227,
-         "ref_words": 7727,
-         "year": 2022
-        },
-        "finance_2023_dag": {
-         "bleu": 17.85,
-         "chrf": 54.2,
-         "length_ratio": 1.515,
-         "hyp_words": 13423,
-         "ref_words": 8526,
-         "year": 2023
+       "per_dataset": {
+        "finance": {
+         "bleu": 19.75,
+         "chrf": 54.91,
+         "length_ratio": 1.46,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_dag": {
+           "bleu": 21.22,
+           "chrf": 54.27,
+           "length_ratio": 1.391,
+           "hyp_words": 11755,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_dag": {
+           "bleu": 20.19,
+           "chrf": 56.26,
+           "length_ratio": 1.47,
+           "hyp_words": 12227,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_dag": {
+           "bleu": 17.85,
+           "chrf": 54.2,
+           "length_ratio": 1.515,
+           "hyp_words": 13423,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 9.01,
+       "chrf": 47.72,
+       "length_ratio": 2.37,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 9.01,
+         "chrf": 47.72,
+         "length_ratio": 2.37,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_dag": {
+           "bleu": 8.12,
+           "chrf": 47.25,
+           "length_ratio": 2.88,
+           "hyp_words": 8915,
+           "ref_words": 8805,
+           "year": 2021
+          },
+          "finance_2022_dag": {
+           "bleu": 8.6,
+           "chrf": 46.47,
+           "length_ratio": 2.438,
+           "hyp_words": 9390,
+           "ref_words": 9315,
+           "year": 2022
+          },
+          "finance_2023_dag": {
+           "bleu": 10.32,
+           "chrf": 49.43,
+           "length_ratio": 1.788,
+           "hyp_words": 10126,
+           "ref_words": 10243,
+           "year": 2023
+          }
+         }
         }
        }
       }
@@ -198,6 +574,85 @@
     {
      "model": "Google/google-translate-free",
      "name": "Google Translate (free endpoint)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "Google/google-translate-free",
+     "name": "Google Translate (free endpoint)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-distilled-600M",
+     "name": "NLLB-200 600M (distilled)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-distilled-600M",
+     "name": "NLLB-200 600M (distilled)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-1.3B",
+     "name": "NLLB-200 1.3B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-1.3B",
+     "name": "NLLB-200 1.3B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-3.3B",
+     "name": "NLLB-200 3.3B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-3.3B",
+     "name": "NLLB-200 3.3B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
+     "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
+     "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "google/madlad400-3b-mt",
+     "name": "MADLAD-400 3B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "google/madlad400-3b-mt",
+     "name": "MADLAD-400 3B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "google/madlad400-10b-mt",
+     "name": "MADLAD-400 10B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "google/madlad400-10b-mt",
+     "name": "MADLAD-400 10B",
+     "direction": "from_en",
      "reason": "language not supported"
     }
    ]
@@ -205,7 +660,6 @@
   "ewe": {
    "iso": "ewe",
    "language": "Ewe",
-   "direction": "Ewe -> English",
    "datasets": [
     "finance"
    ],
@@ -215,40 +669,87 @@
      "name": "Gemini 3.8 Flash",
      "track": "llm",
      "url": "https://ai.google.dev/gemini-api/docs/models",
-     "bleu": 30.13,
-     "chrf": 68.37,
-     "length_ratio": 1.17,
-     "documents": 3,
-     "per_dataset": {
-      "finance": {
+     "bleu": 25.71,
+     "chrf": 61.36,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
        "bleu": 30.13,
        "chrf": 68.37,
        "length_ratio": 1.17,
        "documents": 3,
-       "per_document": {
-        "finance_2021_ewe": {
-         "bleu": 33.64,
-         "chrf": 67.58,
-         "length_ratio": 1.113,
-         "hyp_words": 8973,
-         "ref_words": 7453,
-         "year": 2021
-        },
-        "finance_2022_ewe": {
-         "bleu": 30.91,
-         "chrf": 68.73,
-         "length_ratio": 1.228,
-         "hyp_words": 9423,
-         "ref_words": 7727,
-         "year": 2022
-        },
-        "finance_2023_ewe": {
-         "bleu": 25.85,
-         "chrf": 68.81,
+       "per_dataset": {
+        "finance": {
+         "bleu": 30.13,
+         "chrf": 68.37,
          "length_ratio": 1.17,
-         "hyp_words": 10464,
-         "ref_words": 8526,
-         "year": 2023
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 33.64,
+           "chrf": 67.58,
+           "length_ratio": 1.113,
+           "hyp_words": 8973,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 30.91,
+           "chrf": 68.73,
+           "length_ratio": 1.228,
+           "hyp_words": 9423,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 25.85,
+           "chrf": 68.81,
+           "length_ratio": 1.17,
+           "hyp_words": 10464,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 21.3,
+       "chrf": 54.34,
+       "length_ratio": 0.87,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 21.3,
+         "chrf": 54.34,
+         "length_ratio": 0.87,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 25.56,
+           "chrf": 57.14,
+           "length_ratio": 0.921,
+           "hyp_words": 9138,
+           "ref_words": 10688,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 21.58,
+           "chrf": 53.62,
+           "length_ratio": 0.819,
+           "hyp_words": 9630,
+           "ref_words": 11861,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 16.75,
+           "chrf": 52.27,
+           "length_ratio": 0.866,
+           "hyp_words": 10700,
+           "ref_words": 12854,
+           "year": 2023
+          }
+         }
         }
        }
       }
@@ -259,40 +760,542 @@
      "name": "Google Translate (free endpoint)",
      "track": "api",
      "url": "https://translate.google.com/",
-     "bleu": 16.17,
-     "chrf": 38.23,
-     "length_ratio": 1.27,
-     "documents": 3,
-     "per_dataset": {
-      "finance": {
-       "bleu": 16.17,
-       "chrf": 38.23,
+     "bleu": 22.62,
+     "chrf": 57.53,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 26.17,
+       "chrf": 63.78,
+       "length_ratio": 1.06,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 26.17,
+         "chrf": 63.78,
+         "length_ratio": 1.06,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 27.42,
+           "chrf": 63.75,
+           "length_ratio": 0.963,
+           "hyp_words": 8144,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 28.47,
+           "chrf": 63.79,
+           "length_ratio": 1.105,
+           "hyp_words": 8945,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 22.62,
+           "chrf": 63.81,
+           "length_ratio": 1.116,
+           "hyp_words": 9928,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 19.07,
+       "chrf": 51.27,
+       "length_ratio": 0.78,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 19.07,
+         "chrf": 51.27,
+         "length_ratio": 0.78,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 24.47,
+           "chrf": 56.49,
+           "length_ratio": 0.863,
+           "hyp_words": 8815,
+           "ref_words": 10688,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 18.0,
+           "chrf": 48.83,
+           "length_ratio": 0.702,
+           "hyp_words": 8278,
+           "ref_words": 11861,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 14.73,
+           "chrf": 48.48,
+           "length_ratio": 0.776,
+           "hyp_words": 9689,
+           "ref_words": 12854,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "google/madlad400-10b-mt",
+     "name": "MADLAD-400 10B",
+     "track": "open",
+     "url": "https://huggingface.co/google/madlad400-10b-mt",
+     "bleu": 20.45,
+     "chrf": 52.92,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 24.48,
+       "chrf": 60.95,
+       "length_ratio": 1.16,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 24.48,
+         "chrf": 60.95,
+         "length_ratio": 1.16,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 30.59,
+           "chrf": 61.78,
+           "length_ratio": 1.074,
+           "hyp_words": 8540,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 25.35,
+           "chrf": 61.64,
+           "length_ratio": 1.227,
+           "hyp_words": 9267,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 17.5,
+           "chrf": 59.42,
+           "length_ratio": 1.182,
+           "hyp_words": 10516,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 16.41,
+       "chrf": 44.9,
+       "length_ratio": 1.05,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 16.41,
+         "chrf": 44.9,
+         "length_ratio": 1.05,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 20.63,
+           "chrf": 48.17,
+           "length_ratio": 1.059,
+           "hyp_words": 10800,
+           "ref_words": 10688,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 17.29,
+           "chrf": 44.78,
+           "length_ratio": 0.963,
+           "hyp_words": 11566,
+           "ref_words": 11861,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 11.3,
+           "chrf": 41.74,
+           "length_ratio": 1.12,
+           "hyp_words": 14033,
+           "ref_words": 12854,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "facebook/nllb-200-3.3B",
+     "name": "NLLB-200 3.3B",
+     "track": "open",
+     "url": "https://huggingface.co/facebook/nllb-200-3.3B",
+     "bleu": 19.79,
+     "chrf": 57.5,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 18.75,
+       "chrf": 61.83,
+       "length_ratio": 1.05,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 18.75,
+         "chrf": 61.83,
+         "length_ratio": 1.05,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 20.96,
+           "chrf": 61.62,
+           "length_ratio": 0.986,
+           "hyp_words": 8723,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 20.34,
+           "chrf": 62.25,
+           "length_ratio": 1.052,
+           "hyp_words": 9111,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 14.94,
+           "chrf": 61.62,
+           "length_ratio": 1.105,
+           "hyp_words": 10221,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 20.82,
+       "chrf": 53.17,
+       "length_ratio": 0.88,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 20.82,
+         "chrf": 53.17,
+         "length_ratio": 0.88,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 25.32,
+           "chrf": 56.47,
+           "length_ratio": 0.946,
+           "hyp_words": 10194,
+           "ref_words": 10688,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 21.55,
+           "chrf": 52.8,
+           "length_ratio": 0.807,
+           "hyp_words": 10645,
+           "ref_words": 11861,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 15.59,
+           "chrf": 50.23,
+           "length_ratio": 0.873,
+           "hyp_words": 11420,
+           "ref_words": 12854,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "google/madlad400-3b-mt",
+     "name": "MADLAD-400 3B",
+     "track": "open",
+     "url": "https://huggingface.co/google/madlad400-3b-mt",
+     "bleu": 18.73,
+     "chrf": 51.23,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 22.07,
+       "chrf": 59.9,
        "length_ratio": 1.27,
        "documents": 3,
-       "per_document": {
-        "finance_2021_ewe": {
-         "bleu": 27.42,
-         "chrf": 63.75,
-         "length_ratio": 0.963,
-         "hyp_words": 8144,
-         "ref_words": 7453,
-         "year": 2021
-        },
-        "finance_2022_ewe": {
-         "bleu": 12.52,
-         "chrf": 25.27,
-         "length_ratio": 1.453,
-         "hyp_words": 11836,
-         "ref_words": 7727,
-         "year": 2022
-        },
-        "finance_2023_ewe": {
-         "bleu": 8.57,
-         "chrf": 25.68,
-         "length_ratio": 1.398,
-         "hyp_words": 12846,
-         "ref_words": 8526,
-         "year": 2023
+       "per_dataset": {
+        "finance": {
+         "bleu": 22.07,
+         "chrf": 59.9,
+         "length_ratio": 1.27,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 28.5,
+           "chrf": 60.74,
+           "length_ratio": 1.133,
+           "hyp_words": 9190,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 21.69,
+           "chrf": 59.59,
+           "length_ratio": 1.412,
+           "hyp_words": 11285,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 16.03,
+           "chrf": 59.36,
+           "length_ratio": 1.269,
+           "hyp_words": 11388,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 15.4,
+       "chrf": 42.56,
+       "length_ratio": 1.15,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 15.4,
+         "chrf": 42.56,
+         "length_ratio": 1.15,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 20.39,
+           "chrf": 45.98,
+           "length_ratio": 1.106,
+           "hyp_words": 11889,
+           "ref_words": 10688,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 14.78,
+           "chrf": 41.56,
+           "length_ratio": 1.112,
+           "hyp_words": 14139,
+           "ref_words": 11861,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 11.03,
+           "chrf": 40.13,
+           "length_ratio": 1.244,
+           "hyp_words": 16233,
+           "ref_words": 12854,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "facebook/nllb-200-distilled-600M",
+     "name": "NLLB-200 600M (distilled)",
+     "track": "open",
+     "url": "https://huggingface.co/facebook/nllb-200-distilled-600M",
+     "bleu": 18.02,
+     "chrf": 55.67,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 20.76,
+       "chrf": 61.14,
+       "length_ratio": 1.04,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 20.76,
+         "chrf": 61.14,
+         "length_ratio": 1.04,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 24.51,
+           "chrf": 61.38,
+           "length_ratio": 0.984,
+           "hyp_words": 8804,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 23.57,
+           "chrf": 61.71,
+           "length_ratio": 1.066,
+           "hyp_words": 9291,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 14.2,
+           "chrf": 60.34,
+           "length_ratio": 1.076,
+           "hyp_words": 9830,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 15.28,
+       "chrf": 50.2,
+       "length_ratio": 0.8,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 15.28,
+         "chrf": 50.2,
+         "length_ratio": 0.8,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 19.13,
+           "chrf": 52.49,
+           "length_ratio": 0.828,
+           "hyp_words": 9544,
+           "ref_words": 10688,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 12.78,
+           "chrf": 49.11,
+           "length_ratio": 0.728,
+           "hyp_words": 9444,
+           "ref_words": 11861,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 13.94,
+           "chrf": 49.0,
+           "length_ratio": 0.845,
+           "hyp_words": 10848,
+           "ref_words": 12854,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "facebook/nllb-200-1.3B",
+     "name": "NLLB-200 1.3B",
+     "track": "open",
+     "url": "https://huggingface.co/facebook/nllb-200-1.3B",
+     "bleu": 17.73,
+     "chrf": 56.28,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 21.15,
+       "chrf": 62.19,
+       "length_ratio": 1.06,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 21.15,
+         "chrf": 62.19,
+         "length_ratio": 1.06,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 20.79,
+           "chrf": 61.93,
+           "length_ratio": 0.931,
+           "hyp_words": 8242,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 25.96,
+           "chrf": 63.13,
+           "length_ratio": 1.171,
+           "hyp_words": 9187,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 16.7,
+           "chrf": 61.52,
+           "length_ratio": 1.069,
+           "hyp_words": 9747,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 14.32,
+       "chrf": 50.37,
+       "length_ratio": 0.79,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 14.32,
+         "chrf": 50.37,
+         "length_ratio": 0.79,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 15.27,
+           "chrf": 52.16,
+           "length_ratio": 0.767,
+           "hyp_words": 8694,
+           "ref_words": 10688,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 13.02,
+           "chrf": 49.84,
+           "length_ratio": 0.718,
+           "hyp_words": 9162,
+           "ref_words": 11861,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 14.67,
+           "chrf": 49.11,
+           "length_ratio": 0.873,
+           "hyp_words": 11151,
+           "ref_words": 12854,
+           "year": 2023
+          }
+         }
         }
        }
       }
@@ -303,52 +1306,111 @@
      "name": "Khaya AI",
      "track": "api",
      "url": "https://ghananlp.org/project/khaya-ai/",
-     "bleu": 14.97,
-     "chrf": 59.67,
-     "length_ratio": 1.94,
-     "documents": 3,
-     "per_dataset": {
-      "finance": {
+     "bleu": 15.14,
+     "chrf": 56.09,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
        "bleu": 14.97,
        "chrf": 59.67,
        "length_ratio": 1.94,
        "documents": 3,
-       "per_document": {
-        "finance_2021_ewe": {
-         "bleu": 15.0,
-         "chrf": 59.44,
-         "length_ratio": 2.261,
-         "hyp_words": 8911,
-         "ref_words": 7453,
-         "year": 2021
-        },
-        "finance_2022_ewe": {
-         "bleu": 12.73,
-         "chrf": 58.74,
-         "length_ratio": 2.215,
-         "hyp_words": 9775,
-         "ref_words": 7727,
-         "year": 2022
-        },
-        "finance_2023_ewe": {
-         "bleu": 17.19,
-         "chrf": 60.83,
-         "length_ratio": 1.358,
-         "hyp_words": 10921,
-         "ref_words": 8526,
-         "year": 2023
+       "per_dataset": {
+        "finance": {
+         "bleu": 14.97,
+         "chrf": 59.67,
+         "length_ratio": 1.94,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 15.0,
+           "chrf": 59.44,
+           "length_ratio": 2.261,
+           "hyp_words": 8911,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 12.73,
+           "chrf": 58.74,
+           "length_ratio": 2.215,
+           "hyp_words": 9775,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 17.19,
+           "chrf": 60.83,
+           "length_ratio": 1.358,
+           "hyp_words": 10921,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 15.31,
+       "chrf": 52.52,
+       "length_ratio": 0.81,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 15.31,
+         "chrf": 52.52,
+         "length_ratio": 0.81,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_ewe": {
+           "bleu": 17.63,
+           "chrf": 55.39,
+           "length_ratio": 0.834,
+           "hyp_words": 9065,
+           "ref_words": 10688,
+           "year": 2021
+          },
+          "finance_2022_ewe": {
+           "bleu": 15.22,
+           "chrf": 52.15,
+           "length_ratio": 0.772,
+           "hyp_words": 9541,
+           "ref_words": 11861,
+           "year": 2022
+          },
+          "finance_2023_ewe": {
+           "bleu": 13.08,
+           "chrf": 50.03,
+           "length_ratio": 0.826,
+           "hyp_words": 10497,
+           "ref_words": 12854,
+           "year": 2023
+          }
+         }
         }
        }
       }
      }
     }
    ],
-   "missing": []
+   "missing": [
+    {
+     "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
+     "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
+     "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    }
+   ]
   },
   "gaa": {
    "iso": "gaa",
    "language": "Ga",
-   "direction": "Ga -> English",
    "datasets": [
     "finance"
    ],
@@ -358,68 +1420,71 @@
      "name": "Gemini 3.8 Flash",
      "track": "llm",
      "url": "https://ai.google.dev/gemini-api/docs/models",
-     "bleu": 37.47,
-     "chrf": 68.88,
-     "length_ratio": 1.06,
-     "documents": 2,
-     "per_dataset": {
-      "finance": {
+     "bleu": 32.62,
+     "chrf": 65.42,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
        "bleu": 37.47,
        "chrf": 68.88,
        "length_ratio": 1.06,
        "documents": 2,
-       "per_document": {
-        "finance_2021_gaa": {
-         "bleu": 39.76,
-         "chrf": 68.46,
-         "length_ratio": 1.066,
-         "hyp_words": 7996,
-         "ref_words": 7453,
-         "year": 2021
-        },
-        "finance_2022_gaa": {
-         "bleu": 35.18,
-         "chrf": 69.3,
-         "length_ratio": 1.051,
-         "hyp_words": 8357,
-         "ref_words": 7727,
-         "year": 2022
+       "per_dataset": {
+        "finance": {
+         "bleu": 37.47,
+         "chrf": 68.88,
+         "length_ratio": 1.06,
+         "documents": 2,
+         "per_document": {
+          "finance_2021_gaa": {
+           "bleu": 39.76,
+           "chrf": 68.46,
+           "length_ratio": 1.066,
+           "hyp_words": 7996,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_gaa": {
+           "bleu": 35.18,
+           "chrf": 69.3,
+           "length_ratio": 1.051,
+           "hyp_words": 8357,
+           "ref_words": 7727,
+           "year": 2022
+          }
+         }
         }
        }
-      }
-     }
-    },
-    {
-     "model": "Google/google-translate-free",
-     "name": "Google Translate (free endpoint)",
-     "track": "api",
-     "url": "https://translate.google.com/",
-     "bleu": 35.68,
-     "chrf": 66.12,
-     "length_ratio": 0.99,
-     "documents": 2,
-     "per_dataset": {
-      "finance": {
-       "bleu": 35.68,
-       "chrf": 66.12,
-       "length_ratio": 0.99,
+      },
+      "from_en": {
+       "bleu": 27.76,
+       "chrf": 61.97,
+       "length_ratio": 1.06,
        "documents": 2,
-       "per_document": {
-        "finance_2021_gaa": {
-         "bleu": 38.71,
-         "chrf": 66.53,
-         "length_ratio": 1.002,
-         "hyp_words": 7591,
-         "ref_words": 7453,
-         "year": 2021
-        },
-        "finance_2022_gaa": {
-         "bleu": 32.65,
-         "chrf": 65.72,
-         "length_ratio": 0.988,
-         "hyp_words": 7983,
-         "ref_words": 7727,
-         "year": 2022
+       "per_dataset": {
+        "finance": {
+         "bleu": 27.76,
+         "chrf": 61.97,
+         "length_ratio": 1.06,
+         "documents": 2,
+         "per_document": {
+          "finance_2021_gaa": {
+           "bleu": 31.25,
+           "chrf": 62.44,
+           "length_ratio": 1.053,
+           "hyp_words": 9394,
+           "ref_words": 8789,
+           "year": 2021
+          },
+          "finance_2022_gaa": {
+           "bleu": 24.27,
+           "chrf": 61.51,
+           "length_ratio": 1.073,
+           "hyp_words": 10089,
+           "ref_words": 9520,
+           "year": 2022
+          }
+         }
         }
        }
       }
@@ -430,44 +1495,230 @@
      "name": "Khaya AI",
      "track": "api",
      "url": "https://ghananlp.org/project/khaya-ai/",
-     "bleu": 30.13,
-     "chrf": 61.67,
-     "length_ratio": 1.08,
-     "documents": 2,
-     "per_dataset": {
-      "finance": {
+     "bleu": 27.36,
+     "chrf": 60.25,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
        "bleu": 30.13,
        "chrf": 61.67,
        "length_ratio": 1.08,
        "documents": 2,
-       "per_document": {
-        "finance_2021_gaa": {
-         "bleu": 31.61,
+       "per_dataset": {
+        "finance": {
+         "bleu": 30.13,
          "chrf": 61.67,
-         "length_ratio": 1.093,
-         "hyp_words": 7805,
-         "ref_words": 7453,
-         "year": 2021
-        },
-        "finance_2022_gaa": {
-         "bleu": 28.65,
-         "chrf": 61.67,
-         "length_ratio": 1.061,
-         "hyp_words": 8406,
-         "ref_words": 7727,
-         "year": 2022
+         "length_ratio": 1.08,
+         "documents": 2,
+         "per_document": {
+          "finance_2021_gaa": {
+           "bleu": 31.61,
+           "chrf": 61.67,
+           "length_ratio": 1.093,
+           "hyp_words": 7805,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_gaa": {
+           "bleu": 28.65,
+           "chrf": 61.67,
+           "length_ratio": 1.061,
+           "hyp_words": 8406,
+           "ref_words": 7727,
+           "year": 2022
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 24.59,
+       "chrf": 58.83,
+       "length_ratio": 1.12,
+       "documents": 2,
+       "per_dataset": {
+        "finance": {
+         "bleu": 24.59,
+         "chrf": 58.83,
+         "length_ratio": 1.12,
+         "documents": 2,
+         "per_document": {
+          "finance_2021_gaa": {
+           "bleu": 27.02,
+           "chrf": 59.25,
+           "length_ratio": 1.143,
+           "hyp_words": 9836,
+           "ref_words": 8789,
+           "year": 2021
+          },
+          "finance_2022_gaa": {
+           "bleu": 22.17,
+           "chrf": 58.4,
+           "length_ratio": 1.103,
+           "hyp_words": 9839,
+           "ref_words": 9520,
+           "year": 2022
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "Google/google-translate-free",
+     "name": "Google Translate (free endpoint)",
+     "track": "api",
+     "url": "https://translate.google.com/",
+     "bleu": 25.69,
+     "chrf": 62.39,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 35.69,
+       "chrf": 66.11,
+       "length_ratio": 0.99,
+       "documents": 2,
+       "per_dataset": {
+        "finance": {
+         "bleu": 35.69,
+         "chrf": 66.11,
+         "length_ratio": 0.99,
+         "documents": 2,
+         "per_document": {
+          "finance_2021_gaa": {
+           "bleu": 38.72,
+           "chrf": 66.52,
+           "length_ratio": 1.002,
+           "hyp_words": 7587,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_gaa": {
+           "bleu": 32.65,
+           "chrf": 65.71,
+           "length_ratio": 0.988,
+           "hyp_words": 7979,
+           "ref_words": 7727,
+           "year": 2022
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 15.69,
+       "chrf": 58.67,
+       "length_ratio": 0.94,
+       "documents": 2,
+       "per_dataset": {
+        "finance": {
+         "bleu": 15.69,
+         "chrf": 58.67,
+         "length_ratio": 0.94,
+         "documents": 2,
+         "per_document": {
+          "finance_2021_gaa": {
+           "bleu": 14.96,
+           "chrf": 58.45,
+           "length_ratio": 0.925,
+           "hyp_words": 9630,
+           "ref_words": 8789,
+           "year": 2021
+          },
+          "finance_2022_gaa": {
+           "bleu": 16.41,
+           "chrf": 58.89,
+           "length_ratio": 0.959,
+           "hyp_words": 9957,
+           "ref_words": 9520,
+           "year": 2022
+          }
+         }
         }
        }
       }
      }
     }
    ],
-   "missing": []
+   "missing": [
+    {
+     "model": "facebook/nllb-200-distilled-600M",
+     "name": "NLLB-200 600M (distilled)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-distilled-600M",
+     "name": "NLLB-200 600M (distilled)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-1.3B",
+     "name": "NLLB-200 1.3B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-1.3B",
+     "name": "NLLB-200 1.3B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-3.3B",
+     "name": "NLLB-200 3.3B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-3.3B",
+     "name": "NLLB-200 3.3B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
+     "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
+     "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "google/madlad400-3b-mt",
+     "name": "MADLAD-400 3B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "google/madlad400-3b-mt",
+     "name": "MADLAD-400 3B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "google/madlad400-10b-mt",
+     "name": "MADLAD-400 10B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "google/madlad400-10b-mt",
+     "name": "MADLAD-400 10B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    }
+   ]
   },
   "gjn": {
    "iso": "gjn",
    "language": "Gonja",
-   "direction": "Gonja -> English",
    "datasets": [
     "finance"
    ],
@@ -477,32 +1728,71 @@
      "name": "Gemini 3.8 Flash",
      "track": "llm",
      "url": "https://ai.google.dev/gemini-api/docs/models",
-     "bleu": 33.41,
-     "chrf": 67.52,
-     "length_ratio": 1.09,
-     "documents": 2,
-     "per_dataset": {
-      "finance": {
+     "bleu": 23.6,
+     "chrf": 54.98,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
        "bleu": 33.41,
        "chrf": 67.52,
        "length_ratio": 1.09,
        "documents": 2,
-       "per_document": {
-        "finance_2022_gjn": {
-         "bleu": 30.95,
-         "chrf": 65.74,
-         "length_ratio": 1.027,
-         "hyp_words": 8678,
-         "ref_words": 7727,
-         "year": 2022
-        },
-        "finance_2023_gjn": {
-         "bleu": 35.86,
-         "chrf": 69.29,
-         "length_ratio": 1.158,
-         "hyp_words": 9809,
-         "ref_words": 8526,
-         "year": 2023
+       "per_dataset": {
+        "finance": {
+         "bleu": 33.41,
+         "chrf": 67.52,
+         "length_ratio": 1.09,
+         "documents": 2,
+         "per_document": {
+          "finance_2022_gjn": {
+           "bleu": 30.95,
+           "chrf": 65.74,
+           "length_ratio": 1.027,
+           "hyp_words": 8678,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_gjn": {
+           "bleu": 35.86,
+           "chrf": 69.29,
+           "length_ratio": 1.158,
+           "hyp_words": 9809,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 13.79,
+       "chrf": 42.45,
+       "length_ratio": 1.02,
+       "documents": 2,
+       "per_dataset": {
+        "finance": {
+         "bleu": 13.79,
+         "chrf": 42.45,
+         "length_ratio": 1.02,
+         "documents": 2,
+         "per_document": {
+          "finance_2022_gjn": {
+           "bleu": 11.03,
+           "chrf": 42.81,
+           "length_ratio": 1.083,
+           "hyp_words": 10367,
+           "ref_words": 10293,
+           "year": 2022
+          },
+          "finance_2023_gjn": {
+           "bleu": 16.54,
+           "chrf": 42.08,
+           "length_ratio": 0.967,
+           "hyp_words": 12005,
+           "ref_words": 12321,
+           "year": 2023
+          }
+         }
         }
        }
       }
@@ -513,11 +1803,97 @@
     {
      "model": "KhayaAI/khaya-translate",
      "name": "Khaya AI",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "KhayaAI/khaya-translate",
+     "name": "Khaya AI",
+     "direction": "from_en",
      "reason": "language not supported"
     },
     {
      "model": "Google/google-translate-free",
      "name": "Google Translate (free endpoint)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "Google/google-translate-free",
+     "name": "Google Translate (free endpoint)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-distilled-600M",
+     "name": "NLLB-200 600M (distilled)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-distilled-600M",
+     "name": "NLLB-200 600M (distilled)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-1.3B",
+     "name": "NLLB-200 1.3B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-1.3B",
+     "name": "NLLB-200 1.3B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-3.3B",
+     "name": "NLLB-200 3.3B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-3.3B",
+     "name": "NLLB-200 3.3B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
+     "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
+     "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "google/madlad400-3b-mt",
+     "name": "MADLAD-400 3B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "google/madlad400-3b-mt",
+     "name": "MADLAD-400 3B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "google/madlad400-10b-mt",
+     "name": "MADLAD-400 10B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "google/madlad400-10b-mt",
+     "name": "MADLAD-400 10B",
+     "direction": "from_en",
      "reason": "language not supported"
     }
    ]
@@ -525,7 +1901,6 @@
   "nzi": {
    "iso": "nzi",
    "language": "Nzema",
-   "direction": "Nzema -> English",
    "datasets": [
     "finance"
    ],
@@ -535,40 +1910,269 @@
      "name": "Gemini 3.8 Flash",
      "track": "llm",
      "url": "https://ai.google.dev/gemini-api/docs/models",
-     "bleu": 30.07,
-     "chrf": 66.24,
-     "length_ratio": 1.17,
-     "documents": 3,
-     "per_dataset": {
-      "finance": {
+     "bleu": 26.62,
+     "chrf": 61.63,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
        "bleu": 30.07,
        "chrf": 66.24,
        "length_ratio": 1.17,
        "documents": 3,
-       "per_document": {
-        "finance_2021_nzi": {
-         "bleu": 33.09,
-         "chrf": 66.32,
-         "length_ratio": 1.105,
-         "hyp_words": 8644,
-         "ref_words": 7453,
-         "year": 2021
-        },
-        "finance_2022_nzi": {
-         "bleu": 28.85,
-         "chrf": 66.62,
-         "length_ratio": 1.232,
-         "hyp_words": 9426,
-         "ref_words": 7727,
-         "year": 2022
-        },
-        "finance_2023_nzi": {
-         "bleu": 28.26,
-         "chrf": 65.78,
-         "length_ratio": 1.171,
-         "hyp_words": 9755,
-         "ref_words": 8526,
-         "year": 2023
+       "per_dataset": {
+        "finance": {
+         "bleu": 30.07,
+         "chrf": 66.24,
+         "length_ratio": 1.17,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_nzi": {
+           "bleu": 33.09,
+           "chrf": 66.32,
+           "length_ratio": 1.105,
+           "hyp_words": 8644,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_nzi": {
+           "bleu": 28.85,
+           "chrf": 66.62,
+           "length_ratio": 1.232,
+           "hyp_words": 9426,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_nzi": {
+           "bleu": 28.26,
+           "chrf": 65.78,
+           "length_ratio": 1.171,
+           "hyp_words": 9755,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 23.18,
+       "chrf": 57.02,
+       "length_ratio": 0.95,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 23.18,
+         "chrf": 57.02,
+         "length_ratio": 0.95,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_nzi": {
+           "bleu": 26.57,
+           "chrf": 57.59,
+           "length_ratio": 1.012,
+           "hyp_words": 9667,
+           "ref_words": 9759,
+           "year": 2021
+          },
+          "finance_2022_nzi": {
+           "bleu": 21.87,
+           "chrf": 55.66,
+           "length_ratio": 0.896,
+           "hyp_words": 10192,
+           "ref_words": 11322,
+           "year": 2022
+          },
+          "finance_2023_nzi": {
+           "bleu": 21.1,
+           "chrf": 57.81,
+           "length_ratio": 0.953,
+           "hyp_words": 11513,
+           "ref_words": 11768,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "google/madlad400-10b-mt",
+     "name": "MADLAD-400 10B",
+     "track": "open",
+     "url": "https://huggingface.co/google/madlad400-10b-mt",
+     "bleu": 18.77,
+     "chrf": 47.27,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 23.46,
+       "chrf": 55.88,
+       "length_ratio": 1.16,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 23.46,
+         "chrf": 55.88,
+         "length_ratio": 1.16,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_nzi": {
+           "bleu": 27.98,
+           "chrf": 55.79,
+           "length_ratio": 1.053,
+           "hyp_words": 7983,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_nzi": {
+           "bleu": 22.03,
+           "chrf": 56.01,
+           "length_ratio": 1.204,
+           "hyp_words": 9261,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_nzi": {
+           "bleu": 20.36,
+           "chrf": 55.83,
+           "length_ratio": 1.217,
+           "hyp_words": 10001,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 14.09,
+       "chrf": 38.65,
+       "length_ratio": 1.17,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 14.09,
+         "chrf": 38.65,
+         "length_ratio": 1.17,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_nzi": {
+           "bleu": 16.19,
+           "chrf": 39.19,
+           "length_ratio": 1.279,
+           "hyp_words": 12619,
+           "ref_words": 9759,
+           "year": 2021
+          },
+          "finance_2022_nzi": {
+           "bleu": 14.11,
+           "chrf": 37.67,
+           "length_ratio": 1.11,
+           "hyp_words": 12787,
+           "ref_words": 11322,
+           "year": 2022
+          },
+          "finance_2023_nzi": {
+           "bleu": 11.96,
+           "chrf": 39.1,
+           "length_ratio": 1.115,
+           "hyp_words": 13333,
+           "ref_words": 11768,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "google/madlad400-3b-mt",
+     "name": "MADLAD-400 3B",
+     "track": "open",
+     "url": "https://huggingface.co/google/madlad400-3b-mt",
+     "bleu": 13.46,
+     "chrf": 44.99,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 16.42,
+       "chrf": 52.34,
+       "length_ratio": 1.64,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 16.42,
+         "chrf": 52.34,
+         "length_ratio": 1.64,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_nzi": {
+           "bleu": 19.44,
+           "chrf": 51.32,
+           "length_ratio": 1.553,
+           "hyp_words": 10316,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_nzi": {
+           "bleu": 14.6,
+           "chrf": 51.38,
+           "length_ratio": 1.774,
+           "hyp_words": 12833,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_nzi": {
+           "bleu": 15.22,
+           "chrf": 54.33,
+           "length_ratio": 1.587,
+           "hyp_words": 12173,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 10.5,
+       "chrf": 37.64,
+       "length_ratio": 1.61,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 10.5,
+         "chrf": 37.64,
+         "length_ratio": 1.61,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_nzi": {
+           "bleu": 13.65,
+           "chrf": 39.01,
+           "length_ratio": 1.583,
+           "hyp_words": 16853,
+           "ref_words": 9759,
+           "year": 2021
+          },
+          "finance_2022_nzi": {
+           "bleu": 9.57,
+           "chrf": 36.52,
+           "length_ratio": 1.581,
+           "hyp_words": 19848,
+           "ref_words": 11322,
+           "year": 2022
+          },
+          "finance_2023_nzi": {
+           "bleu": 8.27,
+           "chrf": 37.38,
+           "length_ratio": 1.66,
+           "hyp_words": 21512,
+           "ref_words": 11768,
+           "year": 2023
+          }
+         }
         }
        }
       }
@@ -579,11 +2183,73 @@
     {
      "model": "KhayaAI/khaya-translate",
      "name": "Khaya AI",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "KhayaAI/khaya-translate",
+     "name": "Khaya AI",
+     "direction": "from_en",
      "reason": "language not supported"
     },
     {
      "model": "Google/google-translate-free",
      "name": "Google Translate (free endpoint)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "Google/google-translate-free",
+     "name": "Google Translate (free endpoint)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-distilled-600M",
+     "name": "NLLB-200 600M (distilled)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-distilled-600M",
+     "name": "NLLB-200 600M (distilled)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-1.3B",
+     "name": "NLLB-200 1.3B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-1.3B",
+     "name": "NLLB-200 1.3B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-3.3B",
+     "name": "NLLB-200 3.3B",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "facebook/nllb-200-3.3B",
+     "name": "NLLB-200 3.3B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
+     "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
+     "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "direction": "from_en",
      "reason": "language not supported"
     }
    ]
@@ -591,7 +2257,6 @@
   "twi_asante": {
    "iso": "twi_asante",
    "language": "Asante Twi",
-   "direction": "Asante Twi -> English",
    "datasets": [
     "finance"
    ],
@@ -601,40 +2266,87 @@
      "name": "Gemini 3.8 Flash",
      "track": "llm",
      "url": "https://ai.google.dev/gemini-api/docs/models",
-     "bleu": 27.22,
-     "chrf": 68.16,
-     "length_ratio": 1.31,
-     "documents": 3,
-     "per_dataset": {
-      "finance": {
+     "bleu": 23.57,
+     "chrf": 60.33,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
        "bleu": 27.22,
        "chrf": 68.16,
        "length_ratio": 1.31,
        "documents": 3,
-       "per_document": {
-        "finance_2021_twi_asante": {
-         "bleu": 24.25,
-         "chrf": 66.42,
-         "length_ratio": 1.378,
-         "hyp_words": 11011,
-         "ref_words": 7453,
-         "year": 2021
-        },
-        "finance_2022_twi_asante": {
-         "bleu": 27.53,
-         "chrf": 68.68,
-         "length_ratio": 1.264,
-         "hyp_words": 10550,
-         "ref_words": 7727,
-         "year": 2022
-        },
-        "finance_2023_twi_asante": {
-         "bleu": 29.87,
-         "chrf": 69.39,
-         "length_ratio": 1.287,
-         "hyp_words": 11030,
-         "ref_words": 8526,
-         "year": 2023
+       "per_dataset": {
+        "finance": {
+         "bleu": 27.22,
+         "chrf": 68.16,
+         "length_ratio": 1.31,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 24.25,
+           "chrf": 66.42,
+           "length_ratio": 1.378,
+           "hyp_words": 11011,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 27.53,
+           "chrf": 68.68,
+           "length_ratio": 1.264,
+           "hyp_words": 10550,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 29.87,
+           "chrf": 69.39,
+           "length_ratio": 1.287,
+           "hyp_words": 11030,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 19.92,
+       "chrf": 52.5,
+       "length_ratio": 0.85,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 19.92,
+         "chrf": 52.5,
+         "length_ratio": 0.85,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 20.76,
+           "chrf": 52.78,
+           "length_ratio": 0.872,
+           "hyp_words": 9395,
+           "ref_words": 11597,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 17.54,
+           "chrf": 50.32,
+           "length_ratio": 0.83,
+           "hyp_words": 10134,
+           "ref_words": 12941,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 21.47,
+           "chrf": 54.4,
+           "length_ratio": 0.858,
+           "hyp_words": 11474,
+           "ref_words": 13241,
+           "year": 2023
+          }
+         }
         }
        }
       }
@@ -645,40 +2357,502 @@
      "name": "Google Translate (free endpoint)",
      "track": "api",
      "url": "https://translate.google.com/",
-     "bleu": 21.64,
-     "chrf": 54.76,
-     "length_ratio": 1.19,
-     "documents": 3,
-     "per_dataset": {
-      "finance": {
-       "bleu": 21.64,
-       "chrf": 54.76,
+     "bleu": 22.59,
+     "chrf": 57.1,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 27.67,
+       "chrf": 66.1,
+       "length_ratio": 1.03,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 27.67,
+         "chrf": 66.1,
+         "length_ratio": 1.03,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 28.07,
+           "chrf": 65.62,
+           "length_ratio": 1.027,
+           "hyp_words": 8642,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 24.53,
+           "chrf": 66.1,
+           "length_ratio": 1.028,
+           "hyp_words": 9109,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 30.4,
+           "chrf": 66.57,
+           "length_ratio": 1.05,
+           "hyp_words": 9307,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 17.52,
+       "chrf": 48.1,
+       "length_ratio": 0.81,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 17.52,
+         "chrf": 48.1,
+         "length_ratio": 0.81,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 18.79,
+           "chrf": 49.11,
+           "length_ratio": 0.83,
+           "hyp_words": 9420,
+           "ref_words": 11597,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 16.16,
+           "chrf": 46.49,
+           "length_ratio": 0.781,
+           "hyp_words": 9906,
+           "ref_words": 12941,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 17.62,
+           "chrf": 48.69,
+           "length_ratio": 0.832,
+           "hyp_words": 11360,
+           "ref_words": 13241,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
+     "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "track": "open",
+     "url": "https://huggingface.co/mclanorjeff/NLLB-Twi-Human-Aligned",
+     "bleu": 22.29,
+     "chrf": 60.97,
+     "n_directions": 1,
+     "directions": {
+      "to_en": {
+       "bleu": 22.29,
+       "chrf": 60.97,
+       "length_ratio": 1.17,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 22.29,
+         "chrf": 60.97,
+         "length_ratio": 1.17,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 22.2,
+           "chrf": 60.44,
+           "length_ratio": 1.153,
+           "hyp_words": 9459,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 19.56,
+           "chrf": 60.4,
+           "length_ratio": 1.175,
+           "hyp_words": 10246,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 25.11,
+           "chrf": 62.08,
+           "length_ratio": 1.178,
+           "hyp_words": 10263,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "facebook/nllb-200-1.3B",
+     "name": "NLLB-200 1.3B",
+     "track": "open",
+     "url": "https://huggingface.co/facebook/nllb-200-1.3B",
+     "bleu": 20.21,
+     "chrf": 54.94,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 24.86,
+       "chrf": 64.17,
+       "length_ratio": 1.07,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 24.86,
+         "chrf": 64.17,
+         "length_ratio": 1.07,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 22.16,
+           "chrf": 62.57,
+           "length_ratio": 1.094,
+           "hyp_words": 9553,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 23.24,
+           "chrf": 64.84,
+           "length_ratio": 1.053,
+           "hyp_words": 9091,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 29.18,
+           "chrf": 65.09,
+           "length_ratio": 1.054,
+           "hyp_words": 9330,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 15.57,
+       "chrf": 45.7,
+       "length_ratio": 0.8,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 15.57,
+         "chrf": 45.7,
+         "length_ratio": 0.8,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 16.25,
+           "chrf": 46.17,
+           "length_ratio": 0.809,
+           "hyp_words": 10140,
+           "ref_words": 11597,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 13.65,
+           "chrf": 43.77,
+           "length_ratio": 0.775,
+           "hyp_words": 10476,
+           "ref_words": 12941,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 16.8,
+           "chrf": 47.16,
+           "length_ratio": 0.824,
+           "hyp_words": 11629,
+           "ref_words": 13241,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "facebook/nllb-200-3.3B",
+     "name": "NLLB-200 3.3B",
+     "track": "open",
+     "url": "https://huggingface.co/facebook/nllb-200-3.3B",
+     "bleu": 19.13,
+     "chrf": 54.85,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 22.85,
+       "chrf": 64.57,
+       "length_ratio": 1.1,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 22.85,
+         "chrf": 64.57,
+         "length_ratio": 1.1,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 19.81,
+           "chrf": 63.0,
+           "length_ratio": 1.085,
+           "hyp_words": 9381,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 23.99,
+           "chrf": 65.79,
+           "length_ratio": 1.098,
+           "hyp_words": 9508,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 24.76,
+           "chrf": 64.93,
+           "length_ratio": 1.106,
+           "hyp_words": 10113,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 15.41,
+       "chrf": 45.14,
+       "length_ratio": 1.05,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 15.41,
+         "chrf": 45.14,
+         "length_ratio": 1.05,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 14.84,
+           "chrf": 45.95,
+           "length_ratio": 1.162,
+           "hyp_words": 9613,
+           "ref_words": 11597,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 14.13,
+           "chrf": 43.24,
+           "length_ratio": 1.032,
+           "hyp_words": 10360,
+           "ref_words": 12941,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 17.26,
+           "chrf": 46.23,
+           "length_ratio": 0.97,
+           "hyp_words": 11293,
+           "ref_words": 13241,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "google/madlad400-10b-mt",
+     "name": "MADLAD-400 10B",
+     "track": "open",
+     "url": "https://huggingface.co/google/madlad400-10b-mt",
+     "bleu": 17.12,
+     "chrf": 49.39,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 22.57,
+       "chrf": 59.39,
+       "length_ratio": 1.26,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 22.57,
+         "chrf": 59.39,
+         "length_ratio": 1.26,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 21.42,
+           "chrf": 58.23,
+           "length_ratio": 1.311,
+           "hyp_words": 10771,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 22.37,
+           "chrf": 60.84,
+           "length_ratio": 1.177,
+           "hyp_words": 9732,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 23.92,
+           "chrf": 59.09,
+           "length_ratio": 1.295,
+           "hyp_words": 11033,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 11.67,
+       "chrf": 39.4,
        "length_ratio": 1.19,
        "documents": 3,
-       "per_document": {
-        "finance_2021_twi_asante": {
-         "bleu": 28.07,
-         "chrf": 65.62,
-         "length_ratio": 1.027,
-         "hyp_words": 8642,
-         "ref_words": 7453,
-         "year": 2021
-        },
-        "finance_2022_twi_asante": {
-         "bleu": 22.33,
-         "chrf": 64.1,
-         "length_ratio": 1.066,
-         "hyp_words": 9436,
-         "ref_words": 7727,
-         "year": 2022
-        },
-        "finance_2023_twi_asante": {
-         "bleu": 14.53,
-         "chrf": 34.56,
-         "length_ratio": 1.483,
-         "hyp_words": 13058,
-         "ref_words": 8526,
-         "year": 2023
+       "per_dataset": {
+        "finance": {
+         "bleu": 11.67,
+         "chrf": 39.4,
+         "length_ratio": 1.19,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 12.29,
+           "chrf": 39.67,
+           "length_ratio": 1.194,
+           "hyp_words": 13544,
+           "ref_words": 11597,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 10.45,
+           "chrf": 38.61,
+           "length_ratio": 1.157,
+           "hyp_words": 14784,
+           "ref_words": 12941,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 12.27,
+           "chrf": 39.92,
+           "length_ratio": 1.224,
+           "hyp_words": 16653,
+           "ref_words": 13241,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "facebook/nllb-200-distilled-600M",
+     "name": "NLLB-200 600M (distilled)",
+     "track": "open",
+     "url": "https://huggingface.co/facebook/nllb-200-distilled-600M",
+     "bleu": 16.79,
+     "chrf": 53.31,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 20.21,
+       "chrf": 62.5,
+       "length_ratio": 1.12,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 20.21,
+         "chrf": 62.5,
+         "length_ratio": 1.12,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 18.95,
+           "chrf": 61.24,
+           "length_ratio": 1.122,
+           "hyp_words": 9888,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 19.9,
+           "chrf": 63.06,
+           "length_ratio": 1.12,
+           "hyp_words": 9792,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 21.77,
+           "chrf": 63.21,
+           "length_ratio": 1.129,
+           "hyp_words": 10226,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 13.37,
+       "chrf": 44.13,
+       "length_ratio": 0.79,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 13.37,
+         "chrf": 44.13,
+         "length_ratio": 0.79,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 14.63,
+           "chrf": 45.35,
+           "length_ratio": 0.775,
+           "hyp_words": 9465,
+           "ref_words": 11597,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 11.85,
+           "chrf": 41.83,
+           "length_ratio": 0.819,
+           "hyp_words": 11148,
+           "ref_words": 12941,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 13.64,
+           "chrf": 45.21,
+           "length_ratio": 0.786,
+           "hyp_words": 11000,
+           "ref_words": 13241,
+           "year": 2023
+          }
+         }
         }
        }
       }
@@ -689,47 +2863,192 @@
      "name": "Khaya AI",
      "track": "api",
      "url": "https://ghananlp.org/project/khaya-ai/",
-     "bleu": 20.24,
-     "chrf": 62.57,
-     "length_ratio": 1.28,
-     "documents": 3,
-     "per_dataset": {
-      "finance": {
+     "bleu": 16.13,
+     "chrf": 55.16,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
        "bleu": 20.24,
        "chrf": 62.57,
        "length_ratio": 1.28,
        "documents": 3,
-       "per_document": {
-        "finance_2021_twi_asante": {
-         "bleu": 22.18,
-         "chrf": 62.68,
-         "length_ratio": 1.217,
-         "hyp_words": 10099,
-         "ref_words": 7453,
-         "year": 2021
-        },
-        "finance_2022_twi_asante": {
-         "bleu": 17.57,
-         "chrf": 61.87,
-         "length_ratio": 1.284,
-         "hyp_words": 10946,
-         "ref_words": 7727,
-         "year": 2022
-        },
-        "finance_2023_twi_asante": {
-         "bleu": 20.96,
-         "chrf": 63.17,
-         "length_ratio": 1.325,
-         "hyp_words": 11412,
-         "ref_words": 8526,
-         "year": 2023
+       "per_dataset": {
+        "finance": {
+         "bleu": 20.24,
+         "chrf": 62.57,
+         "length_ratio": 1.28,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 22.18,
+           "chrf": 62.68,
+           "length_ratio": 1.217,
+           "hyp_words": 10099,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 17.57,
+           "chrf": 61.87,
+           "length_ratio": 1.284,
+           "hyp_words": 10946,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 20.96,
+           "chrf": 63.17,
+           "length_ratio": 1.325,
+           "hyp_words": 11412,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 12.03,
+       "chrf": 47.74,
+       "length_ratio": 0.79,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 12.03,
+         "chrf": 47.74,
+         "length_ratio": 0.79,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 11.43,
+           "chrf": 48.33,
+           "length_ratio": 0.787,
+           "hyp_words": 9760,
+           "ref_words": 11597,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 12.26,
+           "chrf": 46.57,
+           "length_ratio": 0.783,
+           "hyp_words": 10431,
+           "ref_words": 12941,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 12.41,
+           "chrf": 48.33,
+           "length_ratio": 0.813,
+           "hyp_words": 11393,
+           "ref_words": 13241,
+           "year": 2023
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "google/madlad400-3b-mt",
+     "name": "MADLAD-400 3B",
+     "track": "open",
+     "url": "https://huggingface.co/google/madlad400-3b-mt",
+     "bleu": 15.87,
+     "chrf": 48.77,
+     "n_directions": 2,
+     "directions": {
+      "to_en": {
+       "bleu": 21.91,
+       "chrf": 59.94,
+       "length_ratio": 1.54,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 21.91,
+         "chrf": 59.94,
+         "length_ratio": 1.54,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 22.55,
+           "chrf": 59.33,
+           "length_ratio": 1.635,
+           "hyp_words": 12577,
+           "ref_words": 7453,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 21.39,
+           "chrf": 59.79,
+           "length_ratio": 1.551,
+           "hyp_words": 11206,
+           "ref_words": 7727,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 21.78,
+           "chrf": 60.7,
+           "length_ratio": 1.442,
+           "hyp_words": 12680,
+           "ref_words": 8526,
+           "year": 2023
+          }
+         }
+        }
+       }
+      },
+      "from_en": {
+       "bleu": 9.82,
+       "chrf": 37.6,
+       "length_ratio": 1.46,
+       "documents": 3,
+       "per_dataset": {
+        "finance": {
+         "bleu": 9.82,
+         "chrf": 37.6,
+         "length_ratio": 1.46,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 9.97,
+           "chrf": 38.0,
+           "length_ratio": 1.523,
+           "hyp_words": 17011,
+           "ref_words": 11597,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 8.89,
+           "chrf": 36.53,
+           "length_ratio": 1.418,
+           "hyp_words": 18958,
+           "ref_words": 12941,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 10.59,
+           "chrf": 38.27,
+           "length_ratio": 1.442,
+           "hyp_words": 19981,
+           "ref_words": 13241,
+           "year": 2023
+          }
+         }
         }
        }
       }
      }
     }
    ],
-   "missing": []
+   "missing": [
+    {
+     "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
+     "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "direction": "from_en",
+     "reason": "direction not supported"
+    }
+   ]
   }
  }
 }

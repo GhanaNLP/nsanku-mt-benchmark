@@ -37,6 +37,72 @@
         "gaa": "gaa"
       },
       "url": "https://translate.google.com/"
+    },
+    {
+      "id": "facebook/nllb-200-distilled-600M",
+      "name": "NLLB-200 600M (distilled)",
+      "kind": "open",
+      "codes": {
+        "twi_asante": "twi_Latn",
+        "ewe": "ewe_Latn"
+      },
+      "url": "https://huggingface.co/facebook/nllb-200-distilled-600M"
+    },
+    {
+      "id": "facebook/nllb-200-1.3B",
+      "name": "NLLB-200 1.3B",
+      "kind": "open",
+      "codes": {
+        "twi_asante": "twi_Latn",
+        "ewe": "ewe_Latn"
+      },
+      "url": "https://huggingface.co/facebook/nllb-200-1.3B"
+    },
+    {
+      "id": "facebook/nllb-200-3.3B",
+      "name": "NLLB-200 3.3B",
+      "kind": "open",
+      "codes": {
+        "twi_asante": "twi_Latn",
+        "ewe": "ewe_Latn"
+      },
+      "url": "https://huggingface.co/facebook/nllb-200-3.3B"
+    },
+    {
+      "id": "mclanorjeff/NLLB-Twi-Human-Aligned",
+      "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+      "kind": "open",
+      "codes": {
+        "twi_asante": "aka_GH"
+      },
+      "url": "https://huggingface.co/mclanorjeff/NLLB-Twi-Human-Aligned",
+      "directions": [
+        "to_en"
+      ]
+    },
+    {
+      "id": "google/madlad400-3b-mt",
+      "name": "MADLAD-400 3B",
+      "kind": "open",
+      "codes": {
+        "twi_asante": "ak",
+        "ewe": "ee",
+        "ada": "ada",
+        "nzi": "nzi"
+      },
+      "url": "https://huggingface.co/google/madlad400-3b-mt"
+    },
+    {
+      "id": "google/madlad400-10b-mt",
+      "name": "MADLAD-400 10B",
+      "kind": "open",
+      "codes": {
+        "twi_asante": "ak",
+        "ewe": "ee",
+        "ada": "ada",
+        "nzi": "nzi"
+      },
+      "url": "https://huggingface.co/google/madlad400-10b-mt"
     }
   ]
 }

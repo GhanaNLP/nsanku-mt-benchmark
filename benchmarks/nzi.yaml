@@ -1,6 +1,5 @@
 iso: nzi
 language: Nzema
-direction: Nzema -> English
 datasets:
 - finance
 benchmarks:
@@ -8,42 +7,270 @@ benchmarks:
   name: Gemini 3.8 Flash
   track: llm
   url: https://ai.google.dev/gemini-api/docs/models
-  bleu: 30.07
-  chrf: 66.24
-  length_ratio: 1.17
-  documents: 3
-  per_dataset:
-    finance:
+  bleu: 26.62
+  chrf: 61.63
+  n_directions: 2
+  directions:
+    to_en:
       bleu: 30.07
       chrf: 66.24
       length_ratio: 1.17
       documents: 3
-      per_document:
-        finance_2021_nzi:
-          bleu: 33.09
-          chrf: 66.32
-          length_ratio: 1.105
-          hyp_words: 8644
-          ref_words: 7453
-          year: 2021
-        finance_2022_nzi:
-          bleu: 28.85
-          chrf: 66.62
-          length_ratio: 1.232
-          hyp_words: 9426
-          ref_words: 7727
-          year: 2022
-        finance_2023_nzi:
-          bleu: 28.26
-          chrf: 65.78
-          length_ratio: 1.171
-          hyp_words: 9755
-          ref_words: 8526
-          year: 2023
+      per_dataset:
+        finance:
+          bleu: 30.07
+          chrf: 66.24
+          length_ratio: 1.17
+          documents: 3
+          per_document:
+            finance_2021_nzi:
+              bleu: 33.09
+              chrf: 66.32
+              length_ratio: 1.105
+              hyp_words: 8644
+              ref_words: 7453
+              year: 2021
+            finance_2022_nzi:
+              bleu: 28.85
+              chrf: 66.62
+              length_ratio: 1.232
+              hyp_words: 9426
+              ref_words: 7727
+              year: 2022
+            finance_2023_nzi:
+              bleu: 28.26
+              chrf: 65.78
+              length_ratio: 1.171
+              hyp_words: 9755
+              ref_words: 8526
+              year: 2023
+    from_en:
+      bleu: 23.18
+      chrf: 57.02
+      length_ratio: 0.95
+      documents: 3
+      per_dataset:
+        finance:
+          bleu: 23.18
+          chrf: 57.02
+          length_ratio: 0.95
+          documents: 3
+          per_document:
+            finance_2021_nzi:
+              bleu: 26.57
+              chrf: 57.59
+              length_ratio: 1.012
+              hyp_words: 9667
+              ref_words: 9759
+              year: 2021
+            finance_2022_nzi:
+              bleu: 21.87
+              chrf: 55.66
+              length_ratio: 0.896
+              hyp_words: 10192
+              ref_words: 11322
+              year: 2022
+            finance_2023_nzi:
+              bleu: 21.1
+              chrf: 57.81
+              length_ratio: 0.953
+              hyp_words: 11513
+              ref_words: 11768
+              year: 2023
+- model: google/madlad400-10b-mt
+  name: MADLAD-400 10B
+  track: open
+  url: https://huggingface.co/google/madlad400-10b-mt
+  bleu: 18.77
+  chrf: 47.27
+  n_directions: 2
+  directions:
+    to_en:
+      bleu: 23.46
+      chrf: 55.88
+      length_ratio: 1.16
+      documents: 3
+      per_dataset:
+        finance:
+          bleu: 23.46
+          chrf: 55.88
+          length_ratio: 1.16
+          documents: 3
+          per_document:
+            finance_2021_nzi:
+              bleu: 27.98
+              chrf: 55.79
+              length_ratio: 1.053
+              hyp_words: 7983
+              ref_words: 7453
+              year: 2021
+            finance_2022_nzi:
+              bleu: 22.03
+              chrf: 56.01
+              length_ratio: 1.204
+              hyp_words: 9261
+              ref_words: 7727
+              year: 2022
+            finance_2023_nzi:
+              bleu: 20.36
+              chrf: 55.83
+              length_ratio: 1.217
+              hyp_words: 10001
+              ref_words: 8526
+              year: 2023
+    from_en:
+      bleu: 14.09
+      chrf: 38.65
+      length_ratio: 1.17
+      documents: 3
+      per_dataset:
+        finance:
+          bleu: 14.09
+          chrf: 38.65
+          length_ratio: 1.17
+          documents: 3
+          per_document:
+            finance_2021_nzi:
+              bleu: 16.19
+              chrf: 39.19
+              length_ratio: 1.279
+              hyp_words: 12619
+              ref_words: 9759
+              year: 2021
+            finance_2022_nzi:
+              bleu: 14.11
+              chrf: 37.67
+              length_ratio: 1.11
+              hyp_words: 12787
+              ref_words: 11322
+              year: 2022
+            finance_2023_nzi:
+              bleu: 11.96
+              chrf: 39.1
+              length_ratio: 1.115
+              hyp_words: 13333
+              ref_words: 11768
+              year: 2023
+- model: google/madlad400-3b-mt
+  name: MADLAD-400 3B
+  track: open
+  url: https://huggingface.co/google/madlad400-3b-mt
+  bleu: 13.46
+  chrf: 44.99
+  n_directions: 2
+  directions:
+    to_en:
+      bleu: 16.42
+      chrf: 52.34
+      length_ratio: 1.64
+      documents: 3
+      per_dataset:
+        finance:
+          bleu: 16.42
+          chrf: 52.34
+          length_ratio: 1.64
+          documents: 3
+          per_document:
+            finance_2021_nzi:
+              bleu: 19.44
+              chrf: 51.32
+              length_ratio: 1.553
+              hyp_words: 10316
+              ref_words: 7453
+              year: 2021
+            finance_2022_nzi:
+              bleu: 14.6
+              chrf: 51.38
+              length_ratio: 1.774
+              hyp_words: 12833
+              ref_words: 7727
+              year: 2022
+            finance_2023_nzi:
+              bleu: 15.22
+              chrf: 54.33
+              length_ratio: 1.587
+              hyp_words: 12173
+              ref_words: 8526
+              year: 2023
+    from_en:
+      bleu: 10.5
+      chrf: 37.64
+      length_ratio: 1.61
+      documents: 3
+      per_dataset:
+        finance:
+          bleu: 10.5
+          chrf: 37.64
+          length_ratio: 1.61
+          documents: 3
+          per_document:
+            finance_2021_nzi:
+              bleu: 13.65
+              chrf: 39.01
+              length_ratio: 1.583
+              hyp_words: 16853
+              ref_words: 9759
+              year: 2021
+            finance_2022_nzi:
+              bleu: 9.57
+              chrf: 36.52
+              length_ratio: 1.581
+              hyp_words: 19848
+              ref_words: 11322
+              year: 2022
+            finance_2023_nzi:
+              bleu: 8.27
+              chrf: 37.38
+              length_ratio: 1.66
+              hyp_words: 21512
+              ref_words: 11768
+              year: 2023
 missing:
 - model: KhayaAI/khaya-translate
   name: Khaya AI
+  direction: to_en
+  reason: language not supported
+- model: KhayaAI/khaya-translate
+  name: Khaya AI
+  direction: from_en
   reason: language not supported
 - model: Google/google-translate-free
   name: Google Translate (free endpoint)
+  direction: to_en
+  reason: language not supported
+- model: Google/google-translate-free
+  name: Google Translate (free endpoint)
+  direction: from_en
+  reason: language not supported
+- model: facebook/nllb-200-distilled-600M
+  name: NLLB-200 600M (distilled)
+  direction: to_en
+  reason: language not supported
+- model: facebook/nllb-200-distilled-600M
+  name: NLLB-200 600M (distilled)
+  direction: from_en
+  reason: language not supported
+- model: facebook/nllb-200-1.3B
+  name: NLLB-200 1.3B
+  direction: to_en
+  reason: language not supported
+- model: facebook/nllb-200-1.3B
+  name: NLLB-200 1.3B
+  direction: from_en
+  reason: language not supported
+- model: facebook/nllb-200-3.3B
+  name: NLLB-200 3.3B
+  direction: to_en
+  reason: language not supported
+- model: facebook/nllb-200-3.3B
+  name: NLLB-200 3.3B
+  direction: from_en
+  reason: language not supported
+- model: mclanorjeff/NLLB-Twi-Human-Aligned
+  name: NLLB-Twi Human-Aligned (600M + LoRA)
+  direction: to_en
+  reason: language not supported
+- model: mclanorjeff/NLLB-Twi-Human-Aligned
+  name: NLLB-Twi Human-Aligned (600M + LoRA)
+  direction: from_en
   reason: language not supported
