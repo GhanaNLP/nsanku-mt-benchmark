@@ -7,9 +7,6 @@ benchmarks:
   name: Gemini 3.8 Flash
   track: llm
   url: https://ai.google.dev/gemini-api/docs/models
-  bleu: 26.62
-  chrf: 61.63
-  n_directions: 2
   directions:
     to_en:
       bleu: 30.07
@@ -81,9 +78,6 @@ benchmarks:
   name: MADLAD-400 10B
   track: open
   url: https://huggingface.co/google/madlad400-10b-mt
-  bleu: 18.77
-  chrf: 47.27
-  n_directions: 2
   directions:
     to_en:
       bleu: 23.46
@@ -155,9 +149,6 @@ benchmarks:
   name: MADLAD-400 3B
   track: open
   url: https://huggingface.co/google/madlad400-3b-mt
-  bleu: 13.46
-  chrf: 44.99
-  n_directions: 2
   directions:
     to_en:
       bleu: 16.42

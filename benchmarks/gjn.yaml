@@ -7,9 +7,6 @@ benchmarks:
   name: Gemini 3.8 Flash
   track: llm
   url: https://ai.google.dev/gemini-api/docs/models
-  bleu: 23.6
-  chrf: 54.98
-  n_directions: 2
   directions:
     to_en:
       bleu: 33.41

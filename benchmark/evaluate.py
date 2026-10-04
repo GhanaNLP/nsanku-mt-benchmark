@@ -4,7 +4,7 @@ score at document level, write translations/ and benchmarks/{iso}.yaml + benchma
 Directions
   to_en    <language> -> English   source = language edition, reference = English edition
   from_en  English -> <language>   source = English edition, reference = language edition
-Both are scored separately and recorded separately; the headline is their mean.
+Both are scored and recorded separately; there is deliberately no combined score across directions.
 """
 import json
 from collections import defaultdict
@@ -71,10 +71,9 @@ def _direction_block(per_ds):
 def assemble():
     """Join every translations/<model>/<doc>[.<direction>].score.json into benchmarks/.
 
-    Results are recorded PER DIRECTION and PER DATASET. Within a direction a language's score is
-    the mean of its per-dataset scores (each dataset weighs the same); the headline `bleu`/`chrf`
-    is the mean of the directions the model has (`n_directions` says how many), so adding a
-    dataset or a direction never rewrites existing numbers.
+    Results are recorded PER DIRECTION and PER DATASET, and directions are never averaged together.
+    Within a direction a language's score is the mean of its per-dataset scores (each dataset weighs
+    the same), so adding a dataset never rewrites the existing numbers.
     """
     config.BENCHMARKS.mkdir(exist_ok=True)
     docs = {d["id"]: d for d in config.documents()}
@@ -92,7 +91,7 @@ def assemble():
     langs = {}
     for d in docs.values():
         langs.setdefault(d["iso"], {"language": d["language"], "datasets": set()})["datasets"].add(d["dataset"])
-    summary = {"metric": "document-level BLEU (sacreBLEU) + chrF; per direction, per dataset; headline = mean over directions",
+    summary = {"metric": "document-level BLEU (sacreBLEU) + chrF; per direction, per dataset (no cross-direction mean)",
                "directions": LABELS,
                "datasets": {x["id"]: dict(x, n_documents=sum(d["dataset"] == x["id"] for d in docs.values()))
                             for x in config.datasets()},
@@ -110,11 +109,8 @@ def assemble():
             if not by_dir:
                 continue
             rows.append({"model": m["id"], "name": m["name"], "track": m["kind"], "url": m.get("url"),
-                         "bleu": _mean([v["bleu"] for v in by_dir.values()]),
-                         "chrf": _mean([v["chrf"] for v in by_dir.values()]),
-                         "n_directions": len(by_dir),
                          "directions": {dr: by_dir[dr] for dr in DIRECTIONS if dr in by_dir}})
-        rows.sort(key=lambda r: -r["bleu"])
+        rows.sort(key=lambda r: -(r["directions"].get("from_en") or r["directions"]["to_en"])["bleu"])
         data = {"iso": iso, "language": info["language"], "datasets": sorted(info["datasets"]),
                 "benchmarks": rows, "missing": missing}
         (config.BENCHMARKS / f"{iso}.yaml").write_text(

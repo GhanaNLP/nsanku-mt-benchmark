@@ -57,10 +57,10 @@ the English edition of the same year (`data/documents.json`).
 | `to_en` (X → English) | the language edition | the English edition of the same year |
 | `from_en` (English → X) | the English edition | the language edition |
 
-Each is scored on its own (`directions.to_en` / `directions.from_en` in `benchmarks/*.yaml`, and side by
-side on the leaderboard). The headline score is the **mean of the directions a system has**; a system that
-supports one direction only (the Twi adapter) is averaged over that direction and flagged `n_directions: 1`.
-BLEU on a low-resource *target* language is harsh, so read English → X through chrF and relative to other systems.
+Each is scored and reported on its own (`directions.to_en` / `directions.from_en` in `benchmarks/*.yaml`; the
+leaderboard has a Direction selector, default English → X). **Directions are never averaged together.** Within a
+direction, a language's score is the mean of its per-dataset scores. BLEU on a low-resource *target* language is harsh, so
+read English → X through chrF and relative to other systems.
 
 ## Systems
 
@@ -70,7 +70,7 @@ BLEU on a low-resource *target* language is harsh, so read English → X through
 | Khaya AI | Hosted API | `translation-api.ghananlp.org/v1/translate` | Twi, Ewe, Ga, Dagbani | both directions |
 | Google Translate (free) | Hosted API | keyless `clients5.google.com/translate_a/t` | Twi, Ewe, Ga | see note below |
 | NLLB-200 600M (distilled), 1.3B, 3.3B | Open | local GPU | Twi, Ewe | beam 4, bf16 |
-| NLLB-Twi Human-Aligned | Open | local GPU, [QLoRA adapter](https://huggingface.co/mclanorjeff/NLLB-Twi-Human-Aligned) on NLLB-600M | Twi | X → English only; model-card recipe (`src_lang="aka_GH"`, 5 beams) |
+| NLLB-Twi Human-Aligned | Open | local GPU, [QLoRA adapter](https://huggingface.co/mclanorjeff/NLLB-Twi-Human-Aligned) on NLLB-600M | Twi | X → English only (no English → X score); model-card recipe (`src_lang="aka_GH"`, 5 beams) |
 | MADLAD-400 3B, 10B | Open | local GPU | Twi, Ewe, Dangme, Nzema | `<2en>` / `<2xx>` target tags; no source tag, so coverage is inferred from its target-tag inventory |
 
 A system is only scored on the languages and directions it supports (`data/mt_models.json`); unsupported

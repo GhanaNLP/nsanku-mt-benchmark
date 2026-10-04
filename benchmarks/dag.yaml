@@ -7,9 +7,6 @@ benchmarks:
   name: Gemini 3.8 Flash
   track: llm
   url: https://ai.google.dev/gemini-api/docs/models
-  bleu: 34.36
-  chrf: 67.38
-  n_directions: 2
   directions:
     to_en:
       bleu: 41.04
@@ -81,9 +78,6 @@ benchmarks:
   name: Khaya AI
   track: api
   url: https://ghananlp.org/project/khaya-ai/
-  bleu: 14.38
-  chrf: 51.31
-  n_directions: 2
   directions:
     to_en:
       bleu: 19.75

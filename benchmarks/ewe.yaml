@@ -7,9 +7,6 @@ benchmarks:
   name: Gemini 3.8 Flash
   track: llm
   url: https://ai.google.dev/gemini-api/docs/models
-  bleu: 25.71
-  chrf: 61.36
-  n_directions: 2
   directions:
     to_en:
       bleu: 30.13
@@ -77,13 +74,81 @@ benchmarks:
               hyp_words: 10700
               ref_words: 12854
               year: 2023
+- model: facebook/nllb-200-3.3B
+  name: NLLB-200 3.3B
+  track: open
+  url: https://huggingface.co/facebook/nllb-200-3.3B
+  directions:
+    to_en:
+      bleu: 18.75
+      chrf: 61.83
+      length_ratio: 1.05
+      documents: 3
+      per_dataset:
+        finance:
+          bleu: 18.75
+          chrf: 61.83
+          length_ratio: 1.05
+          documents: 3
+          per_document:
+            finance_2021_ewe:
+              bleu: 20.96
+              chrf: 61.62
+              length_ratio: 0.986
+              hyp_words: 8723
+              ref_words: 7453
+              year: 2021
+            finance_2022_ewe:
+              bleu: 20.34
+              chrf: 62.25
+              length_ratio: 1.052
+              hyp_words: 9111
+              ref_words: 7727
+              year: 2022
+            finance_2023_ewe:
+              bleu: 14.94
+              chrf: 61.62
+              length_ratio: 1.105
+              hyp_words: 10221
+              ref_words: 8526
+              year: 2023
+    from_en:
+      bleu: 20.82
+      chrf: 53.17
+      length_ratio: 0.88
+      documents: 3
+      per_dataset:
+        finance:
+          bleu: 20.82
+          chrf: 53.17
+          length_ratio: 0.88
+          documents: 3
+          per_document:
+            finance_2021_ewe:
+              bleu: 25.32
+              chrf: 56.47
+              length_ratio: 0.946
+              hyp_words: 10194
+              ref_words: 10688
+              year: 2021
+            finance_2022_ewe:
+              bleu: 21.55
+              chrf: 52.8
+              length_ratio: 0.807
+              hyp_words: 10645
+              ref_words: 11861
+              year: 2022
+            finance_2023_ewe:
+              bleu: 15.59
+              chrf: 50.23
+              length_ratio: 0.873
+              hyp_words: 11420
+              ref_words: 12854
+              year: 2023
 - model: Google/google-translate-free
   name: Google Translate (free endpoint)
   track: api
   url: https://translate.google.com/
-  bleu: 22.62
-  chrf: 57.53
-  n_directions: 2
   directions:
     to_en:
       bleu: 26.17
@@ -155,9 +220,6 @@ benchmarks:
   name: MADLAD-400 10B
   track: open
   url: https://huggingface.co/google/madlad400-10b-mt
-  bleu: 20.45
-  chrf: 52.92
-  n_directions: 2
   directions:
     to_en:
       bleu: 24.48
@@ -225,87 +287,10 @@ benchmarks:
               hyp_words: 14033
               ref_words: 12854
               year: 2023
-- model: facebook/nllb-200-3.3B
-  name: NLLB-200 3.3B
-  track: open
-  url: https://huggingface.co/facebook/nllb-200-3.3B
-  bleu: 19.79
-  chrf: 57.5
-  n_directions: 2
-  directions:
-    to_en:
-      bleu: 18.75
-      chrf: 61.83
-      length_ratio: 1.05
-      documents: 3
-      per_dataset:
-        finance:
-          bleu: 18.75
-          chrf: 61.83
-          length_ratio: 1.05
-          documents: 3
-          per_document:
-            finance_2021_ewe:
-              bleu: 20.96
-              chrf: 61.62
-              length_ratio: 0.986
-              hyp_words: 8723
-              ref_words: 7453
-              year: 2021
-            finance_2022_ewe:
-              bleu: 20.34
-              chrf: 62.25
-              length_ratio: 1.052
-              hyp_words: 9111
-              ref_words: 7727
-              year: 2022
-            finance_2023_ewe:
-              bleu: 14.94
-              chrf: 61.62
-              length_ratio: 1.105
-              hyp_words: 10221
-              ref_words: 8526
-              year: 2023
-    from_en:
-      bleu: 20.82
-      chrf: 53.17
-      length_ratio: 0.88
-      documents: 3
-      per_dataset:
-        finance:
-          bleu: 20.82
-          chrf: 53.17
-          length_ratio: 0.88
-          documents: 3
-          per_document:
-            finance_2021_ewe:
-              bleu: 25.32
-              chrf: 56.47
-              length_ratio: 0.946
-              hyp_words: 10194
-              ref_words: 10688
-              year: 2021
-            finance_2022_ewe:
-              bleu: 21.55
-              chrf: 52.8
-              length_ratio: 0.807
-              hyp_words: 10645
-              ref_words: 11861
-              year: 2022
-            finance_2023_ewe:
-              bleu: 15.59
-              chrf: 50.23
-              length_ratio: 0.873
-              hyp_words: 11420
-              ref_words: 12854
-              year: 2023
 - model: google/madlad400-3b-mt
   name: MADLAD-400 3B
   track: open
   url: https://huggingface.co/google/madlad400-3b-mt
-  bleu: 18.73
-  chrf: 51.23
-  n_directions: 2
   directions:
     to_en:
       bleu: 22.07
@@ -373,13 +358,81 @@ benchmarks:
               hyp_words: 16233
               ref_words: 12854
               year: 2023
+- model: KhayaAI/khaya-translate
+  name: Khaya AI
+  track: api
+  url: https://ghananlp.org/project/khaya-ai/
+  directions:
+    to_en:
+      bleu: 14.97
+      chrf: 59.67
+      length_ratio: 1.94
+      documents: 3
+      per_dataset:
+        finance:
+          bleu: 14.97
+          chrf: 59.67
+          length_ratio: 1.94
+          documents: 3
+          per_document:
+            finance_2021_ewe:
+              bleu: 15.0
+              chrf: 59.44
+              length_ratio: 2.261
+              hyp_words: 8911
+              ref_words: 7453
+              year: 2021
+            finance_2022_ewe:
+              bleu: 12.73
+              chrf: 58.74
+              length_ratio: 2.215
+              hyp_words: 9775
+              ref_words: 7727
+              year: 2022
+            finance_2023_ewe:
+              bleu: 17.19
+              chrf: 60.83
+              length_ratio: 1.358
+              hyp_words: 10921
+              ref_words: 8526
+              year: 2023
+    from_en:
+      bleu: 15.31
+      chrf: 52.52
+      length_ratio: 0.81
+      documents: 3
+      per_dataset:
+        finance:
+          bleu: 15.31
+          chrf: 52.52
+          length_ratio: 0.81
+          documents: 3
+          per_document:
+            finance_2021_ewe:
+              bleu: 17.63
+              chrf: 55.39
+              length_ratio: 0.834
+              hyp_words: 9065
+              ref_words: 10688
+              year: 2021
+            finance_2022_ewe:
+              bleu: 15.22
+              chrf: 52.15
+              length_ratio: 0.772
+              hyp_words: 9541
+              ref_words: 11861
+              year: 2022
+            finance_2023_ewe:
+              bleu: 13.08
+              chrf: 50.03
+              length_ratio: 0.826
+              hyp_words: 10497
+              ref_words: 12854
+              year: 2023
 - model: facebook/nllb-200-distilled-600M
   name: NLLB-200 600M (distilled)
   track: open
   url: https://huggingface.co/facebook/nllb-200-distilled-600M
-  bleu: 18.02
-  chrf: 55.67
-  n_directions: 2
   directions:
     to_en:
       bleu: 20.76
@@ -451,9 +504,6 @@ benchmarks:
   name: NLLB-200 1.3B
   track: open
   url: https://huggingface.co/facebook/nllb-200-1.3B
-  bleu: 17.73
-  chrf: 56.28
-  n_directions: 2
   directions:
     to_en:
       bleu: 21.15
@@ -519,80 +569,6 @@ benchmarks:
               chrf: 49.11
               length_ratio: 0.873
               hyp_words: 11151
-              ref_words: 12854
-              year: 2023
-- model: KhayaAI/khaya-translate
-  name: Khaya AI
-  track: api
-  url: https://ghananlp.org/project/khaya-ai/
-  bleu: 15.14
-  chrf: 56.09
-  n_directions: 2
-  directions:
-    to_en:
-      bleu: 14.97
-      chrf: 59.67
-      length_ratio: 1.94
-      documents: 3
-      per_dataset:
-        finance:
-          bleu: 14.97
-          chrf: 59.67
-          length_ratio: 1.94
-          documents: 3
-          per_document:
-            finance_2021_ewe:
-              bleu: 15.0
-              chrf: 59.44
-              length_ratio: 2.261
-              hyp_words: 8911
-              ref_words: 7453
-              year: 2021
-            finance_2022_ewe:
-              bleu: 12.73
-              chrf: 58.74
-              length_ratio: 2.215
-              hyp_words: 9775
-              ref_words: 7727
-              year: 2022
-            finance_2023_ewe:
-              bleu: 17.19
-              chrf: 60.83
-              length_ratio: 1.358
-              hyp_words: 10921
-              ref_words: 8526
-              year: 2023
-    from_en:
-      bleu: 15.31
-      chrf: 52.52
-      length_ratio: 0.81
-      documents: 3
-      per_dataset:
-        finance:
-          bleu: 15.31
-          chrf: 52.52
-          length_ratio: 0.81
-          documents: 3
-          per_document:
-            finance_2021_ewe:
-              bleu: 17.63
-              chrf: 55.39
-              length_ratio: 0.834
-              hyp_words: 9065
-              ref_words: 10688
-              year: 2021
-            finance_2022_ewe:
-              bleu: 15.22
-              chrf: 52.15
-              length_ratio: 0.772
-              hyp_words: 9541
-              ref_words: 11861
-              year: 2022
-            finance_2023_ewe:
-              bleu: 13.08
-              chrf: 50.03
-              length_ratio: 0.826
-              hyp_words: 10497
               ref_words: 12854
               year: 2023
 missing:

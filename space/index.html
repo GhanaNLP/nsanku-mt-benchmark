@@ -223,10 +223,9 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
       <strong>How the score is calculated.</strong> Each system translates <em>whole documents</em>, one paragraph per request
       (never a page or a full document in one call), and the paragraph outputs are re-joined in order.
       <ul style="margin:6px 0 6px 18px;">
-        <li><strong>Two directions, scored separately:</strong> <em>X &rarr; English</em> (the language edition is translated into English and compared with the English edition)
-          and <em>English &rarr; X</em> (the English edition is translated into the language and compared with the language edition).
-          Every table shows both side by side; <em>Both directions</em> is the mean of the two. A system that supports only one
-          direction is averaged over that direction alone and is marked <span class="badge badge-noref">1 dir</span>.</li>
+        <li><strong>Two directions, scored separately:</strong> <em>English &rarr; X</em> (the English edition is translated into the language and compared with
+          the language edition) and <em>X &rarr; English</em> (the language edition is translated into English and compared with the English edition).
+          Use the <em>Direction</em> selector (default: English &rarr; X). The two are never averaged together.</li>
         <li><strong>BLEU</strong> (sacreBLEU, 13a) and <strong>chrF</strong> are computed with the whole document as a single segment
           against the human English edition of the same document. Higher is better; ranking uses BLEU.</li>
         <li>Results are recorded <strong>per dataset</strong> (see the <em>Datasets</em> tab). A language's headline score is the
@@ -310,7 +309,7 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
       <div class="table-wrap">
         <table id="all-table">
           <thead><tr>
-            <th data-sort="language">Language</th><th data-sort="name">Model</th><th>Track</th><th data-sort="dirlabel">Direction</th><th data-sort="dataset">Dataset</th>
+            <th data-sort="language">Language</th><th data-sort="name">Model</th><th>Track</th><th data-sort="dataset">Dataset</th>
             <th data-sort="bleu">BLEU</th><th data-sort="chrf">chrF</th><th data-sort="length_ratio">Length</th><th data-sort="documents">Docs</th>
           </tr></thead>
           <tbody id="all-body"></tbody>
@@ -364,27 +363,18 @@ function modelCell(name, id) {
 function bleuColor(v) { return v >= 30 ? 'var(--success)' : v >= 20 ? 'var(--accent-hover)' : 'var(--warning)'; }
 function bleuCell(v) { return `<td class="score-num" style="color:${bleuColor(v)}">${fmt(v)}</td>`; }
 
-const DIRS = ['to_en', 'from_en'];
-const DIR_LABEL = { to_en: 'X \u2192 English', from_en: 'English \u2192 X', both: 'Both directions (mean)' };
-const dirOptions = sel => { sel.innerHTML = ['both', ...DIRS].map(d => `<option value="${d}">${DIR_LABEL[d]}</option>`).join(''); };
+const DIRS = ['from_en', 'to_en'];
+const DIR_LABEL = { from_en: 'English \u2192 X', to_en: 'X \u2192 English' };
+const DEFAULT_DIR = 'from_en';
+const dirOptions = sel => { sel.innerHTML = DIRS.map(d => `<option value="${d}">${DIR_LABEL[d]}</option>`).join(''); sel.value = DEFAULT_DIR; };
 const mean = a => a.reduce((x, y) => x + y, 0) / a.length;
 
-// One direction's numbers for a dataset ('all' = headline mean over datasets).
-function dirView(b, dir, ds) {
+// A model's numbers for ONE direction and a dataset ('all' = mean over datasets); null if it has none.
+function view(b, dir, ds) {
   const blk = (b.directions || {})[dir];
   if (!blk) return null;
-  return ds === 'all' ? blk : ((blk.per_dataset || {})[ds] || null);
-}
-// A result row for the chosen direction + dataset. 'both' = mean of the available directions.
-function view(b, dir, ds) {
-  const per = {};
-  for (const d of DIRS) { const v = dirView(b, d, ds); if (v) per[d] = v; }
-  const use = dir === 'both' ? Object.keys(per) : (per[dir] ? [dir] : []);
-  if (!use.length) return null;
-  const vals = use.map(d => per[d]);
-  return { ...b, bleu: mean(vals.map(v => v.bleu)), chrf: mean(vals.map(v => v.chrf)),
-           length_ratio: mean(vals.map(v => v.length_ratio)), documents: vals.reduce((a, v) => a + v.documents, 0),
-           nDir: use.length, perDir: per };
+  const v = ds === 'all' ? blk : ((blk.per_dataset || {})[ds] || null);
+  return v ? { ...b, bleu: v.bleu, chrf: v.chrf, length_ratio: v.length_ratio, documents: v.documents, blk } : null;
 }
 
 function buildRows() {
@@ -407,20 +397,14 @@ function dsOptions(sel, withAll = true) {
 }
 
 function renderStats() {
-  const langs = Object.keys(S.languages).length;
-  let best = null;
-  for (const l of Object.values(S.languages)) {
-    for (const b of l.benchmarks) { if (!best || b.bleu > best.bleu) best = { ...b, language: l.language }; }
-  }
   const nDocs = Object.values(S.datasets).reduce((a, d) => a + (d.n_documents || 0), 0);
   $('stats-grid').innerHTML = [
-    ['Languages', langs, ''],
+    ['Languages', Object.keys(S.languages).length, ''],
     ['Systems', Object.keys(S.models).length, ''],
-    ['Directions', 2, 'X \u2192 EN and EN \u2192 X'],
+    ['Directions', 2, 'English \u2192 X and X \u2192 English'],
     ['Datasets', Object.keys(S.datasets).length, 'more coming'],
     ['Document pairs', nDocs, ''],
-    ['Top BLEU', best ? fmt(best.bleu) : '—', best ? `${best.name} · ${best.language}` : ''],
-  ].map(([l, v, s]) => `<div class="stat-card"><div class="label">${l}</div><div class="value">${v}</div>${s ? `<div class="sub">${esc(s)}</div>` : ''}</div>`).join('');
+  ].map(([l, v, sub]) => `<div class="stat-card"><div class="label">${l}</div><div class="value">${v}</div>${sub ? `<div class="sub">${esc(sub)}</div>` : ''}</div>`).join('');
 }
 
 // ====== sortable table helper ======
@@ -447,9 +431,6 @@ function attachSort(theadId, key, rerender) {
 }
 
 // ====== Global ======
-const fmtDir = (r, d) => { const v = r.perDir && r.perDir[d]; return v ? fmt(v.bleu) : '\u2014'; };
-const oneDirBadge = (r, dir) => (dir === 'both' && Object.keys(r.perDir).length === 1) ? ' <span class="badge badge-noref" title="Only one direction is supported">1 dir</span>' : '';
-
 function renderGlobal() {
   const dir = $('global-dir').value, ds = $('global-ds').value, track = $('global-track').value;
   const dsIds = Object.keys(S.datasets);
@@ -459,44 +440,36 @@ function renderGlobal() {
     if (!cands.length) continue;
     const best = cands.slice().sort((a, b) => b.bleu - a.bleu)[0];
     const row = { iso, language: doc.language, name: best.name, model: best.model, bleu: best.bleu, chrf: best.chrf,
-                  to_en: (best.perDir.to_en || {}).bleu ?? null, from_en: (best.perDir.from_en || {}).bleu ?? null,
-                  scored: cands.length, one: oneDirBadge(best, dir) };
+                  length_ratio: best.length_ratio, scored: cands.length };
     for (const d of dsIds) { const v = view(best, dir, d); row['ds_' + d] = v ? v.bleu : null; }
     rows.push(row);
   }
   $('global-thead').innerHTML = '<tr><th>#</th><th data-sort="language">Language</th><th data-sort="name">Best model</th>' +
-    '<th data-sort="bleu">BLEU</th><th data-sort="chrf">chrF</th>' +
-    '<th class="sep" data-sort="to_en">X \u2192 EN BLEU</th><th data-sort="from_en">EN \u2192 X BLEU</th>' +
+    '<th data-sort="bleu">BLEU</th><th data-sort="chrf">chrF</th><th data-sort="length_ratio">Length</th>' +
     dsIds.map(d => `<th class="sep" data-sort="ds_${esc(d)}" title="BLEU on ${esc(dsName(d))}">${esc(dsName(d))}</th>`).join('') +
     '<th data-sort="scored">Models</th></tr>';
   rows = sortRows(rows, 'global', 'bleu');
   $('global-body').innerHTML = rows.map((r, i) =>
     `<tr><td><span class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</span></td><td class="lang-cell">${esc(r.language)}</td>` +
-    `<td>${modelCell(r.name, r.model)}${r.one}</td>${bleuCell(r.bleu)}<td class="score-num">${fmt(r.chrf)}</td>` +
-    `<td class="sep dom">${fmt(r.to_en)}</td><td class="dom">${fmt(r.from_en)}</td>` +
+    `<td>${modelCell(r.name, r.model)}</td>${bleuCell(r.bleu)}<td class="score-num">${fmt(r.chrf)}</td><td>${fmt(r.length_ratio, 2)}</td>` +
     dsIds.map(d => `<td class="sep dom">${fmt(r['ds_' + d])}</td>`).join('') +
-    `<td class="dom">${r.scored}</td></tr>`).join('') || '<tr class="empty-row"><td colspan="9">No results</td></tr>';
+    `<td class="dom">${r.scored}</td></tr>`).join('') || '<tr class="empty-row"><td colspan="9">No results for this filter</td></tr>';
   attachSort('global-thead', 'global', renderGlobal);
 
-  // models overall (mean over the languages each model covers)
+  // models overall: mean over the languages each model covers, in this direction only
   const acc = {};
   for (const doc of Object.values(S.languages)) {
     for (const b of doc.benchmarks) {
       const v = view(b, dir, ds); if (!v || (track !== 'All' && b.track !== track)) continue;
-      const a = (acc[b.model] ||= { model: b.model, name: b.name, track: b.track, b: [], c: [], e: [], f: [], docs: 0 });
+      const a = (acc[b.model] ||= { model: b.model, name: b.name, track: b.track, b: [], c: [], docs: 0 });
       a.b.push(v.bleu); a.c.push(v.chrf); a.docs += v.documents;
-      if (v.perDir.to_en) a.e.push(v.perDir.to_en.bleu);
-      if (v.perDir.from_en) a.f.push(v.perDir.from_en.bleu);
     }
   }
-  const mrows = Object.values(acc).map(a => ({ ...a, bleu: mean(a.b), chrf: mean(a.c), langs: a.b.length,
-                                                to_en: a.e.length ? mean(a.e) : null, from_en: a.f.length ? mean(a.f) : null }));
-  $('models-thead').innerHTML = '<tr><th>#</th><th data-sort="name">Model</th><th>Track</th><th data-sort="bleu">Mean BLEU</th><th data-sort="chrf">Mean chrF</th>' +
-    '<th class="sep" data-sort="to_en">X \u2192 EN</th><th data-sort="from_en">EN \u2192 X</th><th data-sort="langs">Languages</th><th data-sort="docs">Docs</th></tr>';
+  const mrows = Object.values(acc).map(a => ({ ...a, bleu: mean(a.b), chrf: mean(a.c), langs: a.b.length }));
+  $('models-thead').innerHTML = '<tr><th>#</th><th data-sort="name">Model</th><th>Track</th><th data-sort="bleu">Mean BLEU</th><th data-sort="chrf">Mean chrF</th><th data-sort="langs">Languages</th><th data-sort="docs">Docs</th></tr>';
   $('models-body').innerHTML = sortRows(mrows, 'models', 'bleu').map((r, i) =>
     `<tr><td><span class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</span></td><td>${modelCell(r.name, r.model)}</td><td>${trackBadge(r.track)}</td>` +
-    `${bleuCell(r.bleu)}<td class="score-num">${fmt(r.chrf)}</td><td class="sep dom">${fmt(r.to_en)}</td><td class="dom">${fmt(r.from_en)}</td>` +
-    `<td class="dom">${r.langs}</td><td class="dom">${r.docs}</td></tr>`).join('');
+    `${bleuCell(r.bleu)}<td class="score-num">${fmt(r.chrf)}</td><td class="dom">${r.langs}</td><td class="dom">${r.docs}</td></tr>`).join('') || '<tr class="empty-row"><td colspan="7">No results for this filter</td></tr>';
   attachSort('models-thead', 'models', renderGlobal);
 }
 
@@ -510,47 +483,44 @@ function renderPer() {
     dsIds.map(d => `<span class="ds-pill">${esc(dsName(d))}</span>`).join('');
   let rows = doc.benchmarks.filter(b => track === 'All' || b.track === track).map(b => view(b, dir, ds)).filter(Boolean);
   rows.sort((a, b) => b[sort] - a[sort]);
-  $('per-thead').innerHTML = '<tr><th>#</th><th>Model</th><th>Track</th><th>BLEU</th><th>chrF</th>' +
-    '<th class="sep">X \u2192 EN BLEU</th><th>EN \u2192 X BLEU</th><th>Length</th>' +
+  $('per-thead').innerHTML = '<tr><th>#</th><th>Model</th><th>Track</th><th>BLEU</th><th>chrF</th><th>Length</th>' +
     dsIds.map(d => `<th class="sep">${esc(dsName(d))} BLEU</th>`).join('') + '<th>Docs</th></tr>';
   $('per-body').innerHTML = rows.map((r, i) =>
-    `<tr><td><span class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</span></td><td>${modelCell(r.name, r.model)}${oneDirBadge(r, dir)}</td><td>${trackBadge(r.track)}</td>` +
-    `${bleuCell(r.bleu)}<td class="score-num">${fmt(r.chrf)}</td><td class="sep dom">${fmtDir(r, 'to_en')}</td><td class="dom">${fmtDir(r, 'from_en')}</td>` +
-    `<td>${fmt(r.length_ratio, 2)}</td>` +
+    `<tr><td><span class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</span></td><td>${modelCell(r.name, r.model)}</td><td>${trackBadge(r.track)}</td>` +
+    `${bleuCell(r.bleu)}<td class="score-num">${fmt(r.chrf)}</td><td>${fmt(r.length_ratio, 2)}</td>` +
     dsIds.map(d => { const v = view(r, dir, d); return `<td class="sep dom">${v ? fmt(v.bleu) : '\u2014'}</td>`; }).join('') +
-    `<td class="dom">${r.documents}</td></tr>`).join('') || '<tr class="empty-row"><td colspan="10">No results for this filter</td></tr>';
+    `<td class="dom">${r.documents}</td></tr>`).join('') || '<tr class="empty-row"><td colspan="9">No results for this filter</td></tr>';
 
-  // per-document table: rows = documents, columns = models; both directions shown as "X\u2192EN \u00b7 EN\u2192X"
-  const wantDirs = dir === 'both' ? DIRS : [dir];
+  // per-document table: rows = documents, columns = models (this direction only)
   const docsMap = {};
-  for (const b of doc.benchmarks) for (const dr of wantDirs) {
-    const blk = (b.directions || {})[dr]; if (!blk) continue;
+  for (const b of doc.benchmarks) {
+    const blk = (b.directions || {})[dir]; if (!blk) continue;
     for (const [d, v] of Object.entries(blk.per_dataset)) {
       if (ds !== 'all' && d !== ds) continue;
-      for (const [id, x] of Object.entries(v.per_document)) { ((docsMap[id] ||= { id, dataset: d, year: x.year, by: {} }).by[b.model] ||= {})[dr] = x; }
+      for (const [id, x] of Object.entries(v.per_document)) { (docsMap[id] ||= { id, dataset: d, year: x.year, by: {} }).by[b.model] = x; }
     }
   }
-  const mods = doc.benchmarks.filter(b => track === 'All' || b.track === track);
+  const mods = doc.benchmarks.filter(b => (track === 'All' || b.track === track) && (b.directions || {})[dir]);
   $('doc-thead').innerHTML = '<tr><th>Dataset</th><th>Document</th>' + mods.map(m => `<th>${esc(m.name)}</th>`).join('') + '</tr>';
-  const docCell = (by, bleu) => by ? `<td class="score-num" style="color:${bleuColor(bleu)}">${wantDirs.map(dr => by[dr] ? fmt(by[dr].bleu) : '\u2014').join(' \u00b7 ')}</td>` : '<td class="dom">\u2014</td>';
   $('doc-body').innerHTML = Object.values(docsMap).sort((a, b) => a.id.localeCompare(b.id)).map(d =>
     `<tr><td>${esc(dsName(d.dataset))}</td><td class="lang-cell"><a href="${GH_TREE}data/text/${esc(d.id)}" target="_blank" title="Extracted text">${esc(doc.language)} ${esc(d.year)}</a></td>` +
-    mods.map(m => { const by = d.by[m.model]; const first = by && wantDirs.map(dr => by[dr]).find(Boolean); return docCell(by, first ? first.bleu : 0); }).join('') + '</tr>').join('');
-  $('doc-title').textContent = dir === 'both' ? 'BLEU by document (X \u2192 EN \u00b7 EN \u2192 X)' : `BLEU by document (${DIR_LABEL[dir]})`;
+    mods.map(m => d.by[m.model] ? bleuCell(d.by[m.model].bleu) : '<td class="dom">\u2014</td>').join('') + '</tr>').join('') ||
+    '<tr class="empty-row"><td colspan="3">No results for this filter</td></tr>';
+  $('doc-title').textContent = `BLEU by document (${DIR_LABEL[dir]})`;
 
-  $('per-missing').innerHTML = doc.missing.filter(m => dir === 'both' || m.direction === dir).map(m =>
+  $('per-missing').innerHTML = doc.missing.filter(m => m.direction === dir && (track === 'All' || (S.models[m.model] || {}).track === track)).map(m =>
     `<tr><td>${modelCell(m.name, m.model)}</td><td>${esc(DIR_LABEL[m.direction])}</td><td>${esc(m.reason)}</td></tr>`).join('') || '<tr class="empty-row"><td colspan="3">All systems scored</td></tr>';
 }
 
 // ====== All results ======
 function renderAll() {
   const q = $('all-search').value.trim().toLowerCase(), dir = $('all-dir').value;
-  let rows = ROWS.filter(r => (dir === 'both' || r.dir === dir) &&
-    (!q || `${r.language} ${r.name} ${r.model} ${dsName(r.dataset)} ${r.dataset} ${r.dirlabel}`.toLowerCase().includes(q)));
+  let rows = ROWS.filter(r => r.dir === dir &&
+    (!q || `${r.language} ${r.name} ${r.model} ${dsName(r.dataset)} ${r.dataset}`.toLowerCase().includes(q)));
   rows = sortRows(rows, 'all', 'bleu');
   $('all-count').textContent = `${rows.length} rows`;
   $('all-body').innerHTML = rows.map(r =>
-    `<tr><td class="lang-cell">${esc(r.language)}</td><td>${modelCell(r.name, r.model)}</td><td>${trackBadge(r.track)}</td><td>${esc(r.dirlabel)}</td>` +
+    `<tr><td class="lang-cell">${esc(r.language)}</td><td>${modelCell(r.name, r.model)}</td><td>${trackBadge(r.track)}</td>` +
     `<td>${esc(dsName(r.dataset))}</td>${bleuCell(r.bleu)}<td class="score-num">${fmt(r.chrf)}</td><td>${fmt(r.length_ratio, 2)}</td><td class="dom">${r.documents}</td></tr>`).join('');
   attachSort('all-table', 'all', renderAll);
 }
