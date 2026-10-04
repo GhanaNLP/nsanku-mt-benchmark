@@ -1,0 +1,21 @@
+{
+  "datasets": [
+    {
+      "id": "finance",
+      "name": "Citizens' Budget",
+      "domain": "Finance / public administration",
+      "publisher": "Ministry of Finance, Ghana",
+      "source_url": "https://mofep.gov.gh/publications/citizens-budget",
+      "description": "Plain-language summary of Ghana's annual national budget, published by the Ministry of Finance in English and in several Ghanaian languages. The language editions are human translations of the English edition of the same year.",
+      "format": "PDF (some with broken or image-only text layers, so text is extracted page by page with Gemini vision)",
+      "years": [
+        2021,
+        2022,
+        2023
+      ],
+      "github_path": "data/documents.json",
+      "text_path": "data/text/",
+      "info_doc": "docs/datasets.md#finance-citizens-budget"
+    }
+  ]
+}

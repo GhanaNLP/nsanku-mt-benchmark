@@ -35,33 +35,62 @@ def run(doc_ids=None, model_ids=None, isos=None):
     assemble()
 
 
+def _mean(xs):
+    return round(sum(xs) / len(xs), 2)
+
+
 def assemble():
-    """Join every translations/<model>/<doc>.score.json into benchmarks/."""
+    """Join every translations/<model>/<doc>.score.json into benchmarks/.
+
+    Results are recorded PER DATASET (per_dataset). A language's headline BLEU/chrF is the
+    mean of its per-dataset scores (each dataset weighs the same, however many documents
+    it has), so adding datasets later never rewrites the existing per-dataset numbers.
+    """
     config.BENCHMARKS.mkdir(exist_ok=True)
     docs = {d["id"]: d for d in config.documents()}
-    by_iso = defaultdict(lambda: defaultdict(dict))
-    for mdl in config.models():
-        slug = mdl["id"].split("/")[-1]
+    mdls = config.models()
+    scores = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))  # iso -> model -> dataset -> doc
+    for m in mdls:
+        slug = m["id"].split("/")[-1]
         for f in (config.TRANSLATIONS / slug).glob("*.score.json"):
             did = f.name[:-len(".score.json")]
             if did in docs:
-                by_iso[docs[did]["iso"]][mdl["id"]][did] = json.loads(f.read_text())
-    names = {m["id"]: m["name"] for m in config.models()}
-    summary = {"direction": "<language> -> English", "metric": "document-level BLEU (sacreBLEU) + chrF",
+                d = docs[did]
+                scores[d["iso"]][m["id"]][d["dataset"]][did] = dict(json.loads(f.read_text()), year=d["year"])
+    langs = {}
+    for d in docs.values():
+        langs.setdefault(d["iso"], {"language": d["language"], "datasets": set()})["datasets"].add(d["dataset"])
+    summary = {"direction": "<language> -> English",
+               "metric": "document-level BLEU (sacreBLEU) + chrF; headline = mean over datasets",
+               "datasets": {x["id"]: dict(x, n_documents=sum(d["dataset"] == x["id"] for d in docs.values()))
+                            for x in config.datasets()},
+               "models": {m["id"]: {"name": m["name"], "track": m["kind"], "url": m.get("url")} for m in mdls},
                "languages": {}}
-    for iso, per_model in sorted(by_iso.items()):
-        lang = next(d["language"] for d in docs.values() if d["iso"] == iso)
-        rows = []
-        for mid, per_doc in per_model.items():
-            n = len(per_doc)
-            rows.append({"model": mid, "name": names[mid],
-                         "bleu": round(sum(v["bleu"] for v in per_doc.values()) / n, 2),
-                         "chrf": round(sum(v["chrf"] for v in per_doc.values()) / n, 2),
-                         "documents": n,
-                         "per_document": {k: dict(v, year=docs[k]["year"]) for k, v in sorted(per_doc.items())}})
+    for iso, info in sorted(langs.items()):
+        rows, missing = [], []
+        for m in mdls:
+            per_ds = scores[iso].get(m["id"], {})
+            if not per_ds:
+                missing.append({"model": m["id"], "name": m["name"],
+                                "reason": "language not supported" if iso not in m["codes"] else "not run yet"})
+                continue
+            ds_out = {ds: {"bleu": _mean([v["bleu"] for v in dd.values()]),
+                           "chrf": _mean([v["chrf"] for v in dd.values()]),
+                           "length_ratio": _mean([v["length_ratio"] for v in dd.values()]),
+                           "documents": len(dd), "per_document": dict(sorted(dd.items()))}
+                      for ds, dd in sorted(per_ds.items())}
+            rows.append({"model": m["id"], "name": m["name"], "track": m["kind"], "url": m.get("url"),
+                         "bleu": _mean([v["bleu"] for v in ds_out.values()]),
+                         "chrf": _mean([v["chrf"] for v in ds_out.values()]),
+                         "length_ratio": _mean([v["length_ratio"] for v in ds_out.values()]),
+                         "documents": sum(v["documents"] for v in ds_out.values()),
+                         "per_dataset": ds_out})
         rows.sort(key=lambda r: -r["bleu"])
-        data = {"iso": iso, "language": lang, "direction": f"{lang} -> English", "benchmarks": rows}
+        data = {"iso": iso, "language": info["language"], "direction": f"{info['language']} -> English",
+                "datasets": sorted(info["datasets"]), "benchmarks": rows, "missing": missing}
         (config.BENCHMARKS / f"{iso}.yaml").write_text(
             yaml.safe_dump(data, sort_keys=False, allow_unicode=True), encoding="utf-8")
         summary["languages"][iso] = data
-    (config.BENCHMARKS / "summary.json").write_text(json.dumps(summary, indent=1, ensure_ascii=False))
+    text = json.dumps(summary, indent=1, ensure_ascii=False)
+    (config.BENCHMARKS / "summary.json").write_text(text, encoding="utf-8")
+    (config.ROOT / "space" / "bundled_data.json").write_text(text, encoding="utf-8")

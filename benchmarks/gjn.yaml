@@ -1,24 +1,42 @@
 iso: gjn
 language: Gonja
 direction: Gonja -> English
+datasets:
+- finance
 benchmarks:
 - model: Google/gemini-3.8-flash
   name: Gemini 3.8 Flash
+  track: llm
+  url: https://ai.google.dev/gemini-api/docs/models
   bleu: 33.41
   chrf: 67.52
+  length_ratio: 1.09
   documents: 2
-  per_document:
-    2022_gjn:
-      bleu: 30.95
-      chrf: 65.74
-      length_ratio: 1.027
-      hyp_words: 8678
-      ref_words: 7727
-      year: 2022
-    2023_gjn:
-      bleu: 35.86
-      chrf: 69.29
-      length_ratio: 1.158
-      hyp_words: 9809
-      ref_words: 8526
-      year: 2023
+  per_dataset:
+    finance:
+      bleu: 33.41
+      chrf: 67.52
+      length_ratio: 1.09
+      documents: 2
+      per_document:
+        finance_2022_gjn:
+          bleu: 30.95
+          chrf: 65.74
+          length_ratio: 1.027
+          hyp_words: 8678
+          ref_words: 7727
+          year: 2022
+        finance_2023_gjn:
+          bleu: 35.86
+          chrf: 69.29
+          length_ratio: 1.158
+          hyp_words: 9809
+          ref_words: 8526
+          year: 2023
+missing:
+- model: KhayaAI/khaya-translate
+  name: Khaya AI
+  reason: language not supported
+- model: Google/google-translate-free
+  name: Google Translate (free endpoint)
+  reason: language not supported

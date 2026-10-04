@@ -12,7 +12,8 @@
         "nzi": "Nzema",
         "gjn": "Gonja",
         "gaa": "Ga"
-      }
+      },
+      "url": "https://ai.google.dev/gemini-api/docs/models"
     },
     {
       "id": "KhayaAI/khaya-translate",
@@ -23,7 +24,8 @@
         "dag": "dag",
         "ewe": "ee",
         "gaa": "gaa"
-      }
+      },
+      "url": "https://ghananlp.org/project/khaya-ai/"
     },
     {
       "id": "Google/google-translate-free",
@@ -33,7 +35,8 @@
         "twi_asante": "ak",
         "ewe": "ee",
         "gaa": "gaa"
-      }
+      },
+      "url": "https://translate.google.com/"
     }
   ]
 }

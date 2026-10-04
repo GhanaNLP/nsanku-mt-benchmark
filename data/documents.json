@@ -1,168 +1,185 @@
 {
-  "source": "https://mofep.gov.gh/publications/citizens-budget",
   "direction": "<language> -> English",
   "documents": [
     {
-      "id": "2021_twi_asante",
+      "id": "finance_2021_twi_asante",
       "year": 2021,
       "iso": "twi_asante",
       "language": "Asante Twi",
       "source_pdf": "2021-Citizens-Budget_Asante_Twi.pdf",
-      "reference_id": "2021_eng",
-      "reference_pdf": "2021-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2021_eng",
+      "reference_pdf": "2021-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2021_dag",
+      "id": "finance_2021_dag",
       "year": 2021,
       "iso": "dag",
       "language": "Dagbani",
       "source_pdf": "2021-Citizens-Budget_Dagbani.pdf",
-      "reference_id": "2021_eng",
-      "reference_pdf": "2021-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2021_eng",
+      "reference_pdf": "2021-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2021_ewe",
+      "id": "finance_2021_ewe",
       "year": 2021,
       "iso": "ewe",
       "language": "Ewe",
       "source_pdf": "2021-Citizens-Budget_Ewe.pdf",
-      "reference_id": "2021_eng",
-      "reference_pdf": "2021-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2021_eng",
+      "reference_pdf": "2021-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2021_gaa",
+      "id": "finance_2021_gaa",
       "year": 2021,
       "iso": "gaa",
       "language": "Ga",
       "source_pdf": "2021-Citizens-Budget_Ga.pdf",
-      "reference_id": "2021_eng",
-      "reference_pdf": "2021-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2021_eng",
+      "reference_pdf": "2021-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2021_nzi",
+      "id": "finance_2021_nzi",
       "year": 2021,
       "iso": "nzi",
       "language": "Nzema",
       "source_pdf": "2021-Citizens-Budget_Nzema.pdf",
-      "reference_id": "2021_eng",
-      "reference_pdf": "2021-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2021_eng",
+      "reference_pdf": "2021-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2022_twi_asante",
+      "id": "finance_2022_twi_asante",
       "year": 2022,
       "iso": "twi_asante",
       "language": "Asante Twi",
       "source_pdf": "2022-Citizens-Budget_Asante_Twi.pdf",
-      "reference_id": "2022_eng",
-      "reference_pdf": "2022-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2022_eng",
+      "reference_pdf": "2022-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2022_dag",
+      "id": "finance_2022_dag",
       "year": 2022,
       "iso": "dag",
       "language": "Dagbani",
       "source_pdf": "2022-Citizens-Budget_Dagbani.pdf",
-      "reference_id": "2022_eng",
-      "reference_pdf": "2022-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2022_eng",
+      "reference_pdf": "2022-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2022_ada",
+      "id": "finance_2022_ada",
       "year": 2022,
       "iso": "ada",
       "language": "Dangme",
       "source_pdf": "2022-Citizens-Budget_Dangme.pdf",
-      "reference_id": "2022_eng",
-      "reference_pdf": "2022-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2022_eng",
+      "reference_pdf": "2022-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2022_ewe",
+      "id": "finance_2022_ewe",
       "year": 2022,
       "iso": "ewe",
       "language": "Ewe",
       "source_pdf": "2022-Citizens-Budget_Ewe.pdf",
-      "reference_id": "2022_eng",
-      "reference_pdf": "2022-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2022_eng",
+      "reference_pdf": "2022-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2022_gaa",
+      "id": "finance_2022_gaa",
       "year": 2022,
       "iso": "gaa",
       "language": "Ga",
       "source_pdf": "2022-Citizens-Budget_Ga.pdf",
-      "reference_id": "2022_eng",
-      "reference_pdf": "2022-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2022_eng",
+      "reference_pdf": "2022-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2022_nzi",
+      "id": "finance_2022_nzi",
       "year": 2022,
       "iso": "nzi",
       "language": "Nzema",
       "source_pdf": "2022-Citizens-Budget_Nzema.pdf",
-      "reference_id": "2022_eng",
-      "reference_pdf": "2022-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2022_eng",
+      "reference_pdf": "2022-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2022_gjn",
+      "id": "finance_2022_gjn",
       "year": 2022,
       "iso": "gjn",
       "language": "Gonja",
       "source_pdf": "2022-Citizens-Budget_Gonja.pdf",
-      "reference_id": "2022_eng",
-      "reference_pdf": "2022-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2022_eng",
+      "reference_pdf": "2022-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2023_twi_asante",
+      "id": "finance_2023_twi_asante",
       "year": 2023,
       "iso": "twi_asante",
       "language": "Asante Twi",
       "source_pdf": "2023-Citizens-Budget_Asante_Twi.pdf",
-      "reference_id": "2023_eng",
-      "reference_pdf": "2023-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2023_eng",
+      "reference_pdf": "2023-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2023_dag",
+      "id": "finance_2023_dag",
       "year": 2023,
       "iso": "dag",
       "language": "Dagbani",
       "source_pdf": "2023-Citizens-Budget_Dagbani.pdf",
-      "reference_id": "2023_eng",
-      "reference_pdf": "2023-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2023_eng",
+      "reference_pdf": "2023-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2023_ada",
+      "id": "finance_2023_ada",
       "year": 2023,
       "iso": "ada",
       "language": "Dangme",
       "source_pdf": "2023-Citizens-Budget_Dangme.pdf",
-      "reference_id": "2023_eng",
-      "reference_pdf": "2023-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2023_eng",
+      "reference_pdf": "2023-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2023_ewe",
+      "id": "finance_2023_ewe",
       "year": 2023,
       "iso": "ewe",
       "language": "Ewe",
       "source_pdf": "2023-Citizens-Budget_Ewe.pdf",
-      "reference_id": "2023_eng",
-      "reference_pdf": "2023-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2023_eng",
+      "reference_pdf": "2023-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2023_nzi",
+      "id": "finance_2023_nzi",
       "year": 2023,
       "iso": "nzi",
       "language": "Nzema",
       "source_pdf": "2023-Citizens-Budget_Nzema.pdf",
-      "reference_id": "2023_eng",
-      "reference_pdf": "2023-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2023_eng",
+      "reference_pdf": "2023-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     },
     {
-      "id": "2023_gjn",
+      "id": "finance_2023_gjn",
       "year": 2023,
       "iso": "gjn",
       "language": "Gonja",
       "source_pdf": "2023-Citizens-Budget_Gonja.pdf",
-      "reference_id": "2023_eng",
-      "reference_pdf": "2023-Citizens-Budget_English.pdf"
+      "reference_id": "finance_2023_eng",
+      "reference_pdf": "2023-Citizens-Budget_English.pdf",
+      "dataset": "finance"
     }
   ]
 }

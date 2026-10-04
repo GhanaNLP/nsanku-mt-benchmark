@@ -1,47 +1,556 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Document-level machine translation benchmark for Ghanaian languages. Models translate whole documents paragraph by paragraph and are scored with BLEU and chrF against human translations, per dataset.">
 <title>nsanku MT Benchmark</title>
 <style>
-:root{--bg:#fafaf7;--fg:#1d1d1b;--mut:#6b6b66;--card:#fff;--line:#e4e2da;--acc:#b4531a}
-@media(prefers-color-scheme:dark){:root{--bg:#161614;--fg:#ecebe6;--mut:#9a9890;--card:#201f1d;--line:#34322e;--acc:#e8935a}}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,sans-serif}
-main{max-width:980px;margin:0 auto;padding:24px 16px 60px}
-h1{margin:0 0 4px;font-size:26px}p.sub{color:var(--mut);margin:0 0 20px}
-.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
-.tabs button{border:1px solid var(--line);background:var(--card);color:var(--fg);padding:6px 12px;border-radius:999px;cursor:pointer;font:inherit}
-.tabs button.on{background:var(--acc);border-color:var(--acc);color:#fff}
-table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden}
-th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line)}th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--mut)}
-td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
-.bar{height:6px;background:var(--acc);border-radius:3px;margin-top:4px}
-tr.doc td{font-size:13px;color:var(--mut);background:transparent}
-details summary{cursor:pointer}
-.note{color:var(--mut);font-size:13px;margin-top:14px}
-a{color:var(--acc)}
-</style></head><body><main>
-<h1>nsanku MT Benchmark</h1>
-<p class="sub">Document-level translation, Ghanaian language → English. Source: Ghana Citizens' Budget (Ministry of Finance). Ranked by BLEU.</p>
-<div class="tabs" id="tabs"></div><div id="out">Loading…</div>
-<p class="note">Each document is extracted page by page with Gemini (verbatim, paragraph-marked), translated one paragraph per request, re-joined, and scored as a single segment against the English edition of the same year (sacreBLEU, chrF). Unsupported language/model pairs are omitted.
- Code and results: <a href="https://github.com/GhanaNLP/nsanku-mt-benchmark">GhanaNLP/nsanku-mt-benchmark</a>.</p>
-</main>
+/* ====== Reset & Base  ====== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --accent: #8CD0FF;
+  --accent-soft: #DDF1FF;
+  --accent-hi: #EEF8FF;
+  --accent-hover: #6bc0f5;
+  --link: #0066cc;
+  --bg: #ffffff;
+  --surface: #ffffff;
+  --surface-2: #f8fafc;
+  --neutral-50: #f9fafb;
+  --neutral-100: #f3f4f6;
+  --border: #e5e7eb;
+  --border-strong: #d1d5db;
+  --text: #1f2937;
+  --text-strong: #111827;
+  --text-muted: #6b7280;
+  --success: #15803d;
+  --success-bg: #dcfce7;
+  --warning: #b45309;
+  --warning-bg: #fef3c7;
+  --danger: #b91c1c;
+  --danger-bg: #fee2e2;
+  --radius: 8px;
+  --shadow: 0 1px 2px rgba(16,24,40,.04), 0 1px 3px rgba(16,24,40,.06);
+}
+html { font-size: 15px; }
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.55;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ====== Layout ====== */
+.container { max-width: 1180px; margin: 0 auto; padding: 0 20px 72px; }
+
+/* ====== Header ====== */
+.site-head {
+  display: flex; align-items: baseline; justify-content: space-between;
+  flex-wrap: wrap; gap: 8px; padding: 18px 0 12px; margin-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.site-head h1 { font-size: 1.35rem; font-weight: 700; color: var(--text-strong); letter-spacing: -.01em; }
+.site-head .tagline { color: var(--text-muted); font-size: 0.88rem; }
+
+/* ====== Stat cards ====== */
+.stats-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px; margin-bottom: 26px;
+}
+.stat-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 16px 18px; box-shadow: var(--shadow);
+}
+.stat-card .label { color: var(--text-muted); font-size: 0.78rem; font-weight: 500; margin-bottom: 4px; text-transform: uppercase; letter-spacing: .04em; }
+.stat-card .value { font-size: 1.5rem; font-weight: 700; color: var(--text-strong); }
+
+/* ====== Tabs ====== */
+.tabs { display: flex; gap: 6px; margin-bottom: 22px; flex-wrap: wrap; border-bottom: 1px solid var(--border); padding-bottom: 0; }
+.tab {
+  padding: 9px 18px; cursor: pointer; border: 1px solid transparent; border-bottom: none;
+  background: transparent; color: var(--text-muted); font-weight: 600; font-size: 0.92rem;
+  border-radius: var(--radius) var(--radius) 0 0; transition: all .12s; margin-bottom: -1px;
+}
+.tab:hover { color: var(--text-strong); background: var(--accent-hi); }
+.tab.active {
+  background: var(--surface); color: var(--text-strong);
+  border-color: var(--border); border-bottom: 2px solid var(--accent);
+}
+.tab-pane { display: none; }
+.tab-pane.active { display: block; }
+
+/* ====== Filters ====== */
+.filters { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; align-items: center; }
+.filters label { color: var(--text-muted); font-size: 0.85rem; font-weight: 600; align-self: center; }
+.filters select, .filters input {
+  background: var(--surface); border: 1px solid var(--border-strong);
+  color: var(--text); padding: 7px 11px; border-radius: 6px; font-size: 0.9rem; min-width: 130px;
+  font-family: inherit;
+}
+.filters input[type="text"] { min-width: 240px; }
+select:focus, input:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 3px rgba(140,208,255,.35); }
+
+/* ====== Table ====== */
+.table-wrap {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: var(--radius); overflow-x: auto; box-shadow: var(--shadow);
+}
+table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+th, td { text-align: left; padding: 10px 16px; white-space: nowrap; }
+th {
+  background: var(--surface-2); color: var(--text-strong);
+  font-weight: 600; font-size: 0.8rem; letter-spacing: .02em;
+  border-bottom: 1px solid var(--border); position: sticky; top: 0; cursor: pointer; user-select: none;
+}
+th:hover { color: var(--link); }
+tbody tr { border-bottom: 1px solid var(--border); }
+tbody tr:nth-child(even) { background: var(--neutral-50); }
+tbody tr:hover { background: rgba(140,208,255,.16); }
+td.lang-cell { background: var(--accent-hi); font-weight: 600; color: var(--text-strong); }
+tbody tr:hover td.lang-cell { background: var(--accent-soft); }
+.empty-row td { text-align: center; color: var(--text-muted); padding: 28px; background: var(--surface) !important; }
+
+/* rank medals */
+.rank { font-weight: 700; color: var(--text-muted); }
+.rank.r1 { color: #b8860b; } .rank.r2 { color: #7d7d7d; } .rank.r3 { color: #a0522d; }
+
+/* ====== Badges ====== */
+.badge { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 0.72rem; font-weight: 600; }
+.badge-pass { background: var(--success-bg); color: var(--success); }
+.badge-fail { background: var(--danger-bg); color: var(--danger); }
+.badge-llm { background: #f3e8ff; color: #7e22ce; }
+.badge-nonllm { background: var(--accent-hi); color: #1668a8; }
+.badge-api { background: #fff1e6; color: #9a5b1f; }
+.badge-ref { background: #e0e7ff; color: #3730a3; }
+.badge-noref { background: var(--neutral-100); color: var(--text-muted); }
+
+.score-num { font-weight: 700; font-variant-numeric: tabular-nums; }
+.score-highlight { font-weight: 700; color: #0f766e; }
+
+/* ====== Misc ====== */
+.section-note {
+  font-size: 0.85rem; color: var(--text-muted); padding: 10px 14px;
+  background: var(--surface-2); border-left: 3px solid var(--accent); border-radius: 4px; margin-bottom: 16px;
+}
+.info-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; color: var(--text-muted); font-size: 0.85rem; }
+.loading { text-align: center; padding: 90px 0; color: var(--text-muted); }
+.loading .spinner {
+  width: 38px; height: 38px; border: 3px solid var(--border);
+  border-top-color: var(--accent); border-radius: 50%;
+  animation: spin .8s linear infinite; margin: 0 auto 16px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.footer {
+  margin-top: 44px; text-align: center; color: var(--text-muted);
+  font-size: 0.82rem; padding-top: 22px; border-top: 1px solid var(--border);
+}
+.footer .footer-links { margin-bottom: 8px; display: flex; gap: 18px; justify-content: center; flex-wrap: wrap; }
+.footer .footer-links a { color: var(--text-strong); font-weight: 600; font-size: 0.85rem; }
+
+@media (max-width: 600px) {
+  .site-head { flex-direction: column; align-items: flex-start; gap: 2px; }
+  .filters { flex-direction: column; align-items: stretch; gap: 8px; }
+  .filters select, .filters input { min-width: 100%; }
+  th, td { padding: 8px 10px; font-size: 0.82rem; }
+}
+
+/* ====== Leaderboard extras ====== */
+.intro { color: var(--text-muted); margin-bottom: 8px; }
+td.lang-cell { background: var(--accent-hi); font-weight: 600; color: var(--text-strong); }
+tbody tr:hover td.lang-cell { background: var(--accent-soft); }
+.mtype { display: inline-block; padding: 1px 8px; border-radius: 4px; font-size: 0.75rem; background: var(--neutral-100); color: var(--text-muted); }
+.fam { color: var(--text-muted); font-weight: 400; white-space: nowrap; }
+.code { color: var(--text-muted); font-weight: 400; font-variant-numeric: tabular-nums; }
+.lic { color: var(--text-muted); font-weight: 400; white-space: nowrap; }
+.lic.na { opacity: .55; }
+.dom { color: var(--text-muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.switch { display: inline-flex; align-items: center; gap: 6px; cursor: pointer; color: var(--text); font-weight: 500; }
+.filters .switch input { cursor: pointer; width: auto; padding: 0; margin: 0; }
+.recipe-link {
+  display: inline-block; margin-left: 7px; font-size: 0.7rem; font-weight: 600;
+  color: var(--link); border: 1px solid var(--border-strong); border-radius: 4px;
+  padding: 0 5px; vertical-align: 1px; line-height: 1.5;
+}
+.recipe-link:hover { background: var(--accent-hi); text-decoration: none; }
+th[data-sort] { cursor: pointer; white-space: nowrap; }
+th[data-sort].asc::after { content: " \25B2"; font-size: 0.65rem; }
+th[data-sort].desc::after { content: " \25BC"; font-size: 0.65rem; }
+th.sep, td.sep { border-left: 2px solid var(--border); }
+.play-btn {
+  cursor: pointer; font-size: 0.72rem; line-height: 1; padding: 4px 7px;
+  color: var(--link); background: var(--surface); border: 1px solid var(--border-strong);
+  border-radius: 4px;
+}
+.play-btn:hover { background: var(--accent-hi); }
+.play-btn.playing { background: var(--accent); color: var(--text-strong); border-color: var(--accent); }
+</style><style>
+.stat-card .sub { color: var(--text-muted); font-size: 0.75rem; margin-top: 2px; }
+.ds-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 16px; }
+.ds-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; box-shadow: var(--shadow); }
+.ds-card h3 { font-size: 1.05rem; color: var(--text-strong); margin-bottom: 2px; }
+.ds-card .meta { color: var(--text-muted); font-size: 0.82rem; margin-bottom: 10px; }
+.ds-card p { margin-bottom: 10px; font-size: 0.9rem; }
+.ds-card dl { display: grid; grid-template-columns: 110px 1fr; gap: 4px 10px; font-size: 0.86rem; margin-bottom: 12px; }
+.ds-card dt { color: var(--text-muted); }
+.ds-links { display: flex; gap: 8px; flex-wrap: wrap; }
+.ds-links a { border: 1px solid var(--border-strong); border-radius: 6px; padding: 3px 10px; font-size: 0.82rem; font-weight: 600; }
+.ds-links a:hover { background: var(--accent-hi); text-decoration: none; }
+.ds-pill { display: inline-block; background: var(--accent-hi); color: #1668a8; border-radius: 4px; padding: 0 7px; font-size: 0.78rem; font-weight: 600; margin-right: 4px; }
+.sub-h { margin: 22px 0 10px; font-size: 0.95rem; color: var(--text-strong); }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="site-head">
+    <h1>nsanku MT Benchmark</h1>
+    <span class="tagline">Document-level machine translation &middot; Ghanaian languages &rarr; English &middot; BLEU</span>
+  </div>
+
+  <div id="loading" class="loading">
+    <div class="spinner"></div>
+    <p>Loading benchmark data&hellip;</p>
+  </div>
+
+  <div id="main" style="display:none;">
+    <div class="stats-grid" id="stats-grid"></div>
+
+    <div class="section-note">
+      <strong>How the score is calculated.</strong> Each system translates <em>whole documents</em>, one paragraph per request
+      (never a page or a full document in one call), and the paragraph outputs are re-joined in order.
+      <ul style="margin:6px 0 6px 18px;">
+        <li><strong>BLEU</strong> (sacreBLEU, 13a) and <strong>chrF</strong> are computed with the whole document as a single segment
+          against the human English edition of the same document. Higher is better; ranking uses BLEU.</li>
+        <li>Results are recorded <strong>per dataset</strong> (see the <em>Datasets</em> tab). A language's headline score is the
+          mean of its per-dataset scores, so a new dataset never changes the numbers of the existing ones.</li>
+        <li><strong>Length</strong> is output words / reference words. Values far from 1 usually mean untranslated
+          passes-through or padding, so read BLEU together with it.</li>
+        <li>A system is only scored on the languages it supports; unsupported languages are listed, not scored as zero.</li>
+      </ul>
+      Text is extracted from the source PDFs page by page with Gemini (verbatim, paragraph-marked); see the dataset notes for details.
+    </div>
+
+    <div class="tabs">
+      <div class="tab active" data-tab="global">Global Leaderboard</div>
+      <div class="tab" data-tab="per-lang">Per-Language</div>
+      <div class="tab" data-tab="all">All Results</div>
+      <div class="tab" data-tab="datasets">Datasets</div>
+    </div>
+
+    <div class="tab-pane active" id="pane-global">
+      <div class="filters">
+        <label>Dataset:</label><select id="global-ds"></select>
+        <label>Track:</label>
+        <select id="global-track">
+          <option value="All" selected>All</option>
+          <option value="llm">LLM-based</option>
+          <option value="api">Hosted APIs</option>
+        </select>
+      </div>
+      <p class="intro">Best model per language, ranked by BLEU. The dataset columns show the BLEU of that model on each dataset.</p>
+      <div class="table-wrap">
+        <table id="global-table"><thead id="global-thead"></thead><tbody id="global-body"></tbody></table>
+      </div>
+      <h3 class="sub-h">Models overall</h3>
+      <p class="intro">Mean BLEU over the languages each model covers (models cover different languages, so compare on the same language in the other tabs).</p>
+      <div class="table-wrap">
+        <table id="models-table"><thead id="models-thead"></thead><tbody id="models-body"></tbody></table>
+      </div>
+    </div>
+
+    <div class="tab-pane" id="pane-per-lang">
+      <div class="filters">
+        <label>Language:</label><select id="per-lang"></select>
+        <label>Dataset:</label><select id="per-ds"></select>
+        <label>Track:</label>
+        <select id="per-track">
+          <option value="All" selected>All</option>
+          <option value="llm">LLM-based</option>
+          <option value="api">Hosted APIs</option>
+        </select>
+        <label>Sort:</label>
+        <select id="per-sort">
+          <option value="bleu" selected>BLEU (best first)</option>
+          <option value="chrf">chrF (best first)</option>
+        </select>
+      </div>
+      <p id="per-lang-meta" class="intro"></p>
+      <h3 style="margin-bottom:10px; font-size:0.95rem; color:var(--success)">&#10003; Scored</h3>
+      <div class="table-wrap" style="margin-bottom:24px;">
+        <table id="per-table"><thead id="per-thead"></thead><tbody id="per-body"></tbody></table>
+      </div>
+      <h3 style="margin-bottom:10px; font-size:0.95rem; color:var(--text-strong)">BLEU by document</h3>
+      <div class="table-wrap" style="margin-bottom:24px;">
+        <table id="doc-table"><thead id="doc-thead"></thead><tbody id="doc-body"></tbody></table>
+      </div>
+      <h3 style="margin-bottom:10px; font-size:0.95rem; color:var(--danger)">&#10007; Not scored</h3>
+      <div class="table-wrap">
+        <table><thead><tr><th>Model</th><th>Reason</th></tr></thead><tbody id="per-missing"></tbody></table>
+      </div>
+    </div>
+
+    <div class="tab-pane" id="pane-all">
+      <div class="filters">
+        <input type="text" id="all-search" placeholder="Search model, language or dataset, e.g. khaya, Dagbani, finance...">
+        <span id="all-count" style="color:var(--text-muted); font-size:0.85rem;">0 rows</span>
+      </div>
+      <div class="table-wrap">
+        <table id="all-table">
+          <thead><tr>
+            <th data-sort="language">Language</th><th data-sort="name">Model</th><th>Track</th><th data-sort="dataset">Dataset</th>
+            <th data-sort="bleu">BLEU</th><th data-sort="chrf">chrF</th><th data-sort="length_ratio">Length</th><th data-sort="documents">Docs</th>
+          </tr></thead>
+          <tbody id="all-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="tab-pane" id="pane-datasets">
+      <p class="intro">Every score on this leaderboard is tied to a dataset. More datasets will be added over time; each one gets its own column and its own numbers.</p>
+      <div class="ds-grid" id="ds-grid"></div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-links">
+      <a href="https://huggingface.co/ghananlpcommunity" target="_blank">Ghana NLP Community</a> &middot;
+      <a href="https://github.com/GhanaNLP/nsanku-mt-benchmark" target="_blank">GitHub</a> &middot;
+      <a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-asr-benchmark" target="_blank">nsanku ASR</a> &middot;
+      <a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark" target="_blank">nsanku TTS</a>
+    </div>
+    <p>nsanku-MT benchmark &middot; document-level BLEU / chrF &middot; Ghana NLP 2026</p>
+  </div>
+</div>
+
 <script>
-const URLS=["https://raw.githubusercontent.com/GhanaNLP/nsanku-mt-benchmark/main/benchmarks/summary.json","benchmarks/summary.json"];
-let data,cur="all";
-const esc=s=>String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
-async function load(){for(const u of URLS){try{const r=await fetch(u);if(r.ok){data=await r.json();return}}catch(e){}}throw new Error("no data")}
-function overall(){const acc={};for(const l of Object.values(data.languages))for(const r of l.benchmarks){
- const a=acc[r.model]??={name:r.name,b:[],c:[],langs:0,docs:0};a.b.push(r.bleu);a.c.push(r.chrf);a.langs++;a.docs+=r.documents}
- return Object.entries(acc).map(([m,a])=>({model:m,name:a.name,bleu:avg(a.b),chrf:avg(a.c),documents:a.docs,langs:a.langs})).sort((x,y)=>y.bleu-x.bleu)}
-const avg=a=>Math.round(a.reduce((s,x)=>s+x,0)/a.length*100)/100;
-function render(){
- const rows=cur==="all"?overall():data.languages[cur].benchmarks;const max=Math.max(...rows.map(r=>r.bleu),1);
- let h=`<table><tr><th>#</th><th>Model</th><th class="n">BLEU</th><th class="n">chrF</th><th class="n">${cur==="all"?"Languages":"Documents"}</th></tr>`;
- rows.forEach((r,i)=>{h+=`<tr><td>${i+1}</td><td>${esc(r.name)}<div class="bar" style="width:${r.bleu/max*100}%"></div>`;
-  if(cur!=="all")h+=`<details><summary>per document</summary>${Object.entries(r.per_document).map(([d,v])=>`<div class="note">${d.replace("_"," · ")}: BLEU ${v.bleu} · chrF ${v.chrf} · length ratio ${v.length_ratio}</div>`).join("")}</details>`;
-  h+=`</td><td class="n">${r.bleu}</td><td class="n">${r.chrf}</td><td class="n">${cur==="all"?r.langs:r.documents}</td></tr>`});
- out.innerHTML=h+"</table>";
- tabs.innerHTML=[["all","All languages"],...Object.entries(data.languages).map(([k,v])=>[k,v.language])].map(([k,n])=>`<button class="${k===cur?"on":""}" data-k="${k}">${esc(n)}</button>`).join("");
- tabs.querySelectorAll("button").forEach(b=>b.onclick=()=>{cur=b.dataset.k;render()})}
-load().then(render).catch(()=>out.textContent="No results published yet.");
-</script></body></html>
+const GITHUB_REPO = 'GhanaNLP/nsanku-mt-benchmark';
+const GH = `https://github.com/${GITHUB_REPO}/blob/main/`;
+const GH_TREE = `https://github.com/${GITHUB_REPO}/tree/main/`;
+// One-minute bucket: GitHub's raw CDN caches each URL for ~5 minutes, so without it a fresh push shows up late.
+const SUMMARY_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/benchmarks/summary.json?t=${Math.floor(Date.now() / 60000)}`;
+
+let S = null;      // summary.json
+let ROWS = [];     // one per (language, model, dataset) plus dataset "all" = headline
+const sortState = {};
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const fmt = (v, d = 2) => (v === null || v === undefined || isNaN(v)) ? '—' : Number(v).toFixed(d);
+const dsName = id => (S.datasets[id] || {}).name || id;
+
+function trackBadge(t) {
+  return t === 'llm' ? '<span class="badge badge-llm">LLM</span>' : '<span class="badge badge-api">Hosted API</span>';
+}
+function modelCell(name, id) {
+  const m = S.models[id] || {};
+  return `<a href="${esc(m.url || '#')}" target="_blank" title="${esc(id)}">${esc(name)}</a>` +
+    `<a class="recipe-link" href="${GH}benchmark/models.py" target="_blank" title="How this system is called">code</a>`;
+}
+function bleuColor(v) { return v >= 30 ? 'var(--success)' : v >= 20 ? 'var(--accent-hover)' : 'var(--warning)'; }
+function bleuCell(v) { return `<td class="score-num" style="color:${bleuColor(v)}">${fmt(v)}</td>`; }
+
+// value of a result row for the chosen dataset ('all' = headline mean over datasets)
+function view(b, ds) {
+  if (ds === 'all') return b;
+  const v = (b.per_dataset || {})[ds];
+  return v ? { ...b, bleu: v.bleu, chrf: v.chrf, length_ratio: v.length_ratio, documents: v.documents } : null;
+}
+
+function buildRows() {
+  ROWS = [];
+  for (const [iso, doc] of Object.entries(S.languages)) {
+    for (const b of doc.benchmarks) {
+      for (const [ds, v] of Object.entries(b.per_dataset)) {
+        ROWS.push({ iso, language: doc.language, model: b.model, name: b.name, track: b.track, dataset: ds,
+                    bleu: v.bleu, chrf: v.chrf, length_ratio: v.length_ratio, documents: v.documents });
+      }
+    }
+  }
+}
+
+function dsOptions(sel, withAll = true) {
+  sel.innerHTML = (withAll ? '<option value="all">All datasets (mean)</option>' : '') +
+    Object.keys(S.datasets).map(id => `<option value="${esc(id)}">${esc(dsName(id))}</option>`).join('');
+}
+
+function renderStats() {
+  const langs = Object.keys(S.languages).length;
+  let best = null;
+  for (const l of Object.values(S.languages)) {
+    for (const b of l.benchmarks) { if (!best || b.bleu > best.bleu) best = { ...b, language: l.language }; }
+  }
+  const nDocs = Object.values(S.datasets).reduce((a, d) => a + (d.n_documents || 0), 0);
+  $('stats-grid').innerHTML = [
+    ['Languages', langs, ''],
+    ['Systems', Object.keys(S.models).length, ''],
+    ['Datasets', Object.keys(S.datasets).length, 'more coming'],
+    ['Document pairs', nDocs, ''],
+    ['Top BLEU', best ? fmt(best.bleu) : '—', best ? `${best.name} · ${best.language}` : ''],
+  ].map(([l, v, s]) => `<div class="stat-card"><div class="label">${l}</div><div class="value">${v}</div>${s ? `<div class="sub">${esc(s)}</div>` : ''}</div>`).join('');
+}
+
+// ====== sortable table helper ======
+function sortRows(rows, key, defaultKey) {
+  const st = sortState[key] || { col: defaultKey, dir: 'desc' };
+  const f = (a, b) => {
+    const x = a[st.col], y = b[st.col];
+    const r = (typeof x === 'string' || typeof y === 'string') ? String(x).localeCompare(String(y)) : (x ?? -1) - (y ?? -1);
+    return st.dir === 'asc' ? r : -r;
+  };
+  return rows.slice().sort(f);
+}
+function attachSort(theadId, key, rerender) {
+  document.querySelectorAll(`#${theadId} th[data-sort]`).forEach(th => {
+    const st = sortState[key];
+    th.classList.remove('asc', 'desc');
+    if (st && st.col === th.dataset.sort) th.classList.add(st.dir);
+    th.onclick = () => {
+      const c = th.dataset.sort, cur = sortState[key];
+      sortState[key] = { col: c, dir: cur && cur.col === c && cur.dir === 'desc' ? 'asc' : 'desc' };
+      rerender();
+    };
+  });
+}
+
+// ====== Global ======
+function renderGlobal() {
+  const ds = $('global-ds').value, track = $('global-track').value;
+  const dsIds = Object.keys(S.datasets);
+  let rows = [];
+  for (const [iso, doc] of Object.entries(S.languages)) {
+    const cands = doc.benchmarks.filter(b => track === 'All' || b.track === track).map(b => view(b, ds)).filter(Boolean);
+    if (!cands.length) continue;
+    const best = cands.slice().sort((a, b) => b.bleu - a.bleu)[0];
+    const row = { iso, language: doc.language, name: best.name, model: best.model, bleu: best.bleu, chrf: best.chrf,
+                  length_ratio: best.length_ratio, scored: cands.length, supported: doc.benchmarks.length };
+    for (const d of dsIds) { const v = (best.per_dataset || {})[d]; row['ds_' + d] = v ? v.bleu : null; }
+    rows.push(row);
+  }
+  $('global-thead').innerHTML = '<tr><th>#</th><th data-sort="language">Language</th><th data-sort="name">Best model</th>' +
+    '<th data-sort="bleu">BLEU</th><th data-sort="chrf">chrF</th><th data-sort="length_ratio">Length</th>' +
+    dsIds.map(d => `<th class="sep" data-sort="ds_${esc(d)}" title="BLEU on ${esc(dsName(d))}">${esc(dsName(d))}</th>`).join('') +
+    '<th data-sort="scored">Models</th></tr>';
+  rows = sortRows(rows, 'global', 'bleu');
+  $('global-body').innerHTML = rows.map((r, i) => {
+    const m = S.models[r.model] || {};
+    return `<tr><td><span class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</span></td><td class="lang-cell">${esc(r.language)}</td>` +
+      `<td>${modelCell(r.name, r.model)}</td>${bleuCell(r.bleu)}<td class="score-num">${fmt(r.chrf)}</td><td>${fmt(r.length_ratio, 2)}</td>` +
+      dsIds.map(d => `<td class="sep dom">${fmt(r['ds_' + d])}</td>`).join('') +
+      `<td class="dom">${r.scored}</td></tr>`;
+  }).join('') || '<tr class="empty-row"><td colspan="9">No results</td></tr>';
+  attachSort('global-thead', 'global', renderGlobal);
+
+  // models overall
+  const acc = {};
+  for (const [iso, doc] of Object.entries(S.languages)) {
+    for (const b of doc.benchmarks) {
+      const v = view(b, ds); if (!v || (track !== 'All' && b.track !== track)) continue;
+      (acc[b.model] ||= { model: b.model, name: b.name, track: b.track, b: [], c: [], docs: 0 });
+      acc[b.model].b.push(v.bleu); acc[b.model].c.push(v.chrf); acc[b.model].docs += v.documents;
+    }
+  }
+  const mean = a => a.reduce((x, y) => x + y, 0) / a.length;
+  const mrows = Object.values(acc).map(a => ({ ...a, bleu: mean(a.b), chrf: mean(a.c), langs: a.b.length }));
+  $('models-thead').innerHTML = '<tr><th>#</th><th data-sort="name">Model</th><th>Track</th><th data-sort="bleu">Mean BLEU</th><th data-sort="chrf">Mean chrF</th><th data-sort="langs">Languages</th><th data-sort="docs">Docs</th></tr>';
+  $('models-body').innerHTML = sortRows(mrows, 'models', 'bleu').map((r, i) =>
+    `<tr><td><span class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</span></td><td>${modelCell(r.name, r.model)}</td><td>${trackBadge(r.track)}</td>` +
+    `${bleuCell(r.bleu)}<td class="score-num">${fmt(r.chrf)}</td><td class="dom">${r.langs}</td><td class="dom">${r.docs}</td></tr>`).join('');
+  attachSort('models-thead', 'models', renderGlobal);
+}
+
+// ====== Per-language ======
+function renderPer() {
+  const iso = $('per-lang').value, ds = $('per-ds').value, track = $('per-track').value, sort = $('per-sort').value;
+  const doc = S.languages[iso];
+  if (!doc) return;
+  const dsIds = doc.datasets;
+  $('per-lang-meta').innerHTML = `${esc(doc.language)} &rarr; English &middot; datasets: ` +
+    dsIds.map(d => `<span class="ds-pill">${esc(dsName(d))}</span>`).join('');
+  let rows = doc.benchmarks.filter(b => track === 'All' || b.track === track).map(b => view(b, ds)).filter(Boolean);
+  rows.sort((a, b) => b[sort] - a[sort]);
+  $('per-thead').innerHTML = '<tr><th>#</th><th>Model</th><th>Track</th><th>BLEU</th><th>chrF</th><th>Length</th>' +
+    dsIds.map(d => `<th class="sep">${esc(dsName(d))} BLEU</th>`).join('') + '<th>Docs</th></tr>';
+  $('per-body').innerHTML = rows.map((r, i) =>
+    `<tr><td><span class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</span></td><td>${modelCell(r.name, r.model)}</td><td>${trackBadge(r.track)}</td>` +
+    `${bleuCell(r.bleu)}<td class="score-num">${fmt(r.chrf)}</td><td>${fmt(r.length_ratio, 2)}</td>` +
+    dsIds.map(d => `<td class="sep dom">${fmt(((r.per_dataset || {})[d] || {}).bleu)}</td>`).join('') +
+    `<td class="dom">${r.documents}</td></tr>`).join('') || '<tr class="empty-row"><td colspan="9">No results for this filter</td></tr>';
+
+  // per-document table: rows = documents, columns = models
+  const docsMap = {};
+  for (const b of doc.benchmarks) for (const [d, v] of Object.entries(b.per_dataset)) {
+    if (ds !== 'all' && d !== ds) continue;
+    for (const [id, x] of Object.entries(v.per_document)) { (docsMap[id] ||= { id, dataset: d, year: x.year, by: {} }).by[b.model] = x; }
+  }
+  const mods = doc.benchmarks.filter(b => track === 'All' || b.track === track);
+  $('doc-thead').innerHTML = '<tr><th>Dataset</th><th>Document</th>' + mods.map(m => `<th>${esc(m.name)}</th>`).join('') + '</tr>';
+  $('doc-body').innerHTML = Object.values(docsMap).sort((a, b) => a.id.localeCompare(b.id)).map(d =>
+    `<tr><td>${esc(dsName(d.dataset))}</td><td class="lang-cell"><a href="${GH_TREE}data/text/${esc(d.id)}" target="_blank" title="Extracted text">${esc(doc.language)} ${esc(d.year)}</a></td>` +
+    mods.map(m => d.by[m.model] ? bleuCell(d.by[m.model].bleu) : '<td class="dom">—</td>').join('') + '</tr>').join('');
+
+  $('per-missing').innerHTML = doc.missing.map(m =>
+    `<tr><td>${modelCell(m.name, m.model)}</td><td>${esc(m.reason)}</td></tr>`).join('') || '<tr class="empty-row"><td colspan="2">All systems scored</td></tr>';
+}
+
+// ====== All results ======
+function renderAll() {
+  const q = $('all-search').value.trim().toLowerCase();
+  let rows = ROWS.filter(r => !q || `${r.language} ${r.name} ${r.model} ${dsName(r.dataset)} ${r.dataset}`.toLowerCase().includes(q));
+  rows = sortRows(rows.map(r => ({ ...r, dsname: dsName(r.dataset) })), 'all', 'bleu');
+  $('all-count').textContent = `${rows.length} rows`;
+  $('all-body').innerHTML = rows.map(r =>
+    `<tr><td class="lang-cell">${esc(r.language)}</td><td>${modelCell(r.name, r.model)}</td><td>${trackBadge(r.track)}</td>` +
+    `<td>${esc(dsName(r.dataset))}</td>${bleuCell(r.bleu)}<td class="score-num">${fmt(r.chrf)}</td><td>${fmt(r.length_ratio, 2)}</td><td class="dom">${r.documents}</td></tr>`).join('');
+  attachSort('all-table', 'all', renderAll);
+}
+
+// ====== Datasets ======
+function renderDatasets() {
+  $('ds-grid').innerHTML = Object.values(S.datasets).map(d => {
+    const langs = Object.values(S.languages).filter(l => l.datasets.includes(d.id)).map(l => l.language);
+    return `<div class="ds-card"><h3>${esc(d.name)}</h3><div class="meta">${esc(d.domain)} &middot; id <code>${esc(d.id)}</code></div>` +
+      `<p>${esc(d.description)}</p><dl>` +
+      `<dt>Publisher</dt><dd>${esc(d.publisher)}</dd>` +
+      `<dt>Years</dt><dd>${esc((d.years || []).join(', '))}</dd>` +
+      `<dt>Documents</dt><dd>${d.n_documents || '—'} pairs (language edition + English edition)</dd>` +
+      `<dt>Languages</dt><dd>${esc(langs.join(', '))}</dd>` +
+      `<dt>Format</dt><dd>${esc(d.format)}</dd></dl>` +
+      `<div class="ds-links"><a href="${esc(d.source_url)}" target="_blank">Original source</a>` +
+      `<a href="${GH}${esc(d.info_doc || 'docs/datasets.md')}" target="_blank">Dataset notes</a>` +
+      `<a href="${GH}${esc(d.github_path)}" target="_blank">Document list</a>` +
+      `<a href="${GH_TREE}${esc(d.text_path)}" target="_blank">Extracted text</a>` +
+      `<a href="${GH_TREE}translations" target="_blank">System translations</a></div></div>`;
+  }).join('');
+}
+
+// ====== init ======
+function initUI() {
+  buildRows(); renderStats();
+  dsOptions($('global-ds')); dsOptions($('per-ds'));
+  $('per-lang').innerHTML = Object.entries(S.languages).sort((a, b) => a[1].language.localeCompare(b[1].language))
+    .map(([iso, l]) => `<option value="${iso}">${esc(l.language)}</option>`).join('');
+  ['global-ds', 'global-track'].forEach(id => $(id).addEventListener('change', renderGlobal));
+  ['per-lang', 'per-ds', 'per-track', 'per-sort'].forEach(id => $(id).addEventListener('change', renderPer));
+  $('all-search').addEventListener('input', renderAll);
+  document.querySelectorAll('.tab').forEach(tab => tab.addEventListener('click', () => {
+    document.querySelectorAll('.tab, .tab-pane').forEach(e => e.classList.remove('active'));
+    tab.classList.add('active'); $('pane-' + tab.dataset.tab).classList.add('active');
+  }));
+  renderGlobal(); renderPer(); renderAll(); renderDatasets();
+  $('loading').style.display = 'none'; $('main').style.display = 'block';
+}
+
+async function load() {
+  for (const url of [SUMMARY_URL, 'bundled_data.json']) {
+    try { const r = await fetch(url); if (r.ok) { S = await r.json(); return; } } catch (e) { /* try the next source */ }
+  }
+  throw new Error('no data');
+}
+load().then(initUI).catch(() => { $('loading').innerHTML = '<p>Could not load benchmark data.</p>'; });
+</script>
+</body>
+</html>

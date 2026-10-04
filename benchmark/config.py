@@ -38,5 +38,9 @@ def documents():
     return load_json(DATA / "documents.json")["documents"]
 
 
+def datasets():
+    return load_json(DATA / "datasets.json")["datasets"]
+
+
 def models():
     return load_json(DATA / "mt_models.json")["models"]

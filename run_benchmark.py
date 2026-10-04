@@ -1,6 +1,6 @@
 """Stage 2: paragraph-level MT + document-level BLEU.
 
-  python3 run_benchmark.py --models khaya-translate --docs 2022_gaa
+  python3 run_benchmark.py --models khaya-translate --docs finance_2022_gaa
   python3 run_benchmark.py                 # everything
   python3 run_benchmark.py --assemble      # only rebuild benchmarks/ from stored scores
 """

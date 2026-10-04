@@ -1,24 +1,42 @@
 iso: ada
 language: Dangme
 direction: Dangme -> English
+datasets:
+- finance
 benchmarks:
 - model: Google/gemini-3.8-flash
   name: Gemini 3.8 Flash
+  track: llm
+  url: https://ai.google.dev/gemini-api/docs/models
   bleu: 30.5
   chrf: 68.35
+  length_ratio: 1.18
   documents: 2
-  per_document:
-    2022_ada:
-      bleu: 32.44
-      chrf: 69.22
-      length_ratio: 1.153
-      hyp_words: 9187
-      ref_words: 7727
-      year: 2022
-    2023_ada:
-      bleu: 28.57
-      chrf: 67.49
-      length_ratio: 1.215
-      hyp_words: 10445
-      ref_words: 8526
-      year: 2023
+  per_dataset:
+    finance:
+      bleu: 30.5
+      chrf: 68.35
+      length_ratio: 1.18
+      documents: 2
+      per_document:
+        finance_2022_ada:
+          bleu: 32.44
+          chrf: 69.22
+          length_ratio: 1.153
+          hyp_words: 9187
+          ref_words: 7727
+          year: 2022
+        finance_2023_ada:
+          bleu: 28.57
+          chrf: 67.49
+          length_ratio: 1.215
+          hyp_words: 10445
+          ref_words: 8526
+          year: 2023
+missing:
+- model: KhayaAI/khaya-translate
+  name: Khaya AI
+  reason: language not supported
+- model: Google/google-translate-free
+  name: Google Translate (free endpoint)
+  reason: language not supported

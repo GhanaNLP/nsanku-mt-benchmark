@@ -8,11 +8,19 @@ than isolated sentences. Companion to the nsanku
 [TTS](https://github.com/GhanaNLP/nsanku-tts-benchmark) benchmarks: this repo is the single
 source of truth (`benchmarks/`), and the leaderboard Space (`space/`) reads it.
 
-## Data
+## Datasets
 
-The Ministry of Finance's [Citizens' Budget](https://mofep.gov.gh/publications/citizens-budget),
-published in English and in Ghanaian languages (2021–2023). Each translated edition is paired with the
-English edition of the same year (`data/documents.json`: 18 pairs, 7 languages).
+Results are recorded **per dataset**; a language's headline score is the mean of its per-dataset
+scores. Details, file locations and how to add a dataset: [`docs/datasets.md`](docs/datasets.md).
+
+| Dataset | Domain | Source | Pairs |
+|---|---|---|---|
+| `finance` | Citizens' Budget (Ministry of Finance, 2021–2023) | [mofep.gov.gh](https://mofep.gov.gh/publications/citizens-budget) | 18 documents, 7 languages |
+
+### finance: Citizens' Budget
+
+The budget is published in English and in Ghanaian languages; each translated edition is paired with
+the English edition of the same year (`data/documents.json`).
 
 | Language | iso | Years |
 |---|---|---|
@@ -39,8 +47,8 @@ English edition of the same year (`data/documents.json`: 18 pairs, 7 languages).
 3. **Score**: paragraph outputs are re-joined in order and scored as **one segment per document**
    with sacreBLEU (BLEU, default 13a) and chrF against the English edition. Per-language score =
    mean over its documents. Ranking uses BLEU.
-4. **Publish**: `benchmarks/{iso}.yaml` + `benchmarks/summary.json`; translations in
-   `translations/<model>/<doc>.txt`.
+4. **Publish**: `benchmarks/{iso}.yaml` + `benchmarks/summary.json` (results per dataset);
+   translations in `translations/<model>/<doc>.txt`.
 
 ## Systems
 
@@ -61,7 +69,7 @@ cp .env.example .env            # GEMINI_API_KEY, KHAYA_API_KEY
 python3 scripts/fetch_documents.py
 python3 run_extract.py          # Gemini, page by page
 python3 run_benchmark.py        # translate + score  (or: python3 pipeline.py)
-python3 run_benchmark.py --models khaya-translate --docs 2022_gaa   # targeted
+python3 run_benchmark.py --models khaya-translate --docs finance_2022_gaa   # targeted
 ```
 
 ## Caveats

@@ -1,7 +1,7 @@
 """Stage 1: extract paragraph-marked text from every PDF with Gemini (page by page).
 
   python3 run_extract.py                  # all documents + English references
-  python3 run_extract.py --docs 2022_ga   # one document
+  python3 run_extract.py --docs finance_2022_gaa   # one document
   python3 run_extract.py --pilot          # first 3 pages of one document, prints output
 """
 import argparse
