@@ -1,4 +1,4 @@
-# nsanku-MT Benchmark (document level)
+# nsanku Machine Translation Benchmark
 
 [![Hugging Face Space](https://img.shields.io/badge/%F0%9F%A4%97%20Leaderboard-HF%20Space-blue)](https://huggingface.co/spaces/ghananlpcommunity/nsanku-mt-benchmark)
 
