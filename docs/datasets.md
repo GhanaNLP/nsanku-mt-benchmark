@@ -1,7 +1,7 @@
 # Datasets
 
-Results are recorded **per dataset** (`per_dataset` in each `benchmarks/<iso>.yaml`). A language's
-headline score is the mean of its per-dataset scores, so adding a dataset never changes the numbers of the
+Results are recorded **per dataset** (`per_dataset` in each `benchmarks/<iso>.yaml`). Within a direction, a
+language's score is the mean of its per-dataset scores (directions are never averaged), so adding a dataset never changes the numbers of the
 existing ones. Registry: [`data/datasets.json`](../data/datasets.json); every document in
 [`data/documents.json`](../data/documents.json) carries a `dataset` id.
 

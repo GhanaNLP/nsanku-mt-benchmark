@@ -228,7 +228,7 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
           Use the <em>Direction</em> selector (default: English &rarr; X). The two are never averaged together.</li>
         <li><strong>BLEU</strong> (sacreBLEU, 13a) and <strong>chrF</strong> are computed with the whole document as a single segment
           against the human English edition of the same document. Higher is better; ranking uses BLEU.</li>
-        <li>Results are recorded <strong>per dataset</strong> (see the <em>Datasets</em> tab). A language's headline score is the
+        <li>Results are recorded <strong>per dataset</strong> (see the <em>Datasets</em> tab). Within a direction, a language's score is the
           mean of its per-dataset scores, so a new dataset never changes the numbers of the existing ones.</li>
         <li><strong>Length</strong> is output words / reference words. Values far from 1 usually mean untranslated
           passes-through or padding, so read BLEU together with it.</li>
@@ -342,7 +342,7 @@ const GH_TREE = `https://github.com/${GITHUB_REPO}/tree/main/`;
 const SUMMARY_URL = `https://raw.githubusercontent.com/${GITHUB_REPO}/main/benchmarks/summary.json?t=${Math.floor(Date.now() / 60000)}`;
 
 let S = null;      // summary.json
-let ROWS = [];     // one per (language, model, dataset) plus dataset "all" = headline
+let ROWS = [];     // one per (language, model, direction, dataset)
 const sortState = {};
 
 const $ = id => document.getElementById(id);

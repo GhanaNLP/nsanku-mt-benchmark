@@ -10,8 +10,8 @@ source of truth (`benchmarks/`), and the leaderboard Space (`space/`) reads it.
 
 ## Datasets
 
-Results are recorded **per dataset**; a language's headline score is the mean of its per-dataset
-scores. Details, file locations and how to add a dataset: [`docs/datasets.md`](docs/datasets.md).
+Results are recorded **per dataset**; within a direction, a language's score is the mean of its
+per-dataset scores. Details, file locations and how to add a dataset: [`docs/datasets.md`](docs/datasets.md).
 
 | Dataset | Domain | Source | Pairs |
 |---|---|---|---|
