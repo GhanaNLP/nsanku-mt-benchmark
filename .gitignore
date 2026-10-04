@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.DS_Store
+
+# Source PDFs are re-downloadable with scripts/fetch_documents.py
+data/pdfs/
+# Page images / per-chunk caches (resumable, regenerated on demand)
+data/cache/
+
+# Personal files — saved chat transcripts can contain API tokens.
+*.txt
+session-*.md
+!requirements.txt
+!translations/**/*.txt
+!data/text/**/*.txt

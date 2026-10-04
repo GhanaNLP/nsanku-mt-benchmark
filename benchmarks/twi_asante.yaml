@@ -1,0 +1,85 @@
+iso: twi_asante
+language: Asante Twi
+direction: Asante Twi -> English
+benchmarks:
+- model: Google/gemini-3.8-flash
+  name: Gemini 3.8 Flash
+  bleu: 27.22
+  chrf: 68.16
+  documents: 3
+  per_document:
+    2021_twi_asante:
+      bleu: 24.25
+      chrf: 66.42
+      length_ratio: 1.378
+      hyp_words: 11011
+      ref_words: 7453
+      year: 2021
+    2022_twi_asante:
+      bleu: 27.53
+      chrf: 68.68
+      length_ratio: 1.264
+      hyp_words: 10550
+      ref_words: 7727
+      year: 2022
+    2023_twi_asante:
+      bleu: 29.87
+      chrf: 69.39
+      length_ratio: 1.287
+      hyp_words: 11030
+      ref_words: 8526
+      year: 2023
+- model: Google/google-translate-free
+  name: Google Translate (free endpoint)
+  bleu: 21.64
+  chrf: 54.76
+  documents: 3
+  per_document:
+    2021_twi_asante:
+      bleu: 28.07
+      chrf: 65.62
+      length_ratio: 1.027
+      hyp_words: 8642
+      ref_words: 7453
+      year: 2021
+    2022_twi_asante:
+      bleu: 22.33
+      chrf: 64.1
+      length_ratio: 1.066
+      hyp_words: 9436
+      ref_words: 7727
+      year: 2022
+    2023_twi_asante:
+      bleu: 14.53
+      chrf: 34.56
+      length_ratio: 1.483
+      hyp_words: 13058
+      ref_words: 8526
+      year: 2023
+- model: KhayaAI/khaya-translate
+  name: Khaya AI
+  bleu: 20.24
+  chrf: 62.57
+  documents: 3
+  per_document:
+    2021_twi_asante:
+      bleu: 22.18
+      chrf: 62.68
+      length_ratio: 1.217
+      hyp_words: 10099
+      ref_words: 7453
+      year: 2021
+    2022_twi_asante:
+      bleu: 17.57
+      chrf: 61.87
+      length_ratio: 1.284
+      hyp_words: 10946
+      ref_words: 7727
+      year: 2022
+    2023_twi_asante:
+      bleu: 20.96
+      chrf: 63.17
+      length_ratio: 1.325
+      hyp_words: 11412
+      ref_words: 8526
+      year: 2023

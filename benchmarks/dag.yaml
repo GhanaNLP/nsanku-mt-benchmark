@@ -1,0 +1,58 @@
+iso: dag
+language: Dagbani
+direction: Dagbani -> English
+benchmarks:
+- model: Google/gemini-3.8-flash
+  name: Gemini 3.8 Flash
+  bleu: 41.04
+  chrf: 71.24
+  documents: 3
+  per_document:
+    2021_dag:
+      bleu: 44.24
+      chrf: 72.3
+      length_ratio: 1.012
+      hyp_words: 7710
+      ref_words: 7453
+      year: 2021
+    2022_dag:
+      bleu: 41.08
+      chrf: 70.81
+      length_ratio: 1.05
+      hyp_words: 8024
+      ref_words: 7727
+      year: 2022
+    2023_dag:
+      bleu: 37.79
+      chrf: 70.61
+      length_ratio: 1.109
+      hyp_words: 9200
+      ref_words: 8526
+      year: 2023
+- model: KhayaAI/khaya-translate
+  name: Khaya AI
+  bleu: 19.75
+  chrf: 54.91
+  documents: 3
+  per_document:
+    2021_dag:
+      bleu: 21.22
+      chrf: 54.27
+      length_ratio: 1.391
+      hyp_words: 11755
+      ref_words: 7453
+      year: 2021
+    2022_dag:
+      bleu: 20.19
+      chrf: 56.26
+      length_ratio: 1.47
+      hyp_words: 12227
+      ref_words: 7727
+      year: 2022
+    2023_dag:
+      bleu: 17.85
+      chrf: 54.2
+      length_ratio: 1.515
+      hyp_words: 13423
+      ref_words: 8526
+      year: 2023

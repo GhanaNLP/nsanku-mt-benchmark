@@ -1,0 +1,6 @@
+requests
+pyyaml
+pymupdf
+sacrebleu
+python-dotenv
+googletrans @ git+https://github.com/michsethowusu/py-googletrans.git

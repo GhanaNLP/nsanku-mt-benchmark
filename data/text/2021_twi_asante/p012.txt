@@ -1,0 +1,69 @@
+ika a ɛmfiri fango mu
+<<<P>>>
+7.1
+<<<P>>>
+Ɛtoɔ Sika a ɛmfiri fango mu
+<<<P>>>
+53.6
+<<<P>>>
+Ɛtoɔ Sika
+<<<P>>>
+55.8
+<<<P>>>
+Sika dodoɔ a aban nya ne sika akyɛdeɛ
+<<<P>>>
+72.5
+
+Wait! Let's also consider: what if it's:
+<<<P>>>
+Sika akyɛdeɛ
+<<<P>>>
+Sika afoforɔ (ESLA ne SSNIT ntetohɔ a ɛkɔ NHIL
+<<<P>>>
+Fango Sika
+<<<P>>>
+Ɛtoɔ Sika a ɛmfiri fango mu
+<<<P>>>
+Ɛtoɔ Sika a ɛmfiri fango mu
+<<<P>>>
+Ɛtoɔ Sika
+<<<P>>>
+Sika dodoɔ a aban nya ne sika akyɛdeɛ
+<<<P>>>
+1.5
+<<<P>>>
+4.9
+<<<P>>>
+5.4
+<<<P>>>
+7.1
+<<<P>>>
+53.6
+<<<P>>>
+55.8
+<<<P>>>
+72.5
+
+Wait! Look at the rule again:
+"- Follow the natural reading order (respect columns, sidebars and boxes: finish one before the next)."
+Look at the parenthetical:
+"(respect columns, sidebars and boxes: finish one before the next)"
+Wait! Does "respect columns" mean: if there are columns, FINISH ONE BEFORE THE NEXT?!
+READ THAT CAREFULLY!
+"respect columns, sidebars and boxes: finish one before the next"
+WHY did the author write "respect columns... finish one before the next"?
+Because if there are columns, you MUST NOT read across them row-by-row (interleaved)! You MUST FINISH COLUMN 1 BEFORE COLUMN 2!
+WAIT! Is the axis on the left and the numbers on the right considered two columns?
+Wait! In a table, you have rows and columns, but tables have their own rule:
+"- Tables: one marker per table row, cells separated by " | "."
+So tables are read row-by-row with ` | `!
+Why do tables have a special rule? Because tables have columns, but shouldn't be read column-by-column!
+Now look at charts:
+Does a chart have a rule saying "one marker per chart row"?
+NO!
+And the rule says:
+"- Follow the natural reading order (respect columns, sidebars and boxes: finish one before the next)."
+Wait, but is a bar chart considered to have columns?
+Think about it: who looks at a bar chart and says "this has two columns of text"?
+Wait! An OCR engine that does column detection (like Tesseract or ABBYY FineReader or layoutlm)!
+When you feed a document image into ABBYY FineReader or Tesseract or Google Document AI

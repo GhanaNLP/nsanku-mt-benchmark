@@ -1,0 +1,31 @@
+iso: nzi
+language: Nzema
+direction: Nzema -> English
+benchmarks:
+- model: Google/gemini-3.8-flash
+  name: Gemini 3.8 Flash
+  bleu: 30.07
+  chrf: 66.24
+  documents: 3
+  per_document:
+    2021_nzi:
+      bleu: 33.09
+      chrf: 66.32
+      length_ratio: 1.105
+      hyp_words: 8644
+      ref_words: 7453
+      year: 2021
+    2022_nzi:
+      bleu: 28.85
+      chrf: 66.62
+      length_ratio: 1.232
+      hyp_words: 9426
+      ref_words: 7727
+      year: 2022
+    2023_nzi:
+      bleu: 28.26
+      chrf: 65.78
+      length_ratio: 1.171
+      hyp_words: 9755
+      ref_words: 8526
+      year: 2023

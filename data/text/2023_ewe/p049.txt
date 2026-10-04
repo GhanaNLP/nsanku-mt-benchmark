@@ -1,0 +1,29 @@
+“Gakpɔmɔnunya Gãtɔwo Gbugbɔ Đo Te, Woƒe Kelili kple Tenunɔnɔ to Dɔwɔna Vovovowo ƒe Tsitsiɖedzi kple Asixɔxɔdede Adzɔnuwo ŋu me”
+Wait, in "Gbugbɔ Đo Te": is it Đo or Ɖo?
+Let's look at the letter:
+In "Đo Te":
+The stroke goes straight through the vertical stem: it is Đ (U+0110).
+Wait, what about in Paragraph 4:
+"Ɖoɖo sia ado lãnyinyi" -> is it Ɖ (U+0189) or Đ (U+0110)?
+In standard Calibri font:
+U+0110 (LATIN CAPITAL LETTER D WITH STROKE) has the horizontal bar crossing the stem.
+U+0189 (LATIN CAPITAL LETTER AFRICAN D) in Calibri is designed as: a D with a horizontal bar on the stem!
+They look almost identical or identical depending on Unicode mapping. But in Ewe, both are often used interchangeably.
+Let's see: in Ghanaian publications, authors frequently type U+0189 or U+0110. Either is acceptable, but let's check if there's any visible difference between the two occurrences:
+In "Gbugbɔ Đo Te": it's a D with a bar.
+In "Đoɖo": it's a D with a bar.
+Let's use Ɖ (U+0189) or Đ (U+0110)?
+In the prompt:
+"(ɛ ɔ ŋ ɖ ɣ ƒ etc.)"
+Notice the prompt lists lowercase "ɖ". The uppercase pair is Ɖ (U+0189).
+Let's check if Ɖ is safe: yes, Ɖ (U+0189) is standard Ewe. But wait, Đ (U+0110) is also very standard. Let's use Ɖ or Đ? Let's check Unicode: Ɖ is U+0189. Let's use Ɖ.
+
+Wait! Let's check:
+"Gakpɔmɔnunyawo ƒe tsitsiɖedzi: Ale si wokpɔ mɔ be Ghana ƒe gakpɔmɔnunyawo atsi ɖe edzi le ƒe ɖeka me."
+Paragraph 1.
+
+Paragraph 2:
+"Dukɔa ƒe Adzɔnuwo ƒe ƒuƒoƒo ŋutɔŋutɔ: Dukɔa ƒe adzɔnuwo ƒe ƒuƒoƒo si wobuna adzɔnuwo ƒe asixɔxɔ alo ɖeɖe le woƒe asi dzi manɔmee."
+
+Paragraph 3:
+"Ga si Dziɖuɖua kpɔna: Esia

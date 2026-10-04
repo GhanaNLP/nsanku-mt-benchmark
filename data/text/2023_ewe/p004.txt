@@ -1,0 +1,48 @@
+`!
+Now look at `Numeɖeɖe fe Tatawo`:
+The word `fe` is italicized in the lower list: `Numeɖeɖe fe tata 1...`, the `fe` is in italics: `fe`.
+Wait, in the heading: `Numeɖeɖe fe Tatawo`:
+Is it `fe` or `ƒe`?
+Wait, look at `Numeɖeɖe fe Tatawo` in blue:
+`Numeɖeɖe fe Tatawo`
+The 'f' has a straight bottom on the baseline. It's just `fe`.
+
+Wait, let's check line by line very carefully.
+
+Line 1-2 (top box):
+“Gakpɔmɔnunya Gãtɔwo Gbugbɔ Ɖo Te, Wofe Kelili kple Tenunɔnɔ to Dɔwɔna Vovovowo fe Tsitsiɖedzi kple Asixɔxɔdede Adzɔnuwo ŋu me”
+Wait, is this one paragraph?
+Yes, it's wrapped into two lines inside quotes.
+Rule: "Put the marker line <<<P>>> on its own line before EVERY paragraph, heading, list item, caption or text box. Text of one paragraph goes on the lines after its marker; join lines that are only wrapped (and de-hyphenate words split across lines)."
+So:
+<<<P>>>
+“Gakpɔmɔnunya Gãtɔwo Gbugbɔ Ɖo Te, Wofe Kelili kple Tenunɔnɔ to Dɔwɔna Vovovowo fe Tsitsiɖedzi kple Asixɔxɔdede Adzɔnuwo ŋu me”
+
+Next, the heading:
+<<<P>>>
+Emenyawo
+
+Next, the Table of Contents entries:
+Entry 1:
+<<<P>>>
+Numeɖeɖe fe Tatawo ............................................................................................ 4
+Wait, let's count dots or just put dots?
+Let's see: `Numeɖeɖe fe Tatawo ............................................................................................ 4`
+
+Entry 2:
+<<<P>>>
+KPƆKPLƆYIƉEME................................................................................................... 6
+
+Entry 3:
+<<<P>>>
+ŊGƆDONYA .......................................................................................................... 8
+
+Entry 4:
+<<<P>>>
+GAKPƆMƆNYAWO FE DƆWƆWƆ LE FE 2022 ME ..................................................... 9
+
+Entry 5:
+<<<P>>>
+GA SIWO DZIƉUĐUA KPƆ LE FE 2022 ME KPLE ALE SI WÒWƆ WO ŊU DƆE .........12
+Wait! Look at `DZIƉUĐUA`:
+Wait, is the second letter `Đ` or `Ɖ`? Both are `Ɖ`.

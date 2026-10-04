@@ -1,0 +1,69 @@
+ama" -> wait! Is it "ama"? Yes, "ama".
+- "wɔahyehyɛ"
+- "mmara"
+- "a"
+- "ɛbɛma"
+- "deɛ"
+- "wɔfrɛ"
+- "no"
+- "Mpofirimu"
+- "Ayarehwɛ"
+- "ho"
+- "Anammɔntuo"
+- "(Emergency Response System)"
+- "no"
+- "adi"
+- "mu;"
+
+Bullet 2 under 34:
+- "Ɔbɛkɔ"
+- "so"
+- "adi"
+- "Aban"
+- "mpontunneɛ"
+- "nhyehyɛeɛ"
+- "no"
+- "ho"
+- "dwuma,"
+- "a"
+- "deɛ"
+- "wɔfrɛ"
+- "no"
+- "Agenda 111"
+- "no"
+- "ka"
+- "ho"
+- "bi;"
+
+Bullet 3 under 34:
+- "Ɔbɛtoa"
+- "dwumadie"
+- "ahodoɔ"
+- "a"
+- "ɛdidi"
+- "soɔ"
+- "yi"
+- "so:"
+
+Sub-bullets under Bullet 3:
+1. "Koforidua Mantam Ayaresabea" (no punctuation at end)
+2. "Shama Mansini Ayaresabea;" (semicolon at end)
+3. "La Ayaresabea;" (semicolon at end)
+4. "Tema Mantam Ayaresabea;" (semicolon at end)
+5. "Ɔman yi nnurokorabea hɔ nsiesie;" (semicolon at end)
+6. "Nkoranza Mansini Ayaresabea; ne" (semicolon after Ayaresabea, then "ne")
+
+Now let's check the footer:
+<<<P>>>
+22 | Ghana Aban - 2021 Ɔman Mma Sikasɛm Nhyehyɛeɛ
+Wait, let's look at the footer:
+Is it: "22 | Ghana Aban - 2021 Ɔman Mma Sikasɛm Nhyehyɛeɛ"?
+Let's zoom into the footer:
+"22 | Ghana Aban - 2021 Ɔman Mma Sikasɛm Nhyehyɛeɛ"
+Wait!
+"22 | " (bold 22, then vertical bar | )
+"Ghana Aban" (bold)
+" - 2021 " (hyphen/dash)
+"Ɔman Mma Sikasɛm Nhyehyɛeɛ" (italicized)
+Is there anything printed inside the flag graphic at the bottom right?
+The flag graphic has a black star on

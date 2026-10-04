@@ -1,0 +1,64 @@
+iso: gaa
+language: Ga
+direction: Ga -> English
+benchmarks:
+- model: Google/gemini-3.8-flash
+  name: Gemini 3.8 Flash
+  bleu: 37.47
+  chrf: 68.88
+  documents: 2
+  per_document:
+    2021_gaa:
+      bleu: 39.76
+      chrf: 68.46
+      length_ratio: 1.066
+      hyp_words: 7996
+      ref_words: 7453
+      year: 2021
+    2022_gaa:
+      bleu: 35.18
+      chrf: 69.3
+      length_ratio: 1.051
+      hyp_words: 8357
+      ref_words: 7727
+      year: 2022
+- model: Google/google-translate-free
+  name: Google Translate (free endpoint)
+  bleu: 35.68
+  chrf: 66.12
+  documents: 2
+  per_document:
+    2021_gaa:
+      bleu: 38.71
+      chrf: 66.53
+      length_ratio: 1.002
+      hyp_words: 7591
+      ref_words: 7453
+      year: 2021
+    2022_gaa:
+      bleu: 32.65
+      chrf: 65.72
+      length_ratio: 0.988
+      hyp_words: 7983
+      ref_words: 7727
+      year: 2022
+- model: KhayaAI/khaya-translate
+  name: Khaya AI
+  bleu: 30.13
+  chrf: 61.67
+  documents: 2
+  per_document:
+    2021_gaa:
+      bleu: 31.61
+      chrf: 61.67
+      length_ratio: 1.093
+      hyp_words: 7805
+      ref_words: 7453
+      year: 2021
+    2022_gaa:
+      bleu: 28.65
+      chrf: 61.67
+      length_ratio: 1.061
+      hyp_words: 8406
+      ref_words: 7727
+      year: 2022

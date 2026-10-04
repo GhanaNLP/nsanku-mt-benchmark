@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>nsanku MT Benchmark</title>
+<style>
+:root{--bg:#fafaf7;--fg:#1d1d1b;--mut:#6b6b66;--card:#fff;--line:#e4e2da;--acc:#b4531a}
+@media(prefers-color-scheme:dark){:root{--bg:#161614;--fg:#ecebe6;--mut:#9a9890;--card:#201f1d;--line:#34322e;--acc:#e8935a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.5 system-ui,sans-serif}
+main{max-width:980px;margin:0 auto;padding:24px 16px 60px}
+h1{margin:0 0 4px;font-size:26px}p.sub{color:var(--mut);margin:0 0 20px}
+.tabs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.tabs button{border:1px solid var(--line);background:var(--card);color:var(--fg);padding:6px 12px;border-radius:999px;cursor:pointer;font:inherit}
+.tabs button.on{background:var(--acc);border-color:var(--acc);color:#fff}
+table{width:100%;border-collapse:collapse;background:var(--card);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid var(--line)}th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--mut)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.bar{height:6px;background:var(--acc);border-radius:3px;margin-top:4px}
+tr.doc td{font-size:13px;color:var(--mut);background:transparent}
+details summary{cursor:pointer}
+.note{color:var(--mut);font-size:13px;margin-top:14px}
+a{color:var(--acc)}
+</style></head><body><main>
+<h1>nsanku MT Benchmark</h1>
+<p class="sub">Document-level translation, Ghanaian language → English. Source: Ghana Citizens' Budget (Ministry of Finance). Ranked by BLEU.</p>
+<div class="tabs" id="tabs"></div><div id="out">Loading…</div>
+<p class="note">Each document is extracted page by page with Gemini (verbatim, paragraph-marked), translated one paragraph per request, re-joined, and scored as a single segment against the English edition of the same year (sacreBLEU, chrF). Unsupported language/model pairs are omitted.
+ Code and results: <a href="https://github.com/GhanaNLP/nsanku-mt-benchmark">GhanaNLP/nsanku-mt-benchmark</a>.</p>
+</main>
+<script>
+const URLS=["https://raw.githubusercontent.com/GhanaNLP/nsanku-mt-benchmark/main/benchmarks/summary.json","benchmarks/summary.json"];
+let data,cur="all";
+const esc=s=>String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
+async function load(){for(const u of URLS){try{const r=await fetch(u);if(r.ok){data=await r.json();return}}catch(e){}}throw new Error("no data")}
+function overall(){const acc={};for(const l of Object.values(data.languages))for(const r of l.benchmarks){
+ const a=acc[r.model]??={name:r.name,b:[],c:[],langs:0,docs:0};a.b.push(r.bleu);a.c.push(r.chrf);a.langs++;a.docs+=r.documents}
+ return Object.entries(acc).map(([m,a])=>({model:m,name:a.name,bleu:avg(a.b),chrf:avg(a.c),documents:a.docs,langs:a.langs})).sort((x,y)=>y.bleu-x.bleu)}
+const avg=a=>Math.round(a.reduce((s,x)=>s+x,0)/a.length*100)/100;
+function render(){
+ const rows=cur==="all"?overall():data.languages[cur].benchmarks;const max=Math.max(...rows.map(r=>r.bleu),1);
+ let h=`<table><tr><th>#</th><th>Model</th><th class="n">BLEU</th><th class="n">chrF</th><th class="n">${cur==="all"?"Languages":"Documents"}</th></tr>`;
+ rows.forEach((r,i)=>{h+=`<tr><td>${i+1}</td><td>${esc(r.name)}<div class="bar" style="width:${r.bleu/max*100}%"></div>`;
+  if(cur!=="all")h+=`<details><summary>per document</summary>${Object.entries(r.per_document).map(([d,v])=>`<div class="note">${d.replace("_"," · ")}: BLEU ${v.bleu} · chrF ${v.chrf} · length ratio ${v.length_ratio}</div>`).join("")}</details>`;
+  h+=`</td><td class="n">${r.bleu}</td><td class="n">${r.chrf}</td><td class="n">${cur==="all"?r.langs:r.documents}</td></tr>`});
+ out.innerHTML=h+"</table>";
+ tabs.innerHTML=[["all","All languages"],...Object.entries(data.languages).map(([k,v])=>[k,v.language])].map(([k,n])=>`<button class="${k===cur?"on":""}" data-k="${k}">${esc(n)}</button>`).join("");
+ tabs.querySelectorAll("button").forEach(b=>b.onclick=()=>{cur=b.dataset.k;render()})}
+load().then(render).catch(()=>out.textContent="No results published yet.");
+</script></body></html>

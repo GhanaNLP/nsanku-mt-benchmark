@@ -1,0 +1,85 @@
+iso: ewe
+language: Ewe
+direction: Ewe -> English
+benchmarks:
+- model: Google/gemini-3.8-flash
+  name: Gemini 3.8 Flash
+  bleu: 30.13
+  chrf: 68.37
+  documents: 3
+  per_document:
+    2021_ewe:
+      bleu: 33.64
+      chrf: 67.58
+      length_ratio: 1.113
+      hyp_words: 8973
+      ref_words: 7453
+      year: 2021
+    2022_ewe:
+      bleu: 30.91
+      chrf: 68.73
+      length_ratio: 1.228
+      hyp_words: 9423
+      ref_words: 7727
+      year: 2022
+    2023_ewe:
+      bleu: 25.85
+      chrf: 68.81
+      length_ratio: 1.17
+      hyp_words: 10464
+      ref_words: 8526
+      year: 2023
+- model: Google/google-translate-free
+  name: Google Translate (free endpoint)
+  bleu: 16.17
+  chrf: 38.23
+  documents: 3
+  per_document:
+    2021_ewe:
+      bleu: 27.42
+      chrf: 63.75
+      length_ratio: 0.963
+      hyp_words: 8144
+      ref_words: 7453
+      year: 2021
+    2022_ewe:
+      bleu: 12.52
+      chrf: 25.27
+      length_ratio: 1.453
+      hyp_words: 11836
+      ref_words: 7727
+      year: 2022
+    2023_ewe:
+      bleu: 8.57
+      chrf: 25.68
+      length_ratio: 1.398
+      hyp_words: 12846
+      ref_words: 8526
+      year: 2023
+- model: KhayaAI/khaya-translate
+  name: Khaya AI
+  bleu: 14.97
+  chrf: 59.67
+  documents: 3
+  per_document:
+    2021_ewe:
+      bleu: 15.0
+      chrf: 59.44
+      length_ratio: 2.261
+      hyp_words: 8911
+      ref_words: 7453
+      year: 2021
+    2022_ewe:
+      bleu: 12.73
+      chrf: 58.74
+      length_ratio: 2.215
+      hyp_words: 9775
+      ref_words: 7727
+      year: 2022
+    2023_ewe:
+      bleu: 17.19
+      chrf: 60.83
+      length_ratio: 1.358
+      hyp_words: 10921
+      ref_words: 8526
+      year: 2023

@@ -1,0 +1,53 @@
+ɛm”
+Then:
+kontonkurowi ho ayaresa mu, ɛnna asraafoo dodoɔ a wɔkɔɔ ahomegyeɛ mu nyinaa wɔ Adwumayɛfoɔ Akatua ho nsɛm mu no;
+• COVID-19 yadeɛ kontonkurowi ho ɛka afoforɔ bi a ɛfa Adwadeɛ ne Dwumadie ahodoɔ bi ho; ɛnna
+• COVID-19 yadeɛ kontonkurowi ho mpontunneɛ ho dwumadie a yɛbɔɔ ho ɛka wɔ Mpontunnwuma ho ɛka mu no.
+6. Ɛhia sɛ yɛhyɛ no nso sɛ, Aban bɔɔ bosea a ɛduru Ghana sika sidi ɔpepepem aduanan ɛnan ne ɔpepem nkron (GH¢44.9 billion) de kaa sika dodoɔ a Aban nyaeɛ ne deɛ wɔde kyɛɛ yɛn a ɛyɛ Ghana sika sidi ɔpepepem aduonum enum ne ɔpepem baako (GH¢55.1 billion) no ho na ɔde tuu nneɛma ahodoɔ no ho anammɔn wɔ afe 2020 mu.
+Hyehyɛpono 2: Dwuma A Yɛde Sika Dii firi Ɔpɛpɔn kɔsi Ɔpɛnimma wɔ 2020 mu no ho Tɔfabɔ (Ghana Sika wɔ Ɔpepepem mu)
+
+Then the chart:
+In Excel charts embedded in Office/PDF, the text order in the PDF stream is typically:
+Y-Axis labels:
+Sikasɛm a ɛnsisi so
+Ɛka
+Dwuma afoforɔ a yɛde sika diiɛ
+Mpontunnwuma ho ɛka
+Sika a wɔde maa aban nnwuma
+Nsiho-tua
+Adwadeɛ ne akadeɛ ho sika
+Adwumayɛfoɔ akatua
+Sika dodoɔ a yɛde dii dwuma (ne ɛka...
+Then data labels:
+2.21
+0
+1.44
+1.44
+12.18
+12.08
+14.09
+9.33
+11.88
+11.81
+26.6
+26.27
+7.39
+7.74
+28.27
+27.06
+100.53
+97.74
+X-Axis labels:
+0
+20
+40
+60
+80
+100
+120
+Legend:
+Prov Outturn
+Revised Budget
+
+Wait! Look at the order in Excel charts:
+In Excel, horizontal bar charts store categories in order (either top-down or bottom-up), then

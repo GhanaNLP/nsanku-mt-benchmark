@@ -1,0 +1,39 @@
+{
+  "models": [
+    {
+      "id": "Google/gemini-3.8-flash",
+      "name": "Gemini 3.8 Flash",
+      "kind": "llm",
+      "codes": {
+        "twi_asante": "Asante Twi",
+        "dag": "Dagbani",
+        "ada": "Dangme",
+        "ewe": "Ewe",
+        "nzi": "Nzema",
+        "gjn": "Gonja",
+        "gaa": "Ga"
+      }
+    },
+    {
+      "id": "KhayaAI/khaya-translate",
+      "name": "Khaya AI",
+      "kind": "api",
+      "codes": {
+        "twi_asante": "tw",
+        "dag": "dag",
+        "ewe": "ee",
+        "gaa": "gaa"
+      }
+    },
+    {
+      "id": "Google/google-translate-free",
+      "name": "Google Translate (free endpoint)",
+      "kind": "api",
+      "codes": {
+        "twi_asante": "ak",
+        "ewe": "ee",
+        "gaa": "gaa"
+      }
+    }
+  ]
+}
