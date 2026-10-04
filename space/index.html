@@ -546,7 +546,10 @@ function initUI() {
 
 async function load() {
   for (const url of [SUMMARY_URL, 'bundled_data.json']) {
-    try { const r = await fetch(url); if (r.ok) { S = await r.json(); return; } } catch (e) { /* try the next source */ }
+    try {
+      const r = await fetch(url);
+      if (r.ok) { const d = await r.json(); if (d && d.datasets && d.languages) { S = d; return; } }  // stale/old format -> next source
+    } catch (e) { /* try the next source */ }
   }
   throw new Error('no data');
 }
