@@ -268,6 +268,106 @@
       "language": "Kasem",
       "reference_id": "udhr_eng",
       "dataset": "udhr"
+    },
+    {
+      "id": "jw_202601_twi_asante",
+      "year": 2026,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "source_pdf": "jw_202601_twi_asante.pdf",
+      "reference_id": "jw_202601_eng",
+      "reference_pdf": "jw_202601_eng.pdf",
+      "dataset": "jw"
+    },
+    {
+      "id": "jw_202601_fante",
+      "year": 2026,
+      "iso": "fante",
+      "language": "Fante",
+      "source_pdf": "jw_202601_fante.pdf",
+      "reference_id": "jw_202601_eng",
+      "reference_pdf": "jw_202601_eng.pdf",
+      "dataset": "jw"
+    },
+    {
+      "id": "jw_202601_ewe",
+      "year": 2026,
+      "iso": "ewe",
+      "language": "Ewe",
+      "source_pdf": "jw_202601_ewe.pdf",
+      "reference_id": "jw_202601_eng",
+      "reference_pdf": "jw_202601_eng.pdf",
+      "dataset": "jw"
+    },
+    {
+      "id": "jw_202601_gaa",
+      "year": 2026,
+      "iso": "gaa",
+      "language": "Ga",
+      "source_pdf": "jw_202601_gaa.pdf",
+      "reference_id": "jw_202601_eng",
+      "reference_pdf": "jw_202601_eng.pdf",
+      "dataset": "jw"
+    },
+    {
+      "id": "jw_202601_ada",
+      "year": 2026,
+      "iso": "ada",
+      "language": "Dangme",
+      "source_pdf": "jw_202601_ada.pdf",
+      "reference_id": "jw_202601_eng",
+      "reference_pdf": "jw_202601_eng.pdf",
+      "dataset": "jw"
+    },
+    {
+      "id": "jw_202601_nzi",
+      "year": 2026,
+      "iso": "nzi",
+      "language": "Nzema",
+      "source_pdf": "jw_202601_nzi.pdf",
+      "reference_id": "jw_202601_eng",
+      "reference_pdf": "jw_202601_eng.pdf",
+      "dataset": "jw"
+    },
+    {
+      "id": "jw_202601_dga",
+      "year": 2026,
+      "iso": "dga",
+      "language": "Dagaare",
+      "source_pdf": "jw_202601_dga.pdf",
+      "reference_id": "jw_202601_eng",
+      "reference_pdf": "jw_202601_eng.pdf",
+      "dataset": "jw"
+    },
+    {
+      "id": "jw_202601_gur",
+      "year": 2026,
+      "iso": "gur",
+      "language": "Frafra",
+      "source_pdf": "jw_202601_gur.pdf",
+      "reference_id": "jw_202601_eng",
+      "reference_pdf": "jw_202601_eng.pdf",
+      "dataset": "jw"
+    },
+    {
+      "id": "jw_202601_sfw",
+      "year": 2026,
+      "iso": "sfw",
+      "language": "Sehwi",
+      "source_pdf": "jw_202601_sfw.pdf",
+      "reference_id": "jw_202601_eng",
+      "reference_pdf": "jw_202601_eng.pdf",
+      "dataset": "jw"
+    },
+    {
+      "id": "jw_202601_aha",
+      "year": 2026,
+      "iso": "aha",
+      "language": "Ahanta",
+      "source_pdf": "jw_202601_aha.pdf",
+      "reference_id": "jw_202601_eng",
+      "reference_pdf": "jw_202601_eng.pdf",
+      "dataset": "jw"
     }
   ]
 }

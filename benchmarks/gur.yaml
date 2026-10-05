@@ -1,0 +1,148 @@
+iso: gur
+language: Frafra
+datasets:
+- jw
+benchmarks:
+- model: Google/gemini-3.8-flash
+  name: Gemini 3.8 Flash
+  track: llm
+  url: https://ai.google.dev/gemini-api/docs/models
+  directions:
+    to_en:
+      bleu: 39.16
+      chrf: 67.57
+      length_ratio: 0.99
+      documents: 1
+      per_dataset:
+        jw:
+          bleu: 39.16
+          chrf: 67.57
+          length_ratio: 0.99
+          documents: 1
+          per_document:
+            jw_202601_gur:
+              bleu: 39.16
+              chrf: 67.57
+              length_ratio: 0.988
+              hyp_words: 11524
+              ref_words: 11657
+              year: 2026
+    from_en:
+      bleu: 20.55
+      chrf: 58.42
+      length_ratio: 1.1
+      documents: 1
+      per_dataset:
+        jw:
+          bleu: 20.55
+          chrf: 58.42
+          length_ratio: 1.1
+          documents: 1
+          per_document:
+            jw_202601_gur:
+              bleu: 20.55
+              chrf: 58.42
+              length_ratio: 1.104
+              hyp_words: 14701
+              ref_words: 13245
+              year: 2026
+- model: KhayaAI/khaya-translate
+  name: Khaya AI
+  track: api
+  url: https://ghananlp.org/project/khaya-ai/
+  directions:
+    to_en:
+      bleu: 19.59
+      chrf: 53.1
+      length_ratio: 0.97
+      documents: 1
+      per_dataset:
+        jw:
+          bleu: 19.59
+          chrf: 53.1
+          length_ratio: 0.97
+          documents: 1
+          per_document:
+            jw_202601_gur:
+              bleu: 19.59
+              chrf: 53.1
+              length_ratio: 0.973
+              hyp_words: 11483
+              ref_words: 11657
+              year: 2026
+    from_en:
+      bleu: 11.02
+      chrf: 46.64
+      length_ratio: 1.01
+      documents: 1
+      per_dataset:
+        jw:
+          bleu: 11.02
+          chrf: 46.64
+          length_ratio: 1.01
+          documents: 1
+          per_document:
+            jw_202601_gur:
+              bleu: 11.02
+              chrf: 46.64
+              length_ratio: 1.01
+              hyp_words: 13793
+              ref_words: 13245
+              year: 2026
+missing:
+- model: Google/google-translate-free
+  name: Google Translate (free endpoint)
+  direction: to_en
+  reason: language not supported
+- model: Google/google-translate-free
+  name: Google Translate (free endpoint)
+  direction: from_en
+  reason: language not supported
+- model: facebook/nllb-200-distilled-600M
+  name: NLLB-200 600M (distilled)
+  direction: to_en
+  reason: language not supported
+- model: facebook/nllb-200-distilled-600M
+  name: NLLB-200 600M (distilled)
+  direction: from_en
+  reason: language not supported
+- model: facebook/nllb-200-1.3B
+  name: NLLB-200 1.3B
+  direction: to_en
+  reason: language not supported
+- model: facebook/nllb-200-1.3B
+  name: NLLB-200 1.3B
+  direction: from_en
+  reason: language not supported
+- model: facebook/nllb-200-3.3B
+  name: NLLB-200 3.3B
+  direction: to_en
+  reason: language not supported
+- model: facebook/nllb-200-3.3B
+  name: NLLB-200 3.3B
+  direction: from_en
+  reason: language not supported
+- model: mclanorjeff/NLLB-Twi-Human-Aligned
+  name: NLLB-Twi Human-Aligned (600M + LoRA)
+  direction: to_en
+  reason: language not supported
+- model: mclanorjeff/NLLB-Twi-Human-Aligned
+  name: NLLB-Twi Human-Aligned (600M + LoRA)
+  direction: from_en
+  reason: language not supported
+- model: google/madlad400-3b-mt
+  name: MADLAD-400 3B
+  direction: to_en
+  reason: language not supported
+- model: google/madlad400-3b-mt
+  name: MADLAD-400 3B
+  direction: from_en
+  reason: language not supported
+- model: google/madlad400-10b-mt
+  name: MADLAD-400 10B
+  direction: to_en
+  reason: language not supported
+- model: google/madlad400-10b-mt
+  name: MADLAD-400 10B
+  direction: from_en
+  reason: language not supported

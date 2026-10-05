@@ -31,6 +31,21 @@
       "github_path": "data/documents.json",
       "text_path": "data/text/",
       "info_doc": "docs/datasets.md#udhr-universal-declaration-of-human-rights"
+    },
+    {
+      "id": "jw",
+      "name": "Watchtower (Study Edition)",
+      "domain": "Religion / Community / Moral",
+      "publisher": "Watch Tower Bible and Tract Society",
+      "source_url": "https://www.jw.org/",
+      "description": "Monthly study edition of The Watchtower, human-translated into Ghanaian languages and English. Full issues evaluated at document level.",
+      "format": "PDF (extracted page by page with Gemini vision)",
+      "years": [
+        2026
+      ],
+      "github_path": "data/documents.json",
+      "text_path": "data/text/",
+      "info_doc": "docs/datasets.md#jw-watchtower-study-edition"
     }
   ]
 }

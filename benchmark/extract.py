@@ -34,10 +34,10 @@ Rules:
 _COMMENTARY = re.compile(r"^(here is|here's|sure|okay|the (page|text)|this page|i (cannot|can't))", re.I)
 
 
-def render_page(pdf_path, index, dpi=200):
+def render_page(pdf_path, index, dpi=150):
     with fitz.open(pdf_path) as doc:
         pix = doc[index].get_pixmap(dpi=dpi)
-        return pix.tobytes("png")
+        return pix.tobytes("jpeg")
 
 
 # Tried in order when the primary model returns nothing (RECITATION / PROHIBITED_CONTENT
@@ -48,10 +48,11 @@ FALLBACK_MODELS = ["gemini-3.7-flash", "gemini-3.5-flash", "gemini-2.5-flash"]
 def _gemini(png: bytes, model=None, retries=6):
     model = model or config.GEMINI_EXTRACT_MODEL
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
+    mime = "image/jpeg" if png.startswith(b"\xff\xd8\xff") else "image/png"
     body = {
         "contents": [{"role": "user", "parts": [
             {"text": PROMPT},
-            {"inline_data": {"mime_type": "image/png", "data": base64.b64encode(png).decode()}},
+            {"inline_data": {"mime_type": mime, "data": base64.b64encode(png).decode()}},
         ]}],
         "generationConfig": {"temperature": 0, "maxOutputTokens": 16384},
     }

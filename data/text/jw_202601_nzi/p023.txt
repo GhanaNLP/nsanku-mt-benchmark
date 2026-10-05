@@ -1,0 +1,32 @@
+nedeɛ ne, mɔɔ ɔdaye ti a ɛko-"
+line 2: "la ɛfa Gyihova agɔnwolɛ la anwo anyezɔlɛ"
+line 3: "kpole."
+Yes! "ɛko-" / "la" -> "ɛkola"!
+
+Paragraph 11:
+Line 1: "ɛzonle-" / "nlɛ" -> "ɛzonlenlɛ".
+Line 3: "ɛzoanvo-" / "lɛ" -> "ɛzoanvolɛ".
+Line 7: "gyi-" / "ma" -> "gyima".
+
+Paragraph 12:
+Line 1: "ɛhu-" / "lolɛ" -> "ɛhulolɛ".
+Line 7: "‘ɛhu-" / "lolɛ" -> "‘ɛhulolɛ".
+Last line: "mɔɔ ɛfa ɛyɛ" - wait, does paragraph 12 end with "mɔɔ ɛfa ɛyɛ"?
+Let's check the bottom of paragraph 12:
+"(Fel. 2:13) Kɔ zo di ngyehyeleɛ mɔɔ ɛfa ɛyɛ"
+Yes, it cuts off at the bottom of the page! The sentence continues on the next page!
+Wait, let's verify exact text:
+Line 8: "lolɛ ne yɛɛ anwosesebɛ ne na wɔahola wɔayɛ.’"
+Line 9: "(Fel. 2:13) Kɔ zo di ngyehyeleɛ mɔɔ ɛfa ɛyɛ"
+Yes, that's exactly what is printed.
+
+Now let's check Question 10:
+"10. Kɛ ɔkɛyɛ na ‘wɔadwenledwenle’ sunsum nu ninyɛne mɔɔ ɔwɔ kɛ ɛyɛ la anwo na wɔadu ‘ɛ nwo wɔamaa bɛ bɔkɔɔ’ ɛ? (1 Timote 4:13, 15)"
+De-hyphenated "bɔ-kɔɔ" -> "bɔkɔɔ".
+
+Now let's check Question 11-12:
+"11-12. Saa mɔdenle mɔɔ ɛbɔ wɔ nɔhalɛ ɛzonlenlɛ nu la ka aze mekɛ ekyii a, asoo ɔkile kɛ Nyamenle sunsum ne ɛvi ɛ nwo zo ɔ? Kilehile nu. (Eza nea nvoninli ne.)"
+Wait, is there any hyphen in 11-12?
+Let's check line breaks in Question 11-12:
+Line 1: "11-12. Saa mɔdenle mɔɔ ɛbɔ wɔ nɔhalɛ ɛzonlenlɛ nu la ka"
+Line 2: "aze mekɛ ekyii

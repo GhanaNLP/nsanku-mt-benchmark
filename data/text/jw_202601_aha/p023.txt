@@ -1,0 +1,48 @@
+lɔ":
+Let's compare the letter before 'l' with the 'ɔ' at the end:
+The letter at the end is 'ɔ'.
+The letter before 'l' is 'ʊ'!
+Wait, what about the letter after 'a'?
+It's 'v' or 'ʋ'?
+Wait! Look at 'v' vs 'w' vs 'ʊ':
+Wait, in "sʊ̃mavʊlɔ", is it 'v' or 'ʋ'?
+Wait, earlier I noticed: does Nzema Watchtower use 'ʋ' (Latin small letter v with hook, or upsilon)?
+Wait! In African languages:
+ɛ is U+025B (open e)
+ɔ is U+0254 (open o)
+ɩ is U+0269 (iota)
+ʊ is U+028A (upsilon)
+Does Nzema have 'ʋ' (U+028B, v with hook)?
+NO! Nzema does NOT have 'ʋ'! Ewe has 'ʋ' (voiced bilabial fricative), but Nzema is an Akan (Kwa) language! Nzema phonology has:
+/v/ which is standard English 'v'!
+Wait, why did I type "sʊ̃mavʋlɔ" earlier? Ah, because of the user prompt mentioning diacritics: "(ɛ ɔ ŋ ɖ ɣ ƒ etc.)"!
+In Nzema, the word for apostle is:
+"sɔ̃mavolɛ" in older orthography, and in current orthography:
+"sʊ̃mavɔlɔ" or "sʊ̃mavʊlɔ"?
+Wait, let's look at the letter between 'a' and 'l':
+Wait! Is it "sʊ̃mavɔlɔ"?
+Let's look at the letters:
+s
+ʊ̃
+m
+a
+v
+ʊ or ɔ?
+l
+ɔ
+Wait, let's look at the letter before 'l':
+Wait, look at line 1 of par 10:
+"10 Sʊ̃mavʊlɔ Pɔɔlʊ" or "10 Sʊ̃mavɔlɔ Pɔɔlʊ"?
+Let's look at that letter in "10 Sʊ̃mav...lɔ":
+Is it 'ɔ' or 'ʊ'?
+Look at the shape:
+Wait! It has a curved left side and open right? No, it's open at the top!
+Wait, look at line 1 of par 10:
+S - ʊ̃ - m - a - v - ʊ - l - ɔ
+Wait! The letter after 'a':
+Is it 'v'? Yes, diagonal down, diagonal up: 'v'.
+The letter after 'v':
+Wait! Is it 'ʊ' or 'ɔ'?
+Let's look at line 5 of par 11:
+"sʊ̃mavʊlɔ Pɔɔlʊ"
+Wait, could it

@@ -1,6 +1,7 @@
 iso: dga
 language: Dagaare
 datasets:
+- jw
 - udhr
 benchmarks:
 - model: Google/gemini-3.8-flash
@@ -9,11 +10,24 @@ benchmarks:
   url: https://ai.google.dev/gemini-api/docs/models
   directions:
     to_en:
-      bleu: 63.25
-      chrf: 79.22
-      length_ratio: 1.08
-      documents: 1
+      bleu: 47.79
+      chrf: 73.76
+      length_ratio: 1.11
+      documents: 2
       per_dataset:
+        jw:
+          bleu: 32.33
+          chrf: 68.3
+          length_ratio: 1.14
+          documents: 1
+          per_document:
+            jw_202601_dga:
+              bleu: 32.33
+              chrf: 68.3
+              length_ratio: 1.137
+              hyp_words: 13466
+              ref_words: 11657
+              year: 2026
         udhr:
           bleu: 63.25
           chrf: 79.22
@@ -28,11 +42,24 @@ benchmarks:
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 5.79
-      chrf: 40.3
-      length_ratio: 0.9
-      documents: 1
+      bleu: 13.36
+      chrf: 47.75
+      length_ratio: 0.93
+      documents: 2
       per_dataset:
+        jw:
+          bleu: 20.92
+          chrf: 55.21
+          length_ratio: 0.96
+          documents: 1
+          per_document:
+            jw_202601_dga:
+              bleu: 20.92
+              chrf: 55.21
+              length_ratio: 0.957
+              hyp_words: 15161
+              ref_words: 15791
+              year: 2026
         udhr:
           bleu: 5.79
           chrf: 40.3

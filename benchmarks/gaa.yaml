@@ -2,6 +2,7 @@ iso: gaa
 language: Ga
 datasets:
 - finance
+- jw
 - udhr
 benchmarks:
 - model: Google/gemini-3.8-flash
@@ -10,10 +11,10 @@ benchmarks:
   url: https://ai.google.dev/gemini-api/docs/models
   directions:
     to_en:
-      bleu: 59.67
-      chrf: 78.28
-      length_ratio: 1.01
-      documents: 3
+      bleu: 50.79
+      chrf: 75.51
+      length_ratio: 1.08
+      documents: 4
       per_dataset:
         finance:
           bleu: 37.47
@@ -35,6 +36,19 @@ benchmarks:
               hyp_words: 8357
               ref_words: 7727
               year: 2022
+        jw:
+          bleu: 33.03
+          chrf: 69.98
+          length_ratio: 1.22
+          documents: 1
+          per_document:
+            jw_202601_gaa:
+              bleu: 33.03
+              chrf: 69.98
+              length_ratio: 1.219
+              hyp_words: 14410
+              ref_words: 11657
+              year: 2026
         udhr:
           bleu: 81.87
           chrf: 87.68
@@ -49,10 +63,10 @@ benchmarks:
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 22.19
-      chrf: 60.05
-      length_ratio: 1.06
-      documents: 3
+      bleu: 25.2
+      chrf: 62.47
+      length_ratio: 1.01
+      documents: 4
       per_dataset:
         finance:
           bleu: 27.76
@@ -74,6 +88,19 @@ benchmarks:
               hyp_words: 10089
               ref_words: 9520
               year: 2022
+        jw:
+          bleu: 31.22
+          chrf: 67.3
+          length_ratio: 0.92
+          documents: 1
+          per_document:
+            jw_202601_gaa:
+              bleu: 31.22
+              chrf: 67.3
+              length_ratio: 0.916
+              hyp_words: 13769
+              ref_words: 14903
+              year: 2026
         udhr:
           bleu: 16.61
           chrf: 58.13
@@ -93,10 +120,10 @@ benchmarks:
   url: https://ghananlp.org/project/khaya-ai/
   directions:
     to_en:
-      bleu: 22.47
-      chrf: 57.01
-      length_ratio: 1.06
-      documents: 3
+      bleu: 22.76
+      chrf: 59.22
+      length_ratio: 1.1
+      documents: 4
       per_dataset:
         finance:
           bleu: 30.13
@@ -118,6 +145,19 @@ benchmarks:
               hyp_words: 8406
               ref_words: 7727
               year: 2022
+        jw:
+          bleu: 23.34
+          chrf: 63.65
+          length_ratio: 1.19
+          documents: 1
+          per_document:
+            jw_202601_gaa:
+              bleu: 23.34
+              chrf: 63.65
+              length_ratio: 1.185
+              hyp_words: 14030
+              ref_words: 11657
+              year: 2026
         udhr:
           bleu: 14.81
           chrf: 52.35
@@ -132,10 +172,10 @@ benchmarks:
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 21.24
-      chrf: 57.81
-      length_ratio: 1.07
-      documents: 3
+      bleu: 22.96
+      chrf: 59.66
+      length_ratio: 1.01
+      documents: 4
       per_dataset:
         finance:
           bleu: 24.59
@@ -157,6 +197,19 @@ benchmarks:
               hyp_words: 9839
               ref_words: 9520
               year: 2022
+        jw:
+          bleu: 26.38
+          chrf: 63.36
+          length_ratio: 0.9
+          documents: 1
+          per_document:
+            jw_202601_gaa:
+              bleu: 26.38
+              chrf: 63.36
+              length_ratio: 0.896
+              hyp_words: 13604
+              ref_words: 14903
+              year: 2026
         udhr:
           bleu: 17.9
           chrf: 56.79
@@ -176,10 +229,10 @@ benchmarks:
   url: https://translate.google.com/
   directions:
     to_en:
-      bleu: 39.7
-      chrf: 66.9
-      length_ratio: 0.98
-      documents: 3
+      bleu: 38.82
+      chrf: 68.21
+      length_ratio: 1.02
+      documents: 4
       per_dataset:
         finance:
           bleu: 35.69
@@ -201,6 +254,19 @@ benchmarks:
               hyp_words: 7979
               ref_words: 7727
               year: 2022
+        jw:
+          bleu: 37.05
+          chrf: 70.85
+          length_ratio: 1.1
+          documents: 1
+          per_document:
+            jw_202601_gaa:
+              bleu: 37.05
+              chrf: 70.85
+              length_ratio: 1.101
+              hyp_words: 12901
+              ref_words: 11657
+              year: 2026
         udhr:
           bleu: 43.72
           chrf: 67.68
@@ -215,10 +281,10 @@ benchmarks:
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 17.61
-      chrf: 57.63
-      length_ratio: 0.93
-      documents: 3
+      bleu: 18.44
+      chrf: 56.37
+      length_ratio: 0.96
+      documents: 4
       per_dataset:
         finance:
           bleu: 15.69
@@ -240,6 +306,19 @@ benchmarks:
               hyp_words: 9957
               ref_words: 9520
               year: 2022
+        jw:
+          bleu: 20.1
+          chrf: 53.84
+          length_ratio: 1.04
+          documents: 1
+          per_document:
+            jw_202601_gaa:
+              bleu: 20.1
+              chrf: 53.84
+              length_ratio: 1.038
+              hyp_words: 16313
+              ref_words: 14903
+              year: 2026
         udhr:
           bleu: 19.54
           chrf: 56.59

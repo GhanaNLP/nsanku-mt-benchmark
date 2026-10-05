@@ -2,6 +2,7 @@ iso: nzi
 language: Nzema
 datasets:
 - finance
+- jw
 - udhr
 benchmarks:
 - model: Google/gemini-3.8-flash
@@ -10,10 +11,10 @@ benchmarks:
   url: https://ai.google.dev/gemini-api/docs/models
   directions:
     to_en:
-      bleu: 56.47
-      chrf: 77.14
-      length_ratio: 1.08
-      documents: 4
+      bleu: 53.06
+      chrf: 75.73
+      length_ratio: 1.05
+      documents: 5
       per_dataset:
         finance:
           bleu: 30.07
@@ -42,6 +43,19 @@ benchmarks:
               hyp_words: 9755
               ref_words: 8526
               year: 2023
+        jw:
+          bleu: 46.23
+          chrf: 72.9
+          length_ratio: 0.98
+          documents: 1
+          per_document:
+            jw_202601_nzi:
+              bleu: 46.23
+              chrf: 72.9
+              length_ratio: 0.978
+              hyp_words: 11380
+              ref_words: 11657
+              year: 2026
         udhr:
           bleu: 82.88
           chrf: 88.04
@@ -56,10 +70,10 @@ benchmarks:
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 19.05
-      chrf: 60.03
-      length_ratio: 0.98
-      documents: 4
+      bleu: 25.3
+      chrf: 65.54
+      length_ratio: 1.02
+      documents: 5
       per_dataset:
         finance:
           bleu: 23.18
@@ -88,6 +102,19 @@ benchmarks:
               hyp_words: 11513
               ref_words: 11768
               year: 2023
+        jw:
+          bleu: 37.81
+          chrf: 76.55
+          length_ratio: 1.08
+          documents: 1
+          per_document:
+            jw_202601_nzi:
+              bleu: 37.81
+              chrf: 76.55
+              length_ratio: 1.076
+              hyp_words: 13746
+              ref_words: 12709
+              year: 2026
         udhr:
           bleu: 14.92
           chrf: 63.04
@@ -107,10 +134,10 @@ benchmarks:
   url: https://huggingface.co/google/madlad400-10b-mt
   directions:
     to_en:
-      bleu: 21.2
-      chrf: 57.44
-      length_ratio: 1.1
-      documents: 4
+      bleu: 24.64
+      chrf: 58.69
+      length_ratio: 1.04
+      documents: 5
       per_dataset:
         finance:
           bleu: 23.46
@@ -139,6 +166,19 @@ benchmarks:
               hyp_words: 10001
               ref_words: 8526
               year: 2023
+        jw:
+          bleu: 31.5
+          chrf: 61.19
+          length_ratio: 0.92
+          documents: 1
+          per_document:
+            jw_202601_nzi:
+              bleu: 31.5
+              chrf: 61.19
+              length_ratio: 0.917
+              hyp_words: 10597
+              ref_words: 11657
+              year: 2026
         udhr:
           bleu: 18.95
           chrf: 59.0
@@ -153,10 +193,10 @@ benchmarks:
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 7.57
-      chrf: 35.83
-      length_ratio: 1.44
-      documents: 4
+      bleu: 8.93
+      chrf: 39.77
+      length_ratio: 1.5
+      documents: 5
       per_dataset:
         finance:
           bleu: 14.09
@@ -185,6 +225,19 @@ benchmarks:
               hyp_words: 13333
               ref_words: 11768
               year: 2023
+        jw:
+          bleu: 11.64
+          chrf: 47.66
+          length_ratio: 1.62
+          documents: 1
+          per_document:
+            jw_202601_nzi:
+              bleu: 11.64
+              chrf: 47.66
+              length_ratio: 1.617
+              hyp_words: 21555
+              ref_words: 12709
+              year: 2026
         udhr:
           bleu: 1.05
           chrf: 33.0
@@ -204,10 +257,10 @@ benchmarks:
   url: https://huggingface.co/google/madlad400-3b-mt
   directions:
     to_en:
-      bleu: 12.74
-      chrf: 51.98
-      length_ratio: 1.52
-      documents: 4
+      bleu: 18.27
+      chrf: 54.99
+      length_ratio: 1.33
+      documents: 5
       per_dataset:
         finance:
           bleu: 16.42
@@ -236,6 +289,19 @@ benchmarks:
               hyp_words: 12173
               ref_words: 8526
               year: 2023
+        jw:
+          bleu: 29.33
+          chrf: 61.0
+          length_ratio: 0.96
+          documents: 1
+          per_document:
+            jw_202601_nzi:
+              bleu: 29.33
+              chrf: 61.0
+              length_ratio: 0.962
+              hyp_words: 11209
+              ref_words: 11657
+              year: 2026
         udhr:
           bleu: 9.05
           chrf: 51.62
@@ -250,10 +316,10 @@ benchmarks:
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 6.11
-      chrf: 33.12
-      length_ratio: 1.81
-      documents: 4
+      bleu: 7.67
+      chrf: 36.56
+      length_ratio: 1.76
+      documents: 5
       per_dataset:
         finance:
           bleu: 10.5
@@ -282,6 +348,19 @@ benchmarks:
               hyp_words: 21512
               ref_words: 11768
               year: 2023
+        jw:
+          bleu: 10.79
+          chrf: 43.46
+          length_ratio: 1.66
+          documents: 1
+          per_document:
+            jw_202601_nzi:
+              bleu: 10.79
+              chrf: 43.46
+              length_ratio: 1.663
+              hyp_words: 23038
+              ref_words: 12709
+              year: 2026
         udhr:
           bleu: 1.72
           chrf: 28.59

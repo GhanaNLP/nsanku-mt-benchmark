@@ -15,7 +15,10 @@
         "gjn": "Gonja",
         "gaa": "Ga",
         "dga": "Dagaare",
-        "xsm": "Kasem"
+        "xsm": "Kasem",
+        "gur": "Frafra",
+        "sfw": "Sehwi",
+        "aha": "Ahanta"
       },
       "url": "https://ai.google.dev/gemini-api/docs/models"
     },
@@ -28,7 +31,8 @@
         "fante": "fat",
         "dag": "dag",
         "ewe": "ee",
-        "gaa": "gaa"
+        "gaa": "gaa",
+        "gur": "gur"
       },
       "url": "https://ghananlp.org/project/khaya-ai/"
     },
