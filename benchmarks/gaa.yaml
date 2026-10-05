@@ -2,6 +2,7 @@ iso: gaa
 language: Ga
 datasets:
 - finance
+- udhr
 benchmarks:
 - model: Google/gemini-3.8-flash
   name: Gemini 3.8 Flash
@@ -9,10 +10,10 @@ benchmarks:
   url: https://ai.google.dev/gemini-api/docs/models
   directions:
     to_en:
-      bleu: 37.47
-      chrf: 68.88
-      length_ratio: 1.06
-      documents: 2
+      bleu: 59.67
+      chrf: 78.28
+      length_ratio: 1.01
+      documents: 3
       per_dataset:
         finance:
           bleu: 37.47
@@ -34,11 +35,24 @@ benchmarks:
               hyp_words: 8357
               ref_words: 7727
               year: 2022
+        udhr:
+          bleu: 81.87
+          chrf: 87.68
+          length_ratio: 0.96
+          documents: 1
+          per_document:
+            udhr_gaa:
+              bleu: 81.87
+              chrf: 87.68
+              length_ratio: 0.961
+              hyp_words: 1674
+              ref_words: 1747
+              year: 1948
     from_en:
-      bleu: 27.76
-      chrf: 61.97
+      bleu: 22.19
+      chrf: 60.05
       length_ratio: 1.06
-      documents: 2
+      documents: 3
       per_dataset:
         finance:
           bleu: 27.76
@@ -60,16 +74,29 @@ benchmarks:
               hyp_words: 10089
               ref_words: 9520
               year: 2022
+        udhr:
+          bleu: 16.61
+          chrf: 58.13
+          length_ratio: 1.06
+          documents: 1
+          per_document:
+            udhr_gaa:
+              bleu: 16.61
+              chrf: 58.13
+              length_ratio: 1.059
+              hyp_words: 2179
+              ref_words: 2039
+              year: 1948
 - model: KhayaAI/khaya-translate
   name: Khaya AI
   track: api
   url: https://ghananlp.org/project/khaya-ai/
   directions:
     to_en:
-      bleu: 30.13
-      chrf: 61.67
-      length_ratio: 1.08
-      documents: 2
+      bleu: 22.47
+      chrf: 57.01
+      length_ratio: 1.06
+      documents: 3
       per_dataset:
         finance:
           bleu: 30.13
@@ -91,11 +118,24 @@ benchmarks:
               hyp_words: 8406
               ref_words: 7727
               year: 2022
+        udhr:
+          bleu: 14.81
+          chrf: 52.35
+          length_ratio: 1.03
+          documents: 1
+          per_document:
+            udhr_gaa:
+              bleu: 14.81
+              chrf: 52.35
+              length_ratio: 1.034
+              hyp_words: 1785
+              ref_words: 1747
+              year: 1948
     from_en:
-      bleu: 24.59
-      chrf: 58.83
-      length_ratio: 1.12
-      documents: 2
+      bleu: 21.24
+      chrf: 57.81
+      length_ratio: 1.07
+      documents: 3
       per_dataset:
         finance:
           bleu: 24.59
@@ -117,16 +157,29 @@ benchmarks:
               hyp_words: 9839
               ref_words: 9520
               year: 2022
+        udhr:
+          bleu: 17.9
+          chrf: 56.79
+          length_ratio: 1.02
+          documents: 1
+          per_document:
+            udhr_gaa:
+              bleu: 17.9
+              chrf: 56.79
+              length_ratio: 1.02
+              hyp_words: 2107
+              ref_words: 2039
+              year: 1948
 - model: Google/google-translate-free
   name: Google Translate (free endpoint)
   track: api
   url: https://translate.google.com/
   directions:
     to_en:
-      bleu: 35.69
-      chrf: 66.11
-      length_ratio: 0.99
-      documents: 2
+      bleu: 39.7
+      chrf: 66.9
+      length_ratio: 0.98
+      documents: 3
       per_dataset:
         finance:
           bleu: 35.69
@@ -148,11 +201,24 @@ benchmarks:
               hyp_words: 7979
               ref_words: 7727
               year: 2022
+        udhr:
+          bleu: 43.72
+          chrf: 67.68
+          length_ratio: 0.97
+          documents: 1
+          per_document:
+            udhr_gaa:
+              bleu: 43.72
+              chrf: 67.68
+              length_ratio: 0.973
+              hyp_words: 1692
+              ref_words: 1747
+              year: 1948
     from_en:
-      bleu: 15.69
-      chrf: 58.67
-      length_ratio: 0.94
-      documents: 2
+      bleu: 17.61
+      chrf: 57.63
+      length_ratio: 0.93
+      documents: 3
       per_dataset:
         finance:
           bleu: 15.69
@@ -174,6 +240,19 @@ benchmarks:
               hyp_words: 9957
               ref_words: 9520
               year: 2022
+        udhr:
+          bleu: 19.54
+          chrf: 56.59
+          length_ratio: 0.91
+          documents: 1
+          per_document:
+            udhr_gaa:
+              bleu: 19.54
+              chrf: 56.59
+              length_ratio: 0.912
+              hyp_words: 1870
+              ref_words: 2039
+              year: 1948
 missing:
 - model: facebook/nllb-200-distilled-600M
   name: NLLB-200 600M (distilled)

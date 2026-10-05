@@ -2,6 +2,7 @@ iso: gjn
 language: Gonja
 datasets:
 - finance
+- udhr
 benchmarks:
 - model: Google/gemini-3.8-flash
   name: Gemini 3.8 Flash
@@ -9,10 +10,10 @@ benchmarks:
   url: https://ai.google.dev/gemini-api/docs/models
   directions:
     to_en:
-      bleu: 33.41
-      chrf: 67.52
-      length_ratio: 1.09
-      documents: 2
+      bleu: 41.6
+      chrf: 67.31
+      length_ratio: 1.02
+      documents: 3
       per_dataset:
         finance:
           bleu: 33.41
@@ -34,11 +35,24 @@ benchmarks:
               hyp_words: 9809
               ref_words: 8526
               year: 2023
+        udhr:
+          bleu: 49.79
+          chrf: 67.11
+          length_ratio: 0.95
+          documents: 1
+          per_document:
+            udhr_gjn:
+              bleu: 49.79
+              chrf: 67.11
+              length_ratio: 0.954
+              hyp_words: 1632
+              ref_words: 1747
+              year: 1948
     from_en:
-      bleu: 13.79
-      chrf: 42.45
-      length_ratio: 1.02
-      documents: 2
+      bleu: 7.71
+      chrf: 42.02
+      length_ratio: 1.16
+      documents: 3
       per_dataset:
         finance:
           bleu: 13.79
@@ -60,6 +74,19 @@ benchmarks:
               hyp_words: 12005
               ref_words: 12321
               year: 2023
+        udhr:
+          bleu: 1.64
+          chrf: 41.58
+          length_ratio: 1.3
+          documents: 1
+          per_document:
+            udhr_gjn:
+              bleu: 1.64
+              chrf: 41.58
+              length_ratio: 1.299
+              hyp_words: 2543
+              ref_words: 1937
+              year: 1948
 missing:
 - model: KhayaAI/khaya-translate
   name: Khaya AI

@@ -6,12 +6,16 @@
       "kind": "llm",
       "codes": {
         "twi_asante": "Asante Twi",
+        "twi_akuapem": "Akuapem Twi",
+        "fante": "Fante",
         "dag": "Dagbani",
         "ada": "Dangme",
         "ewe": "Ewe",
         "nzi": "Nzema",
         "gjn": "Gonja",
-        "gaa": "Ga"
+        "gaa": "Ga",
+        "dga": "Dagaare",
+        "xsm": "Kasem"
       },
       "url": "https://ai.google.dev/gemini-api/docs/models"
     },
@@ -21,6 +25,7 @@
       "kind": "api",
       "codes": {
         "twi_asante": "tw",
+        "fante": "fat",
         "dag": "dag",
         "ewe": "ee",
         "gaa": "gaa"

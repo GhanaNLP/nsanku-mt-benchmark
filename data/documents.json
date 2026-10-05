@@ -180,6 +180,94 @@
       "reference_id": "finance_2023_eng",
       "reference_pdf": "2023-Citizens-Budget_English.pdf",
       "dataset": "finance"
+    },
+    {
+      "id": "udhr_twi_asante",
+      "year": 1948,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "udhr_eng",
+      "dataset": "udhr"
+    },
+    {
+      "id": "udhr_twi_akuapem",
+      "year": 1948,
+      "iso": "twi_akuapem",
+      "language": "Akuapem Twi",
+      "reference_id": "udhr_eng",
+      "dataset": "udhr"
+    },
+    {
+      "id": "udhr_fante",
+      "year": 1948,
+      "iso": "fante",
+      "language": "Fante",
+      "reference_id": "udhr_eng",
+      "dataset": "udhr"
+    },
+    {
+      "id": "udhr_dag",
+      "year": 1948,
+      "iso": "dag",
+      "language": "Dagbani",
+      "reference_id": "udhr_eng",
+      "dataset": "udhr"
+    },
+    {
+      "id": "udhr_ada",
+      "year": 1948,
+      "iso": "ada",
+      "language": "Dangme",
+      "reference_id": "udhr_eng",
+      "dataset": "udhr"
+    },
+    {
+      "id": "udhr_ewe",
+      "year": 1948,
+      "iso": "ewe",
+      "language": "Ewe",
+      "reference_id": "udhr_eng",
+      "dataset": "udhr"
+    },
+    {
+      "id": "udhr_gaa",
+      "year": 1948,
+      "iso": "gaa",
+      "language": "Ga",
+      "reference_id": "udhr_eng",
+      "dataset": "udhr"
+    },
+    {
+      "id": "udhr_nzi",
+      "year": 1948,
+      "iso": "nzi",
+      "language": "Nzema",
+      "reference_id": "udhr_eng",
+      "dataset": "udhr"
+    },
+    {
+      "id": "udhr_gjn",
+      "year": 1948,
+      "iso": "gjn",
+      "language": "Gonja",
+      "reference_id": "udhr_eng",
+      "dataset": "udhr"
+    },
+    {
+      "id": "udhr_dga",
+      "year": 1948,
+      "iso": "dga",
+      "language": "Dagaare",
+      "reference_id": "udhr_eng",
+      "dataset": "udhr"
+    },
+    {
+      "id": "udhr_xsm",
+      "year": 1948,
+      "iso": "xsm",
+      "language": "Kasem",
+      "reference_id": "udhr_eng",
+      "dataset": "udhr"
     }
   ]
 }

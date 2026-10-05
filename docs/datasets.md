@@ -56,6 +56,46 @@ text layer. Pages that stay empty are blank or back covers. `run_extract.py` aud
 - Extraction is OCR by an LLM: small errors in the source text affect every system equally.
 - Budget vocabulary (macro-economics, programmes, acronyms) is narrow; this is one domain, not general-purpose MT.
 
+## udhr: Universal Declaration of Human Rights
+
+| | |
+|---|---|
+| Publisher | United Nations / Office of the High Commissioner for Human Rights (OHCHR) & Unicode Consortium |
+| Source | <https://www.ohchr.org/en/human-rights/universal-declaration/universal-declaration-human-rights> |
+| Domain | Legal / Human Rights charter |
+| Years | 1948 |
+| Pairs | 11 document pairs: a Ghanaian-language edition + the English reference edition |
+| Direction | Bidirectional (`to_en` and `from_en`) |
+
+The Universal Declaration of Human Rights (UDHR) is the most translated document in the world.
+The translations for Ghanaian languages were prepared by official linguistic bodies (including the Bureau of Ghana Languages) and published by the UN OHCHR and the Unicode UDHR project.
+Like the Citizens' Budget, whole documents are compared at corpus/document level (paragraphs are re-joined into full document text and scored with sacreBLEU and chrF against the English reference).
+
+| Language | iso | Words (approx) |
+|---|---|---|
+| Asante Twi | `twi_asante` | 2,098 |
+| Akuapem Twi | `twi_akuapem` | 1,890 |
+| Fante | `fante` | 1,944 |
+| Dagbani | `dag` | 2,174 |
+| Dangme | `ada` | 2,912 |
+| Ewe | `ewe` | 2,230 |
+| Ga | `gaa` | 2,039 |
+| Nzema | `nzi` | 2,176 |
+| Gonja | `gjn` | 1,937 |
+| Dagaare | `dga` | 2,582 |
+| Kasem | `xsm` | 2,171 |
+| *English (Reference)* | `eng` | 1,747 |
+
+### Where things are in this repo
+
+| What | Path |
+|---|---|
+| Preparation script | `scripts/prepare_udhr.py` |
+| Cached XML sources | `data/udhr_xml/` |
+| Document text | `data/text/udhr_<iso>/p001.txt` |
+| System translations | `translations/<model>/udhr_<iso>[.from_en].txt` |
+| Per-document scores | `translations/<model>/udhr_<iso>[.from_en].score.json` |
+
 ## Adding a dataset
 
 1. Add an entry to `data/datasets.json` (id, name, publisher, `source_url`, description, `info_doc`).

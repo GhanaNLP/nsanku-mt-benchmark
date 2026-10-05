@@ -2,6 +2,7 @@ iso: dag
 language: Dagbani
 datasets:
 - finance
+- udhr
 benchmarks:
 - model: Google/gemini-3.8-flash
   name: Gemini 3.8 Flash
@@ -9,10 +10,10 @@ benchmarks:
   url: https://ai.google.dev/gemini-api/docs/models
   directions:
     to_en:
-      bleu: 41.04
-      chrf: 71.24
-      length_ratio: 1.06
-      documents: 3
+      bleu: 27.3
+      chrf: 62.18
+      length_ratio: 1.17
+      documents: 4
       per_dataset:
         finance:
           bleu: 41.04
@@ -41,11 +42,24 @@ benchmarks:
               hyp_words: 9200
               ref_words: 8526
               year: 2023
+        udhr:
+          bleu: 13.57
+          chrf: 53.12
+          length_ratio: 1.28
+          documents: 1
+          per_document:
+            udhr_dag:
+              bleu: 13.57
+              chrf: 53.12
+              length_ratio: 1.282
+              hyp_words: 2204
+              ref_words: 1747
+              year: 1948
     from_en:
-      bleu: 27.67
-      chrf: 63.53
-      length_ratio: 1.01
-      documents: 3
+      bleu: 15.04
+      chrf: 55.19
+      length_ratio: 0.96
+      documents: 4
       per_dataset:
         finance:
           bleu: 27.67
@@ -74,16 +88,29 @@ benchmarks:
               hyp_words: 10326
               ref_words: 10243
               year: 2023
+        udhr:
+          bleu: 2.41
+          chrf: 46.84
+          length_ratio: 0.9
+          documents: 1
+          per_document:
+            udhr_dag:
+              bleu: 2.41
+              chrf: 46.84
+              length_ratio: 0.904
+              hyp_words: 1980
+              ref_words: 2174
+              year: 1948
 - model: KhayaAI/khaya-translate
   name: Khaya AI
   track: api
   url: https://ghananlp.org/project/khaya-ai/
   directions:
     to_en:
-      bleu: 19.75
-      chrf: 54.91
-      length_ratio: 1.46
-      documents: 3
+      bleu: 11.28
+      chrf: 48.47
+      length_ratio: 1.56
+      documents: 4
       per_dataset:
         finance:
           bleu: 19.75
@@ -112,11 +139,24 @@ benchmarks:
               hyp_words: 13423
               ref_words: 8526
               year: 2023
+        udhr:
+          bleu: 2.81
+          chrf: 42.04
+          length_ratio: 1.66
+          documents: 1
+          per_document:
+            udhr_dag:
+              bleu: 2.81
+              chrf: 42.04
+              length_ratio: 1.656
+              hyp_words: 2879
+              ref_words: 1747
+              year: 1948
     from_en:
-      bleu: 9.01
-      chrf: 47.72
-      length_ratio: 2.37
-      documents: 3
+      bleu: 5.74
+      chrf: 44.82
+      length_ratio: 1.54
+      documents: 4
       per_dataset:
         finance:
           bleu: 9.01
@@ -145,6 +185,19 @@ benchmarks:
               hyp_words: 10126
               ref_words: 10243
               year: 2023
+        udhr:
+          bleu: 2.47
+          chrf: 41.92
+          length_ratio: 0.71
+          documents: 1
+          per_document:
+            udhr_dag:
+              bleu: 2.47
+              chrf: 41.92
+              length_ratio: 0.713
+              hyp_words: 1591
+              ref_words: 2174
+              year: 1948
 missing:
 - model: Google/google-translate-free
   name: Google Translate (free endpoint)

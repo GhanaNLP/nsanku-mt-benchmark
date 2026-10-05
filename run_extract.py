@@ -29,6 +29,8 @@ def main():
 
     refs_done = set()
     for n, d in enumerate(docs, 1):
+        if not d.get("source_pdf"):
+            continue
         print(f"[{n}/{len(docs)}] {d['id']}", flush=True)
         extract.extract_document(d, args.workers, args.force)
         for page, why in extract.audit(d["id"], config.PDFS / d["source_pdf"]):

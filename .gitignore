@@ -5,8 +5,9 @@ venv/
 .env
 .DS_Store
 
-# Source PDFs are re-downloadable with scripts/fetch_documents.py
+# Source PDFs / XMLs are re-downloadable with scripts/
 data/pdfs/
+data/udhr_xml/
 # Page images / per-chunk caches (resumable, regenerated on demand)
 data/cache/
 

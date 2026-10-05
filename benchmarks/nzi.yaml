@@ -2,6 +2,7 @@ iso: nzi
 language: Nzema
 datasets:
 - finance
+- udhr
 benchmarks:
 - model: Google/gemini-3.8-flash
   name: Gemini 3.8 Flash
@@ -9,10 +10,10 @@ benchmarks:
   url: https://ai.google.dev/gemini-api/docs/models
   directions:
     to_en:
-      bleu: 30.07
-      chrf: 66.24
-      length_ratio: 1.17
-      documents: 3
+      bleu: 56.47
+      chrf: 77.14
+      length_ratio: 1.08
+      documents: 4
       per_dataset:
         finance:
           bleu: 30.07
@@ -41,11 +42,24 @@ benchmarks:
               hyp_words: 9755
               ref_words: 8526
               year: 2023
+        udhr:
+          bleu: 82.88
+          chrf: 88.04
+          length_ratio: 1.0
+          documents: 1
+          per_document:
+            udhr_nzi:
+              bleu: 82.88
+              chrf: 88.04
+              length_ratio: 0.998
+              hyp_words: 1735
+              ref_words: 1747
+              year: 1948
     from_en:
-      bleu: 23.18
-      chrf: 57.02
-      length_ratio: 0.95
-      documents: 3
+      bleu: 19.05
+      chrf: 60.03
+      length_ratio: 0.98
+      documents: 4
       per_dataset:
         finance:
           bleu: 23.18
@@ -74,16 +88,29 @@ benchmarks:
               hyp_words: 11513
               ref_words: 11768
               year: 2023
+        udhr:
+          bleu: 14.92
+          chrf: 63.04
+          length_ratio: 1.02
+          documents: 1
+          per_document:
+            udhr_nzi:
+              bleu: 14.92
+              chrf: 63.04
+              length_ratio: 1.023
+              hyp_words: 2219
+              ref_words: 2176
+              year: 1948
 - model: google/madlad400-10b-mt
   name: MADLAD-400 10B
   track: open
   url: https://huggingface.co/google/madlad400-10b-mt
   directions:
     to_en:
-      bleu: 23.46
-      chrf: 55.88
-      length_ratio: 1.16
-      documents: 3
+      bleu: 21.2
+      chrf: 57.44
+      length_ratio: 1.1
+      documents: 4
       per_dataset:
         finance:
           bleu: 23.46
@@ -112,11 +139,24 @@ benchmarks:
               hyp_words: 10001
               ref_words: 8526
               year: 2023
+        udhr:
+          bleu: 18.95
+          chrf: 59.0
+          length_ratio: 1.04
+          documents: 1
+          per_document:
+            udhr_nzi:
+              bleu: 18.95
+              chrf: 59.0
+              length_ratio: 1.041
+              hyp_words: 1821
+              ref_words: 1747
+              year: 1948
     from_en:
-      bleu: 14.09
-      chrf: 38.65
-      length_ratio: 1.17
-      documents: 3
+      bleu: 7.57
+      chrf: 35.83
+      length_ratio: 1.44
+      documents: 4
       per_dataset:
         finance:
           bleu: 14.09
@@ -145,16 +185,29 @@ benchmarks:
               hyp_words: 13333
               ref_words: 11768
               year: 2023
+        udhr:
+          bleu: 1.05
+          chrf: 33.0
+          length_ratio: 1.71
+          documents: 1
+          per_document:
+            udhr_nzi:
+              bleu: 1.05
+              chrf: 33.0
+              length_ratio: 1.713
+              hyp_words: 3734
+              ref_words: 2176
+              year: 1948
 - model: google/madlad400-3b-mt
   name: MADLAD-400 3B
   track: open
   url: https://huggingface.co/google/madlad400-3b-mt
   directions:
     to_en:
-      bleu: 16.42
-      chrf: 52.34
-      length_ratio: 1.64
-      documents: 3
+      bleu: 12.74
+      chrf: 51.98
+      length_ratio: 1.52
+      documents: 4
       per_dataset:
         finance:
           bleu: 16.42
@@ -183,11 +236,24 @@ benchmarks:
               hyp_words: 12173
               ref_words: 8526
               year: 2023
+        udhr:
+          bleu: 9.05
+          chrf: 51.62
+          length_ratio: 1.4
+          documents: 1
+          per_document:
+            udhr_nzi:
+              bleu: 9.05
+              chrf: 51.62
+              length_ratio: 1.399
+              hyp_words: 2425
+              ref_words: 1747
+              year: 1948
     from_en:
-      bleu: 10.5
-      chrf: 37.64
-      length_ratio: 1.61
-      documents: 3
+      bleu: 6.11
+      chrf: 33.12
+      length_ratio: 1.81
+      documents: 4
       per_dataset:
         finance:
           bleu: 10.5
@@ -216,6 +282,19 @@ benchmarks:
               hyp_words: 21512
               ref_words: 11768
               year: 2023
+        udhr:
+          bleu: 1.72
+          chrf: 28.59
+          length_ratio: 2.01
+          documents: 1
+          per_document:
+            udhr_nzi:
+              bleu: 1.72
+              chrf: 28.59
+              length_ratio: 2.009
+              hyp_words: 4495
+              ref_words: 2176
+              year: 1948
 missing:
 - model: KhayaAI/khaya-translate
   name: Khaya AI

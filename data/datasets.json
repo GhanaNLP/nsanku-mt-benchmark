@@ -16,6 +16,21 @@
       "github_path": "data/documents.json",
       "text_path": "data/text/",
       "info_doc": "docs/datasets.md#finance-citizens-budget"
+    },
+    {
+      "id": "udhr",
+      "name": "Universal Declaration of Human Rights",
+      "domain": "Law / Human Rights",
+      "publisher": "United Nations / OHCHR & Unicode Consortium",
+      "source_url": "https://www.ohchr.org/en/human-rights/universal-declaration/universal-declaration-human-rights",
+      "description": "Official human translations of the Universal Declaration of Human Rights (UDHR) across Ghanaian languages, evaluated at document/corpus level against the English reference charter.",
+      "format": "XML / Plain text (structured paragraphs from the UN OHCHR & Unicode UDHR project)",
+      "years": [
+        1948
+      ],
+      "github_path": "data/documents.json",
+      "text_path": "data/text/",
+      "info_doc": "docs/datasets.md#udhr-universal-declaration-of-human-rights"
     }
   ]
 }

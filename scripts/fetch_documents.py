@@ -8,7 +8,11 @@ root = Path(__file__).resolve().parent.parent
 BASES = ["https://mofep.gov.gh/sites/default/files/basic-page/", "https://mofep.gov.gh/sites/default/files/citizens-budget/"]
 (root / "data/pdfs").mkdir(parents=True, exist_ok=True)
 for d in json.load(open(root / "data/documents.json"))["documents"]:
-    for name in (d["source_pdf"], d["reference_pdf"]):
+    if not d.get("source_pdf"):
+        continue
+    for name in (d["source_pdf"], d.get("reference_pdf")):
+        if not name:
+            continue
         f = root / "data/pdfs" / name
         if f.exists():
             continue
