@@ -45,8 +45,8 @@ the English edition of the same year (`data/documents.json`).
    comparable). Paragraphs with no letters (numbers, dot leaders) pass through untouched. Results
    are cached per paragraph, so runs resume.
 3. **Score**: paragraph outputs are re-joined in order and scored as **one segment per document**
-   with sacreBLEU (BLEU, default 13a) and chrF against the English edition. Per-language score =
-   mean over its documents. Ranking uses BLEU.
+   with sacreBLEU's chrF2 against the English edition. Per-language score =
+   mean over its documents. chrF2 is the metric this benchmark reports and ranks by.
 4. **Publish**: `benchmarks/{iso}.yaml` + `benchmarks/summary.json` (results per dataset);
    translations in `translations/<model>/<doc>.txt`.
 
@@ -59,8 +59,10 @@ the English edition of the same year (`data/documents.json`).
 
 Each is scored and reported on its own (`directions.to_en` / `directions.from_en` in `benchmarks/*.yaml`; the
 leaderboard has a Direction selector, default English → X). **Directions are never averaged together.** Within a
-direction, a language's score is the mean of its per-dataset scores. BLEU on a low-resource *target* language is harsh, so
-read English → X through chrF and relative to other systems.
+direction, a language's score is the mean of its per-dataset scores. chrF2 is used rather than BLEU because it
+scores a low-resource *target* language less harshly: it works on characters, so rich morphology and spelling
+variation cost far less than they do for BLEU. Still read any single system relative to the others on the same
+language, and read the length ratio alongside.
 
 ## Systems
 
@@ -100,8 +102,8 @@ python3 run_benchmark.py --models gemini-3.8-flash --directions from_en        #
 
 ## Caveats
 
-- Document-level BLEU on a single long segment is a coarse number, and paragraph order/boundaries
-  must match between editions; use it for relative ranking, and read it with chrF and the length ratio.
+- Document-level chrF2 on a single long segment is a coarse number, and paragraph order/boundaries
+  must match between editions; use it for relative ranking, and read it with the length ratio.
 - The translated editions are human translations of the English edition, but layout differs
   (page counts differ), so pages are never aligned — only whole documents are compared.
 - The Citizens' Budget is public and may be in some systems' training data.

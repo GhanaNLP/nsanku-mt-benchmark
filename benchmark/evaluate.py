@@ -48,7 +48,7 @@ def run(doc_ids=None, model_ids=None, isos=None, directions=None):
                 (out / f"{stem}.txt").write_text("\n\n".join(hyp), encoding="utf-8")
                 res = metrics.score(hyp, ref)
                 (out / f"{stem}.score.json").write_text(json.dumps(res, indent=1))
-                print(f"   BLEU {res['bleu']}  chrF {res['chrf']}", flush=True)
+                print(f"   chrF {res['chrf']}  BLEU {res['bleu']}", flush=True)
     assemble()
 
 
@@ -91,7 +91,7 @@ def assemble():
     langs = {}
     for d in docs.values():
         langs.setdefault(d["iso"], {"language": d["language"], "datasets": set()})["datasets"].add(d["dataset"])
-    summary = {"metric": "document-level BLEU (sacreBLEU) + chrF; per direction, per dataset (no cross-direction mean)",
+    summary = {"metric": "document-level chrF2 (sacreBLEU); per direction, per dataset (no cross-direction mean)",
                "directions": LABELS,
                "datasets": {x["id"]: dict(x, n_documents=sum(d["dataset"] == x["id"] for d in docs.values()))
                             for x in config.datasets()},
@@ -110,7 +110,7 @@ def assemble():
                 continue
             rows.append({"model": m["id"], "name": m["name"], "track": m["kind"], "url": m.get("url"),
                          "directions": {dr: by_dir[dr] for dr in DIRECTIONS if dr in by_dir}})
-        rows.sort(key=lambda r: -(r["directions"].get("from_en") or r["directions"]["to_en"])["bleu"])
+        rows.sort(key=lambda r: -(r["directions"].get("from_en") or r["directions"]["to_en"])["chrf"])
         data = {"iso": iso, "language": info["language"], "datasets": sorted(info["datasets"]),
                 "benchmarks": rows, "missing": missing}
         (config.BENCHMARKS / f"{iso}.yaml").write_text(

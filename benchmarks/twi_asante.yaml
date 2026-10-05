@@ -315,6 +315,129 @@ benchmarks:
               hyp_words: 2003
               ref_words: 2098
               year: 1948
+- model: KhayaAI/khaya-translate
+  name: Khaya AI
+  track: api
+  url: https://ghananlp.org/project/khaya-ai/
+  directions:
+    to_en:
+      bleu: 18.85
+      chrf: 59.64
+      length_ratio: 1.26
+      documents: 5
+      per_dataset:
+        finance:
+          bleu: 20.24
+          chrf: 62.57
+          length_ratio: 1.28
+          documents: 3
+          per_document:
+            finance_2021_twi_asante:
+              bleu: 22.18
+              chrf: 62.68
+              length_ratio: 1.217
+              hyp_words: 10099
+              ref_words: 7453
+              year: 2021
+            finance_2022_twi_asante:
+              bleu: 17.57
+              chrf: 61.87
+              length_ratio: 1.284
+              hyp_words: 10946
+              ref_words: 7727
+              year: 2022
+            finance_2023_twi_asante:
+              bleu: 20.96
+              chrf: 63.17
+              length_ratio: 1.325
+              hyp_words: 11412
+              ref_words: 8526
+              year: 2023
+        jw:
+          bleu: 26.82
+          chrf: 63.19
+          length_ratio: 1.1
+          documents: 1
+          per_document:
+            jw_202601_twi_asante:
+              bleu: 26.82
+              chrf: 63.19
+              length_ratio: 1.097
+              hyp_words: 12773
+              ref_words: 11657
+              year: 2026
+        udhr:
+          bleu: 9.49
+          chrf: 53.16
+          length_ratio: 1.4
+          documents: 1
+          per_document:
+            udhr_twi_asante:
+              bleu: 9.49
+              chrf: 53.16
+              length_ratio: 1.398
+              hyp_words: 2164
+              ref_words: 1747
+              year: 1948
+    from_en:
+      bleu: 15.88
+      chrf: 54.62
+      length_ratio: 0.95
+      documents: 5
+      per_dataset:
+        finance:
+          bleu: 12.03
+          chrf: 47.74
+          length_ratio: 0.79
+          documents: 3
+          per_document:
+            finance_2021_twi_asante:
+              bleu: 11.43
+              chrf: 48.33
+              length_ratio: 0.787
+              hyp_words: 9760
+              ref_words: 11597
+              year: 2021
+            finance_2022_twi_asante:
+              bleu: 12.26
+              chrf: 46.57
+              length_ratio: 0.783
+              hyp_words: 10431
+              ref_words: 12941
+              year: 2022
+            finance_2023_twi_asante:
+              bleu: 12.41
+              chrf: 48.33
+              length_ratio: 0.813
+              hyp_words: 11393
+              ref_words: 13241
+              year: 2023
+        jw:
+          bleu: 27.55
+          chrf: 66.2
+          length_ratio: 1.02
+          documents: 1
+          per_document:
+            jw_202601_twi_asante:
+              bleu: 27.55
+              chrf: 66.2
+              length_ratio: 1.021
+              hyp_words: 14112
+              ref_words: 13335
+              year: 2026
+        udhr:
+          bleu: 8.06
+          chrf: 49.92
+          length_ratio: 1.03
+          documents: 1
+          per_document:
+            udhr_twi_asante:
+              bleu: 8.06
+              chrf: 49.92
+              length_ratio: 1.032
+              hyp_words: 2265
+              ref_words: 2098
+              year: 1948
 - model: facebook/nllb-200-3.3B
   name: NLLB-200 3.3B
   track: open
@@ -559,129 +682,6 @@ benchmarks:
               chrf: 50.47
               length_ratio: 0.956
               hyp_words: 2073
-              ref_words: 2098
-              year: 1948
-- model: KhayaAI/khaya-translate
-  name: Khaya AI
-  track: api
-  url: https://ghananlp.org/project/khaya-ai/
-  directions:
-    to_en:
-      bleu: 18.85
-      chrf: 59.64
-      length_ratio: 1.26
-      documents: 5
-      per_dataset:
-        finance:
-          bleu: 20.24
-          chrf: 62.57
-          length_ratio: 1.28
-          documents: 3
-          per_document:
-            finance_2021_twi_asante:
-              bleu: 22.18
-              chrf: 62.68
-              length_ratio: 1.217
-              hyp_words: 10099
-              ref_words: 7453
-              year: 2021
-            finance_2022_twi_asante:
-              bleu: 17.57
-              chrf: 61.87
-              length_ratio: 1.284
-              hyp_words: 10946
-              ref_words: 7727
-              year: 2022
-            finance_2023_twi_asante:
-              bleu: 20.96
-              chrf: 63.17
-              length_ratio: 1.325
-              hyp_words: 11412
-              ref_words: 8526
-              year: 2023
-        jw:
-          bleu: 26.82
-          chrf: 63.19
-          length_ratio: 1.1
-          documents: 1
-          per_document:
-            jw_202601_twi_asante:
-              bleu: 26.82
-              chrf: 63.19
-              length_ratio: 1.097
-              hyp_words: 12773
-              ref_words: 11657
-              year: 2026
-        udhr:
-          bleu: 9.49
-          chrf: 53.16
-          length_ratio: 1.4
-          documents: 1
-          per_document:
-            udhr_twi_asante:
-              bleu: 9.49
-              chrf: 53.16
-              length_ratio: 1.398
-              hyp_words: 2164
-              ref_words: 1747
-              year: 1948
-    from_en:
-      bleu: 15.88
-      chrf: 54.62
-      length_ratio: 0.95
-      documents: 5
-      per_dataset:
-        finance:
-          bleu: 12.03
-          chrf: 47.74
-          length_ratio: 0.79
-          documents: 3
-          per_document:
-            finance_2021_twi_asante:
-              bleu: 11.43
-              chrf: 48.33
-              length_ratio: 0.787
-              hyp_words: 9760
-              ref_words: 11597
-              year: 2021
-            finance_2022_twi_asante:
-              bleu: 12.26
-              chrf: 46.57
-              length_ratio: 0.783
-              hyp_words: 10431
-              ref_words: 12941
-              year: 2022
-            finance_2023_twi_asante:
-              bleu: 12.41
-              chrf: 48.33
-              length_ratio: 0.813
-              hyp_words: 11393
-              ref_words: 13241
-              year: 2023
-        jw:
-          bleu: 27.55
-          chrf: 66.2
-          length_ratio: 1.02
-          documents: 1
-          per_document:
-            jw_202601_twi_asante:
-              bleu: 27.55
-              chrf: 66.2
-              length_ratio: 1.021
-              hyp_words: 14112
-              ref_words: 13335
-              year: 2026
-        udhr:
-          bleu: 8.06
-          chrf: 49.92
-          length_ratio: 1.03
-          documents: 1
-          per_document:
-            udhr_twi_asante:
-              bleu: 8.06
-              chrf: 49.92
-              length_ratio: 1.032
-              hyp_words: 2265
               ref_words: 2098
               year: 1948
 - model: facebook/nllb-200-distilled-600M

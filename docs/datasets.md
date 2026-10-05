@@ -69,7 +69,7 @@ text layer. Pages that stay empty are blank or back covers. `run_extract.py` aud
 
 The Universal Declaration of Human Rights (UDHR) is the most translated document in the world.
 The translations for Ghanaian languages were prepared by official linguistic bodies (including the Bureau of Ghana Languages) and published by the UN OHCHR and the Unicode UDHR project.
-Like the Citizens' Budget, whole documents are compared at corpus/document level (paragraphs are re-joined into full document text and scored with sacreBLEU and chrF against the English reference).
+Like the Citizens' Budget, whole documents are compared at corpus/document level (paragraphs are re-joined into full document text and scored with sacreBLEU's chrF2 against the English reference).
 
 | Language | iso | Words (approx) |
 |---|---|---|
