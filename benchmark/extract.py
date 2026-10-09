@@ -54,7 +54,8 @@ def _gemini(png: bytes, model=None, retries=6):
             {"text": PROMPT},
             {"inline_data": {"mime_type": mime, "data": base64.b64encode(png).decode()}},
         ]}],
-        "generationConfig": {"temperature": 0, "maxOutputTokens": 16384},
+        "generationConfig": {"temperature": 0, "maxOutputTokens": 16384,
+                             "thinkingConfig": {"thinkingBudget": 0}},
     }
     for attempt in range(retries):
         try:
