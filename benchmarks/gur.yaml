@@ -9,42 +9,98 @@ benchmarks:
   url: https://ai.google.dev/gemini-api/docs/models
   directions:
     to_en:
-      bleu: 39.16
-      chrf: 67.57
-      length_ratio: 0.99
-      documents: 1
+      bleu: 33.12
+      chrf: 68.75
+      length_ratio: 1.09
+      documents: 5
       per_dataset:
         jw:
-          bleu: 39.16
-          chrf: 67.57
-          length_ratio: 0.99
-          documents: 1
+          bleu: 33.12
+          chrf: 68.75
+          length_ratio: 1.09
+          documents: 5
           per_document:
-            jw_202601_gur:
-              bleu: 39.16
-              chrf: 67.57
-              length_ratio: 0.988
-              hyp_words: 11524
-              ref_words: 11657
+            jw_202606_gur:
+              bleu: 31.2
+              chrf: 68.82
+              length_ratio: 1.114
+              hyp_words: 13674
+              ref_words: 12130
+              year: 2026
+            jw_202607_gur:
+              bleu: 35.16
+              chrf: 70.12
+              length_ratio: 1.073
+              hyp_words: 12877
+              ref_words: 11919
+              year: 2026
+            jw_202608_gur:
+              bleu: 31.96
+              chrf: 67.51
+              length_ratio: 1.102
+              hyp_words: 12832
+              ref_words: 11499
+              year: 2026
+            jw_202609_gur:
+              bleu: 34.76
+              chrf: 68.66
+              length_ratio: 1.084
+              hyp_words: 12960
+              ref_words: 11759
+              year: 2026
+            jw_202610_gur:
+              bleu: 32.54
+              chrf: 68.64
+              length_ratio: 1.088
+              hyp_words: 13031
+              ref_words: 11842
               year: 2026
     from_en:
-      bleu: 20.55
-      chrf: 58.42
-      length_ratio: 1.1
-      documents: 1
+      bleu: 19.99
+      chrf: 56.99
+      length_ratio: 0.99
+      documents: 5
       per_dataset:
         jw:
-          bleu: 20.55
-          chrf: 58.42
-          length_ratio: 1.1
-          documents: 1
+          bleu: 19.99
+          chrf: 56.99
+          length_ratio: 0.99
+          documents: 5
           per_document:
-            jw_202601_gur:
-              bleu: 20.55
-              chrf: 58.42
-              length_ratio: 1.104
-              hyp_words: 14701
-              ref_words: 13245
+            jw_202606_gur:
+              bleu: 19.28
+              chrf: 56.85
+              length_ratio: 0.969
+              hyp_words: 15175
+              ref_words: 15710
+              year: 2026
+            jw_202607_gur:
+              bleu: 19.55
+              chrf: 57.63
+              length_ratio: 1.029
+              hyp_words: 15200
+              ref_words: 14748
+              year: 2026
+            jw_202608_gur:
+              bleu: 20.66
+              chrf: 57.18
+              length_ratio: 0.985
+              hyp_words: 14699
+              ref_words: 14889
+              year: 2026
+            jw_202609_gur:
+              bleu: 20.93
+              chrf: 56.94
+              length_ratio: 0.975
+              hyp_words: 14420
+              ref_words: 14814
+              year: 2026
+            jw_202610_gur:
+              bleu: 19.53
+              chrf: 56.33
+              length_ratio: 0.988
+              hyp_words: 15029
+              ref_words: 15203
               year: 2026
 - model: KhayaAI/khaya-translate
   name: Khaya AI
@@ -52,42 +108,98 @@ benchmarks:
   url: https://ghananlp.org/project/khaya-ai/
   directions:
     to_en:
-      bleu: 19.59
-      chrf: 53.1
-      length_ratio: 0.97
-      documents: 1
+      bleu: 16.91
+      chrf: 56.47
+      length_ratio: 1.14
+      documents: 5
       per_dataset:
         jw:
-          bleu: 19.59
-          chrf: 53.1
-          length_ratio: 0.97
-          documents: 1
+          bleu: 16.91
+          chrf: 56.47
+          length_ratio: 1.14
+          documents: 5
           per_document:
-            jw_202601_gur:
-              bleu: 19.59
-              chrf: 53.1
-              length_ratio: 0.973
-              hyp_words: 11483
-              ref_words: 11657
+            jw_202606_gur:
+              bleu: 16.71
+              chrf: 56.9
+              length_ratio: 1.146
+              hyp_words: 14197
+              ref_words: 12130
+              year: 2026
+            jw_202607_gur:
+              bleu: 16.33
+              chrf: 55.53
+              length_ratio: 1.12
+              hyp_words: 13703
+              ref_words: 11919
+              year: 2026
+            jw_202608_gur:
+              bleu: 17.5
+              chrf: 56.3
+              length_ratio: 1.148
+              hyp_words: 13568
+              ref_words: 11499
+              year: 2026
+            jw_202609_gur:
+              bleu: 18.1
+              chrf: 57.15
+              length_ratio: 1.132
+              hyp_words: 13636
+              ref_words: 11759
+              year: 2026
+            jw_202610_gur:
+              bleu: 15.92
+              chrf: 56.45
+              length_ratio: 1.16
+              hyp_words: 13977
+              ref_words: 11842
               year: 2026
     from_en:
-      bleu: 11.02
-      chrf: 46.64
-      length_ratio: 1.01
-      documents: 1
+      bleu: 9.75
+      chrf: 45.58
+      length_ratio: 0.92
+      documents: 5
       per_dataset:
         jw:
-          bleu: 11.02
-          chrf: 46.64
-          length_ratio: 1.01
-          documents: 1
+          bleu: 9.75
+          chrf: 45.58
+          length_ratio: 0.92
+          documents: 5
           per_document:
-            jw_202601_gur:
-              bleu: 11.02
-              chrf: 46.64
-              length_ratio: 1.01
-              hyp_words: 13793
-              ref_words: 13245
+            jw_202606_gur:
+              bleu: 9.22
+              chrf: 45.02
+              length_ratio: 0.901
+              hyp_words: 14397
+              ref_words: 15710
+              year: 2026
+            jw_202607_gur:
+              bleu: 9.43
+              chrf: 45.56
+              length_ratio: 0.95
+              hyp_words: 14600
+              ref_words: 14748
+              year: 2026
+            jw_202608_gur:
+              bleu: 10.78
+              chrf: 46.48
+              length_ratio: 0.913
+              hyp_words: 13869
+              ref_words: 14889
+              year: 2026
+            jw_202609_gur:
+              bleu: 9.96
+              chrf: 44.68
+              length_ratio: 0.921
+              hyp_words: 14131
+              ref_words: 14814
+              year: 2026
+            jw_202610_gur:
+              bleu: 9.35
+              chrf: 46.16
+              length_ratio: 0.905
+              hyp_words: 14116
+              ref_words: 15203
               year: 2026
 missing:
 - model: Google/google-translate-free

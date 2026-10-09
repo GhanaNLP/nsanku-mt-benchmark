@@ -10,67 +10,123 @@ benchmarks:
   url: https://ai.google.dev/gemini-api/docs/models
   directions:
     to_en:
-      bleu: 57.55
-      chrf: 78.73
-      length_ratio: 1.05
-      documents: 2
+      bleu: 55.94
+      chrf: 79.35
+      length_ratio: 1.11
+      documents: 6
       per_dataset:
         jw:
-          bleu: 35.06
-          chrf: 70.56
-          length_ratio: 1.16
-          documents: 1
+          bleu: 30.94
+          chrf: 70.86
+          length_ratio: 1.24
+          documents: 5
           per_document:
-            jw_202601_fante:
-              bleu: 35.06
-              chrf: 70.56
-              length_ratio: 1.158
-              hyp_words: 13701
-              ref_words: 11657
+            jw_202606_fante:
+              bleu: 29.58
+              chrf: 70.38
+              length_ratio: 1.23
+              hyp_words: 15155
+              ref_words: 12130
+              year: 2026
+            jw_202607_fante:
+              bleu: 32.54
+              chrf: 72.07
+              length_ratio: 1.214
+              hyp_words: 14657
+              ref_words: 11919
+              year: 2026
+            jw_202608_fante:
+              bleu: 30.91
+              chrf: 70.21
+              length_ratio: 1.249
+              hyp_words: 14713
+              ref_words: 11499
+              year: 2026
+            jw_202609_fante:
+              bleu: 32.27
+              chrf: 71.93
+              length_ratio: 1.284
+              hyp_words: 15618
+              ref_words: 11759
+              year: 2026
+            jw_202610_fante:
+              bleu: 29.4
+              chrf: 69.73
+              length_ratio: 1.227
+              hyp_words: 14789
+              ref_words: 11842
               year: 2026
         udhr:
-          bleu: 80.04
-          chrf: 86.91
-          length_ratio: 0.95
+          bleu: 80.94
+          chrf: 87.85
+          length_ratio: 0.99
           documents: 1
           per_document:
             udhr_fante:
-              bleu: 80.04
-              chrf: 86.91
-              length_ratio: 0.949
-              hyp_words: 1657
+              bleu: 80.94
+              chrf: 87.85
+              length_ratio: 0.992
+              hyp_words: 1734
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 19.78
-      chrf: 61.41
+      bleu: 18.66
+      chrf: 61.25
       length_ratio: 0.99
-      documents: 2
+      documents: 6
       per_dataset:
         jw:
-          bleu: 27.82
-          chrf: 65.41
-          length_ratio: 0.93
-          documents: 1
+          bleu: 25.88
+          chrf: 64.8
+          length_ratio: 0.91
+          documents: 5
           per_document:
-            jw_202601_fante:
-              bleu: 27.82
-              chrf: 65.41
-              length_ratio: 0.929
-              hyp_words: 13445
-              ref_words: 14464
+            jw_202606_fante:
+              bleu: 24.89
+              chrf: 64.89
+              length_ratio: 0.921
+              hyp_words: 14260
+              ref_words: 15459
+              year: 2026
+            jw_202607_fante:
+              bleu: 26.01
+              chrf: 65.72
+              length_ratio: 0.916
+              hyp_words: 13733
+              ref_words: 15015
+              year: 2026
+            jw_202608_fante:
+              bleu: 27.03
+              chrf: 65.12
+              length_ratio: 0.915
+              hyp_words: 13620
+              ref_words: 14947
+              year: 2026
+            jw_202609_fante:
+              bleu: 26.34
+              chrf: 63.15
+              length_ratio: 0.86
+              hyp_words: 13612
+              ref_words: 16092
+              year: 2026
+            jw_202610_fante:
+              bleu: 25.11
+              chrf: 65.14
+              length_ratio: 0.926
+              hyp_words: 13905
+              ref_words: 15017
               year: 2026
         udhr:
-          bleu: 11.74
-          chrf: 57.41
-          length_ratio: 1.05
+          bleu: 11.43
+          chrf: 57.7
+          length_ratio: 1.07
           documents: 1
           per_document:
             udhr_fante:
-              bleu: 11.74
-              chrf: 57.41
-              length_ratio: 1.05
-              hyp_words: 2040
+              bleu: 11.43
+              chrf: 57.7
+              length_ratio: 1.07
+              hyp_words: 2084
               ref_words: 1944
               year: 1948
 - model: KhayaAI/khaya-translate
@@ -79,23 +135,51 @@ benchmarks:
   url: https://ghananlp.org/project/khaya-ai/
   directions:
     to_en:
-      bleu: 16.13
-      chrf: 57.02
-      length_ratio: 1.15
-      documents: 2
+      bleu: 15.21
+      chrf: 57.5
+      length_ratio: 1.18
+      documents: 6
       per_dataset:
         jw:
-          bleu: 18.63
-          chrf: 61.16
-          length_ratio: 1.28
-          documents: 1
+          bleu: 16.78
+          chrf: 62.13
+          length_ratio: 1.33
+          documents: 5
           per_document:
-            jw_202601_fante:
-              bleu: 18.63
-              chrf: 61.16
-              length_ratio: 1.282
-              hyp_words: 15799
-              ref_words: 11657
+            jw_202606_fante:
+              bleu: 16.59
+              chrf: 62.36
+              length_ratio: 1.293
+              hyp_words: 16374
+              ref_words: 12130
+              year: 2026
+            jw_202607_fante:
+              bleu: 17.7
+              chrf: 62.27
+              length_ratio: 1.302
+              hyp_words: 16214
+              ref_words: 11919
+              year: 2026
+            jw_202608_fante:
+              bleu: 17.33
+              chrf: 61.92
+              length_ratio: 1.28
+              hyp_words: 15446
+              ref_words: 11499
+              year: 2026
+            jw_202609_fante:
+              bleu: 17.57
+              chrf: 62.64
+              length_ratio: 1.371
+              hyp_words: 17195
+              ref_words: 11759
+              year: 2026
+            jw_202610_fante:
+              bleu: 14.7
+              chrf: 61.46
+              length_ratio: 1.388
+              hyp_words: 17411
+              ref_words: 11842
               year: 2026
         udhr:
           bleu: 13.63
@@ -111,23 +195,51 @@ benchmarks:
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 15.1
-      chrf: 55.67
-      length_ratio: 0.92
-      documents: 2
+      bleu: 14.17
+      chrf: 55.23
+      length_ratio: 0.9
+      documents: 6
       per_dataset:
         jw:
-          bleu: 19.46
-          chrf: 57.02
-          length_ratio: 0.88
-          documents: 1
+          bleu: 17.6
+          chrf: 56.14
+          length_ratio: 0.85
+          documents: 5
           per_document:
-            jw_202601_fante:
-              bleu: 19.46
-              chrf: 57.02
-              length_ratio: 0.876
-              hyp_words: 12697
-              ref_words: 14464
+            jw_202606_fante:
+              bleu: 17.32
+              chrf: 57.42
+              length_ratio: 0.863
+              hyp_words: 13327
+              ref_words: 15459
+              year: 2026
+            jw_202607_fante:
+              bleu: 17.72
+              chrf: 56.45
+              length_ratio: 0.852
+              hyp_words: 12725
+              ref_words: 15015
+              year: 2026
+            jw_202608_fante:
+              bleu: 18.08
+              chrf: 56.11
+              length_ratio: 0.864
+              hyp_words: 12803
+              ref_words: 14947
+              year: 2026
+            jw_202609_fante:
+              bleu: 17.39
+              chrf: 53.63
+              length_ratio: 0.812
+              hyp_words: 12909
+              ref_words: 16092
+              year: 2026
+            jw_202610_fante:
+              bleu: 17.48
+              chrf: 57.08
+              length_ratio: 0.865
+              hyp_words: 12923
+              ref_words: 15017
               year: 2026
         udhr:
           bleu: 10.74

@@ -11,121 +11,177 @@ benchmarks:
   url: https://ai.google.dev/gemini-api/docs/models
   directions:
     to_en:
-      bleu: 32.42
-      chrf: 68.52
-      length_ratio: 1.22
-      documents: 5
+      bleu: 34.66
+      chrf: 70.38
+      length_ratio: 1.19
+      documents: 9
       per_dataset:
         finance:
-          bleu: 27.22
-          chrf: 68.16
-          length_ratio: 1.31
+          bleu: 28.86
+          chrf: 68.72
+          length_ratio: 1.23
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 24.25
-              chrf: 66.42
-              length_ratio: 1.378
-              hyp_words: 11011
+              bleu: 27.85
+              chrf: 67.55
+              length_ratio: 1.196
+              hyp_words: 9876
               ref_words: 7453
               year: 2021
             finance_2022_twi_asante:
-              bleu: 27.53
-              chrf: 68.68
-              length_ratio: 1.264
-              hyp_words: 10550
+              bleu: 28.02
+              chrf: 69.27
+              length_ratio: 1.253
+              hyp_words: 10464
               ref_words: 7727
               year: 2022
             finance_2023_twi_asante:
-              bleu: 29.87
-              chrf: 69.39
-              length_ratio: 1.287
-              hyp_words: 11030
+              bleu: 30.7
+              chrf: 69.33
+              length_ratio: 1.248
+              hyp_words: 10639
               ref_words: 8526
               year: 2023
         jw:
-          bleu: 36.13
-          chrf: 70.32
-          length_ratio: 1.13
-          documents: 1
+          bleu: 33.83
+          chrf: 72.39
+          length_ratio: 1.18
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 36.13
-              chrf: 70.32
-              length_ratio: 1.13
-              hyp_words: 13232
-              ref_words: 11657
+            jw_202606_twi_asante:
+              bleu: 33.46
+              chrf: 72.58
+              length_ratio: 1.164
+              hyp_words: 14220
+              ref_words: 12130
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 33.48
+              chrf: 72.76
+              length_ratio: 1.212
+              hyp_words: 14573
+              ref_words: 11919
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 34.31
+              chrf: 71.97
+              length_ratio: 1.189
+              hyp_words: 13847
+              ref_words: 11499
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 35.69
+              chrf: 73.08
+              length_ratio: 1.17
+              hyp_words: 14043
+              ref_words: 11759
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 32.23
+              chrf: 71.55
+              length_ratio: 1.189
+              hyp_words: 14245
+              ref_words: 11842
               year: 2026
         udhr:
-          bleu: 33.91
-          chrf: 67.09
-          length_ratio: 1.21
+          bleu: 41.28
+          chrf: 70.04
+          length_ratio: 1.15
           documents: 1
           per_document:
             udhr_twi_asante:
-              bleu: 33.91
-              chrf: 67.09
-              length_ratio: 1.21
-              hyp_words: 2035
+              bleu: 41.28
+              chrf: 70.04
+              length_ratio: 1.152
+              hyp_words: 1964
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 21.11
-      chrf: 59.54
-      length_ratio: 0.93
-      documents: 5
+      bleu: 20.43
+      chrf: 59.41
+      length_ratio: 0.91
+      documents: 9
       per_dataset:
         finance:
-          bleu: 19.92
+          bleu: 19.99
           chrf: 52.5
           length_ratio: 0.85
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 20.76
-              chrf: 52.78
-              length_ratio: 0.872
-              hyp_words: 9395
+              bleu: 21.05
+              chrf: 53.28
+              length_ratio: 0.878
+              hyp_words: 9481
               ref_words: 11597
               year: 2021
             finance_2022_twi_asante:
-              bleu: 17.54
-              chrf: 50.32
-              length_ratio: 0.83
-              hyp_words: 10134
+              bleu: 17.73
+              chrf: 50.3
+              length_ratio: 0.831
+              hyp_words: 10171
               ref_words: 12941
               year: 2022
             finance_2023_twi_asante:
-              bleu: 21.47
-              chrf: 54.4
-              length_ratio: 0.858
-              hyp_words: 11474
+              bleu: 21.2
+              chrf: 53.93
+              length_ratio: 0.849
+              hyp_words: 11374
               ref_words: 13241
               year: 2023
         jw:
-          bleu: 34.47
-          chrf: 70.24
-          length_ratio: 0.98
-          documents: 1
+          bleu: 31.14
+          chrf: 69.28
+          length_ratio: 0.94
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 34.47
-              chrf: 70.24
-              length_ratio: 0.978
-              hyp_words: 13365
-              ref_words: 13335
+            jw_202606_twi_asante:
+              bleu: 31.89
+              chrf: 70.67
+              length_ratio: 0.957
+              hyp_words: 14227
+              ref_words: 14580
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 29.67
+              chrf: 68.16
+              length_ratio: 0.911
+              hyp_words: 13567
+              ref_words: 14637
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 32.74
+              chrf: 70.11
+              length_ratio: 0.95
+              hyp_words: 13567
+              ref_words: 14064
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 32.29
+              chrf: 69.34
+              length_ratio: 0.937
+              hyp_words: 13510
+              ref_words: 14226
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 29.09
+              chrf: 68.12
+              length_ratio: 0.922
+              hyp_words: 13865
+              ref_words: 14754
               year: 2026
         udhr:
-          bleu: 8.93
-          chrf: 55.87
+          bleu: 10.15
+          chrf: 56.44
           length_ratio: 0.95
           documents: 1
           per_document:
             udhr_twi_asante:
-              bleu: 8.93
-              chrf: 55.87
-              length_ratio: 0.951
-              hyp_words: 2044
+              bleu: 10.15
+              chrf: 56.44
+              length_ratio: 0.949
+              hyp_words: 2040
               ref_words: 2098
               year: 1948
 - model: mclanorjeff/NLLB-Twi-Human-Aligned
@@ -134,62 +190,90 @@ benchmarks:
   url: https://huggingface.co/mclanorjeff/NLLB-Twi-Human-Aligned
   directions:
     to_en:
-      bleu: 20.6
-      chrf: 57.81
-      length_ratio: 1.09
-      documents: 5
+      bleu: 20.39
+      chrf: 58.86
+      length_ratio: 1.1
+      documents: 9
       per_dataset:
         finance:
-          bleu: 22.29
-          chrf: 60.97
-          length_ratio: 1.17
+          bleu: 22.4
+          chrf: 60.91
+          length_ratio: 1.16
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 22.2
-              chrf: 60.44
-              length_ratio: 1.153
-              hyp_words: 9459
+              bleu: 22.28
+              chrf: 60.4
+              length_ratio: 1.147
+              hyp_words: 9398
               ref_words: 7453
               year: 2021
             finance_2022_twi_asante:
-              bleu: 19.56
+              bleu: 19.73
               chrf: 60.4
-              length_ratio: 1.175
-              hyp_words: 10246
+              length_ratio: 1.165
+              hyp_words: 10160
               ref_words: 7727
               year: 2022
             finance_2023_twi_asante:
-              bleu: 25.11
-              chrf: 62.08
-              length_ratio: 1.178
-              hyp_words: 10263
+              bleu: 25.2
+              chrf: 61.93
+              length_ratio: 1.174
+              hyp_words: 10222
               ref_words: 8526
               year: 2023
         jw:
-          bleu: 30.63
-          chrf: 62.02
-          length_ratio: 0.96
-          documents: 1
+          bleu: 29.84
+          chrf: 65.17
+          length_ratio: 1.01
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 30.63
-              chrf: 62.02
-              length_ratio: 0.956
-              hyp_words: 11264
-              ref_words: 11657
+            jw_202606_twi_asante:
+              bleu: 29.68
+              chrf: 64.47
+              length_ratio: 0.995
+              hyp_words: 12204
+              ref_words: 12130
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 29.45
+              chrf: 65.5
+              length_ratio: 1.006
+              hyp_words: 12164
+              ref_words: 11919
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 30.79
+              chrf: 65.34
+              length_ratio: 1.023
+              hyp_words: 11998
+              ref_words: 11499
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 31.95
+              chrf: 66.32
+              length_ratio: 0.992
+              hyp_words: 11968
+              ref_words: 11759
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 27.32
+              chrf: 64.22
+              length_ratio: 1.014
+              hyp_words: 12212
+              ref_words: 11842
               year: 2026
         udhr:
-          bleu: 8.88
-          chrf: 50.45
-          length_ratio: 1.14
+          bleu: 8.92
+          chrf: 50.51
+          length_ratio: 1.13
           documents: 1
           per_document:
             udhr_twi_asante:
-              bleu: 8.88
-              chrf: 50.45
-              length_ratio: 1.135
-              hyp_words: 1919
+              bleu: 8.92
+              chrf: 50.51
+              length_ratio: 1.13
+              hyp_words: 1910
               ref_words: 1747
               year: 1948
 - model: Google/google-translate-free
@@ -198,121 +282,177 @@ benchmarks:
   url: https://translate.google.com/
   directions:
     to_en:
-      bleu: 34.8
-      chrf: 67.03
-      length_ratio: 1.01
-      documents: 5
+      bleu: 33.79
+      chrf: 67.76
+      length_ratio: 1.03
+      documents: 9
       per_dataset:
         finance:
-          bleu: 27.67
-          chrf: 66.1
-          length_ratio: 1.03
+          bleu: 27.58
+          chrf: 66.07
+          length_ratio: 1.04
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 28.07
-              chrf: 65.62
-              length_ratio: 1.027
-              hyp_words: 8642
+              bleu: 27.84
+              chrf: 65.55
+              length_ratio: 1.033
+              hyp_words: 8697
               ref_words: 7453
               year: 2021
             finance_2022_twi_asante:
-              bleu: 24.53
-              chrf: 66.1
-              length_ratio: 1.028
-              hyp_words: 9109
+              bleu: 24.5
+              chrf: 66.08
+              length_ratio: 1.027
+              hyp_words: 9104
               ref_words: 7727
               year: 2022
             finance_2023_twi_asante:
-              bleu: 30.4
-              chrf: 66.57
+              bleu: 30.39
+              chrf: 66.59
               length_ratio: 1.05
-              hyp_words: 9307
+              hyp_words: 9309
               ref_words: 8526
               year: 2023
         jw:
-          bleu: 38.52
-          chrf: 68.53
-          length_ratio: 0.99
-          documents: 1
+          bleu: 36.31
+          chrf: 71.21
+          length_ratio: 1.03
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
+            jw_202606_twi_asante:
+              bleu: 35.72
+              chrf: 70.69
+              length_ratio: 1.016
+              hyp_words: 12256
+              ref_words: 12130
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 35.55
+              chrf: 71.77
+              length_ratio: 1.052
+              hyp_words: 12547
+              ref_words: 11919
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 37.08
+              chrf: 70.89
+              length_ratio: 1.041
+              hyp_words: 11975
+              ref_words: 11499
+              year: 2026
+            jw_202609_twi_asante:
               bleu: 38.52
-              chrf: 68.53
-              length_ratio: 0.987
-              hyp_words: 11480
-              ref_words: 11657
+              chrf: 72.93
+              length_ratio: 1.036
+              hyp_words: 12272
+              ref_words: 11759
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 34.67
+              chrf: 69.77
+              length_ratio: 1.023
+              hyp_words: 12117
+              ref_words: 11842
               year: 2026
         udhr:
-          bleu: 38.22
-          chrf: 66.45
+          bleu: 37.47
+          chrf: 65.99
           length_ratio: 1.01
           documents: 1
           per_document:
             udhr_twi_asante:
-              bleu: 38.22
-              chrf: 66.45
-              length_ratio: 1.014
-              hyp_words: 1722
+              bleu: 37.47
+              chrf: 65.99
+              length_ratio: 1.013
+              hyp_words: 1719
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 19.61
-      chrf: 56.29
-      length_ratio: 0.9
-      documents: 5
+      bleu: 18.72
+      chrf: 55.84
+      length_ratio: 0.87
+      documents: 9
       per_dataset:
         finance:
-          bleu: 17.52
-          chrf: 48.1
+          bleu: 17.41
+          chrf: 48.06
           length_ratio: 0.81
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 18.79
-              chrf: 49.11
-              length_ratio: 0.83
-              hyp_words: 9420
+              bleu: 18.78
+              chrf: 49.12
+              length_ratio: 0.831
+              hyp_words: 9428
               ref_words: 11597
               year: 2021
             finance_2022_twi_asante:
-              bleu: 16.16
-              chrf: 46.49
-              length_ratio: 0.781
-              hyp_words: 9906
+              bleu: 15.95
+              chrf: 46.47
+              length_ratio: 0.779
+              hyp_words: 9879
               ref_words: 12941
               year: 2022
             finance_2023_twi_asante:
-              bleu: 17.62
-              chrf: 48.69
-              length_ratio: 0.832
-              hyp_words: 11360
+              bleu: 17.51
+              chrf: 48.6
+              length_ratio: 0.829
+              hyp_words: 11310
               ref_words: 13241
               year: 2023
         jw:
-          bleu: 31.67
-          chrf: 67.62
-          length_ratio: 0.96
-          documents: 1
+          bleu: 29.45
+          chrf: 67.15
+          length_ratio: 0.92
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 31.67
-              chrf: 67.62
-              length_ratio: 0.958
-              hyp_words: 13350
-              ref_words: 13335
+            jw_202606_twi_asante:
+              bleu: 30.79
+              chrf: 68.84
+              length_ratio: 0.944
+              hyp_words: 14247
+              ref_words: 14580
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 28.08
+              chrf: 66.17
+              length_ratio: 0.895
+              hyp_words: 13506
+              ref_words: 14637
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 30.86
+              chrf: 68.15
+              length_ratio: 0.939
+              hyp_words: 13643
+              ref_words: 14064
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 30.71
+              chrf: 67.13
+              length_ratio: 0.911
+              hyp_words: 13384
+              ref_words: 14226
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 26.79
+              chrf: 65.46
+              length_ratio: 0.906
+              hyp_words: 13758
+              ref_words: 14754
               year: 2026
         udhr:
-          bleu: 9.65
-          chrf: 53.15
-          length_ratio: 0.92
+          bleu: 9.29
+          chrf: 52.3
+          length_ratio: 0.88
           documents: 1
           per_document:
             udhr_twi_asante:
-              bleu: 9.65
-              chrf: 53.15
-              length_ratio: 0.923
-              hyp_words: 2003
+              bleu: 9.29
+              chrf: 52.3
+              length_ratio: 0.881
+              hyp_words: 1909
               ref_words: 2098
               year: 1948
 - model: KhayaAI/khaya-translate
@@ -321,10 +461,10 @@ benchmarks:
   url: https://ghananlp.org/project/khaya-ai/
   directions:
     to_en:
-      bleu: 18.85
-      chrf: 59.64
-      length_ratio: 1.26
-      documents: 5
+      bleu: 18.07
+      chrf: 60.32
+      length_ratio: 1.28
+      documents: 9
       per_dataset:
         finance:
           bleu: 20.24
@@ -354,17 +494,45 @@ benchmarks:
               ref_words: 8526
               year: 2023
         jw:
-          bleu: 26.82
-          chrf: 63.19
-          length_ratio: 1.1
-          documents: 1
+          bleu: 24.48
+          chrf: 65.22
+          length_ratio: 1.16
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 26.82
-              chrf: 63.19
-              length_ratio: 1.097
-              hyp_words: 12773
-              ref_words: 11657
+            jw_202606_twi_asante:
+              bleu: 24.56
+              chrf: 65.18
+              length_ratio: 1.125
+              hyp_words: 13688
+              ref_words: 12130
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 23.09
+              chrf: 64.83
+              length_ratio: 1.196
+              hyp_words: 14350
+              ref_words: 11919
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 24.84
+              chrf: 64.68
+              length_ratio: 1.147
+              hyp_words: 13284
+              ref_words: 11499
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 26.46
+              chrf: 65.83
+              length_ratio: 1.15
+              hyp_words: 13724
+              ref_words: 11759
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 23.47
+              chrf: 65.6
+              length_ratio: 1.157
+              hyp_words: 13785
+              ref_words: 11842
               year: 2026
         udhr:
           bleu: 9.49
@@ -380,10 +548,10 @@ benchmarks:
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 15.88
-      chrf: 54.62
-      length_ratio: 0.95
-      documents: 5
+      bleu: 15.37
+      chrf: 54.48
+      length_ratio: 0.93
+      documents: 9
       per_dataset:
         finance:
           bleu: 12.03
@@ -413,17 +581,45 @@ benchmarks:
               ref_words: 13241
               year: 2023
         jw:
-          bleu: 27.55
-          chrf: 66.2
-          length_ratio: 1.02
-          documents: 1
+          bleu: 26.03
+          chrf: 65.78
+          length_ratio: 0.96
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 27.55
-              chrf: 66.2
-              length_ratio: 1.021
-              hyp_words: 14112
-              ref_words: 13335
+            jw_202606_twi_asante:
+              bleu: 26.95
+              chrf: 67.1
+              length_ratio: 0.984
+              hyp_words: 14700
+              ref_words: 14580
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 24.64
+              chrf: 64.68
+              length_ratio: 0.928
+              hyp_words: 13985
+              ref_words: 14637
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 27.08
+              chrf: 66.25
+              length_ratio: 0.983
+              hyp_words: 14181
+              ref_words: 14064
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 26.69
+              chrf: 65.7
+              length_ratio: 0.961
+              hyp_words: 13975
+              ref_words: 14226
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 24.81
+              chrf: 65.16
+              length_ratio: 0.951
+              hyp_words: 14385
+              ref_words: 14754
               year: 2026
         udhr:
           bleu: 8.06
@@ -444,109 +640,165 @@ benchmarks:
   url: https://huggingface.co/facebook/nllb-200-3.3B
   directions:
     to_en:
-      bleu: 21.91
-      chrf: 58.87
+      bleu: 22.03
+      chrf: 59.52
       length_ratio: 1.05
-      documents: 5
+      documents: 9
       per_dataset:
         finance:
-          bleu: 22.85
-          chrf: 64.57
-          length_ratio: 1.1
+          bleu: 23.06
+          chrf: 64.58
+          length_ratio: 1.08
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 19.81
-              chrf: 63.0
-              length_ratio: 1.085
-              hyp_words: 9381
+              bleu: 20.42
+              chrf: 63.13
+              length_ratio: 1.055
+              hyp_words: 9211
               ref_words: 7453
               year: 2021
             finance_2022_twi_asante:
-              bleu: 23.99
-              chrf: 65.79
-              length_ratio: 1.098
-              hyp_words: 9508
+              bleu: 23.93
+              chrf: 65.71
+              length_ratio: 1.092
+              hyp_words: 9465
               ref_words: 7727
               year: 2022
             finance_2023_twi_asante:
-              bleu: 24.76
-              chrf: 64.93
-              length_ratio: 1.106
-              hyp_words: 10113
+              bleu: 24.84
+              chrf: 64.9
+              length_ratio: 1.1
+              hyp_words: 10058
               ref_words: 8526
               year: 2023
         jw:
-          bleu: 28.58
-          chrf: 57.45
-          length_ratio: 0.73
-          documents: 1
+          bleu: 28.77
+          chrf: 59.42
+          length_ratio: 0.76
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 28.58
-              chrf: 57.45
-              length_ratio: 0.727
-              hyp_words: 8433
-              ref_words: 11657
+            jw_202606_twi_asante:
+              bleu: 28.31
+              chrf: 59.66
+              length_ratio: 0.754
+              hyp_words: 9101
+              ref_words: 12130
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 28.55
+              chrf: 59.24
+              length_ratio: 0.744
+              hyp_words: 8856
+              ref_words: 11919
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 27.98
+              chrf: 57.86
+              length_ratio: 0.75
+              hyp_words: 8611
+              ref_words: 11499
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 31.38
+              chrf: 61.16
+              length_ratio: 0.771
+              hyp_words: 8945
+              ref_words: 11759
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 27.62
+              chrf: 59.17
+              length_ratio: 0.764
+              hyp_words: 9068
+              ref_words: 11842
               year: 2026
         udhr:
-          bleu: 14.29
-          chrf: 54.59
+          bleu: 14.27
+          chrf: 54.56
           length_ratio: 1.32
           documents: 1
           per_document:
             udhr_twi_asante:
-              bleu: 14.29
-              chrf: 54.59
-              length_ratio: 1.317
-              hyp_words: 2213
+              bleu: 14.27
+              chrf: 54.56
+              length_ratio: 1.32
+              hyp_words: 2217
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 18.2
-      chrf: 52.17
-      length_ratio: 0.91
-      documents: 5
+      bleu: 17.01
+      chrf: 51.4
+      length_ratio: 0.88
+      documents: 9
       per_dataset:
         finance:
-          bleu: 15.41
-          chrf: 45.14
-          length_ratio: 1.05
+          bleu: 15.59
+          chrf: 45.25
+          length_ratio: 1.03
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 14.84
-              chrf: 45.95
-              length_ratio: 1.162
-              hyp_words: 9613
+              bleu: 14.89
+              chrf: 46.06
+              length_ratio: 1.158
+              hyp_words: 9596
               ref_words: 11597
               year: 2021
             finance_2022_twi_asante:
-              bleu: 14.13
-              chrf: 43.24
-              length_ratio: 1.032
-              hyp_words: 10360
+              bleu: 14.66
+              chrf: 43.54
+              length_ratio: 0.956
+              hyp_words: 10299
               ref_words: 12941
               year: 2022
             finance_2023_twi_asante:
-              bleu: 17.26
-              chrf: 46.23
-              length_ratio: 0.97
-              hyp_words: 11293
+              bleu: 17.22
+              chrf: 46.14
+              length_ratio: 0.968
+              hyp_words: 11201
               ref_words: 13241
               year: 2023
         jw:
-          bleu: 28.73
-          chrf: 59.31
-          length_ratio: 0.75
-          documents: 1
+          bleu: 25.0
+          chrf: 56.89
+          length_ratio: 0.7
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 28.73
-              chrf: 59.31
-              length_ratio: 0.753
-              hyp_words: 10133
-              ref_words: 13335
+            jw_202606_twi_asante:
+              bleu: 26.56
+              chrf: 59.45
+              length_ratio: 0.726
+              hyp_words: 10668
+              ref_words: 14580
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 23.36
+              chrf: 55.24
+              length_ratio: 0.672
+              hyp_words: 9897
+              ref_words: 14637
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 25.23
+              chrf: 56.19
+              length_ratio: 0.687
+              hyp_words: 9698
+              ref_words: 14064
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 26.14
+              chrf: 56.63
+              length_ratio: 0.698
+              hyp_words: 9906
+              ref_words: 14226
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 23.7
+              chrf: 56.95
+              length_ratio: 0.705
+              hyp_words: 10526
+              ref_words: 14754
               year: 2026
         udhr:
           bleu: 10.45
@@ -567,88 +819,116 @@ benchmarks:
   url: https://huggingface.co/facebook/nllb-200-1.3B
   directions:
     to_en:
-      bleu: 22.81
-      chrf: 58.51
+      bleu: 22.85
+      chrf: 59.3
       length_ratio: 1.02
-      documents: 5
+      documents: 9
       per_dataset:
         finance:
-          bleu: 24.86
-          chrf: 64.17
-          length_ratio: 1.07
+          bleu: 24.82
+          chrf: 64.2
+          length_ratio: 1.06
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 22.16
-              chrf: 62.57
-              length_ratio: 1.094
-              hyp_words: 9553
+              bleu: 21.96
+              chrf: 62.62
+              length_ratio: 1.092
+              hyp_words: 9485
               ref_words: 7453
               year: 2021
             finance_2022_twi_asante:
-              bleu: 23.24
-              chrf: 64.84
-              length_ratio: 1.053
-              hyp_words: 9091
+              bleu: 23.35
+              chrf: 64.93
+              length_ratio: 1.043
+              hyp_words: 9013
               ref_words: 7727
               year: 2022
             finance_2023_twi_asante:
-              bleu: 29.18
-              chrf: 65.09
-              length_ratio: 1.054
-              hyp_words: 9330
+              bleu: 29.16
+              chrf: 65.06
+              length_ratio: 1.053
+              hyp_words: 9314
               ref_words: 8526
               year: 2023
         jw:
-          bleu: 28.93
-          chrf: 56.6
-          length_ratio: 0.73
-          documents: 1
+          bleu: 29.05
+          chrf: 58.94
+          length_ratio: 0.75
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 28.93
-              chrf: 56.6
-              length_ratio: 0.73
-              hyp_words: 8370
-              ref_words: 11657
+            jw_202606_twi_asante:
+              bleu: 29.32
+              chrf: 59.43
+              length_ratio: 0.749
+              hyp_words: 9004
+              ref_words: 12130
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 28.69
+              chrf: 58.9
+              length_ratio: 0.749
+              hyp_words: 8868
+              ref_words: 11919
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 28.11
+              chrf: 56.45
+              length_ratio: 0.721
+              hyp_words: 8202
+              ref_words: 11499
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 31.28
+              chrf: 60.35
+              length_ratio: 0.756
+              hyp_words: 8809
+              ref_words: 11759
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 27.83
+              chrf: 59.57
+              length_ratio: 0.772
+              hyp_words: 9087
+              ref_words: 11842
               year: 2026
         udhr:
-          bleu: 14.64
-          chrf: 54.76
+          bleu: 14.67
+          chrf: 54.77
           length_ratio: 1.25
           documents: 1
           per_document:
             udhr_twi_asante:
-              bleu: 14.64
-              chrf: 54.76
-              length_ratio: 1.254
-              hyp_words: 2079
+              bleu: 14.67
+              chrf: 54.77
+              length_ratio: 1.251
+              hyp_words: 2075
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 16.98
-      chrf: 51.24
-      length_ratio: 0.83
-      documents: 5
+      bleu: 16.4
+      chrf: 51.22
+      length_ratio: 0.82
+      documents: 9
       per_dataset:
         finance:
-          bleu: 15.57
-          chrf: 45.7
+          bleu: 15.58
+          chrf: 45.72
           length_ratio: 0.8
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 16.25
-              chrf: 46.17
-              length_ratio: 0.809
-              hyp_words: 10140
+              bleu: 16.28
+              chrf: 46.24
+              length_ratio: 0.812
+              hyp_words: 10170
               ref_words: 11597
               year: 2021
             finance_2022_twi_asante:
-              bleu: 13.65
-              chrf: 43.77
-              length_ratio: 0.775
-              hyp_words: 10476
+              bleu: 13.66
+              chrf: 43.75
+              length_ratio: 0.776
+              hyp_words: 10492
               ref_words: 12941
               year: 2022
             finance_2023_twi_asante:
@@ -659,17 +939,45 @@ benchmarks:
               ref_words: 13241
               year: 2023
         jw:
-          bleu: 27.24
-          chrf: 57.55
-          length_ratio: 0.72
-          documents: 1
+          bleu: 25.49
+          chrf: 57.46
+          length_ratio: 0.7
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 27.24
-              chrf: 57.55
-              length_ratio: 0.716
-              hyp_words: 9623
-              ref_words: 13335
+            jw_202606_twi_asante:
+              bleu: 26.28
+              chrf: 58.69
+              length_ratio: 0.712
+              hyp_words: 10443
+              ref_words: 14580
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 23.87
+              chrf: 56.5
+              length_ratio: 0.68
+              hyp_words: 10013
+              ref_words: 14637
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 26.82
+              chrf: 57.77
+              length_ratio: 0.71
+              hyp_words: 9995
+              ref_words: 14064
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 26.81
+              chrf: 57.71
+              length_ratio: 0.706
+              hyp_words: 10017
+              ref_words: 14226
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 23.65
+              chrf: 56.62
+              length_ratio: 0.688
+              hyp_words: 10246
+              ref_words: 14754
               year: 2026
         udhr:
           bleu: 8.12
@@ -690,50 +998,78 @@ benchmarks:
   url: https://huggingface.co/facebook/nllb-200-distilled-600M
   directions:
     to_en:
-      bleu: 18.58
-      chrf: 55.1
-      length_ratio: 0.97
-      documents: 5
+      bleu: 18.93
+      chrf: 56.55
+      length_ratio: 0.98
+      documents: 9
       per_dataset:
         finance:
-          bleu: 20.21
-          chrf: 62.5
-          length_ratio: 1.12
+          bleu: 20.44
+          chrf: 62.55
+          length_ratio: 1.11
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 18.95
-              chrf: 61.24
-              length_ratio: 1.122
-              hyp_words: 9888
+              bleu: 19.36
+              chrf: 61.45
+              length_ratio: 1.097
+              hyp_words: 9640
               ref_words: 7453
               year: 2021
             finance_2022_twi_asante:
-              bleu: 19.9
-              chrf: 63.06
-              length_ratio: 1.12
-              hyp_words: 9792
+              bleu: 19.96
+              chrf: 62.98
+              length_ratio: 1.119
+              hyp_words: 9780
               ref_words: 7727
               year: 2022
             finance_2023_twi_asante:
-              bleu: 21.77
-              chrf: 63.21
-              length_ratio: 1.129
-              hyp_words: 10226
+              bleu: 22.0
+              chrf: 63.23
+              length_ratio: 1.118
+              hyp_words: 10109
               ref_words: 8526
               year: 2023
         jw:
-          bleu: 26.29
-          chrf: 52.66
-          length_ratio: 0.68
-          documents: 1
+          bleu: 27.1
+          chrf: 56.95
+          length_ratio: 0.72
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 26.29
-              chrf: 52.66
-              length_ratio: 0.681
-              hyp_words: 7827
-              ref_words: 11657
+            jw_202606_twi_asante:
+              bleu: 27.53
+              chrf: 57.52
+              length_ratio: 0.742
+              hyp_words: 8886
+              ref_words: 12130
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 26.71
+              chrf: 56.25
+              length_ratio: 0.712
+              hyp_words: 8458
+              ref_words: 11919
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 27.6
+              chrf: 56.43
+              length_ratio: 0.722
+              hyp_words: 8304
+              ref_words: 11499
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 28.33
+              chrf: 57.86
+              length_ratio: 0.71
+              hyp_words: 8388
+              ref_words: 11759
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 25.31
+              chrf: 56.68
+              length_ratio: 0.728
+              hyp_words: 8579
+              ref_words: 11842
               year: 2026
         udhr:
           bleu: 9.24
@@ -749,29 +1085,29 @@ benchmarks:
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 15.82
-      chrf: 50.69
-      length_ratio: 0.8
-      documents: 5
+      bleu: 15.17
+      chrf: 50.44
+      length_ratio: 0.79
+      documents: 9
       per_dataset:
         finance:
-          bleu: 13.37
-          chrf: 44.13
+          bleu: 13.38
+          chrf: 44.1
           length_ratio: 0.79
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 14.63
-              chrf: 45.35
+              bleu: 14.62
+              chrf: 45.36
               length_ratio: 0.775
-              hyp_words: 9465
+              hyp_words: 9475
               ref_words: 11597
               year: 2021
             finance_2022_twi_asante:
-              bleu: 11.85
-              chrf: 41.83
-              length_ratio: 0.819
-              hyp_words: 11148
+              bleu: 11.87
+              chrf: 41.72
+              length_ratio: 0.818
+              hyp_words: 11124
               ref_words: 12941
               year: 2022
             finance_2023_twi_asante:
@@ -782,17 +1118,45 @@ benchmarks:
               ref_words: 13241
               year: 2023
         jw:
-          bleu: 26.22
-          chrf: 57.77
-          length_ratio: 0.73
-          documents: 1
+          bleu: 24.26
+          chrf: 57.06
+          length_ratio: 0.7
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 26.22
-              chrf: 57.77
-              length_ratio: 0.735
-              hyp_words: 9944
-              ref_words: 13335
+            jw_202606_twi_asante:
+              bleu: 26.29
+              chrf: 59.81
+              length_ratio: 0.739
+              hyp_words: 10844
+              ref_words: 14580
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 23.5
+              chrf: 56.44
+              length_ratio: 0.688
+              hyp_words: 10129
+              ref_words: 14637
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 23.83
+              chrf: 54.95
+              length_ratio: 0.671
+              hyp_words: 9446
+              ref_words: 14064
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 25.47
+              chrf: 57.58
+              length_ratio: 0.712
+              hyp_words: 10206
+              ref_words: 14226
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 22.22
+              chrf: 56.52
+              length_ratio: 0.696
+              hyp_words: 10426
+              ref_words: 14754
               year: 2026
         udhr:
           bleu: 7.88
@@ -813,109 +1177,165 @@ benchmarks:
   url: https://huggingface.co/google/madlad400-10b-mt
   directions:
     to_en:
-      bleu: 20.27
-      chrf: 56.78
-      length_ratio: 1.29
-      documents: 5
+      bleu: 19.21
+      chrf: 57.68
+      length_ratio: 1.31
+      documents: 9
       per_dataset:
         finance:
-          bleu: 22.57
-          chrf: 59.39
+          bleu: 22.64
+          chrf: 59.41
           length_ratio: 1.26
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 21.42
-              chrf: 58.23
-              length_ratio: 1.311
-              hyp_words: 10771
+              bleu: 21.74
+              chrf: 58.33
+              length_ratio: 1.288
+              hyp_words: 10490
               ref_words: 7453
               year: 2021
             finance_2022_twi_asante:
-              bleu: 22.37
-              chrf: 60.84
-              length_ratio: 1.177
-              hyp_words: 9732
+              bleu: 22.52
+              chrf: 60.67
+              length_ratio: 1.166
+              hyp_words: 9633
               ref_words: 7727
               year: 2022
             finance_2023_twi_asante:
-              bleu: 23.92
-              chrf: 59.09
-              length_ratio: 1.295
-              hyp_words: 11033
+              bleu: 23.66
+              chrf: 59.22
+              length_ratio: 1.322
+              hyp_words: 11191
               ref_words: 8526
               year: 2023
         jw:
-          bleu: 30.57
-          chrf: 61.62
-          length_ratio: 1.04
-          documents: 1
+          bleu: 27.29
+          chrf: 64.23
+          length_ratio: 1.1
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 30.57
-              chrf: 61.62
-              length_ratio: 1.039
-              hyp_words: 12019
-              ref_words: 11657
+            jw_202606_twi_asante:
+              bleu: 26.22
+              chrf: 62.63
+              length_ratio: 1.095
+              hyp_words: 13212
+              ref_words: 12130
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 25.82
+              chrf: 64.79
+              length_ratio: 1.142
+              hyp_words: 13648
+              ref_words: 11919
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 28.0
+              chrf: 64.33
+              length_ratio: 1.104
+              hyp_words: 12648
+              ref_words: 11499
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 30.45
+              chrf: 64.83
+              length_ratio: 1.05
+              hyp_words: 12227
+              ref_words: 11759
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 25.97
+              chrf: 64.57
+              length_ratio: 1.123
+              hyp_words: 13182
+              ref_words: 11842
               year: 2026
         udhr:
-          bleu: 7.68
-          chrf: 49.32
+          bleu: 7.69
+          chrf: 49.39
           length_ratio: 1.58
           documents: 1
           per_document:
             udhr_twi_asante:
-              bleu: 7.68
-              chrf: 49.32
+              bleu: 7.69
+              chrf: 49.39
               length_ratio: 1.579
-              hyp_words: 2590
+              hyp_words: 2591
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 10.41
-      chrf: 43.77
-      length_ratio: 1.41
-      documents: 5
+      bleu: 10.02
+      chrf: 43.47
+      length_ratio: 1.39
+      documents: 9
       per_dataset:
         finance:
-          bleu: 11.67
-          chrf: 39.4
-          length_ratio: 1.19
+          bleu: 11.7
+          chrf: 39.25
+          length_ratio: 1.2
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 12.29
-              chrf: 39.67
-              length_ratio: 1.194
-              hyp_words: 13544
+              bleu: 12.45
+              chrf: 39.16
+              length_ratio: 1.177
+              hyp_words: 13375
               ref_words: 11597
               year: 2021
             finance_2022_twi_asante:
-              bleu: 10.45
-              chrf: 38.61
-              length_ratio: 1.157
-              hyp_words: 14784
+              bleu: 10.23
+              chrf: 38.5
+              length_ratio: 1.192
+              hyp_words: 15177
               ref_words: 12941
               year: 2022
             finance_2023_twi_asante:
-              bleu: 12.27
-              chrf: 39.92
-              length_ratio: 1.224
-              hyp_words: 16653
+              bleu: 12.42
+              chrf: 40.1
+              length_ratio: 1.217
+              hyp_words: 16536
               ref_words: 13241
               year: 2023
         jw:
-          bleu: 16.74
-          chrf: 54.66
-          length_ratio: 1.38
-          documents: 1
+          bleu: 15.54
+          chrf: 53.9
+          length_ratio: 1.32
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 16.74
-              chrf: 54.66
-              length_ratio: 1.377
-              hyp_words: 18781
-              ref_words: 13335
+            jw_202606_twi_asante:
+              bleu: 14.04
+              chrf: 53.66
+              length_ratio: 1.373
+              hyp_words: 20470
+              ref_words: 14580
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 15.22
+              chrf: 53.41
+              length_ratio: 1.283
+              hyp_words: 18508
+              ref_words: 14637
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 16.64
+              chrf: 54.24
+              length_ratio: 1.317
+              hyp_words: 18301
+              ref_words: 14064
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 16.12
+              chrf: 53.99
+              length_ratio: 1.369
+              hyp_words: 19057
+              ref_words: 14226
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 15.7
+              chrf: 54.19
+              length_ratio: 1.282
+              hyp_words: 18868
+              ref_words: 14754
               year: 2026
         udhr:
           bleu: 2.82
@@ -936,109 +1356,165 @@ benchmarks:
   url: https://huggingface.co/google/madlad400-3b-mt
   directions:
     to_en:
-      bleu: 17.32
-      chrf: 55.96
-      length_ratio: 1.47
-      documents: 5
+      bleu: 16.65
+      chrf: 56.53
+      length_ratio: 1.48
+      documents: 9
       per_dataset:
         finance:
-          bleu: 21.91
-          chrf: 59.94
-          length_ratio: 1.54
+          bleu: 22.34
+          chrf: 60.12
+          length_ratio: 1.51
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 22.55
-              chrf: 59.33
-              length_ratio: 1.635
-              hyp_words: 12577
+              bleu: 22.95
+              chrf: 59.3
+              length_ratio: 1.608
+              hyp_words: 12395
               ref_words: 7453
               year: 2021
             finance_2022_twi_asante:
-              bleu: 21.39
-              chrf: 59.79
-              length_ratio: 1.551
-              hyp_words: 11206
+              bleu: 21.92
+              chrf: 60.24
+              length_ratio: 1.504
+              hyp_words: 10840
               ref_words: 7727
               year: 2022
             finance_2023_twi_asante:
-              bleu: 21.78
-              chrf: 60.7
-              length_ratio: 1.442
-              hyp_words: 12680
+              bleu: 22.15
+              chrf: 60.83
+              length_ratio: 1.403
+              hyp_words: 12349
               ref_words: 8526
               year: 2023
         jw:
-          bleu: 26.79
-          chrf: 62.08
-          length_ratio: 1.14
-          documents: 1
+          bleu: 24.57
+          chrf: 63.67
+          length_ratio: 1.18
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 26.79
-              chrf: 62.08
+            jw_202606_twi_asante:
+              bleu: 23.35
+              chrf: 62.42
+              length_ratio: 1.185
+              hyp_words: 14254
+              ref_words: 12130
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 24.51
+              chrf: 64.6
+              length_ratio: 1.173
+              hyp_words: 14019
+              ref_words: 11919
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 24.62
+              chrf: 62.92
+              length_ratio: 1.214
+              hyp_words: 14096
+              ref_words: 11499
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 26.09
+              chrf: 64.24
               length_ratio: 1.142
-              hyp_words: 13450
-              ref_words: 11657
+              hyp_words: 13740
+              ref_words: 11759
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 24.3
+              chrf: 64.17
+              length_ratio: 1.163
+              hyp_words: 13884
+              ref_words: 11842
               year: 2026
         udhr:
-          bleu: 3.27
-          chrf: 45.87
+          bleu: 3.05
+          chrf: 45.79
           length_ratio: 1.74
           documents: 1
           per_document:
             udhr_twi_asante:
-              bleu: 3.27
-              chrf: 45.87
-              length_ratio: 1.735
-              hyp_words: 3015
+              bleu: 3.05
+              chrf: 45.79
+              length_ratio: 1.744
+              hyp_words: 3030
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 8.72
-      chrf: 41.54
-      length_ratio: 1.69
-      documents: 5
+      bleu: 8.43
+      chrf: 41.56
+      length_ratio: 1.7
+      documents: 9
       per_dataset:
         finance:
-          bleu: 9.82
-          chrf: 37.6
-          length_ratio: 1.46
+          bleu: 9.88
+          chrf: 37.43
+          length_ratio: 1.47
           documents: 3
           per_document:
             finance_2021_twi_asante:
-              bleu: 9.97
-              chrf: 38.0
-              length_ratio: 1.523
-              hyp_words: 17011
+              bleu: 9.99
+              chrf: 37.93
+              length_ratio: 1.527
+              hyp_words: 17025
               ref_words: 11597
               year: 2021
             finance_2022_twi_asante:
-              bleu: 8.89
-              chrf: 36.53
-              length_ratio: 1.418
-              hyp_words: 18958
+              bleu: 9.02
+              chrf: 36.31
+              length_ratio: 1.44
+              hyp_words: 19182
               ref_words: 12941
               year: 2022
             finance_2023_twi_asante:
-              bleu: 10.59
-              chrf: 38.27
-              length_ratio: 1.442
-              hyp_words: 19981
+              bleu: 10.62
+              chrf: 38.04
+              length_ratio: 1.435
+              hyp_words: 19883
               ref_words: 13241
               year: 2023
         jw:
-          bleu: 14.31
-          chrf: 50.42
+          bleu: 13.39
+          chrf: 50.66
           length_ratio: 1.52
-          documents: 1
+          documents: 5
           per_document:
-            jw_202601_twi_asante:
-              bleu: 14.31
-              chrf: 50.42
-              length_ratio: 1.524
-              hyp_words: 21621
-              ref_words: 13335
+            jw_202606_twi_asante:
+              bleu: 12.41
+              chrf: 49.7
+              length_ratio: 1.564
+              hyp_words: 24132
+              ref_words: 14580
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 14.09
+              chrf: 52.62
+              length_ratio: 1.446
+              hyp_words: 22083
+              ref_words: 14637
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 13.43
+              chrf: 50.76
+              length_ratio: 1.606
+              hyp_words: 23865
+              ref_words: 14064
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 14.12
+              chrf: 50.16
+              length_ratio: 1.451
+              hyp_words: 22062
+              ref_words: 14226
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 12.88
+              chrf: 50.08
+              length_ratio: 1.526
+              hyp_words: 23675
+              ref_words: 14754
               year: 2026
         udhr:
           bleu: 2.03

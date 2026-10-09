@@ -9,41 +9,41 @@ benchmarks:
   url: https://ai.google.dev/gemini-api/docs/models
   directions:
     to_en:
-      bleu: 75.52
-      chrf: 83.82
-      length_ratio: 0.95
+      bleu: 80.94
+      chrf: 88.43
+      length_ratio: 1.0
       documents: 1
       per_dataset:
         udhr:
-          bleu: 75.52
-          chrf: 83.82
-          length_ratio: 0.95
+          bleu: 80.94
+          chrf: 88.43
+          length_ratio: 1.0
           documents: 1
           per_document:
             udhr_twi_akuapem:
-              bleu: 75.52
-              chrf: 83.82
-              length_ratio: 0.946
-              hyp_words: 1645
+              bleu: 80.94
+              chrf: 88.43
+              length_ratio: 0.998
+              hyp_words: 1734
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 18.5
-      chrf: 62.67
+      bleu: 18.99
+      chrf: 63.26
       length_ratio: 1.09
       documents: 1
       per_dataset:
         udhr:
-          bleu: 18.5
-          chrf: 62.67
+          bleu: 18.99
+          chrf: 63.26
           length_ratio: 1.09
           documents: 1
           per_document:
             udhr_twi_akuapem:
-              bleu: 18.5
-              chrf: 62.67
-              length_ratio: 1.091
-              hyp_words: 2058
+              bleu: 18.99
+              chrf: 63.26
+              length_ratio: 1.087
+              hyp_words: 2049
               ref_words: 1890
               year: 1948
 missing:

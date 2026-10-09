@@ -1,4 +1,4 @@
-Universal Declaration of Human Rights
+UNIVERSAL DECLARATION OF HUMAN RIGHTS
 
 INTRODUCTION
 
@@ -18,19 +18,19 @@ Whereas a common understanding of these rights and freedoms is of the greatest i
 
 THE GENERAL ASSEMBLY OF THE UNITED NATIONS PROCLAIMS:
 
-This Declaration of Human Rights is a standard approved for all peoples throughout the world. It is hoped that every individual and every organ of society everywhere will act in accordance with this Declaration. It shall be disseminated throughout the world through teaching and education to the people. This will ensure that people understand and accept the Declaration, and act upon it, so that life may progress well in the Member States of the United Nations. It is hoped that the Declaration will also be disseminated in the Trust Territories administered by certain nations, for the sake of success.
+This Universal Declaration of Human Rights is a standard approved for all peoples throughout the entire world. It is hoped that every individual and every organ of society everywhere will act in accordance with this Declaration. It shall be disseminated throughout the whole world through teaching and education for the people. This will enable people to understand and accept the Declaration, and ensure that it is implemented so that life may progress well in the Member States of the United Nations. It is also hoped that the Declaration will be disseminated in the territories under the jurisdiction of other nations for successful achievement.
 
-SCHEDULE 1
+SCHEDULE 1 / APPENDIX 1
 
 All human beings are born free and equal in dignity and rights. They are endowed with reason and conscience and should act towards one another in a spirit of brotherhood.
 
-SECOND SCHEDULE
+SECOND AMENDMENT
 
 Everyone is entitled to all the rights and freedoms set forth in this Declaration, without distinction of any kind, such as race, colour, sex, language, religion, political or other opinion, national or social origin, property, birth or other status.
 
 Furthermore, no distinction shall be made on the basis of the political, jurisdictional or international status of the country or territory to which a person belongs, whether it be independent, trust, non-self-governing or under any other limitation of sovereignty.
 
-THIRD SCHEDULE
+APPENDIX SCHEDULE 3
 
 Everyone has the right to life, liberty and security of person.
 
@@ -38,11 +38,11 @@ FOURTH SCHEDULE
 
 No one shall be held in slavery or servitude; slavery and the slave trade shall be prohibited in all their forms.
 
-FIFTH SCHEDULE / SCHEDULE 5 / APPENDIX 5 "Kpeɖodzinya ɖoɖo" means "Schedule" or "Appendix" in legal/statutory Ewe. "5-lia" means "5th" or "Fifth". "FIFTH SCHEDULE" is standard in legal documents (e.g., constitutions). "SCHEDULE 5" or "APPENDIX 5" or "FIFTH APPENDIX". Let's use "FIFTH SCHEDULE".FIFTH SCHEDULE
+SCHEDULE 5
 
 No one shall be subjected to torture or to cruel, inhuman or degrading treatment or punishment.
 
-SCHEDULE 6
+APPENDIX 6
 
 Everyone has the right to recognition everywhere as a person before the law.
 
@@ -54,7 +54,7 @@ SCHEDULE 8
 
 Everyone has the right to an effective remedy by the competent national tribunals for acts violating the fundamental rights granted him by the constitution or by law.
 
-SCHEDULE 9
+NINTH SCHEDULE
 
 No one shall be subjected to arbitrary arrest, detention or exile.
 
@@ -62,7 +62,7 @@ APPENDIX 10
 
 Everyone is entitled in full equality to a fair and public hearing by an independent and impartial tribunal, in the determination of his rights and obligations and of any criminal charge against him.
 
-APPENDIX 11
+SCHEDULE 11
 
 No one shall be held guilty of any penal offence on account of any act or omission which did not constitute a penal offence, under national or international law, at the time when it was committed.
 
@@ -70,49 +70,49 @@ No one shall be held guilty of any penal offence on account of any act or omissi
 
 SCHEDULE 12
 
-No one shall be subjected to arbitrary interference with his privacy, family, home or correspondence, nor to attacks upon his honour and reputation. Everyone has the right to the protection of the law against such interference or attacks.
+No one shall be subjected to arbitrary interference with his privacy, family, or home. No one shall, by any means, pry into another person's correspondence with others. Likewise, no one shall attack another person's honor and reputation. The law provides that anyone subjected to such interference has the right to the protection of the law against it.
 
 SCHEDULE 13
 
-Everyone has the right to travel to any country, to stay wherever they wish, provided that the person does not cross the borders of the country in which they reside.
+Everyone has the right to travel to any country and live wherever they wish, but the person must ensure that they do not cross the borders of the country in which they reside.
 
 Everyone has the right to leave any country, including his own, and to return to his country.
 
-Fourteenth Amendment
+SCHEDULE 14
 
 Everyone who has fled to another country has the right to seek asylum.
 
-This right to seek asylum may not be invoked in the case of prosecutions genuinely arising from non-political crimes or from acts contrary to the purposes and principles of the United Nations.
+This right may not be invoked in the case of prosecutions genuinely arising from non-political crimes or from acts contrary to the purposes and principles of the United Nations.
 
-SCHEDULE 15
+SCHEDULE 15 / APPENDIX 15
 
 Everyone has the right to a nationality.
 
 No one shall be arbitrarily deprived of his nationality nor denied the right to change his nationality.
 
-SCHEDULE 16
+APPENDIX 16
 
 Men and women of full age, without any limitation due to race, nationality or religion, have the right to marry and to found a family. They are entitled to equal rights as to marriage, during marriage and at its dissolution.
 
-No one shall be forced into marriage. Marriage must be the desire of the two spouses.
+Marriage shall not be forced upon anyone. Marriage must be the desire of the two intending spouses.
 
 Naturally, the family is the foundation of human society; therefore, it is the duty of every nation to ensure the security of every family.
 
-SCHEDULE 17
+ANNEX 17
 
-There is an opportunity for property to be owned by one person and also to be owned jointly by that person and other people.
+Everyone has the right to own property alone as well as in association with others.
 
 No one shall be arbitrarily deprived of his property.
 
-APPENDIX 18
+ORDER 18 OF THE SCHEDULE
 
-Everyone has the right to freedom of thought, conscience, and religion; this right includes freedom to change one's religion or belief, and freedom, either alone or in community with others and in public or private, to manifest one's religion or belief in teaching, practice, worship, and observance without hindrance.
+Everyone has the right to freedom of thought, conscience and religion; this right includes freedom to change his religion or belief, and freedom, either alone or in community with others and in public or private, to manifest his religion or belief in teaching, practice, worship and observance.
 
 SCHEDULE 19
 
-Everyone has the right to freedom of opinion and expression. This right includes freedom to hold opinions without interference. This means that no one has the right to interfere with this act. It also includes the freedom to seek, receive and impart information and ideas through any media. In these acts, frontiers shall not even be an obstacle.
+Everyone has the right to freedom of opinion and expression; this right includes freedom to hold opinions without interference and to seek, receive and impart information and ideas through any media and regardless of frontiers.
 
-APPENDIX 20
+SCHEDULE 20
 
 Everyone has the right to freedom of peaceful assembly and association.
 
@@ -120,33 +120,33 @@ No one may be compelled to belong to an association.
 
 SCHEDULE 21
 
-Everyone has the right to take part in the government of his country, directly or through freely chosen representatives.
+Every citizen has the right to take part in the governance of their country. It can be directly or through representatives chosen in an election.
 
-Every citizen has equal opportunity to benefit from all the assistance provided by the government to all citizens.
+Every citizen has an equal opportunity to participate in receiving all the assistance that the government provides to all citizens.
 
-The authority of any government resides in the hands of its citizens. This authority shall be demonstrated at specific times through elections conducted under a good arrangement. In these elections, all eligible citizens shall cast their votes secretly or through the use of any other approved voting method.
+The authority of every government resides in its citizens. This authority shall be demonstrated periodically through properly organized elections. In these elections, all eligible citizens shall cast their votes secretly or by an equivalent approved voting procedure.
 
-TWENTY-SECOND AMENDMENT
+AMENDMENT 22 / TWENTY-SECOND AMENDMENT
 
-Every citizen has the right to social security. It is necessary for every citizen to recognize this clearly through knowledge about their country's unity and relations with foreign nations. Likewise, it is also necessary for them to know about the assistance their country receives from other nations in economic, social, and cultural matters, for the dignity and development of themselves as citizens and their fellows, which is very essential.
+Every citizen has the right to social security and well-being. It is necessary for every citizen to clearly realize this through knowledge of their country's unity and relations with foreign nations. Likewise, it is also necessary for them to know about the assistance their country receives from other nations in economic, social, and cultural matters, for their own dignity and vital development as a citizen and that of their fellow citizens.
 
-APPENDIX 23
+AMENDMENT 23
 
-Everyone has the right to work, to free choice of employment, to just and favourable conditions of work and to protection against unemployment.
+Everyone has the right to work freely. Everyone can choose the work that suits them. They shall pursue satisfaction in their work and strongly defend against unemployment.
 
-Everyone, without any discrimination, has the right to equal pay for equal work everywhere.
+Everyone, without any discrimination, has the right to equal pay for equal work.
 
-Everyone has the right to just and favourable remuneration ensuring for himself, his wife, and his children an existence worthy of human dignity, and supplemented, if necessary, by other means of social protection.
+Everyone has the right to just and favorable remuneration ensuring for himself, his spouse, and his children an existence worthy of human dignity, and supplemented, if necessary, by other means of social protection.
 
 Everyone has the right to form and to join trade unions for the protection of his interests.
 
 SCHEDULE 24
 
-Every public servant has the opportunity to be given leave of absence on certain specific occasions, but they will be paid their full salary. No deduction shall be made from their salary for the period they were absent from work.
+Every government employee has the right to be given rest through leave at certain specific times while being paid their full salary. No deduction shall be made from their salary for the periods they were not at work.
 
-APPENDIX 25
+SCHEDULE 25
 
-Everyone has the right to a standard of living adequate for the health and well-being of himself, his spouse, and his children, including food, clothing, housing, medical care, and necessary social services. In the event of unemployment, sickness, disability, widowhood, old age, or other lack of livelihood in circumstances beyond his control, he has the right to security.
+Everyone has the right to a standard of living adequate for the health and well-being of himself and of his family, including food, clothing, housing, medical care and necessary social services, and the right to security in the event of unemployment, sickness, disability, widowhood, old age or other lack of livelihood in circumstances beyond his control.
 
 Motherhood and childhood are entitled to special care and assistance. All children, whether born in or out of wedlock, shall enjoy the same social protection.
 
@@ -154,28 +154,28 @@ SCHEDULE 26
 
 Everyone has the right to education. Education shall be free, at least in the elementary and fundamental stages. Elementary education shall be compulsory. Technical and professional education shall be made generally available and higher education shall be equally accessible to all on the basis of merit.
 
-Education shall be directed to the full development of the human personality. It shall also strengthen the respect for human rights and fundamental freedoms. It shall promote understanding, tolerance and friendship among all nations, racial or religious groups. It shall further the activities of the United Nations for the maintenance of peace throughout the world.
+Education shall be directed to the full development of the human personality and to the strengthening of respect for human rights and fundamental freedoms. It shall promote understanding, tolerance and friendship among all nations, racial or religious groups, and shall further the activities of the United Nations for the maintenance of peace.
 
 Parents have a prior right to choose the kind of education that shall be given to their children.
 
-AMENDMENT 27
+CONFIRMATION OF ORDER NO. 27
 
-Everyone has the right to participate in daily cultural life. This means that everyone has the opportunity to share in the benefits that result from scientific advancement and the arts.
+Everyone has the right to participate in daily life. This means that everyone has the opportunity to share in the benefits that result from scientific advancement and arts.
 
-There is an opportunity to protect someone's creation through the use of the law. This creation can be writing, music composition, or any other kind of art that is the person's handiwork to which they have ownership.
+There is an opportunity to protect someone's creation through the use of the law. This creation can be writing, musical composition, or any other kind of art that is the person's handiwork over which they have ownership.
 
 AMENDMENT 28
 
 Everyone is entitled to a social and international order in which the rights and freedoms set forth in this Declaration can be fully realized.
 
-ADDITIONAL ORDER NO. 29
+CONSTITUTIONAL AMENDMENT 29
 
-Participation in national development reflects the face of every citizen where their freedom and full humanity are accessible.
+Participation in national development tasks considers every citizen where their freedom and full humanity are accessible.
 
-Everyone shall be subject only to such limitations as are determined by law in the exercise of their rights and freedoms, solely for the purpose of securing due recognition and respect for the rights and freedoms of others and of meeting the just requirements of morality, public order and the general welfare in a democratic society.
+Everyone, in the exercise of their rights and freedoms, shall be subject only to such limitations as are determined by law solely for the purpose of securing due recognition and respect for the rights and freedoms of others and of meeting the just requirements of morality, public order and the general welfare in a democratic society.
 
 These rights and freedoms may in no case be exercised contrary to the purposes and principles of the United Nations.
 
-ARTICLE 30 OF THE CONSTITUTION
+ARTICLE 30
 
 Nothing in this Declaration may be interpreted as implying for any State, group or person any right to engage in any activity or to perform any act aimed at the destruction of any of the rights and freedoms set forth herein.

@@ -56,7 +56,7 @@ FINANCIAL FINANCIAL PLAN STEPS FOR 2023 ........................................
 
 DEVELOPMENT IN THE INSTITUTIONS AND CURRENT SITUATION...............................................................................................23
 
-CONCLUSION………………………………………………………………………………………………42
+CONCLUSION……………………………………………………………………………………………42
 
 DEFINITION OF TERMS (FINANCIAL SYSTEM TERMS)...........................43
 
@@ -68,7 +68,7 @@ Table 2: Financial performance from January-March
 
 Table 3: National debt ratio (2018 – Debt, 2022)
 
-Table 4: 2023 Costs (in GH¢ Million) ……………………21
+Table 4: 2023 amounts (in GH¢ Million) ……………………21
 
 Table 5: Cash distribution in 2023 (in GH¢ Million) …………………22
 
@@ -88,7 +88,7 @@ This year will undoubtedly be the year this country went through the best recess
 
 Just as we started the Positive Change Plan and thought we were now trying to recover from the effects of this pandemic, other crises hit, causing all the economic stability we had compared well from 2017 to 2019 to collapse. The first was the Russia-Ukraine war, the next was the time we wasted on the approval of the 2022 budget, which led to the international lenders declaring us ineligible to lend. Then, about ten years ago, suddenly the International Credit Union refused to lend to us, the credit situation in this country itself became so troubled that interest rates soared and therefore the cost of borrowing increased, causing our weight to decline.
 
-This means that while foreign exchange earnings from the international credit market and exports are declining, and then due to our high demand for foreign goods, imports are also increasing, and our foreign debt is increasing, our currency weight is decreasing. This has made life difficult for both Government and individuals. The continuing rise in coal prices has therefore led to a strong inflation rate in the month of August 2022, with inflation reaching 40.4% in October 2022.
+This means that while foreign exchange earnings from the international credit market and exports are declining, and then due to our high demand for foreign goods, imports are also increasing, and our foreign debt is increasing, our currency weight is decreasing. This has made life difficult for both Government and individuals. The continuing rise in coal prices has therefore led to a strong inflation rate in the month of Ahineme in 2022, with inflation reaching 40.4% in October 2022.
 
 We have been through a very severe test and the Government knows the hardship this situation has put on you. The government offers deep gratitude to the groups
 
@@ -126,7 +126,7 @@ INTRODUCTION
 
 AS THE NATIONAL ECONOMY DOES IN
 
-As was the basis of State economic development
+As was the basis of State economic growth
 
 4. In the Mid-Year Fiscal Policy Review, the Government set the target of achieving the following national fiscal growth targets by 2022:
 
@@ -164,7 +164,7 @@ vi. The strength of the Ghanaian currency against the US dollar declined by 54 p
 
 “We are working together to revitalize the National Economy u and stabilize it”
 
-five which was only three per cent and one back plot by the end of February in
+five which was three per cent and only one back plot by the end of February in
 
 12 | Government of Ghana – 2023 Citizen Economic Strategy
 
@@ -172,9 +172,9 @@ five which was only three per cent and one back plot by the end of February in
 
 REVENUE AND EXPENDITURE FOR
 
-6. For six months in 2022, we carried out Economic Policy Reforms through monetary policy because the world economy and the domestic economy were in turmoil.
+6. For six months in 2022, we carried out Economic Policy Reforms through the monetary policy because the world economy and the economy of this country were in turmoil.
 
-7. The report on the Government's fiscal measures from January to March 2022 shows that the revenue of the government has declined sharply but the use of funds has continued to decline over the same period.
+7. The report on the Government's fiscal measures from January to March 2022 shows that the revenue of the government has decreased significantly but the use of funds has continued to decline over the same period.
 
 MONEY INTO THE NATIONAL EXCHANGE
 
@@ -196,13 +196,13 @@ Money afodor, 7%
 
 Oil and Gas.
 
-Cash gift, 1%
+Cash gifts, 1%
 
 Non-Oil Tax Revenue, 68%
 
 WORK WITH MONEY
 
-11. The Government's expenditure including existing and other debt reached GH¢109,421 million -18.5 percent of GDP, exceeding the figure of GH¢109,421 million -18.5 percent of GDP (GH¢103,992 million) which is seventeen percent of gross domestic product and six times (17.6 percent of GDP) which is five percent and two times above our target amount. The source of the slightly higher operating expenses was Interest and Payments to various Government Entities.
+11. The Government's expenditure including existing and other debt reached GH¢109,421 million -18.5 percent of GDP, exceeding the figure of GH¢109,421 million -18.5 percent of GDP (GH¢103,992 million) which is seventeen percent of gross domestic product and six times (17.6 percent of GDP) which is five percent and two times above our target amount. The source of the slightly higher operating expenses was Interest and Payments to Government Entities.
 
 14 | Government of Ghana – 2023 Citizen Economic Strategy
 
@@ -234,7 +234,7 @@ MISCELLANEOUS FINANCIAL SERVICES
 
 National Debt In 2022
 
-14. Current data shows that by the end of April 2022, the total debt of the country reached GH¢467,371.32 million to the US currency ((US$48,871.34 million) which is 100 percent of total domestic sales
+14. The current report shows that by the end of April 2022, the total debt of the country reached GH¢467,371.32 million to the US currency ((US$48,871.34 million) which is 100 percent of total domestic sales
 
 15 | Government of Ghana – 2023 Citizens Economic Strategy
 
@@ -266,7 +266,7 @@ iii. Year-end commodity-price-increase of eight per cent which may increase or d
 
 iv. The amount of money that should affect our coffers is at least one percent of total domestic consumption and beyond three percent in the period ahead (2023-2026); then now
 
-v. Foreign Currency Quantity to be received for orders approximately four months.
+v. Foreign Currency Quantity to be received for orders is approximately four months.
 
 17. In view of the basic economic growth objectives and the recent budget objectives, we have set the following sustainability targets to be achieved by 2023:
 
@@ -276,7 +276,7 @@ ii. Three per cent of the country's exports excluding Coal;
 
 iii. Seventeen percent inflation at the end of February and nine percent;
 
-iv. At least the amount that should affect our treasury is zero percent and seven percent of total domestic sales; then
+iv. At least the amount that should affect our treasury is zero and seven percent of total domestic sales; then
 
 v. Foreign Currency Quantity to be received for orders exceeding three months and three days.
 
@@ -350,7 +350,7 @@ Money gifts | GH¢2,4
 
 Other currencies | GH¢6,1
 
-Fango new | GH¢23,4
+Fango new | GH¢23,455
 
 Non-coal and non-taxable income | GH¢12,308
 
@@ -514,7 +514,7 @@ It's time to make a difference with YouStart initiative
 
 THE WORLD BANK NEIP
 
-49. This three-year program has supported seventy youth-led enterprises (under 40 years and Small Medium Enterprises ,SMEs) to access assistance such as capacity building, access to markets, labor compliance and trade compliance.Money the amount we have distributed in this project is one million Ghanaian shillings, ninety-eight thousand (GH¢1.98 million).
+49. This three-year project has supported seventy youth-led enterprises (under 40 years and Small Medium Enterprises ,SMEs) to access assistance such as capacity building, access to markets, labor compliance and trade compliance.Money the amount we have distributed in this project is one million Ghanaian shillings, ninety-eight thousand (GH¢1.98 million).
 
 50. The Government and the National Association of Banks of Ghana (GAB) and eleven (11) commercial banks have signed a Memorandum of Understanding (MoU) on the Youstart programme. In this regard, eleven banks have contributed GH¢1.169 billion, representing 30 percent of the budget for the project.
 
@@ -522,13 +522,13 @@ THE WORLD BANK NEIP
 
 “We are working together to revitalize the National Economy u and stabilize it”
 
-Ghana The role of Crops to mitigate the impact of climate change
+Ghana The role of Crops to mitigate the effects of climate change
 
 51. In 2022, based on the program entitled” Ghana Seedling Day”, we distributed 26.55 million seedlings and 24.44 million of them have been printed. In addition, we distributed 12.9 million small trees including ofram, emire, wawa, coconut, teak, cedrela, gmelina, cassia, eucalyptus and mahogany for planting.
 
 Ghana Green Ghana Day
 
-52. Based on the National Tree Program, we planted a total of eleven thousand six hundred and ninety-two (11,692ha) hectares of trees which was less than the 17,000ha we intended to plant.
+52. Based on the National Tree Programme, we planted a total of eleven thousand six hundred and ninety-two (11,692ha) hectares of trees which was less than the seventeen thousand hectares (17,000ha) we intended to plant.
 
 53. By 2023 Ghana Tree Day, we will plant twenty million small trees.
 
@@ -718,7 +718,7 @@ Women And Men, Children And Life Protection
 
 a good nutrient-packed meal once a day. This resulted in an increase in the number of children attending schools at (primary) KG, Primary and JHS levels for the 2020/21 school year. Primary School increased by 118 per cent, Primary by 40 per cent and Adantam School by 72 per cent.
 
-85. Thirty-two thousand, four hundred and ninety-six (32,496) female caterers (caterers) and cooks (cooks) were recruited by the Government as their income would be sufficient to support their families. Again Government opened up farm procurement opportunities to farmers thereby stabilizing their economy.
+85. Thirty-two thousand, four hundred and ninety-six (32,496) female caterers (caterers) and cooks (cooks) were recruited by the Government as their income would be sufficient to support their families. Again Government opened farm procurement facilities to farmers thereby stabilizing their economy.
 
 86. In order to achieve the goal of providing nutritious food to the individual, the Government paid five times the Livelihood Empowerment Against Poverty (LEAP) funds to 344,389 different fiduas.
 
@@ -816,7 +816,7 @@ Grants to other Government Units: This represents the amounts that are required 
 
 Gross Domestic Product (GDP): This refers to the value of all the goods produced in the country during a given period.
 
-Gross International Reserves:This is a measure of the extent of the purchasing power of a country’s economy at a particular point in time. This helps to compare the budget of one country with that of another country by seeing the economic strength of the country.
+Gross International Reserves:This is a measure of the purchasing power of a country at a particular point in time. This helps to compare the budget of one country with that of another country by seeing the economic strength of the country.
 
 46 | Government of Ghana – 2023 Citizen Economic Strategy
 

@@ -58,7 +58,7 @@ POST-COVID-19 FINANCIAL CHANGES ................................................
 
 VARIOUS DEPARTMENTS AND THEIR FUNCTIONS …………………………………………………… 23
 
-ENDING .......................................................................................................................................... 37
+END .......................................................................................................................................... 37
 
 Prints:
 
@@ -130,7 +130,7 @@ Topic: Promoting Self-Employment in the Country through Stability of Income and 
 
 FINANCIAL PERFORMANCE IN 2021
 
-Major Revenue Services
+Activities of Major Funds
 
 3. The allegations relating to the performance of the financial statements in 2021 go as follows:
 
@@ -148,17 +148,17 @@ Major Revenue Services
 
 • As at the end of December, the debt held by the Government stood at US$11.44 billion. This amount is higher than the Government's exports from foreign countries in 5.2 months whereas the Government's foreign exchange reserves by the end of 2020 stood at US$8.62 billion. This amount is equivalent to the amount of goods exported by the Government from grassland countries in 4.1 months; and
 
-• The Ghanaian rate for advanced desert cards remained unchanged for the first five months of However, the Ghanaian exchange rate depreciated slightly by 1.7 per cent at the end of November compared to 2.9 per cent in 2020 over the same period.
+• The amount of money you need to get advanced cards remained unchanged for the first five months of However, the Ghanaian exchange rate depreciated slightly by 1.7 per cent at the end of November compared to 2.9 per cent in 2020 over the same period.
 
 8 | Government of Ghana – Debt 2022 Budget for Citizens
 
 Topic: Promoting Self-Employment in the Country through Stability of Income and Employment for Citizens
 
-GOVERNMENT REVENUES FOR 2021 AND HOW ITS EXPENDITURE
+GOVERNMENT REVENUE FOR 2021 AND HOW ITS EXPENDITURE
 
 Amount Received by Government
 
-4. The total amount of revenue received by the Government and the amount allocated to the Government from January to March 2021 is Ghana 46.85 billion (10.7 percent of GDP) whereas the Government's expected revenue is Ghana 51.31 billion (GDP). percentage of 11.7 years). The total revenue of the Government includes non-fuel taxes (74 per cent), non-fuel or taxes (9 per cent), Government revenue from oil and gas (9 per cent), other revenues (6 per cent) and grants to the Government (2 per cent). as in the first edition of the commentary.
+4. The total amount of revenue received by the Government and the amount allocated to the Government from January to March 2021 is Ghana 46.85 billion (10.7 percent of gross domestic product) whereas the Government's expected revenue is Ghana 51.31 billion (GDP). percentage of 11.7 years). The total revenue of the Government includes non-fuel taxes (74 per cent), non-fuel or taxes (9 per cent), Government revenue from oil and gas (9 per cent), other revenues (6 per cent) and grants to the Government (2 per cent). as in the first edition of the commentary.
 
 5. The amount of revenue collected by the Government was less than it expected to receive in 2021, as the following taxes were not properly collected: corporate tax, income tax paid by citizens, mineral tax, excise tax and telecommunication tax for other events.
 
@@ -298,7 +298,7 @@ Other metal applications
 
 11.5
 
-Funds contributed by Government to support Government payments
+Funds contributed by Government to support Government debt
 
 26.5
 
@@ -324,7 +324,7 @@ Iron work pays father
 
 0.0 20.0 40.0 60.0 80.0 100.0 120.0 140.0 160.0
 
-12. With regard to the Government's expected revenue and expenditure plans, the Government will need Ghana 37.01 billion, or 7.4 per cent of the national debt, to meet the development budget.
+12. With regard to the Government's revenue and expenditure plans, the Government will need Ghana 37.01 billion, or 7.4 per cent of the national debt, to meet the development budget.
 
 13. The funds that the Government will seek from rural areas to supplement its expected revenue is Ghanaian shillings 9.1 billion (1.8 per cent of the national debt). However, the Government’s domestic revenue to cover the expected pre-completion revenue will be Ghana 27.9 billion (5.6 per cent of the national debt).
 
@@ -384,7 +384,7 @@ Topic: Promoting Self-Employment in the Country through Stability of Income and 
 
 POST-COVID-19 FINANCIAL CHANGES
 
-The COVID-19 Insurance Mitigation, Infrastructure Rehabilitation and Infrastructure Support Program
+The COVID-19 Insurance Mitigation, Infrastructure Recovery and Infrastructure Support Program
 
 17. To address the 'Ghana No More Need for Assistance' Program even during the COVID-19 pandemic, the Government has launched a rehabilitation and assistance program to reduce the costs of the COVID-19 pandemic with a budget of Ghana 100 billion. This plan will revitalize the country's economy by implementing many reforms and sustain the country by promoting employment and supporting the private sector.
 
@@ -412,7 +412,7 @@ Promotion of Recreation, Arts and Culture
 
 22. As part of the promotion of tourism, arts and culture under the COVID-19 Disaster Mitigation, Infrastructure Rehabilitation and Support Infrastructure Programme, the Government has completed the training of 300 tourist computerized support personnel under the special ‘National Tourism Destination Single Window Platform’ implementation material. The implementation of this program will assist tourism operators to promote tourism in the country.
 
-23. By February 2022, the Government will build additional facilities to support recreation in addition to other development projects such as electricity, water and sanitation in resorts. These developments include a museum, a collection of recycled artifacts, access to the museums, and a “Power House.”
+23. By February 2022, the Government will build additional facilities to support recreation in addition to other development projects such as electricity, water and sanitation in resorts. These developments include a museum, a collection of recycled artifacts, a road to the museum, and a “Power House.”
 
 Expansion of Manufacturing and Export Activities
 
@@ -428,7 +428,7 @@ some citizens have. In Year 2022, the Government will launch a medical center in
 
 • The government will initiate the implementation of a policy that will promote industrial decentralization. These centers will be linked to tertiary institutions of vocational training; and
 
-• The government will expand domestic pharmaceutical manufacturing by working with the manufacturing industry to promote the manufacturing of ingredients.
+• The government will expand domestic pharmaceutical manufacturing activities by working with the manufacturing sector to promote the manufacturing of ingredients.
 
 Application of Computer Science in Management
 
@@ -444,7 +444,7 @@ Health Promotion and Public Safety
 
 Topic: Promoting Self-Employment in the Country through Stability of Income and Employment for Citizens
 
-problems in health according to the 'Agenda 111 Plan' with the aim of achieving the health goal by
+problems in health according to the 'Agenda 111' with the aim of achieving the health goal by
 
 Skill Development and Recruitment of the Youth
 
@@ -592,7 +592,7 @@ Access to Safe Drinking Water
 
 • Tamale Safe Drinking Water Project - Feasibility study completed for project commencement;
 
-• Bringing Safe Drinking Water to Damango – Preliminary preparations and project benefit analysis completed;
+• Bringing Safe Drinking Water to Damango – Initial preparations and project benefit analysis completed;
 
 • Providing Safe Drinking Water to Wenchi – Feasibility study completed and implementation started;
 
@@ -644,11 +644,11 @@ Topic: Promoting Self-Employment in the Country through Stability of Income and 
 
 Getting food
 
-60. To empower people for agriculture so far in the year, 507 of the 560 minor dams sunk have been completed and a further 80 dams have been completed under the 'One Village One Dam' Scheme.
+60. To empower people for agriculture so far in the year, 507 of the 560 small dams sunk have been completed and a further 80 dams have been completed under the ‘One Village One Dam’ Scheme.
 
-61. The Government has completed the construction of 50 markets in small towns under the Development Action for Poverty Alleviation Scheme which includes promotion of agricultural marketing. In addition, all works on the Mankessim market, including the construction of a 2,500-foot [780 m] water tank, have been completed.
+61. The Government has completed the construction of 50 markets in small towns under the Development Action for Poverty Alleviation Program which includes the promotion of marketing of agricultural products. In addition, all works on the Mankessim market, including the construction of a 2,500-foot [780 m] water tank, have been completed.
 
-62. The government distributed roasted export crops to farmers under the “Agriculture for Food Export and Rural Development Scheme”. These crops numbered 7.9 million.
+62. The government distributed roasted agricultural exports to farmers under the “Agriculture for Food Export and Rural Development Scheme”. These crops numbered 7.9 million.
 
 TECHNO CAMON
 
@@ -666,7 +666,7 @@ Topic: Promoting Self-Employment in the Country through Stability of Income and 
 
 Adjustment of Irrigation Project at Tono in Navrongo
 
-66. By the end of August 2021, 23 of the 30 underground bridges have been completed under the One Sub-Area One Building Scheme. The last 7 loading docks will be completed by the end of 2021. These containers will be able to accommodate the 30,000 metric tonnes of food grains with a view to enabling these facilities to store the expected food surpluses under the Agriculture for Sustainability Scheme.
+66. By the end of August 2021, 23 of the 30 underground bridges have been completed under the One Sub-Area One Building Scheme. The final 7 loading docks will be completed by the end of 2021. These containers will be able to accommodate the 30,000 metric tonnes of food grains with a view to enabling these facilities to store the expected food surpluses under the Agriculture for Sustainability Scheme.
 
 32 | Government of Ghana – 2022 Budget for Citizens
 
@@ -674,19 +674,19 @@ Topic: Promoting Self-Employment in the Country through Stability of Income and 
 
 Goods Loading at Wenchi
 
-67. In the just concluded 2020/2021 coconut growing season, coconut production by coconut farmers amounted to 1,045,500 million tonnes. The government has increased the price of a tonne of cocoa by 28 percentage points to Ghanaian sidis 10,560 during the 2019/2020 cropping season and remains the same until the 2021/2022 cropping season, despite the decline in international cocoa prices.
+67. In the just concluded 2020/2021 coconut growing season, coconut production by coconut farmers amounted to 1,045,500 million tonnes. The government has increased the price of a tonne of cocoa by 28 percentage points to Ghanaian shillings 10,560 during the 2019/2020 cropping season and remains the same until the 2021/2022 cropping season, despite the decline in international cocoa prices.
 
-68. Since the establishment of the Animal Research Institute, this is the first time that commercial chicks have been raised for reproduction. The number of 5- to 7-week-old hens was 1,300 and the 5- to 7-week-old hens were 300. In addition, 6,023,930 villages were mobilized for the implementation of the Agriculture for Food Supply and Rural and Urban Development Programme. A total of 55,727 devi and 34,252 nevi were sold to farmers.
+68. Since the establishment of the Department of Animal Research, this is the first time that commercial chicks have been raised for reproduction. The number of 5- to 7-week-old hens was 1,300 and the 5- to 7-week-old hens were 300. In addition, 6,023,930 villages were mobilized for the implementation of the Agriculture for Food Supply and Rural and Urban Development Programme. A total of 55,727 devi and 34,252 nevi were sold to farmers.
 
 33 | Government of Ghana – 2022 Economic Agenda for Citizens
 
 Topic: Promoting Self-Employment in the Country through Sustainable Income and Employment for Citizens
 
-69. In 2022, the Government will continue to support 14,000 farmers and broilers, 8,000 turkeys, 5 million chickens and 20,000 other birds.
+69. In 2022, the Government will continue to support 14,000 farmers and livestock breeders, 8,000 turkeys, 5 million chickens and 20,000 other birds.
 
 70. The Ministry of Research will continue to support the Agriculture for Food Security and Rural and Urban Development Program and the Agriculture for Employment Programs by providing seeds to farmers. Chickens will be reared and distributed to farmers (breeders) in accordance with the Poultry Breeding Program of the Department of Veterinary Research.
 
-Latric Forces and Modemines
+Latric Force and Modemines
 
 71. For lattice energy gain and distribution terms to combine well and achieve stability, the following operations were carried out:
 
@@ -698,7 +698,7 @@ Latric Forces and Modemines
 
 • Government has completed 85 per cent distribution of construction of Kasoa Transmission line comprising upgrade of 161KV GRIDCO main transmission line and point-to-point pulling works with remaining to be completed by 2021 end.
 
-72. To reach all parts of the country by 2024, the Government has extended latric power to 162 districts resulting in an increase in latrine consumption in the country from 85.17 per cent by 2020 to 86.63 per cent by 2021. Latric extension projects to 512 communities are in progress and have reached various stages of completion.
+72. To reach all parts of the country by 2024, the Government has extended latric power to 162 districts resulting in an increase in latrine consumption in the country from 85.17 per cent by 2020 to 86.63 per cent by 2021. Latric extension to 512 communities is in progress and various stages of completion have been reached.
 
 34 | Government of Ghana – 2022 Budget for Citizens
 
@@ -750,7 +750,7 @@ Fufofo | 1,909,489 | 130,608 | 128,131 | 1,203 | 1,274
 
 77. With the global cure for COVID-19 resolved, the COVID-19 pandemic has become an additional safety measure in addition to those we are implementing to prevent the spread of the disease. These safety measures include masks, social distancing and hand washing or sanitizing that do not involve the use of medicines.
 
-78. The AstraZeneca COVID-19 vaccine was launched with 600,000 people in February 2021 and as of August 8, 2021, the number of people who have been injected at least once has exceeded 2.5 million. The vaccine is being offered to people 18 years of age and older, except pregnant women. The campaign is still underway in all 16 major states and 261 sub-states across the country.
+78. The AstraZeneca COVID-19 vaccine was launched with 600,000 people in February 2021 and as of August 8, 2021, the number of people who have been injected at least once has exceeded 2.5 million. The vaccine is being given to people 18 years of age and older, except pregnant women. The campaign is still underway in all 16 major states and 261 sub-states across the country.
 
 79. As part of boosting the distribution of droni essential medicines, Government has partnered with the Zipline Company to build two new dispensing stations in Anum in the Eastern Region and Abujuro in Oti Region.
 
@@ -758,13 +758,13 @@ Fufofo | 1,909,489 | 130,608 | 128,131 | 1,203 | 1,274
 
 Topic: Promoting Self Employment in the Country through Sustainable Income and Employment for Citizens
 
-80. The Government will promote the implementation of the ‘Agenda 111 Plan’ which includes the construction of 101 treatment centers in small communities, seven treatment centers in large communities, and three psychiatric hospitals in the state. Make necessary preparations for the construction of 91 additional clinics in smaller areas.
+80. The Government will promote the implementation of the ‘Agenda 111 Plan’ which includes the construction of 101 dispensaries in small communities, seven dispensaries in large communities, and three psychiatric hospitals in the state. Make necessary preparations for the construction of 91 additional clinics in smaller areas.
 
 81. By 2022, the Government will commence the construction of 11 40-bed dispensaries and one 30-bed dispensary in Ashanti, Bono, Ghewa and Eastern Provinces. The main Tema Dispensary and the National Drug Reserve will be rebuilt and the construction of La Dispensary, Nkoranza Dispensary and Shama Dispensaries will continue.
 
 Census of the population
 
-82. The 2021 Census of Persons and Households ended on the 8th of December The previously unapproved census released on 22nd November 2021 shows that the population of Ghana is 30,792,608 million. Of this number, 15,610,149 million women (50.7 percentage points) and 15,182,459 million men (49.3 percentage points).
+82. The 2021 census will end on the 8th of December, The previously unapproved census released on 22nd November 2021 shows that the population of Ghana is 30,792,608 million. Of this number, 15,610,149 million women (50.7 percentage points) and 15,182,459 million men (49.3 percentage points).
 
 2021 Census of Persons and Housing
 
@@ -778,7 +778,7 @@ END
 
 Topic: Promoting Self-Employment in the Country through Stability of Income and Employment for Citizens
 
-the goal of ‘Ghana No Longer Needs Support’. As a united nation, we need to make various changes in our needs, desires and expectations.
+the goal of ‘Ghana No Longer Needing Support’. As a united nation, we need to make various changes in our needs, desires and expectations.
 
 85. We need to foster the spirit of enduring, semi-self-employment among the citizens and promote the matters of their execution. We have had extensive discussions and are confident in the transactions for the implementation of the provisions contained in this Budget. Now let us all strive hard in the works.
 
@@ -798,7 +798,7 @@ Allocation of funds and resources: The process by which the Government allocates
 
 Problem alleviation: How to alleviate a problem or suffering.
 
-Budget: The budget is the plan of the Government for the source of funds and how it will spend the funds. For example, a family may plan how much money they have and how they will spend it. (e.g. rent, latrine, water and food) If the family needs more money, it has to borrow or reduce its spending.
+Budget: The budget is the plan of the Government for the source of funds and how it will spend the funds. For example, a family can plan how much money they have and how they will spend it. (e.g. rent, latrine, water and food) If the family needs more money, it has to borrow or reduce its spending.
 
 Deficit: This occurs when the Government spends more money than it receives, or when the amount spent is more than the amount it receives.
 
@@ -842,9 +842,9 @@ The Small Business Promotion Programme: Small businesses are usually employers t
 
 Employment for the Unemployed: This is a program launched by the Government of Ghana for employment of higher education graduates to alleviate social problems in the public and private sectors to enable them to develop their skills for the promotion of the national economy.
 
-Department of Small Industries: This is the non-profit government agency. This department is under the supervision of the Ministry of Commerce and Industry. The mission of this department is to promote the growth and development of small businesses.
+Department of Small Industries: This is the nonprofit government agency. This department is under the supervision of the Ministry of Commerce and Industry. The mission of this department is to promote the growth and development of small businesses.
 
-Unroute Father of Public Goods: All other revenues of the public. This is the total revenue generated by the Government through its revenue operations excluding revenue from fuel; this also looks at inflation.
+Father of Public Goods Without Routes: All revenues of the public in other ways. This is the total revenue generated by the Government through its revenue operations excluding revenue from fuel; this also looks at inflation.
 
 Non-Tax Revenues: This is the non-tax revenues of the Government. For example, license fees and fees for the use of public property.
 

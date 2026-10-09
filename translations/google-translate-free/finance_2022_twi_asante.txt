@@ -34,7 +34,7 @@ Types of accounting tables:
 
 5 ANNOUNCEMENT OF THE PRESIDENT
 
-7 OWNERSHIP
+7 OWNERS
 
 HOW THE NATIONAL ECONOMY PERFORMED IN
 
@@ -82,9 +82,9 @@ Table 5: Expenditure Forecast and Allocation by 2022 (in Ghanaian Billion).
 
 “Building a Nation where Private Entrepreneurship is Strong as a result of Good Economic Planning and Entrepreneurship Policy”
 
-THE PRESIDENT'S STATEMENT
+THE PRESIDENT'S ANODISEM
 
-The negative impact of the COVID-19 pandemic has affected the economy of every country in the world including Ghana. The suffering that resulted in death, hardship and job loss experienced by Ghanaians has not been completely forgotten by the Government. I am proud to say that the steps taken by this country against this epidemic are courageous steps and the most successful decisions that all the countries of the world have acknowledged. The government also introduced various programs to support private enterprises to rebuild the community.
+The negative impact of the COVID-19 pandemic has affected the economy of every country in the world including Ghana. The suffering that resulted in death, hardship and job loss experienced by Ghanaians has not been completely forgotten by the Government. I am proud to say that the steps taken by this country against this epidemic are courageous steps and the most successful decisions that all the countries of the world have acknowledged. The government also developed various programs to support private enterprises to rebuild the community.
 
 Furthermore, in order to cope with the challenges and opportunities posed by this pandemic, the Government through the successful administration of President Nana Addo Dankwa Akufo-Addo swiftly launched the Ghana Covid-19 Eradication and Private Employment Rehabilitation Assistance (GhanaCARES) “Good Father” Program (Ghana). The COVID-19 Alleviation and Revitalization of Enterprises programme, (the GhanaCARES “Good Father” programme) with a budget of GH¢100 billion This has brought real relief to our people and continues to bring revival to the country.
 
@@ -102,7 +102,7 @@ In this 2022 Economic Plan, we have developed various plans to continue to addre
 
 “Building a Nation where Private Entrepreneurship is Strong as a result of Good Economic Planning and Entrepreneurship Policy”
 
-All Ghanaians, especially the youth to see that they have a stake in this country, to think positively and to participate in the private enterprise society that we are building to sustain and not complete.
+All Ghanaians, especially the youth to see that they have a stake in this country, to think positively and to participate in the private enterprise nation that we are building to sustain and not complete.
 
 I encourage all of us to help build the Ghana we all seek.
 
@@ -126,7 +126,7 @@ INTRODUCTION
 
 AS THE NATIONAL ECONOMY PERFORMED IN
 
-As was the basis of State economic development
+As was the basis of State economic growth
 
 3. The following is a statistical report we have received that shows what the national economy would look like in 2021:
 
@@ -142,13 +142,13 @@ As was the basis of State economic development
 
 • The national debt as a percentage of gross domestic product (%age of GDP) stood at 77.7 percent at the end of April 2021, compared to 76.7 percent at the end of February (76.1%);
 
-• Gross International Reserves also reached US$11.44 billion at the end of January 2021, which is five months and five days long compared to the end of February 2020 in US dollars eight billion and sixty-two million (US$8.62 billion) with an order capacity of only four months and one day; then now
+• Gross International Reserves also reached US$11.44 billion at the end of January 2021, which is five months and five days long compared to the end of February 2020 in US dollars eight billion and sixty-two million units (US$8.62 billion) with an order capacity of only four months and one day; then now
 
 8 | Government of Ghana - 2022 Citizens Economic Plan
 
 “Building a Nation where Private Entrepreneurship is Strong as a result of Good Economic Planning and Entrepreneurship Policy”
 
-• The country's currency strength in major foreign currencies stabilized in By the end of April 2021, the Ghanaian currency had depreciated by 1.7% against the US Dollar compared to the same period in 2020 when the country’s currency depreciated by 2.9 % depreciation.
+• The strength of the country's currency in major foreign currencies stabilized in By the end of April 2021, the Ghanaian currency had depreciated by 1.7% against the US Dollar compared to the same period in 2020 when the country’s currency depreciated by 2.9 % depreciation.
 
 9 | Government of Ghana - 2022 Citizens Economic Plan
 
@@ -320,11 +320,11 @@ Cost of goods and services
 
 Employee salary 36.0
 
-Amount of activity fee 138.3
+Activity Amount 138.3
 
 0.0 20.0 40.0 60.0 80.0 100.0 120.0 140.0 160.0
 
-12. Based on the targeted revenue and allocations and then the various activities in 2022, the operating budget will exceed the target in this Budget by GH¢39.01 billion which is 7.4 % of the country’s gross domestic product. of GDP).
+12. Given the targeted revenue and allocations and then the various activities in 2022, the operating budget will exceed the target in this Budget by GH¢39.01 billion which is 7.4 % of the country’s gross domestic product. of GDP).
 
 13. The expected foreign exchange reserves are estimated at GH¢9.1 billion, which is 1.8 % of GDP. The expected revenue in the country alone is also around GH¢27.9 billion, which is five and six percent of the country’s gross domestic product (5.6 % of GDP).
 
@@ -406,13 +406,13 @@ The Foreign Method of Farming and the Replacement of Breeders
 
 Tourism, Arts And Cultural Tourism
 
-22. As part of the Government's efforts to integrate Tourism, Arts and Culture through the CARES program to improve the national economy, the Government sought to complete the consolidation of National Tourism Centres, thereby bringing together 300 operators role and their role is fulfilled.
+22. In response to the Government's efforts to integrate Tourism, Arts and Culture through the CARES program to improve the national economy, the Government sought to complete the consolidation of National Tourism Centres, thereby bringing together 300 operators role and their role is fulfilled.
 
 23. By 2022, the Government will build areas such as the Art Gallery, Electric Station, Organic Station, and remove access roads to tourist attractions and then provide improvements such as electricity, water and sanitation and communication facilities to tourist attractions.
 
 Trade and Export Promotion
 
-24. In order to align our efforts with the Government’s 10-Point Industrialization Agenda, we have decided to focus on the expansion of Ghana’s Small Scale Industries so that they can produce value added products on the foreign market, processing industries will flourish effective, many export products have been developed and thus jobs have been created for the public to produce. In 2021, the Government began construction of a world-class Medical Center in Noguchi to support the country's pharmaceutical companies. In 2022, we will take the following steps:
+24. In order to align our efforts with the Government’s 10-Point Industrialization Agenda, we have decided to focus on the expansion of Ghana’s Small Scale Industries so that they can produce value added products on the foreign market, processing industries will flourish effective, many export products have been developed and thus jobs have been created for the public. In 2021, the Government began construction of a world-class Medical Center in Noguchi to support the country's pharmaceutical companies. In 2022, we will take the following steps:
 
 • The various corporate policy reforms will be accelerated and a decentralized approach will prevail in the Office of the Registrar General of Companies (Registrar General Department);
 
@@ -426,7 +426,7 @@ Trade and Export Promotion
 
 We are bridging the gap between us and the rest of the world in terms of digital knowledge and accelerating the process of digital communication
 
-25. The Government continues to make significant progress in our digital infrastructure initiatives. To complete this step, the Government has provided over 15 million Ghanaians with their own identity cards and has also placed seven million and 7.5 million houses on the national road network which helps to pinpoint the exact location of each of these sources.
+25. The Government continues to make significant progress in our digital infrastructure initiatives. To complete this step, the Government has provided over 15 million Ghanaians with their own identity cards and has also placed 7.5 million houses on the national road network which helps to pinpoint the exact location of each of these houses.
 
 26. The Bank of Ghana has launched a new e-cedi currency in our e-cedi currency. We have demonstrated the digital approach to Government, and the strategies we can use to improve the performance and value of Government agencies for the public on the ‘Ghana.gov’ platform.
 
@@ -452,7 +452,7 @@ Climate change measures are the best way to reduce climate change.
 
 31. Ghana is planning to replace all the deforested areas with afforestation. To this end, the Government is taking steps to rehabilitate degraded lands, to ensure that our forests and wildlife are protected, planned and implemented in a variety of beneficial ways.
 
-32. In order to overcome the problem of logging and deforestation, the President led the people to plant more than 7,000 trees by April This exceeded the target of five thousand trees under the Green Ghana programme.
+32. In order to overcome the problem of logging and deforestation, the President led the people to plant more than 7,000 trees by April This exceeded the target of five thousand trees to be planted under the Green Ghana programme.
 
 22 | Government of Ghana - 2022 Citizens Economic Plan
 
@@ -732,7 +732,7 @@ HUAWEI Nova 7i AI QUAD CAMERA
 
 • Twenty-seven thousand three hundred and ninety-one sets of technical instruments.
 
-75. In addition, we completed a total of one hundred and seventeen other secondary school projects, all of which included classrooms, dormitories, administration blocks, reading rooms and dining halls. This brings the total number of activities we have undertaken in the secondary school housing program to six hundred and fifty-seven.
+75. In addition, we completed a total of one hundred and seventeen other secondary school projects, including classrooms, dormitories, administration blocks, reading rooms and dining halls. This brings the total number of activities we have undertaken in the secondary school housing program to six hundred and fifty-seven.
 
 Exercise
 
@@ -740,7 +740,7 @@ Exercise
 
 Table 2: COVID-19 screening scores
 
-Specific function | Blood tests | Those who have | The recovered | The Dead | Those Who Are Sick
+Specific function | Blood tests | Those who have | Those who have recovered | The Dead | Those Who Are Sick
 
 Time to time tracking | 446,782 | 49,609 | 125,320 | 1,203 | 1,274
 
@@ -762,7 +762,7 @@ Population | 1,909,489 | 130,608 | 128,131 | 1,203 | 1,274
 
 The population
 
-82. We completed the manpower and construction process on 7th January The latest figures were released on the 22nd of April 2021 which shows that the total population of Ghana is 30,792,6 Of this, the number of females is 15,610,149 million females which is 50.7 %) and the number of males
+82. We completed the processing of the people and the buildings on 7th January The latest figures were released on the 22nd of April 2021 which shows that the total population of Ghana is 30,792,6 Of this, the number of females is 15,610,149 million females which is 50.7 %) and the number of males
 
 37 | Government of Ghana - 2022 Citizens Economic Plan
 
@@ -782,7 +782,7 @@ END
 
 84. The 2022 Economic Plan is vital in the steps we are taking to recover from our past, and to achieve the positive transformation that will lead to our vision of Ghana Beyond Aid. It is vital that we carefully compare our needs, aspirations and goals as a nation and as a people.
 
-85. These steps will require us to stretch our legs and ensure that private enterprise and its growth takes root in this country. We have endeavored to build partnerships and partnerships with partners that have provided us with the willingness to implement our action plans outlined in this Financial Plan. Let us all work together!
+85. This step will require us to stretch our legs and ensure that private enterprise and its growth take root in this country. We have endeavored to build partnerships and partnerships with partners that have provided us with the willingness to implement our action plans outlined in this Financial Plan. Let’s all work together!
 
 86. God Bless our country Ghana!
 
@@ -826,7 +826,7 @@ Grants to other Government Units: This represents the amounts that are required 
 
 Gross Domestic Product (GDP): This refers to the value of all the goods produced in the country during a given period.
 
-Gross International Reserves:This is a measure of the extent of the purchasing power of a country’s economy at a particular point in time. This helps to compare the budget of one country with that of another country by seeing the economic strength of the country.
+Gross International Reserves:This is a measure of the purchasing power of a country at a particular point in time. This helps to compare the budget of one country with that of another country by seeing the economic strength of the country.
 
 Inflation: This represents the increase in the prices of services and goods over a period of time.
 

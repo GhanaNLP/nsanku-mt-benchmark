@@ -9,42 +9,98 @@ benchmarks:
   url: https://ai.google.dev/gemini-api/docs/models
   directions:
     to_en:
-      bleu: 30.22
-      chrf: 59.16
-      length_ratio: 0.8
-      documents: 1
+      bleu: 32.15
+      chrf: 71.17
+      length_ratio: 1.19
+      documents: 5
       per_dataset:
         jw:
-          bleu: 30.22
-          chrf: 59.16
-          length_ratio: 0.8
-          documents: 1
+          bleu: 32.15
+          chrf: 71.17
+          length_ratio: 1.19
+          documents: 5
           per_document:
-            jw_202601_aha:
-              bleu: 30.22
-              chrf: 59.16
-              length_ratio: 0.799
-              hyp_words: 9178
-              ref_words: 11657
+            jw_202606_aha:
+              bleu: 31.52
+              chrf: 71.33
+              length_ratio: 1.18
+              hyp_words: 14544
+              ref_words: 12130
+              year: 2026
+            jw_202607_aha:
+              bleu: 32.04
+              chrf: 71.9
+              length_ratio: 1.206
+              hyp_words: 14317
+              ref_words: 11919
+              year: 2026
+            jw_202608_aha:
+              bleu: 30.53
+              chrf: 69.8
+              length_ratio: 1.216
+              hyp_words: 14205
+              ref_words: 11499
+              year: 2026
+            jw_202609_aha:
+              bleu: 35.33
+              chrf: 72.31
+              length_ratio: 1.157
+              hyp_words: 13901
+              ref_words: 11759
+              year: 2026
+            jw_202610_aha:
+              bleu: 31.31
+              chrf: 70.49
+              length_ratio: 1.168
+              hyp_words: 14074
+              ref_words: 11842
               year: 2026
     from_en:
-      bleu: 9.64
-      chrf: 36.04
-      length_ratio: 1.2
-      documents: 1
+      bleu: 9.81
+      chrf: 34.61
+      length_ratio: 0.89
+      documents: 5
       per_dataset:
         jw:
-          bleu: 9.64
-          chrf: 36.04
-          length_ratio: 1.2
-          documents: 1
+          bleu: 9.81
+          chrf: 34.61
+          length_ratio: 0.89
+          documents: 5
           per_document:
-            jw_202601_aha:
-              bleu: 9.64
-              chrf: 36.04
-              length_ratio: 1.197
-              hyp_words: 13621
-              ref_words: 10897
+            jw_202606_aha:
+              bleu: 9.37
+              chrf: 34.98
+              length_ratio: 0.874
+              hyp_words: 14087
+              ref_words: 16267
+              year: 2026
+            jw_202607_aha:
+              bleu: 9.05
+              chrf: 33.89
+              length_ratio: 0.898
+              hyp_words: 13611
+              ref_words: 15114
+              year: 2026
+            jw_202608_aha:
+              bleu: 10.57
+              chrf: 34.32
+              length_ratio: 0.885
+              hyp_words: 13555
+              ref_words: 15396
+              year: 2026
+            jw_202609_aha:
+              bleu: 10.47
+              chrf: 34.89
+              length_ratio: 0.893
+              hyp_words: 13588
+              ref_words: 15505
+              year: 2026
+            jw_202610_aha:
+              bleu: 9.57
+              chrf: 34.96
+              length_ratio: 0.878
+              hyp_words: 13861
+              ref_words: 15982
               year: 2026
 missing:
 - model: KhayaAI/khaya-translate

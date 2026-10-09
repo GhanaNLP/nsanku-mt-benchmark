@@ -4,45 +4,45 @@ FREEDOM AND JUSTICE REPUBLIC OF GHANA
 
 2021 CITIZENS BUDGET
 
-2021 Budget statement and economic policy which is summarized and easy to read
+2021 Citizens' Budget and economic policy summary that is easy to read
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-How citizens can access information
+The process by which citizens will receive information
 
-The 2021 Budget Statement and Economic Policy of the Government of Ghana, as well as the 2021 Citizens' Budget, are all available on this website: www.mofep.gov.gh
+The 2021 Budget Statement and Economic Policy of the Government of Ghana, as well as the 2021 Citizens' Budget, are all available on the website: www.mofep.gov.gh
 
-If you need the Budget very much, please you can contact the Public Relations Office of the Ministry of Finance:
+If you want more of the Budget, please you can contact the Public Relations Office of the Ministry of Finance:
 
 Public Relations Office New Building Ground Floor Room 001 or 003 P. O. Box MB 40 Accra – Ghana Email: info@mofep.gov.gh
 
-The provided text "Translated by:" is already in English. If you meant to translate it into Dagbani, it is: "Ŋun lebgili n-nyɛ:" Otherwise, as requested to output only the English translation of the text provided: Translated by:
+Translated by:
 
 Bureau of Ghana Languages
 
 2 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: "Economic recovery, strengthening, completion and continuity"
+Motto: “Revitalizing the economy through Growth, Resilience, and Diversification”
 
-What is in this book
+Table of Contents
 
 Tables: ................................................................................................................................ 4
 
 Houses:.............................................................................................................................................. 4
 
-MINISTER FOR FINANCE FOREWORD........................................................... 6
+MINISTER RESPONSIBLE FOR FINANCE'S SPEECH........................................................... 6
 
 INTRODUCTION ..........................................................................................................................................7
 
-ECONOMIC AND FINANCIAL ACTIVITIES FOR THE YEAR 2020 .............................................................................7
+ECONOMIC ACTIVITIES IN THE YEAR 2020 .............................................................................7
 
-2021 BUDGET AND ECONOMY ............................................................................ 10
+2021 BUDGET AND ECONOMIC AFFAIRS ............................................................................ 10
 
-METHODS OF COLLECTING TAXES ............................................................................................................ 11
+WAYS OF COLLECTING TAXES ............................................................................................................ 11
 
-THE IMPACT OF THE COVID-19 PANDEMIC, MITIGATION MEASURES AND GhanaCARES INITIATIVES .......... 12
+COVID-19 PANDEMIC IMPACT, EASING OF RESTRICTIONS AND GhanaCARES PATHWAY .......... 12
 
-STATE OF DEVELOPMENT SECTORS AND THEIR SITUATION ................................................................. 16
+DEVELOPMENT AREAS SITUATION AND ITS CONDITION ................................................................. 16
 
 CONCLUSION ....................................................................................................................................... 27
 
@@ -50,7 +50,7 @@ BUDGET KEYWORDS ................................................................
 
 3 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
 Tables:
 
@@ -58,47 +58,47 @@ Table 1: Workers in the Government Health Sector.......................... 22
 
 Table 2: Completed works .......................................................................................... 24
 
-Table 3: Output of work...................................................................................... 25
+Table 3: Output tasks...................................................................................... 25
 
 Houses:
 
-Table 1: Total tax revenue for the year 2020 Jan-Dec (in billions of cedis).................................... 8
+Chapter 1: Summary of tax operations 2020 Jan-Dec year (in billions of cedis).................................... 8
 
-Table 2: Financial statement from Jan-Dec 2020 (in Ghanaian Cedis)................................ 9
+Chapter 2: Financial statement 2020 Jan-Dec year (in sweet potato)................................ 9
 
-House 3: Tax assessment collection 2021 (in billions of cedis) ............................................ 11
+Chapter 3: Tax Revenue Projections 2021 (in Billions of Cedis) ............................................ 11
 
-Chapter 4: Goods and Services in the year 2021 (in billions of cedis).......................................... 12
+House 4: Commodity prices and their indices in the year 2021 (in billions of cedis).......................................... 12
 
 4 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-Now, the time has come for every one of us, regardless of the political parties we belong to, to unite, join hands with one another, stand shoulder to shoulder, and work hard to elevate Ghana to where it deserves to be.
+Now, the time has come for each and every one of us, regardless of the political parties we belong to, to come together in unity and join hands with one another, stand shoulder to shoulder, and work hard to elevate Ghana to where it deserves to be.
 
 H.E. Nana Addo Dankwa Akufo-Addo
 
 (March 2021- State of the Nation Address)
 
-5 | Government of Ghana - 2021 Citizens' Budget
+5 | Government of Ghana - 2021 Citizens Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-MINISTER RESPONSIBLE FOR FINANCIAL OVERSIGHT PROFILE
+MINISTER RESPONSIBLE FOR FINANCIAL MATTERS DEEP KNOWLEDGE / SHADOW MINISTER FOR FINANCE (Depending on context: MINISTRY OF FINANCE / MINISTER RESPONSIBLE FOR FINANCE INSIGHT) Wait: "MINISITA ŊUN SU LAƔIDIBO" = Minister responsible for finance / Minister for Finance. "FUKUMSI" = authority / control / supervision. "ZILIŊKOM" = shadow / deep essence / reflection? Wait, "ziliŋkom" in Dagbani: Zilinli = deep. Ziliŋkom = depth, insight, shadow? Wait! In Ghanaian parliamentary terminology: "Minisita ŋun su laɣidibo" = Minister of Finance / Minister responsible for finance. Wait, "fukumsi" = control / mandate / oversight. Wait, "ziliŋkom" = shadow? "Shadow Minister of Finance"? Wait, "fukumsi ziliŋkom" = shadow cabinet oversight / shadow minister? Wait, "zilinli" = shadow / shade (like "chilimli" / "jilimli" / "zilinli" -> shade/shadow in some dialects: "zalinzoli", "ziliŋkom" = shade/reflection?). Wait, in Dagbani, "ziliŋkom" literally means "shadow" (from *ziliŋ* / *jiliŋ*). So "MINISITA ŊUN SU LAƔIDIBO FUKUMSI ZILIŊKOM" = SHADOW MINISTER OF FINANCE / SHADOW MINISTER FOR FINANCE. Wait: "Minisita ŋun su... fukumsi ziliŋkom" -> "Shadow Minister for Finance". Yes, "ziliŋkom" = shadow. "Minisita... fukumsi ziliŋkom" = Shadow Minister for Finance.SHADOW MINISTER FOR FINANCE
 
-Citizens of Ghana held an election in December 2020 and re-elected the President, Nana Addo Dankwa Akufo-Addo, to sit on the seat for another four years to continue his good work and do much more. The trust that we, the Ghanaian people, have in the Government is something we cannot overlook, because it happened.
+The citizens of Ghana voted in December 2020 to re-elect the President, Nana Addo Dankwa Akufo-Addo, to sit on the seat for another four years to continue his good work and do much more. The trust that we, the people of Ghana, have placed in the Government is something we cannot overlook, because it has been done.
 
-The 2021 Budget is a special one that brings together the Government's revenue mobilization avenues to save lives, revitalize struggling businesses, and channel our energy toward the transformation of Ghana in the wake of COVID-19. The budget captures our vision to transform Ghana and transform our fiscal pathways.
+The 2021 Budget is a special one that consolidates the Government's expenditure pathways to save lives, strengthen distressed businesses, and focus our efforts on rebuilding a better Ghana in the wake of COVID-19. The budget also captures our vision of transforming Ghana to reshape our expenditure patterns.
 
-In the first part, we changed many of the expenditure paths to restore them to their proper footing, which followed many economic paths we undertook to do so, starting with revenue mobilization enhancement measures, employing growth measures, and coming out to support the private sector to establish various poverty alleviation measures. Towards the end of the year 2019, we were on track to transform this country based on economic projections and what the international community had approved, which was evident, when COVID-19 struck us. The devastating impact of this disease penetrated the economic systems of every country, including Ghana.
+In much of the first part, we significantly reformed our fiscal policies, driven by a range of economic measures we introduced: from expanding tax compliance to utilizing targeted growth interventions, and stepping in to support the informal sector through various poverty alleviation schemes. By the end of 2019, our pathway toward national economic transformation, supported by projections and validated by our international partners, was evident when COVID-19 struck. The disruptive forces of this pandemic have spared no economy, including that of Ghana.
 
-Since the outbreak of the COVID-19 pandemic, it has caused much distress, setting our economy and daily lives backward. The government observed this with great concern, along with the damages the pandemic brought, and came out with measures to help lift the burdens and restore our lives to how they used to be. We have not lost hope yet, because we have now seen new paths to follow in working that bring limitless success. The government is committed to ensuring that we have healthy people. That is why it made a way to vaccinate Ghanaians to ensure we all remain healthy and develop Ghana into what we desire to see.
+Since the outbreak of the COVID-19 disease, it has brought a lot of suffering, setting back our economy and daily lives. The government observed this and was very troubled by the hardships brought by the pandemic, and came out with measures to help lift the burden and restore our lives to how they used to be. We have not lost hope because we have now found new ways to work, and their success is limitless. The government is committed to ensuring that we have healthy people. That is why it has made ways to vaccinate Ghanaians to ensure that we are all healthy and transform Ghana into what we want it to be.
 
-Our closer ties with each other, even in the midst of difficulties, are one of the paths of our development, and we have taken bold steps to restore our economy back on its track. Just as about one million and two thousand (1,002,000) Ghanaians have been able to attain better secondary school education in their lives, we have also improved the banking sector so that depositors can retrieve their savings from the defunct banks. In addition, vehicle assembly plants have been established, and we see the first vehicles coming from there on our roads and in our markets.
+Our close relationship with each other, even in the midst of difficulties, is one of our paths to development, and we have taken bold steps to restore our economic fortunes. Just as about one million and two thousand (1,002,000) Ghanaians have been able to access secondary school education which has improved their lives, we have also improved the banking sector so that depositors are able to retrieve their savings from collapsed banks. In addition, an automotive assembly plant has opened, and we are seeing the first vehicles produced from it on our roads and in our markets.
 
-Indeed, we really faced challenges in our efforts to achieve these development goals. The government is making every effort to take measures to overcome these challenges and bring relief to businesses. For example, we established the CAP-BUSS Programme worth GH¢750 million in May 2020, and this has provided support to micro, small, and medium enterprises (MSMEs) and the like.
+Indeed, we really faced challenges in our efforts to bring about these development goals. The government simply did its best to take measures to overcome these challenges and bring relief to the business community. For example, we established the GH¢750 million CAP-BUSS Programme in May 2020, which has provided support to Micro, Small and Medium Enterprises (MSMEs) and the like.
 
-As has never happened before, we have been called upon to come together to develop our country, while we continue to work on the path with courage so that we achieve development that reaches everyone. For we have committed ourselves to serve our Ghana with all our strength and all our hearts.
+In the meantime, we are called upon to come together and develop our country, while continuing to follow that path with dedication to see progress that reaches everyone. Because we have pledged to serve our Ghana with all our strength and all our heart.
 
 May God bless all of us.
 
@@ -108,107 +108,107 @@ Ken Ofori-Atta, Minister of Finance
 
 6 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-BEGINNING
+INTRODUCTION
 
-1. The 2021 Citizens' Budget is a summary of the Government's achievements in 2020 and its plans for revenue collection and projected expenditure for the year 2021. The theme of the 2021 Budget is "Completion, Consolidation and Continuation". This theme is appropriate because in past years, every new budget introduced many new projects to be started, diverting funds from ongoing works. This did not expand our revenue streams, but rather resulted in accumulated debt and delayed payments to many contractors who had completed their work. This caused the cost of every project to increase, as delayed payments for completed works led to interest charges on claims.
+1. The 2021 Citizens' Budget is a review of the Government's achievements in 2020 and its intentions for revenue mobilization and the projects projected to be undertaken in the 2021 year. The theme of the 2021 Budget is “Completion, Consolidation and Continuation”. This theme is appropriate because in past years, every new budget came with many new projects to be started, whose funding would come from ongoing projects. This does not align well with our revenue mobilization avenues, but rather results in debt accumulation, and many contractors who have completed their work are not paid on time. This caused the cost of every project to increase, as delayed payments for completed works led to interest charges on delayed payments.
 
-2. In the year 2021, the Government of Ghana intended to adopt a new path. Its intention was to put an end to the habit where a government begins a project without completing it before stepping down from office, and another person assumes office and abandons those old projects to also start their own new projects. The government promised the people that it would complete the projects that had been left halfway.
+2. In the year 2021, the Government of Ghana intended to adopt a new path. Its aim was to put an end to the culture of a government starting work without finishing it before leaving office, only for another to come into office and abandon those old projects to start their own new ones. The government made a promise to the people that it would complete all those abandoned projects.
 
 ECONOMIC ACTIVITIES IN THE YEAR 2020
 
-Land economic livelihood activities
+Ministry of Lands and Natural Resources
 
-3. The existing information regarding the economic activity for the year 2020 follows below:
+3. Information regarding the economic activities of the year 2020 follows below:
 
-• In the first nine months of the year 2020, total GDP growth was 0.2%. We saw a growth of 0.9% in the latter part of the year;
+• In the first nine months of the year 2020, total GDP growth was 0.2%. We saw a growth of 0.9% at the end of the year;
 
-• Real non-oil GDP which was 0.4% growth in the first nine months of the year, with an expectation that by the end of the year, it would be 1.6%;
+• Non-oil real GDP grew by 0.4% in the first nine months of the year, and was projected to be 1.6% by the end of the year;
 
-• The end-December year-on-year headline inflation was 10.4%, compared to the revised estimate of 11.0%;
+• Inflation for the end of December was 10.4%, compared to the revised 11.0%;
 
 • The budget deficit was 11.7% of GDP compared to the revised target of 11.4% of GDP;
 
-• The actual change was a deficit of 5.3% of GDP compared to a projected deficit of 4.6% of GDP; and
+• The change was 5.3% of GDP compared to their projected 4.6% of GDP; and
 
-• Gross international reserves stood at US$8.6 billion, equivalent to 4.1 months of import cover.
+• Gross international reserves stood at US$8.6 billion, representing 4.1 months of import cover for the country.
 
-TAX OPERATIONS AND EXPENDITURE FOR THE YEAR 2020
+TAX WORK AND MONEY SPENT IN THE YEAR 2020
 
-Tax work
+Tax collection
 
 7 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-4. In the 2020 Budget, Government outlined the measures it would take to mobilize taxes and grants amounting to GH¢53.7 billion to be used for work in this country. By the end of December 2020, revenue amounting to GH¢55.1 billion had entered Government hands, exceeding what was projected by GH¢1.5 billion. This was due to the strong performance in international trade tax collection, a success resulting from the implementation of ICUMS (Integrated Customs Management System), which allowed for better administration and collection of the taxes. Table 1 shows the tax collection performance in several areas in the year 2020.
+4. In the 2020 Budget, the Government outlined measures it would use to mobilize tax and grants amounting to GH¢53.7 billion to execute work in the country. By the end of December 2020, revenue amounting to GH¢55.1 billion had been received by the Government, exceeding the target by GH¢1.5 billion. This was due to the strong performance in international trade tax collection, a success attributed to the implementation of the ICUMS (Integrated Customs Management System), which enabled effective administration and collection of the taxes. Chart 1 shows the tax collection performance across various sectors in the year 2020.
 
-Table 1: Tax revenue Jan-Dec 2020 (in billions of Ghana Cedis)
+House 1: Total tax revenue 2020 Jan-Dec (in billions of Ghana Cedis)
 
 60.0 55.1 53.7 50.0 42.6 40.7 40.0 30.0 20.0 10.0 4.5 5.0 3.8 3.6 3.4 2.8 1.2 1.2 0.0 Total Revenue & Grants Non-oil Tax Revenue Non-Oil Non-Tax Revenue Oil and Gas Receipt Other Revenue (ESLA & SSNIT to NHIL) Grants Rev. Budget Prov.outturn
 
-Corruption
+Bribery
 
-5. By the end of December 2020, Government expenditures (including payments for old debts) amounted to GH¢100.1 billion, compared to the projection of GH¢97.7 billion. Revenue and the expenditure that was in the projection. All expenditures exceeded what had been projected in the 2020 Budget
+5. By the end of December 2020, Government spent an amount of GH¢100.1 billion on expenditures (including clearance of arrears), against a projection of GH¢97.7 billion. Revenue and grants fell short of the projection, while every expenditure category exceeded what was projected in the 2020 Budget.
 
 8 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-as we have seen in Song 2. Great efforts were also made in an expenditure that showed the rivers came from some of the following:
+as we have seen in Song 2. Great efforts were also made in the collection that showed the rivers originated from some of the following:
 
-• Recruitment of additional health workers, payment of allowances to critical health workers, and payment of rank promotion arrears to retired military personnel under Compensation of Employees;
+• Recruitment of health workers, payment of allowances to critical health workers, and promotion arrears of retired military personnel in the Compensation of Employees;
 
-• COVID-19-related expenditure on goods and services; and
+• Expenditure related to COVID-19 concerning logistics and human resources; and
 
-• COVID-19 and its impact on activities related to goods and merchandise.
+• COVID-19 and jobs related to material assets.
 
-6. We need to know that the Government borrowed an amount of GH¢44.9 billion in addition to revenue collected and grants from abroad, all totaling GH¢55.1 billion, to spend in the year 2020.
+6. It is important to note that the Government borrowed an amount of GH¢44.9 billion in addition to revenue collected and foreign grants totaling GH¢55.1 billion to be able to spend in the year 2020.
 
-House 2: Financial operations total 2020 Jan-Dec year (in Billions)
+Table 2: Financial operations summary 2020 Jan-Dec (in Billions of Cedis)
 
 Discrepancy 2.21 0 Arrears 1.44 1.44 Other Expenditure 12.18 12.08 14.09 Capital Expenditure 9.33 11.88 Grants to Other Government Units 11.81 26.6 Interest Payments 26.27 7.39 Use of Goods and Services 7.74 28.27 Compensation of Employees 27.06 100.53 Total Expenditure (incl. arrears... 97.74 0 20 40 60 80 100 120 Prov Outturn Revised Budget
 
-Public debt status in the year 2020
+How public debt increased in the year 2020
 
-7. The debt stock at the end of December 2020 was GH¢291.6 billion (US$50.8 billion), representing 76.1% of GDP. This breakdown includes funds the Government provided to bail out the financial and energy sectors, as well as the excess capacity charges for the energy sector from Independent Power Producers (Independent Power Purchase). Excluding this financial sector bailout, the debt in the 2020 Budget was 71.5% of GDP. The breakdown of the debt is as follows:
+7. The debt at the end of December 2020 stood at GH¢291.6 billion (US$50.8 billion), representing 76.1% of GDP. This breakdown includes funds the Government provided to bail out the financial and energy sectors, as well as excess capacity charges from the Independent Power Producers (IPPs). Excluding the financial sector bailout, the debt in the 2020 Budget stood at 71.5% of GDP. The breakdown of the debt is as follows:
 
 9 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-• External debt: GH¢141.7 billion (US$24.7 billion), representing 48.6% of the existing debt; and
+• External debt: GH¢141.7 billion (US$24.7 billion), representing 48.6% of the total debt; and
 
 • Domestic debt: GH¢149.8 billion (US$26.1 billion), representing 51.4% of the total debt.
 
-2021 BUDGET AND ECONOMY
+2021 BUDGET AND ECONOMIC POLICY
 
-Economic indicators projected for the year 2021
+Economic outlook for the year 2021
 
-8. How the government monitors expenditure and activities (i.e. taxes and decisions concerning money) and its impact on money and its value in the short term. The 2020 Budget is anchored on the following economic projections:
+8. How the government monitors expenditure and activities (i.e. taxes and decisions concerning money) so that money and its value function within a short period. The 2020 Budget is based on the following national economic projections:
 
-• Overall GDP growth of 5.0%;
+• Total GDP growth of 5.0%;
 
 • Real non-oil GDP growth of 6.7%;
 
-• End-of-December inflation of 8.0%;
+• End of December inflation which is 8.0%;
 
-• The government's expenditure exceeded the revenue it gained from taxes, which was 9.5% of GDP;
+• Government spending exceeding revenue from tax collection, representing 9.5% of GDP;
 
-• A financial shortfall which is the difference between the annual debt and the debt arising from interest on old debts, amounting to 1.3% of GDP; and
+• A fiscal deficit representing the difference between the annual debt and debt servicing costs, amounting to 1.3% of GDP; and
 
-• US dollar reserves that will represent not less than four months of import cover.
+• US dollar reserves that can cover not less than four months of imports.
 
-2021 financial revenue mobilization
+2021 financial wealth collection
 
-9. The government hopes to collect taxes and grants amounting to GH₵72.5 billion in the year 2021. The projected breakdown of the revenue and contributions is in Table 3 below:
+9. The government hopes to receive taxes and grants amounting to GH₵72.5 billion in the year 2021. The projected breakdown of the revenue sources is in Table 3 below:
 
 10 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: "Economic recovery, strengthening, completion and continuity"
+Motto: “Revitalizing the economy through Growth, Resilience, and Diversification”
 
-Song 3: Assessment of Tax 2021 (in billions of Cedis)
+Chapter 3: Projected revenue for the year 2021 (in billions of cedis)
 
 Grants
 
@@ -238,31 +238,31 @@ Total Revenue & Grants
 
 72.5
 
-TAX COLLECTION METHODS
+METHODS OF TAX COLLECTION
 
-10. The government introduced tax collection measures in the 2021 Budget to ease development pathways and alleviate the hardships brought by COVID-19. The tax collection measures are as follows:
+10. The government introduced tax collection measures in the 2021 Budget to ease development initiatives and reduce the hardships brought by COVID-19. The tax collection measures are as follows:
 
-• COVID-19 Health Levy, a 1% increase in the National Health Insurance Levy and a 1% increase in the VAT rate;
+• COVID-19 health levy, a one percent increase in the National Health Insurance Levy and a one percent increase in the VAT flat rate;
 
-• Sanitation and Pollution Levy (SPL) of ten pesewas (10 pesewas) on each liter of petrol or diesel under ESLA (Energy SEctor Levy ACT), to ensure that sanitation is maintained well to promote good living conditions and reduce premature deaths associated with poor sanitation;
+• Sanitation and Pollution Levy (SPL) of 10 pesewas on each liter of petrol or diesel under the ESLA (Energy Sector Levy Act), to ensure proper sanitation, promote good living conditions, and reduce the daily premature deaths resulting from poor sanitation;
 
-• Energy Sector Recovery Levy (Delta levy) of twenty pesewas (20 pesewas) per litre on petrol/diesel under ESLA, to help pay the debts of the Power Purchase Agreement (Power Purchase Agreement) resulting from the plants standing idle or operating below their full capacity;
+• Energy Sector Recovery Levy (Delta levy) of twenty pesewas (20 pesewas) per litre on petrol/diesel under ESLA, to help pay the Power Purchase Agreement (PPA) debts incurred when the plants were standing idle or operating below capacity;
 
-• a tourism development levy of 5% on gross profit, to support promotional activities in the tourism sector. This will be reviewed in 2024;
+• tourism development levy of 5% on gross profit, to help pay for promotional work in the tourism sector. This is to be reviewed in the year 2024;
 
-• The Minister for Finance and the Minister for Local Government shall jointly inspect the casino operating areas, consult with the relevant stakeholders in this country, and come up with multiple measures that will help improve the tax collection mechanisms in the casino operating sector; and
+• The Minister for Finance and the Minister for Local Government shall jointly inspect the gambling areas and consult with stakeholders in this country to come up with several strategies that will help improve tax collection methods in the gambling areas; and
 
 11 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-• And review road tolls to align them with current road toll rates, amend the Fees and Charges (Miscellaneous Provisions) Act, 2018 (Act 983) regarding road toll rates to adjust them automatically every year by an increase, benchmarked against the average annual inflation rate as published by the Ghana Statistical Service.
+• And review the road toll rates to align them with current road toll values, and amend the Fees and Charges (Miscellaneous Provisions) Act, 2018 (Act 983) concerning road toll rates, to adjust them annually by increasing them in line with the projected inflation rates of the preceding year as published by the Ghana Statistical Service.
 
-How wealth was distributed in the year 2021
+How wealth is distributed to us in the year 2021
 
-11. Government in the year 2021 has projected that it will spend an amount of GH¢113.8 billion as shown in Chapter 4. The GH¢41.3 billion deficit will be financed by borrowing from domestic and external markets.
+11. Government in the year 2021 estimates to spend an amount of GH¢113.8 billion as indicated in Section 4. The GH¢41.3 billion deficit will be financed by borrowing from foreign and domestic markets.
 
-House 4: Commodity markets and their projections for the year 2021 (in billions of cedis)
+Table 4: Goods markets and their projections in the year 2021 (in billions of cedis)
 
 Arrears Clearance 3.7
 
@@ -280,209 +280,209 @@ Compensation 30.3
 
 Total Expenditure 113.8
 
-COVID-19 PANDEMIC WORK, EASING OF RESTRICTIONS AND GHANA CARES PROGRAMMES
+COVID-19 PANDEMIC INTERVENTIONS, EASING OF RESTRICTIONS AND GHANA CARES PROGRAMME
 
-12. This section shows the adverse impacts that COVID-19 has on the world economy, especially Ghana. It also highlights the measures the Government has taken to protect against and mitigate the effects of this pandemic.
+12. This section shows the catastrophes that COVID-19 poses to the global economy, especially Ghana. It also highlights the measures the Government has taken to prevent and protect against the impact of this pandemic.
 
 12 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: "Economic recovery, strengthening, completion and continuity"
+Motto: “Revitalizing the economy through Growth, Resilience, and Diversification”
 
 COVID-19 Pandemic Response
 
-13. The COVID-19 pandemic that struck the world in late 2019 is one whose effects have surpassed all domestic and commercial activities in the world's economy. It has also disrupted economic affairs, prevents and restricts the lack of profits, and weakens economic growth. In addition, about 2.6 million people have lost their lives across the world.
+13. The COVID-19 pandemic that broke out across the world in late 2019 has had an unprecedented impact on all economic and commercial activities worldwide. It has also disrupted economic affairs, exacerbated poverty, and weakened economic growth. Furthermore, around 2.6 million people have lost their lives across the world.
 
-14. In this Ghana, within a week, eleven (11) people were infected with this disease, and it rose up to 781 in the last two weeks of July 2020, and declined to 104 by the end of December 2020. And in the year 2021, new modes of infection emerged, and we also saw a figure of 99 in the first week of January, up to 880 by the week of February 5th.
+14. In Ghana this week, eleven (11) people were infected with the disease, rising to 781 in the last two weeks of July 2020, and declining to 104 by the end of December 2020. And in the year 2021, new cases emerged and we saw the number go from 99 in the first week of January up to 880 by the week of February 5th.
 
-15. In terms of measures to prevent and protect against this disease, the government has placed restrictions on Ghanaians and specific sectors of the economy such as hospitality, agriculture, health, travel, manufacturing, construction, finance, as well as education.
+15. Regarding the measures to prevent and protect against this disease, the government restricted Ghanaians and economic activities in key active sectors such as hospitality, agriculture, health, travel, manufacturing, food services, finance, and the education sector.
 
-16. Transport workers, drivers and conductors of trotro and small informal transport groups also suffered during the restrictions on human movement. But although this restriction on public movement was necessary in order to prevent the disease, it also reduced the movement and availability of many goods.
+16. Travel workers, drivers, and conductors of trotros and small unregistered unions that operate without government support also faced hardships due to the restrictions on public movement. However, these restrictions on public movement were necessary for disease prevention, but they also led to a reduction in the movement and availability of many goods.
 
-17. When comparing us with our peers in this West African region, the bold measures taken by the Government of Ghana to prevent and curb the spread of the virus have been praised internationally, and this encourages us to do even more.
+17. If one compares us with our peers in this West African region, the decisive measures taken by the Government of Ghana to prevent and control the spread of the virus have been praised internationally, and this encourages us to redouble our efforts.
 
 13 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: "Economic recovery, strengthening, completion and continuity"
+Motto: “Revitalizing the economy through Growth, Resilience, and Diversification”
 
-18. In addition, the Government received support from the World Bank of up to US$100 million for the National COVID-19 Emergency Preparedness and Response Plan (EPRP), which focuses on strengthening the country's workforce in terms of surveillance, diagnosis, and treatment pathways relating to Testing, Tracing, and Treatment (3Ts).
+18. In addition, the Government received support from the World Bank of up to US$100 million for the National COVID-19 Emergency Preparedness and Response Plan (EPRP), which focuses on strengthening the country’s workforce in surveillance, diagnostics, and treatment procedures relating to Tracing, Tracking, and Treatment (3Ts).
 
-Existing skills training programs
+Existing medicine production jobs
 
-19. The government also sought relief assistance regarding these areas:
+19. The government has also sought relief support regarding these areas:
 
-• to support businesses to retain their workers and families during this disease;
+• which will help business owners to maintain their employees and families during this disease;
 
-• reduced electricity bills from April to the end of December 2020 and provided food to the vulnerable during the lockdown;
+• reduced electricity tariffs from April to the end of December 2020 and provided food for the vulnerable during the lockdown;
 
-• provided cooked, packaged food in packs totaling 1,827,581 and 917,142 to the vulnerable in Accra and Kumasi;
+• provide hot cooked food in packs, amounting to 1,827,581 and 917,142 to the vulnerable in Accra and Kumasi;
 
-• Distribution of food to 470,000 households during the partial lockdown, through a partnership between the Government and faith-based organizations;
+• Distribution of food to 470,000 families during the lockdown through the collaboration between the Government and faith-based organizations;
 
-• The Government of Ghana also enabled the Ghana Water Company (Ghana Water Company Limited) to provide free water to 10,125,620 Ghanaians;
+• The Government of Ghana also caused the Ghana Water Company to provide free water to Ghanaians numbering about 10,125,620 people;
 
-• The Ghanaian citizens who were stranded abroad were repatriated, during the travel restrictions, under the "Operation Return Home" initiative;
+• Ghanaian citizens who were stranded abroad were repatriated during the travel restrictions under the "Operation Return Home" program;
 
 Free drinking water
 
-• establishing the GH¢750 million Coronavirus Alleviation Programme Business Support Scheme (CAP-BuSS), to mitigate the impact of this pandemic on micro, small, and medium/large enterprises, and distributing GH¢412.88 million to support 277,511 businesses; and
+• establishing the GH¢750 million Coronavirus Alleviation Programme Business Support Scheme (CAP-BuSS) to mitigate the impact of the pandemic on micro, small, and medium-sized businesses, and disbursed GH¢412.88 million to support 277,511 businesses; and
 
 14 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: "Economic revitalization through Growth, Strengthening, and Continuity"
+Motto: "Restoring Economic Growth and Strength through Continuity"
 
-• established the COVID-19 National Trust Fund, which received GH¢ 57.13 million, out of which GH¢45.22 million was spent on operations. As of December 31st, 2020, it had provided PPEs and medical supplies to COVID-19 treatment centers, distributed food to the aged, the needy, and the vulnerable, and procured vehicles for some COVID-19 treatment centers, just to mention a few.
+• established the COVID-19 National Trust Fund, which received GH¢ 57.13 million, of which GH¢45.22 million was disbursed. As of December 31st, 2020, it was used to procure PPEs and medical supplies for COVID-19 treatment centers, distribute food to the aged, vulnerable, and needy, and provide vehicles to COVID-19 treatment facilities, to mention just a few.
 
-20. COVID-19 Relief in 2021: The government will announce additional social relief interventions in 2021 to support some groups of people, especially those adversely affected by the pandemic:
+20. COVID-19 Relief in 2021: The government has announced additional social relief support in 2021 for various categories of people, especially those hard hit by this pandemic:
 
-• Refund of overpaid tax: seek a 30% refund of payroll tax if it is from the first half, second or third quarter of 2021, for hospitality and food services, arts and entertainment, as well as travel and its sectors;
+• Overpaid tax refund: apply for a 30% employment tax refund from the first, second, or third quarter of the 2021 fiscal year for hospitality and food services, entertainment and business, as well as travel and tourism sectors;
 
-• Stamp duty: it deferred the collection of the one percent quarterly income tax for the second, third and fourth quarters from petty traders based on the 2021 stamp duty guidelines;
+• Stamp duty: it exempted taxpayers from paying one percent of the second, third, and fourth quarter taxes under the 2021 tax stamp initiative;
 
-• Vehicle Income Tax: Vehicle income tax: suspended quarterly vehicle income tax for the first, second, third, and fourth quarters of the year 2021 for trotros and taxis only, to reduce transport fares; and
+• Vehicle income tax: Income tax on vehicles: suspended quarterly income tax on vehicles for the first, second, third and fourth quarters of 2021, and this applies only to trotros and taxis, to reduce transport fares; and
 
-• Waiving tax arrears to benefit debtors: The waiver of penalty interest for debtors up to December 2020 reduced the financial burden on businesses and individuals who committed to GRA to settle their debts in the 2021 financial year. To enjoy this benefit, they must register with the Ghana Revenue Authority (GRA) and pay the first half of the outstanding tax owed.
+• Waiving accumulated tax arrears to benefit taxpayers: The waiver of penalty interest accumulated for debtors up to December 2020 reduced cash flow constraints for businesses and individuals who entered into an agreement with GRA to pay the principal tax in 2021. Those wishing to benefit from this relief had to register with the Ghana Revenue Authority (GRA) and pay the outstanding tax for their first half of the year.
 
-15 | Government of Ghana - 2021 Citizens' Budget
+15 | Ghana Government - 2021 Citizens' Budget
 
-Motto: “Economic revitalization through Enlightenment, Empowerment, and Excellence”
+Motto: “Economic Recovery through Revival, Revitalization and Transformation”
 
-THE Ghana CARES ("Obaatan Pa" Programme)
+THE Ghana CARES (OBAATAN PA PROGRAMME)
 
-21. The Government of Ghana established the COVID-19 Alleviation and Revitalization of Enterprises Support (Ghana CARES) programme on November 20th, 2020, to help mitigate the pandemic, find ways to eradicate the disease, and develop the economy. It is an approach taken by Ghana's economy to make it strong, developed, progressive, and to improve the living conditions of all, helping to meet the needs of every Ghanaian citizen.
+21. The Government of Ghana established the COVID-19 Alleviation and Revitalization of Enterprises Support (Ghana CARES) programme on November 20th, 2020, to help mitigate the pandemic and find ways to eradicate the disease while developing the economy. It is an initiative adopted by Ghana's economy to make it strong, developed, progressive, and to enhance everyone's living standards so that the needs of every Ghanaian citizen are met.
 
-22. Ghana CARES will strengthen and expand business operations to grow and revitalize, and create decent jobs. Under Ghana CARES, the Government is confident that economic activities will surge forward and revitalize Ghana's development, which will strengthen productivity, create new jobs, and provide better-paying jobs, especially in the private sector.
+22. Ghana CARES will strengthen and expand businesses that will grow and thrive, creating decent jobs. Under Ghana CARES, Government is confident that economic activities will be revived and further strengthened in the Ghanaian economy to boost enterprise and job creation, including higher-earning jobs, especially in the private sector.
 
-23. Some of the key activities and programs it will establish within the Ghana CARES program include:
+23. Key tasks and groupings that it will establish and include in the Ghana CARES group include:
 
-• Support commercial farmers to enable educated youth to also venture into commercial farming;
+• Support large-scale farmers so as to encourage educated youth to also venture into commercial farming;
 
-• to construct an electricity generation plant in Ghana;
+• build an electricity generation plant in Ghana;
 
-• Increase in engineering/machinery, tools, and ICT/technology trade shows;
+• increase the importation/commercial sales of engineering/machinery, tools as well as ICT/science and technology equipment;
 
-• promote the advancement of science;
+• promote scientific progress;
 
-• transform the development of Ghana's housing & construction sector;
+• to transform the development of Ghana's housing and construction sector;
 
-• to make Ghana the hub of countries in the region.
+• to make Ghana become the basin of the countries in the region.
 
-• review and strengthen key and selected Ghana Government sectors; as well as
+• review and strengthen priority and key sectors of the Government of Ghana; as well as
 
-• review and strengthen Ghana's development priorities and secure financial support for Ghana's development goals.
+• review and strengthen key words for Ghana's development to seek financial support for development goals in Ghana.
 
 DEVELOPMENT SECTORS AND THEIR SITUATION
 
-24. This section highlights the key areas in 2020 and the projects that the Government intends to commence in the year 2021. These projects and activities are centered on the country’s medium-term development agenda for the years 2018-2021, and the “Ghana Beyond Aid Agenda.” The aim of these policy initiatives is also to fulfill the objectives of Ghana CARES, as well as our international commitments in line with the UN 2030 Agenda (SDGs) and the African Union Agenda 2063.
+24. This section highlights the key areas in 2020 and the activities Government intends to implement in the 2021 fiscal year. These programmes and activities are anchored on the Medium-Term National Development Policy Framework, 2018-2021 and the “Ghana Beyond Aid Agenda.” These strategic interventions are also designed to achieve the goals of the Ghana CARES programme, as well as to meet our international commitments under the UN 2030 Sustainable Development Goals (SDGs) and the African Union Agenda 2063.
 
 16 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: "Economic recovery, strengthening, completion and continuity"
+Motto: “Revitalizing the economy through Growth, Resilience, and Diversification”
 
 MINISTER FOR FOOD AND AGRICULTURE
 
-Traders sell cotton
+Traders sell ginger
 
-25. The Ministry of Food and Agriculture continued to implement activities in the National Agricultural Investment Plan-Investing for Food and Jobs (IFJ, 2018-2021) to reduce poverty and create decent jobs and economic opportunities. In the year 2020, the Government carried out the following activities:
+25. The Minister responsible for Food and Agriculture continued to carry out the activities in the National Agricultural Investment Plan-Investing for Food and Jobs (IFJ, 2018-2021) (The country's objective to provide food and jobs for the people in the year of work, to reduce poverty, and also provide decent jobs for people to expand business. In the year 2020, the Government carried out the following works:
 
-• 1,736,510 farmers benefited from subsidized fertilizer and improved seeds, leading to high yields of crops such as maize, and all these create jobs for the people;
+• 1,736,510 farmers benefited when fertilizer prices were reduced and the seed sector was also strengthened, which led to people getting a lot of food, food such as maize, and all this was work he sought to provide for the people;
 
-• He also distributed about 7,500 sheep to farmers in the Upper West region, Northern region, and Oti region, and also distributed about 3,000 cockerels to farmers in the Upper West, Eastern region, Ashanti region, Northern region, and Greater Accra regions;
+• He also distributed about 7,500 sheep to farmers in the Upper West region, Northern region, and Oti region, and also distributed about 3,000 chicks to farmers in Upper West, Eastern region, Ashanti region, Northern region, and Greater Accra regions;
 
-• Distributed various breeds of livestock, including pigs and poultry, totaling about 531,100 to farmers, and commenced the construction of eleven livestock housing facilities, along with seven pens in areas where these livestock breeds will be reared;
+• Further mobilize and distribute about 531,100 head of livestock, including pigs and poultry, to farmers, and begin the construction of over 11 livestock housing units and seven paddocks where these livestock breeds will be reared;
 
 17 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-• continued preparation of areas for dry season farming, with all reaching near completion: Tamne Phase I & II—90% and 50%; Mprumem Phase II—95%, rehabilitated sections in Tano have reached 95%, Kpong Left Bank Irrigation Project has reached 61%, and its Left Bank dry season farming area has reached 72%;
+• continued rehabilitation of irrigation schemes at various levels of completion: Tamne Phase I & II—90% and 50%; Mprumem Phase II—95%, rehabilitation of parts of Tano now at 95%, Kpong Left Bank Irrigation Scheme at 61%, and the Left Bank Irrigation Scheme at 72%;
 
-• Construction of ten (10) dams in the Upper East, Upper West region, Northern region, and Savannah region to mitigate drought and ensure water availability for their annual needs;
+• Dredging of ten (10) dams in the Upper East, Upper West region, Northern region, and Savannah region to mitigate drought and ensure they are available for use every year;
 
 An irrigated farm
 
-• And after 21 fairs in one year, one fair in the covenant;
+• And he closed 21 fairs, in one area, one fair in the agreement;
 
-• And still maintained the cocoa price at what it was, which is GH¢7,600 per tonne in the 2017/2018 year, and increased the farmers' bonus up to 8.42%, which is a percentage of GH¢8,240 per tonne in the 2018/2019 year, to ensure that the farmers' efforts were not in vain, because it had collapsed on the market; and
+• And while maintaining the cocoa producer price at GH¢7,600 per tonne in the 2017/2018 season, and increasing the farmers' income by 8.42%, which translates to a percentage of GH¢8,240 per tonne in the 2018/2019 season, so that farmers would not suffer in vain, due to the fall in prices on the market; and
 
-• Created over 110,000 jobs through the Government's cocoa initiative to reduce youth rural-urban migration and promote their livelihoods.
+• Created over 110,000 jobs through the Government's cocoa initiative to reduce rural-urban youth migration and promote their livelihood development.
 
 26. In the year 2021, the Government will:
 
-• distribute seeds and fertilizers to deserving farmers in order to boost maize, rice, soybean, sorghum, cowpea, and groundnut production, which will make Ghana self-sufficient in food cultivation, and help boost export commodities to international markets.
+• distributed seeds and fertilizers to deserving farmers in order to boost maize, rice, soybean, sorghum, cowpea, and groundnut production, which will make Ghana self-sufficient in food production, and help boost exports.
 
 18 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-• supplied farmers with about 531,100 livestock for rearing. Livestock such as sheep and poultry that were procured in the year 2020; established three poultry breeding centres; and procured about five million day-old chicks, intending to obtain 20,000 brooding birds and reduce their price to farmers by 50%;
+• distributed 531,100 livestock to farmers to rear, including pigs and cockerels procured in 2020; established three poultry hatcheries; and procured 5 million day-old chicks to support 20,000 poultry farmers with a 50% subsidy;
 
 • procured agricultural machinery and equipment worth US$30 million to distribute to farmers to enhance their commercial farming;
 
-• procured 97,000 litres and 14,000 kg of chemicals that kill Fall Armyworm, and also procured two mist blowers, three insect release facilities, and 3 million insects that lay their eggs in the armyworms to destroy their seeds; as well as
+• procured 97,000 liters and 14,000 kg of chemicals that kill Fall Army Worm, and also procured two mist blowers, three insect rearing rooms, and 3 million parasitoids that will lay their eggs in the worms to eliminate them; as well as
 
-• to train 64 youth in greenhouse technology at Akumadan and Bawjiase.
+• trained 64 youth in greenhouse technology at Akumadan and Bawjiase.
 
 MINISTER FOR TRADE AND INDUSTRY
 
-27. In the year 2020, the Government established measures to strengthen sectors and areas, to ensure that Ghana leads when it comes to manufacturing goods for Black people and all of Africa. In the year 2020, these were the measures the Government undertook:
+27. In the year 2020, the Government established measures to strengthen regional sectors and position Ghana at the forefront when it comes to manufacturing goods in West Africa and Africa as a whole. In the year 2020, these were the measures the Government took:
 
-• He established 232 projects under the “1D1F”, all at various stages of completion. 76% of these projects are already operational, while 107 are currently under construction;
+• He established 232 projects under the "1D1F" initiative, with all having their respective implementation statuses. 76% of these are already operational, while 107 are currently under construction;
 
-• Key agencies supporting the 1D1F came out with their support, both tax and non-tax sectors, and assistance regarding construction and its components such as good roads and the provision of electricity are all available.
+• Key institutions that support 1D1F came out with their assistance, tax and non-tax components, as well as infrastructure support such as good roads and the provision of electricity are all available.
 
-• Used an amount of GH¢603 million to pay customs duty on imported 371D1F materials;
+• Used an amount of GH¢603 million to pay tax exemptions on 371D1F imported goods;
 
-• Working with 1D1F companies, and collaborating with participating financial institutions (PFIs), to leverage GH¢2.3 billion for businesses. An amount of GH¢213 million, representing interest subsidy, was paid by the Government to PFIs on behalf of 1D1F companies;
+• Working with 1D1F companies, and collaborating with participating financial institutions (PFIs), to leverage GH¢2.3 billion for businesses. An amount of GH¢213 million representing interest subsidy was paid by the Government to PFIs on behalf of 1D1F companies;
 
-• Established 37 Business Resource Centres (BRCs) nationwide in 2020, all of which are operational with their equipment and facilities in good condition. These 37 resource centres serve about 146 districts. The construction of an additional 30 of these resource centres has commenced, bringing the total number of BRCs to 67;
+• Established 37 Business Resource Centres (BRCs) across all regions in 2020, all of which are operational, fully equipped, and in good condition. These 37 resource centres are located in about 146 districts. The construction of an additional 30 of these resource centres has commenced, bringing the total number of BRCs to 67;
 
-• It also sought support for 110 local garment manufacturing companies to strengthen and expand their businesses, and also tasked them to produce personal protective equipment (PPEs) to combat COVID-19.
+• It also sought assistance for 110 local garment manufacturing sectors to strengthen and expand their businesses, and also provided them with contracts to produce Personal Protective Equipment (PPEs) to combat COVID-19.
 
-• It also produced over 19.5 million nose masks, 90,000 hospital gowns, 90,000 head covers, and over 50,000 aprons in the year 2020, with the fabric coming from three local textile factories.
+• It also produced more than 19.5 million face masks, 90,000 hospital gowns, 90,000 head covers, and 50,000 aprons during the year 2020, with the fabric sourced from three local textile weaving factories.
 
 19 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: "Economic recovery, strengthening, completion and continuity"
+Motto: “Revitalizing the economy through Growth, Resilience, and Diversification”
 
 8 DECENT WORK AND ECONOMIC GROWTH
 
 9 INDUSTRY, INNOVATION AND INFRASTRUCTURE
 
-COVID-19 Support to strengthen Micro, Small and Medium Enterprises (MSMEs)
+COVID-19 Support to strengthen micro, small and medium enterprises (MSMEs)
 
-28. In this year 2021, the Government will continue to construct 107 1D1F companies, and also commence the construction of 49 new ones.
+28. In this year 2021, Government will continue constructing 107 1D1F companies, and will also begin the construction of 49 new ones.
 
-Ministry of Petroleum and Energy
+MINISTRY OF PETROLEUM AND ENERGY
 
-29. In an effort to find ways to ensure the availability of fuel and electricity, in the year 2020, the Government came out to:
+29. In an effort to find ways to ensure the sustainable availability of fuel and electricity, in the year 2020, Government rolled out:
 
-• Complete about 98% of the Amandi Power Project, which is a 200MW power project, and is now in its final phase awaiting its commissioning;
+• Completed the Amandi Power Project, which is a 200MW power plant, by about 98% and is now in its final phase awaiting its commissioning;
 
-• Connected 388 out of 560 communities to electricity, increasing electricity access from 85% in January 2020 to 85.2% by the end of December 2020. Over 10,000 communities are now connected to electricity under the Rural Electrification Programme;
+• Extended electricity to 388 communities out of 560, and increased electricity access rate from 85% in January 2020 to 85.2% by the end of December 2020. With over 10,000 communities connected to the national grid under the Rural Electrification Programme;
 
-• And also distributing 1,500 LPG cylinders under the LPG promotion support to our rural communities.
+• And distributed 1,500 LPG cylinders under the Rural LPG Promotion Programme.
 
-30. In the year 2021, the Government will monitor to ensure that the following projects begin:
+30. In the year 2021, the Government will look forward to the commencement of the following works:
 
-• Successfully completed Phase 1B, the initial power section, increasing its capacity to 202MW;
+• Completed Phase 1B of the first power plant, increasing its capacity to 202MW;
 
 20 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-• To continue the PPA discussion;
+• Continue the PPA discussion;
 
-• And construct the Pwalugu multi-purpose dam;
+• And establish the Pwalugu multipurpose dam;
 
-• Repair/replace the T3 gas cables;
+• Repair/replace the T3 Gas wires;
 
-• Completion of Lot 1 (Kumasi-Kintampo) works on the Kumasi-Bolgatanga transmission line;
+• Complete the work on Lot 1 (Kumasi-Kintampo) which connects the Kumasi-Bolgatanga cables;
 
-• Strengthen the 161kV Volta-Achimota-Mallam transmission lines; and
+• Upgrade the 161kV Volta-Achimota-Mallam transmission lines; and
 
-• Completed the 330kV A4BSP (Pokuase Bulk Supply Point).
+• Complete the 330kV A4BSP (Pokuase Bulk Supply Point) project.
 
-Minister for Health
+MINISTER FOR HEALTH
 
 GHANA COVID-19 PRIVATE SECTOR FUND
 
@@ -490,57 +490,57 @@ GHANA COVID-19 PRIVATE SECTOR FUND
 
 8 DECENT WORK AND ECONOMIC GROWTH
 
-Ghana Infectious Diseases Centre, Accra
+Ghana Infectious Disease Centre, Accra
 
-31. As the Government had already pledged to protect everyone from the COVID-19 disease, it came out with these measures in 2020:
+31. As the Government had already promised to protect everyone from the COVID-19 disease, it came out with these measures in 2020:
 
-• Seek ways to build 101 hospitals for all districts, 7 hospitals for seven regions, two psychiatric hospitals, and the redevelopment of Effia-Nkwanta Hospital, all of which are part of the Government's commitment to the health sector under the Agenda 111 project;
+• Find ways to construct 101 hospitals for all districts, 7 regional hospitals for seven regions, two psychiatric hospitals, and the redevelopment of Effia-Nkwanta hospital, all of which are part of the Government's commitment to the health sector under the Agenda 111 project;
 
-21 | Government of Ghana - 2021 Citizens' Budget
+21 | Ghana Government - 2021 Citizens Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-Drones deliver hospital supplies
+A drone delivers hospital equipment
 
-• Deployment of the Antiretroviral Therapy (ART) eTracker across all 488 ART service sites to facilitate HIV/AIDS healthcare delivery, expanded the Malaria eTracker, and procured 2,343 pharmaceutical refrigerators distributed nationwide to support cold chain resilience in diagnostics and clinical care;
+• Implementing the Antiretroviral Therapy (ART) eTracker across all 488 ART sites to ease HIV/AIDS healthcare delivery, developing the Tuberculosis eTracker, and distributing 2,343 vaccine fridges across the country to help restore immunization and health infrastructure efforts;
 
-• established four Drone centers in this country. These are: GH1 Omenako, GH2 Mpanya, GH3 Vobsi, and GH4 Sefwi to strengthen medical technology that will eliminate supply shortages, ensure that refrigerated medicines do not run out, and also help improve emergency response in our healthcare facilities; and
+• Established four drone operational centers across the country, namely: GH1 Omenako, GH2 Mpanya, GH3 Vobsi, and GH4 Sefwi, to leverage technology to eliminate zero stock-outs, address cold-chain failures, and enhance emergency response at health facilities; and
 
-• Admitted 58,191 people into health facilities. The breakdown is shown below in Table 1.
+• Appoint 58,191 people into health sectors. How it is divided follows below in this table 1.
 
 Table 1: Workers in the Government Health Sector
 
-No | Recruits | 2020 recruitment
+No | Those recruited | 2020 recruitment
 
 1. | Doctors | 822
 
-2. | Skilled workers (Contract) | 8
+2. | Experts / Skilled personnel (Contract) | 8
 
-3. | Those who are not active and still unknown | 637
+3. | Those who are not having operations and are not yet aware of everything | 637
 
-4. | Nurses (Certificate, Diploma & Degree) | 43,057
+4. | Nurses (Certificates, Diploma & Degree) | 43,057
 
-5. | Assistants (cook managers, elders, etc.) | 2,000
+5. | Helpers (assistant managers, elders, etc.) | 2,000
 
-6. | Those who give medicine / Dispensers | 150
+6. | Dispensers | 150
 
-7. | Those who administer medicine and are doctors | 150
+7. | Medical doctors / Those who give medicine and are doctors | 150
 
-8. | Health associate professionals (ophthalmic, environmental, lab technicians) | 4,146
+8. | Workers who assist hospital specialists (eye care, general, Lab technicians) | 4,146
 
 TOTAL | | 50,970
 
-No | Temporary workers | 2020 recruitment
+No | Part-time workers | 2020 recruitment
 
-1 | Domestic workers | 1,030
+1 | Senior domestic staff | 1,030
 
-2 | Shift-working nurses | 6,016
+2 | Shift nurses | 6,016
 
-3 | Home healthcare providers (Prescribing doctors) | 175
+3 | Community Health Officers (Medics) | 175
 
 TOTAL | | 7,221
 
-32. The government completed the following work:
+32. The government has completed the following work:
 
 • Staff accommodation for four district hospitals in Twifo-Praso, Tepa, Nsawkaw, and Bekwai;
 
@@ -548,41 +548,41 @@ TOTAL | | 7,221
 
 22 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-• Nine clinics, located in Wiaboman—Greater Accra Region, Antwirifo—Bono Region, Kofiasua—Bono Region, Mantewareso—Bono Ahafo Region, Amakyekrom—Bono Region, Mewerenfiwuo—Bono Region, Samproso—Ashanti Region, Koforidua (Near Offinso)—Ashanti Region, and Akaaso—Western Region.
+• Nine small hospitals, located in Wiaboman—Greater Accra Region, Antwirifo—Bono Region, Kofiasua—Bono Region, Mantewareso—Bono-Ahafo Region, Amakyekrom—Bono Region, Mewerenfiwuo—Bono Region, Samproso—Ashanti Region, Koforidua (Near Offinso)—Ashanti Region, and Akaaso—Western Region.
 
-33. The government also supported 13 public testing centers and nine (9) private ones with medical equipment to strengthen the testing of this COVID-19 disease across every part of the country. Some of these centers include: Kumasi Centre for Collaborative Research (KCCR); National Public Health Reference Laboratory (NPHRL); Vetenary Services Department (VSD); University of Allied Health Sciences (UAHS); and Council for Scientific and Industrial Research (CSIR), among others.
+33. The government also supported 13 testing centers that are public, and nine (9) private ones, with medical equipment to strengthen the testing of this COVID-19 disease across every part of the country. Some of these centers include: Kumasi Centre for Collaborative Research (KCCR); National Public Health Reference Laboratory (NPHRL); Vetenary Services Department (VSD); University of Allied Health Sciences (UAHS); and Council for Scientific and Industrial Research (CSIR), among others.
 
 34. In 2021, the Government:
 
-• Come up with policies to strengthen our health sector in the half year, establish the Disease Control Center (GCDC), and also pass legislation to strengthen the emergency call/response sector.
+• Come out with plans that will strengthen our health sector within half a year, establish a disease control center (GCDC), and also enact laws that will strengthen the emergency response sector.
 
-• Continue his work regarding the expansion of health facilities, which includes his plan to build 111 hospitals;
+• Continue his work regarding the expansion of the health sector, which includes his goal of building 111 hospitals;
 
 • continue to build the following hospitals:
 
-his Koforidua Regional Hospital;
+the Koforidua Regional Hospital;
 
-Shama district hospital;
+the Shama District Hospital;
 
-the regional major hospital;
+the main regional hospital;
 
-at the Tema General Hospital;
+his Tema general hospital;
 
-he reconstructed the health center;
+he rebuilt the health facilities;
 
-his Nkoranza district hospital; and
+to the Nkoranza district hospital; and
 
-the Dormaa hospital's Accident and Emergency Center.
+his family's emergency and trauma center at the Dormaa Hospital.
 
-• Continue vaccinating people with the vaccines acquired and received from all sources, including the COVAX facility, to reduce the spread of COVID-19 and to fight and overcome it.
+• Continuing to vaccinate people with the medicines/vaccines she/he/it purchased and received from all sides/sectors, including the COVAX facility, in order to reduce the spread of COVID-19 and overcome it.
 
-MINISTER FOR ROADS AND HIGHWAYS
+MINISTER OF ROADS AND HIGHWAYS
 
-23 | Government of Ghana - 2021 Citizens' Budget
+23 | Ghana Government - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
 9 INDUSTRY, INNOVATION AND INFRASTRUCTURE
 
@@ -590,59 +590,59 @@ Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity�
 
 Pokuase Interchange (Accra road construction)
 
-35. Government has continued to focus on ensuring the smooth movement of people and goods by constantly repairing and maintaining roads with potholes or that have deteriorated in the year 2020. The following are the actions being undertaken:
+35. The government is still focusing on ensuring that people and goods move without any hindrance, by regularly repairing and maintaining roads that have potholes or are damaged in the year 2020. The following are the actions being taken:
 
-• Routine maintenance covering 25,048km on trunk roads, 11,061km on feeder roads, and 5,535km on urban roads;
+• Routine maintenance covering 25,048km on our major vehicular roads, 11,061km on our feeder roads, and 5,535km on our urban roads;
 
-• Routine maintenance, including gravel spreading and pothole patching covering up to 62km, 120km, and 1,570 km on our feeder roads and urban roads, was carried out, and 648km of paved roads were also completed, with the locations where they were done shown in this table:
+• Periodic maintenance, including graveling and pothole patching covering 62km, 120km, and 1,570 km on our feeder and urban roads, was carried out, and 648km of paved roads were also completed, with the locations where these were done shown in this table:
 
 Table 2: Completed roads
 
-REGION | SECTOR
+DISTRICT | REGION
 
-Accra Region | Ashongman, Lapaz (Petroleum), Airport Residential Area, Trinity Seminary, Ga Central, Kwashiman-Ofankor, Chapel Street/Link, Dzorwulu, Tema East, Dansoman, East Legon, Tantra Hill, Ga West Roads, Tema, Baatsona, Shiashie, Burma Camp, Roman Ridge, Ofankor.
+Greater Accra Region | Ashongman, Lapaz (Petroleum), Airport Residential Area, Trinity Seminary, Ga Central, Kwashiman-Ofankor, Chapel Street/Link, Dzorwulu, Tema East, Dansoman, East Legon, Tantra Hill, Ga West Roads, Tema, Baatsona, Shiashie, Burma Camp, Roman Ridge, Ofankor.
 
-East | Kyebi, Koforidua, Oda, Suhum, Nana Asafo Adjei – Mile 50, Akim Oda
+Eastern | Kyebi, Koforidua, Oda, Suhum, Nana Asafo Adjei – Mile 50, Akim Oda
 
 Upper East | Regional Hospital Road, Bolga
 
-24 | Government of Ghana - 2021 Citizens' Budget
+24 | Ghana Government - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-REGION | SECTOR
+DISTRICT | REGION
 
 West | Chapel Hill, Kwesimintim Sawmill, Assakae, New Takoradi, GPHA Quarters
 
-Ashanti Region | Tech Jnc – Anloga Jnc, Tafo, Suame, Moshie Zongo, Buokrom, Kwadaso, Bantama, Manhyia, Mampong, Obuasi, Subin
+Kumasi | Tech Jnc – Anloga Jnc, Tafo, Suame, Moshie Zongo, Buokrom, Kwadaso, Bantama, Manhyia, Mampong, Obuasi, Subin
 
 Central Region | Winneba (Anglican Church – Copa Jnc. Rd.), Winneba-Oda Road, Bawjiase Road, Swedru SHS Roads
 
 Bono | Sunyani, Berekum
 
-Volta Region | Hohoe Town Roads, Kpeme Area Roads
+Volta River Crossing | Hohoe Town Roads, Kpeme Area Roads
 
 36. In the year 2021, the Government:
 
-• continue to construct the country's roads in order to protect the huge amounts of money spent on road construction, and also establish toll collection mechanisms that will generate revenue into the Road Fund to maintain roads and all their components;
+• continue maintaining the country's roads in a way that protects and preserves the huge sums of money spent on road construction, and also establish toll collection mechanisms to generate revenue into the road fund for the maintenance of roads and all their components;
 
-• to establish laws governing the transport of heavy goods so as to reduce the money we spend on maintaining our roads; and
+• enact axle-load regulations to reduce the cost of road maintenance; and
 
-• begin the main work that is still underway, and listed in this third (3) table:
+• start major ongoing projects listed in this Table 3:
 
-Table 3: Job output
+Table 3: Employment status
 
 WORK | HOW IT IS
 
-Construction of Dufor Adidome – Asikuma Junction (39.2km) Roads and Asutuare – Aveyime (23.9km) road including 2 no. interchanges located at Dufor Adidome and Asikuma junction | 63.1km and 2No. Interchanges
+Construction of Dufor Adidome – Asikuma Junction (39.2km) Road and Asutuare – Aveyime (23.9km) road including 2 no. interchanges located at Dufor Adidome and Asikuma Junction | 63.1km and 2No. Interchanges
 
-Construction of a bridge across the Volta River at Volivo | 1No.
+Construction of bridge across Volta River at Volivo | 1No.
 
-Rehabilitation of the Tatale-Zabzugu-Yendi-Tamale road | 165.8km
+Rehabilitation of Tatale-Zabzugu-Yendi-Tamale road | 165.8km
 
-Zabzugu – Nakpali – Bimbilla road rehabilitation | 73.6km
+Resurfacing/rehabilitation of the Zabzugu – Nakpali – Bimbila road | 73.6km
 
-Rehabilitation of Dome – Kitase road | 19.5km
+Dome – Kitase road rehabilitation | 19.5km
 
 Reconstruction of Buipe and Yapei and Daboya bridges | 3No.
 
@@ -652,7 +652,7 @@ Tema-Akosombo Akosombo road construction | 64.7km
 
 25 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
 WORK | HOW IT IS
 
@@ -660,13 +660,13 @@ Assin Praso – Assin Foso road rehabilitation (N8) – Phase 2 | 60km
 
 Reconstruction of the Tema Motorway Roundabout 2 | 1No.
 
-Procurement and installation of bridge materials for 50No. steel bridges | 50No.
+Procurement and installation of bridge parts for 50No. steel bridges | 50No.
 
-Reconstruction of Kumasi inner city roads and roads adjoining these roads project | 100km
+Kumasi town roads rehabilitation and surrounding roads project | 100km
 
-Roads repaired in Accra and Tema | 100km
+Potholes patched on Accra and Tema roads | 100km
 
-Upgrading and rehabilitation of some roads in Tamale and Yendi in the Northern Region, Nalerigu, Walewale, and Gambaga in the North East Region, and Damongo (in the Savannah Region). | 100km
+Upgrading and rehabilitation of some roads in Tamale and Yendi in the Northern Region, Nalerigu, Walewale and Gambaga in the North East Region, and Damongo (in the Savannah Region). | 100km
 
 MINISTER FOR EDUCATION
 
@@ -676,163 +676,163 @@ MINISTER FOR EDUCATION
 
 8 DECENT WORK AND ECONOMIC GROWTH
 
-How SHS students follow COVID-19 rules
+How SHS students adhere to COVID-19 protocols
 
-37. For everyone to be able to get a good education, the Government in 2020:
+37. For everyone to be able to get a good education, the Government in the year 2020:
 
-• continued development pathways and the Pre-tertiary Standards-Based Curriculum (SBC), which started in the year 2017. About 153,000 public school teachers, from KG to Basic 6 from all across the country, first received the initial training, and further trained 290 supervisors, now known as School Improvement Support Officers (SISOs), to oversee the implementation of the KG to Basic 6 Standards-Based Curriculum;
+• the continued development and implementation of the Pre-tertiary Standard-Based Curriculum (SBC), which started in the year 2017. Approximately 153,000 teachers from KG to Basic 6 across all parts of the country received initial training, and 290 supervisors, now known as School Improvement Support Officers (SISOs), were also trained to oversee the implementation of the KG to Basic 6 Standard-Based Curriculum;
 
-• inspected and approved about 956 documents/books written by various authors regarding the new curriculum. In the second review of the pre-tertiary curriculum, "Pre-Tertiary Curriculum Review", it was
+• evaluated and approved about 956 books/materials written by various authors regarding the new curriculum. In the second review of the pre-tertiary school curriculum, "Pre-Tertiary Curriculum Review", it was
 
 26 | Government of Ghana - 2021 Citizens' Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-The Parliament and Cabinet of Ghana have agreed that it is a priority for the school curriculum of boys and girls;
+Ghana's parliament and cabinet agreed that it should be a subject in the curriculum for boys and girls' schools;
 
-• Built 20 new libraries across all parts of this country, which will increase the number of government libraries to 90, and renovated 10 government libraries and 33 basic school libraries that will enhance reading and learning.
+• Built 20 new libraries across all parts of the country, which will increase the number of public libraries to 90, and renovated 10 public libraries and 33 basic school libraries to boost reading and learning.
 
-• Distributing materials under the new curriculum to 157,000 teachers nationwide and training headteachers, circuit supervisors numbering up to 4,086, as well as 152,000 teachers under this new curriculum;
+• Distributing materials under the new curriculum to 157,000 teachers nationwide and training 4,086 headteachers, circuit supervisors, and regional officers, along with 152,000 teachers on this new curriculum;
 
-• Procured 840 pickup trucks, 350 buses, and 2,000 motorbikes for school supervisors to enhance their work;
+• Procured 840 pickup trucks, 350 buses, and 2,000 motorbikes for school inspectors to facilitate their work;
 
-• Following the introduction of the Free Senior High School (Free SHS) Programme, which increased the number of beneficiaries from 813,448 students in the 2016/2017 academic year to 1,200,580 students in the 2019/2020 academic year;
+• Continuation of the Free Senior High School, "Free SHS Programme", which has increased the number of beneficiaries from 813,448 people in the 2016/2017 academic year up to 1,200,580 students in the 2019/2020 academic year;
 
-• And invest money in the construction of school infrastructure that can accommodate the challenges brought by the “Free SHS Programme”:
+• And invest money in building schools that can absorb the challenges brought by the "Free SHS Programme":
 
-○ Completed 539 kindergarten classrooms, out of the 1,119 classrooms that were started in 2017;
+○ And completed 539 kindergarten classrooms, out of the 1,119 classrooms that were started in the year 2017;
 
-○ and completed 28 Community Day Senior High Schools, also known as “E-Blocks”, under the Secondary Education Improvement Programme (SEIP).
+○ and completed twenty-eight (28) of the "Community Day Senior High School" schools, also known as "E Blocks" schools, under the "Secondary Education Improvement Programme" (SEIP) project.
 
 38. In the year 2021, the Government:
 
-• trained 11,997 teachers who teach from KG to Basic P6 in the Standard-Based Curriculum and 95,000 teachers in the Common Core Programme Curriculum (CCP).
+• trained 11,997 teachers teaching from KG to Basic P6 in the Standard-Based Curriculum and 95,000 teachers in the Common Core Programme Curriculum (CCP).
 
-• Ensure that the first National Standard Assessment Test (NSAT) is conducted for Primary 2 and Primary 4;
+• And ensure that the first National Standard Assessment Test (NSAT) is conducted for Primary 2 and Primary 4;
 
-• and expand the TVET uniquely and the Free SHS Programme; and
+• and to expand specialised TVET branches and the Free SHS Programme; and
 
-• and continued the construction of 20 STEAM centres across all regions of the country, which are Science, Technology, Engineering, Arts, and Mathematics.
+• and continued the construction of 20 STEAM centres across all parts of the country, which are Science, Technology, Engineering, Arts, and Mathematics.
 
-CATTLE
+CHIEFTAINCY
 
-39. In the year 2021, the government will support sectors of work, construction work, agricultural work, factory work, and commercial work. We are calling on all citizens to put their hands to the development work of this country, just as we have put our hands to holding the hoe together, so that we may reap the benefits of our sweat from our three-fold farm.
+39. In the year 2021, the government supported various sectors of work: construction work, agricultural work, factory work, and commercial business. We call on all citizens to put their hands to the development work of this country, just as we unite our hands to hold one hoe, so that it enables us to harvest the third yield of our farm, which is the fruit of our labor.
 
 27 | Government of Ghana - 2021 Citizens Budget
 
-Motto: “Revitalizing the Economy through Growth, Consolidation and Continuity”
+Motto: “Revitalizing the economy through Growth, Consolidation, and Continuity”
 
-40. May God bless our homeland Ghana!
+40. May God bless our country Ghana!
 
 28 | Government of Ghana - 2021 Citizens' Budget
 
-Theme: “Economic Revitalisation through Completion, Consolidation & Continuity”
+The provided text is already in English: Theme: “Economic Revitalisation through Completion, Consolidation & Continuity”
 
-BUDGET KEYWORDS
+BUDGET TERMINOLOGY
 
-1D1F (One District One Factory): The construction of factories and workplaces is what will usher this country into large-scale industrialization, which is great development for our country. Its aim is to provide jobs for Ghanaians across every part of this country.
+1D1F (One District, One Factory): The construction of factories and offices will bring this country into a state of major industries, which is great development for our country. Its aim is to provide jobs for Ghanaians across every corner of this country.
 
-The study agreed that: This is when the government carries out its work openly, allowing the citizens of this country to know all the secrets, successes, and challenges of the work. This can be money or any state resource that the government manages.
+Research confirms: This means the Government works openly and lets the citizens of this country know everything about the work, both its secrets, its successes, and all its challenges. This can be money or any state resource held by the Government.
 
-Allocation: it is the process through which resources are made to reach workplaces such as ministries and government agencies that we call MDAs.
+Allocation: it is the process through which resources reach workplaces such as ministries and other government agencies known as MDAs.
 
 Mitigation: it is a way followed to reduce the harm of a problem.
 
-BSTEM (Basic Science, Technology, Engineering, and Mathematics): An acronym used to bring together areas of knowledge that encompass both science and mathematics. This term is used in the academic field when selecting an academic program for a school to promote scientific knowledge.
+BSTEM (Basic Science, Technology, Engineering, and Mathematics): A word used to bring together fields of knowledge that encompass both science and mathematics. This word functions in the educational sector when selecting an academic field for a school to promote scientific knowledge.
 
-Budget: A budget is a way that shows where money will come from and what that money will be spent on. For example, a family (household) can make their budget to show how much money they have, and show how they will spend it on rent, electricity and water bills, and food. If the money will not be enough, the family will discuss seeking more or taking a loan.
+Budget: A budget is a way that shows where money will come from and what that money will be spent on. For example, a family (household) can make their budget to show how much money they have, and show how they will spend it on room rent, electricity and water bills, and food. If the money will not be enough, the family will discuss to find an addition or they will take a loan.
 
-Budget deficit: this happens when the Government's expenditure exceeds the taxes collected.
+Budget deficit: this happens when the government's expenditure exceeds the taxes they collect.
 
-Capital expenditure: it is the money the Government spends on major projects such as roads, schools, hospitals, culverts, vehicles, water, and machines.
+Capital expenditure: it is the money spent by the government on major projects such as roads, schools, hospitals, bridges, vehicles, water, and machinery.
 
-Payment of workers' debts: This includes workers' salaries and all allowances that accompany monthly salaries. Or retirement benefits.
+Workers' remuneration/compensation: This is the salaries of workers and all allowances that accompany monthly salaries. Or retirement benefits/pensions.
 
-Development Partners (DPs): This refers to countries or organizations that support the Government to fulfill national development goals. Examples of DPs include global bodies such as the International Monetary Fund (IMF), World Bank, and African Development Bank (AfDB), or bilateral relations between countries such as Germany, the United Kingdom, as well as the United States of America (USA).
+Development Partners (DPs): This refers to countries or organizations that support the Government to achieve national development goals. Examples of DPs include global institutions such as the International Monetary Fund (IMF), World Bank, and African Development Bank (AfDB), or bilateral relations between countries such as Germany, United Kingdom, and the United States of America (USA).
 
 29 | Government of Ghana - 2021 Citizens’ Budget
 
-Theme: “Economic Revitalisation through Completion, Consolidation & Continuity”
+The provided text is already in English: Theme: “Economic Revitalisation through Completion, Consolidation & Continuity”
 
-End-of-year clothing sale: A clothing sale that takes place in December, the last month of the year.
+Year-end clearance sale: A clearance sale that takes place at the end of the year in the month of December.
 
-Excess Expenditure: It occurs when the Government spends money beyond the approved budget. The Members of Parliament must approve it.
+Supplementary Budget: This occurs when the Government spends money beyond the allocated budget. Members of Parliament must approve it.
 
 ESLA : Energy Sector Levies Act.
 
-Evacuation: The return of people or their removal from a place.
+People evacuation: The relocation of people or their removal from a place.
 
-FREE SHS: Free SHS is a policy that the Government of Ghana introduced during the tenure of President Nana Akufo-Addo in September 2017, which allows any student qualified for SHS to attend without paying a pesewa.
+FREE SHS: Free SHS is a policy that the Government of Ghana introduced during the tenure of President Nana Akufo-Addo in September 2017, which enables every student who qualifies to attend SHS to do so without paying a pesewa.
 
-Fiscal Responsibility Act: This is a law that directs how the Government can balance expenditure and debt.
+Fiscal Responsibility Act: This is a law that directs how the government can balance spending and tax revenue.
 
-Grants: This is assistance that financial institutions give to the Government, which does not need to be repaid.
+Grants: These are assistances that financial institutions give to the Government, which it does not have to pay back.
 
-Grants to Government Units: This consists of monies the Government must pay into operational sectors such as the District Assemblies Common Fund (DACF), Road Fund, Ghana Education Trust Fund (GETFUND), Petroleum Related Fund, and the National Health Fund.
+Grants to Government Units: This consists of statutory payments made by the Government into designated funds such as the District Assemblies Common Fund (DACF), Road Fund, Ghana Education Trust Fund (GETFUND), Petroleum Related Fund, and the National Health Fund.
 
-Gross Domestic Product (GDP): This is the value of goods and services within a country over a specific period.
+Gross Domestic Product (GDP): This is the value of goods and services produced in a country within a specific period.
 
-Gross International Reserves: This measures the value of a country's foreign exchange reserves or its ability to purchase goods or services internationally within a given time. It also shows the value of a country's currency compared to foreign currencies.
+Gross International Reserves: This measures the value or ability of a country's capital reserves to purchase goods or services internationally within a given period. It also shows the value of a country's currency relative to international currencies.
 
 Inflation: How the prices of goods and services increase over a period of time.
 
-IPEP (Poverty Eradication Initiative): The Poverty Eradication Initiative is a programme introduced by the NPP Government to eradicate poverty and reduce disparities between urban and rural areas. Its aim is to provide rural communities with their basic needs to lift them out of poverty.
+IPEP (Poverty Eradication Initiative): The Poverty Eradication Initiative is a program introduced by the NPP Government to eradicate poverty and reduce disparities between cities and rural communities. Its aim is to provide rural communities with their needs to lift them out of poverty.
 
-Loan Repayment: These are monies paid to countries, banks, or financial institutions that lent money to the Government to carry out development projects. These lenders can be Ghanaians or foreigners.
+Debt Payment: This refers to monies paid to countries, banks, or financial institutions that lent money to the Government to undertake development projects. These creditors can be Ghanaians or foreigners.
 
-Macroeconomic targets: This is a measure used to assess a country's economy. Examples include economic growth, prices of goods and services, and changes in the workforce
+Macroeconomic targets: These are benchmarks used to measure a country's economic performance. Examples include economic growth, the cost of goods and services, and changes in the workforce
 
 30 | Government of Ghana - 2021 Citizens’ Budget
 
-Theme: “Economic Revitalisation through Completion, Consolidation & Continuity”
+The provided text is already in English: Theme: “Economic Revitalisation through Completion, Consolidation & Continuity”
 
-taking in, international trade, Government expenditure increases or decreases, as well as the measures that the Bank of Ghana takes to meet the needs and demands of the people.
+taking into account, international trade, the progress or decline of Government expenditure, as well as the measures adopted by the Bank of Ghana that are useful to people's needs and the satisfaction of those needs.
 
-MSME (Micro And Small Buisness Developmet Programme): MSME is a business where they can employ a small number of people, and their revenue also has a limit and will not exceed that limit.
+MSME (Micro And Small Business Development Programme): MSME is a business that employs a small number of people, and its income/revenue is also limited and does not exceed that limit.
 
 Miscellaneous Provision: This is a section of the contract that also has parts, and all the matters contained within it are difficult to recall.
 
-Mitigating Measures: This is an action taken to reduce or eliminate the potential hardship that would have existed.
+Mitigating Measures: This is an action taken to reduce or eliminate the impact of a problem that would have existed.
 
-NABCo (Nation Builders Corps): NABCO is an initiative introduced by the Government of Ghana to create good jobs for unemployed university graduates, in order to reduce their social hardships and also provide them with skills that will enable them to work to strengthen the country's economy.
+NABCo (Nation Builders Corps): NABCO is an initiative introduced by the Government of Ghana to provide decent jobs for unemployed university graduates, in order to reduce their social hardships and also equip them with skills that will enable them to contribute to enhancing the economic development of the country.
 
-NBSSI (SMALL SCALE ENTERPRISES): Small Scale Enterprises are non-profit ventures under the country's Ministry of Trade, aimed at promoting the growth and development of small businesses known as SMEs.
+NBSSI (NATIONAL BOARD FOR SMALL SCALE INDUSTRIES): The National Board for Small Scale Industries is a non-profit organization. It is under the country's Ministry of Trade and Industry, to promote the growth and development of the small enterprises referred to as SMEs.
 
-Non-Oil Real GDP: It is the measurement of all economic activities of a country, excluding the petroleum business.
+Non-Oil Real GDP: It is the measurement of all economic activities in a country, excluding the petroleum business.
 
-Non-Tax Revenue: The monies the government obtains that are not collected as taxes. Examples include monies people pay to obtain licenses, fees people pay for using government facilities, as well as profits generated from government enterprises.
+Non-Tax Revenue: Money that the government obtains which is not collected as taxes. Examples include money derived from what people pay to acquire licenses, fees people pay for using government facilities or services, as well as profits made from government businesses or enterprises.
 
-Outstanding Obligations: The mandatory funds that the Ministry of Finance must disburse to MDAs, as well as the existing 2016 arrears to be paid to Government departments.
+Outstanding Obligations: Statutory transfers from the Ministry of Finance to MDAs, as well as outstanding 2016 arrears to be paid to Government departments.
 
-Primary balance : It is the difference between government tax revenues and non-interest expenditures (debt payment is excluded from this). This is calculated as a percentage of GDP.
+Primary balance: It is the difference between government revenue and expenditure excluding interest payments (debt servicing is not included in this). This is measured as a percentage of GDP.
 
-PFMRD (Public Financial Management Reforms Project): The objective of the PFMRD is to improve budget implementation, financial control, and enhance the transparency of Government expenditures. The project is designed to strengthen financial compliance, ensure equitable resource allocation, promote efficient operational delivery, and ensure the effective enforcement of financial regulations.
+PFMRD (Public Financial Management Reforms Project): The aim of PFMRD is to improve budget implementation, ensure financial control, and bring transparency to government expenditure. The project will ensure that funds are spent according to regulations, ensure that resource allocation proceeds smoothly, ensure that work execution is carried out as required, and make expenditure rules function properly.
 
 31 | Government of Ghana - 2021 Citizens' Budget
 
-Theme: “Economic Revitalisation through Completion, Consolidation & Continuity”
+The provided text is already in English: Theme: “Economic Revitalisation through Completion, Consolidation & Continuity”
 
 Projected Growth Rate: How Ghana's economy is expected to grow within the year.
 
 PFI: Private Finance Initiative.
 
-Tax: It is all the money that the Government gets locally or from abroad.
+Tax: It refers to all the money the Government receives locally or internationally.
 
-RFJ (Rearing for Food and Jobs): A new project of the Government of Ghana that will enhance the value of livestock rearing, ensure the constant availability of young livestock, and create many jobs that will become the occupation of many people.
+RFJ (Rearing for Food and Jobs): Ghana Government's new initiative that will enhance the value of livestock rearing, ensure the constant availability of young livestock, and create many jobs that will become employment for many people.
 
-Social Benefits: The money that the government pays to electricity and water companies, as well as on fuel, which is paid on behalf of people who use it for their needs.
+Social Benefits: The money that the government pays to electricity and water utility companies, as well as on fuel, which is paid for the people who use it for their needs.
 
-Subsidy: It is money that the government gives to citizens to reduce their hardship regarding financial income.
+Subsidy: It is money that the government gives to citizens to reduce their financial hardship.
 
-Surveillance: The method followed to investigate matters properly.
+Surveillance: The way or method followed to investigate things thoroughly.
 
-Transparency: This is when the government provides information about how it carries out its work so that citizens know how things are going.
+Transparency: This is when the government gives information about how it carries out its work so that the citizens will know how things are going.
 
-TLM (Teaching and Learning Materials): These are all things such as living and non-living things, and humans and non-humans, that a teacher can use in teaching and learning to help achieve their objective.
+TLM (Teaching and Learning Materials): These are everything like living things and non-living things, as well as human beings and non-human beings, that a teacher can use in teaching and learning to help achieve their objective.
 
-Use of Goods and Services: The money government spends on paying people who work for it or on behalf of the public.
+Use of Goods and Services: The money government spends on paying people for doing work for it or on behalf of the public.
 
-Value Added Tax (VAT): VAT is a tax that the Government places on goods and services at the place of their production or execution.
+Value Added Tax (VAT): VAT is a tax that the government places on goods and services at the point of their production or execution.
 
 32 | Government of Ghana - 2021 Citizens’ Budget
 

@@ -10,67 +10,123 @@ benchmarks:
   url: https://ai.google.dev/gemini-api/docs/models
   directions:
     to_en:
-      bleu: 47.79
-      chrf: 73.76
-      length_ratio: 1.11
-      documents: 2
+      bleu: 45.16
+      chrf: 75.53
+      length_ratio: 1.23
+      documents: 6
       per_dataset:
         jw:
-          bleu: 32.33
-          chrf: 68.3
-          length_ratio: 1.14
-          documents: 1
+          bleu: 28.55
+          chrf: 69.89
+          length_ratio: 1.3
+          documents: 5
           per_document:
-            jw_202601_dga:
-              bleu: 32.33
-              chrf: 68.3
-              length_ratio: 1.137
-              hyp_words: 13466
-              ref_words: 11657
+            jw_202606_dga:
+              bleu: 27.22
+              chrf: 69.71
+              length_ratio: 1.274
+              hyp_words: 15759
+              ref_words: 12130
+              year: 2026
+            jw_202607_dga:
+              bleu: 29.91
+              chrf: 71.01
+              length_ratio: 1.282
+              hyp_words: 15548
+              ref_words: 11919
+              year: 2026
+            jw_202608_dga:
+              bleu: 28.19
+              chrf: 69.19
+              length_ratio: 1.323
+              hyp_words: 15664
+              ref_words: 11499
+              year: 2026
+            jw_202609_dga:
+              bleu: 30.09
+              chrf: 69.9
+              length_ratio: 1.28
+              hyp_words: 15607
+              ref_words: 11759
+              year: 2026
+            jw_202610_dga:
+              bleu: 27.35
+              chrf: 69.66
+              length_ratio: 1.337
+              hyp_words: 16313
+              ref_words: 11842
               year: 2026
         udhr:
-          bleu: 63.25
-          chrf: 79.22
-          length_ratio: 1.08
+          bleu: 61.77
+          chrf: 81.16
+          length_ratio: 1.15
           documents: 1
           per_document:
             udhr_dga:
-              bleu: 63.25
-              chrf: 79.22
-              length_ratio: 1.081
-              hyp_words: 1891
+              bleu: 61.77
+              chrf: 81.16
+              length_ratio: 1.148
+              hyp_words: 2009
               ref_words: 1747
               year: 1948
     from_en:
-      bleu: 13.36
-      chrf: 47.75
-      length_ratio: 0.93
-      documents: 2
+      bleu: 11.88
+      chrf: 46.15
+      length_ratio: 0.86
+      documents: 6
       per_dataset:
         jw:
-          bleu: 20.92
-          chrf: 55.21
-          length_ratio: 0.96
-          documents: 1
+          bleu: 17.88
+          chrf: 51.59
+          length_ratio: 0.83
+          documents: 5
           per_document:
-            jw_202601_dga:
-              bleu: 20.92
-              chrf: 55.21
-              length_ratio: 0.957
-              hyp_words: 15161
-              ref_words: 15791
+            jw_202606_dga:
+              bleu: 18.21
+              chrf: 52.67
+              length_ratio: 0.834
+              hyp_words: 15592
+              ref_words: 18834
+              year: 2026
+            jw_202607_dga:
+              bleu: 17.97
+              chrf: 51.91
+              length_ratio: 0.83
+              hyp_words: 15367
+              ref_words: 18697
+              year: 2026
+            jw_202608_dga:
+              bleu: 18.18
+              chrf: 51.96
+              length_ratio: 0.843
+              hyp_words: 15169
+              ref_words: 18148
+              year: 2026
+            jw_202609_dga:
+              bleu: 18.79
+              chrf: 51.02
+              length_ratio: 0.837
+              hyp_words: 14935
+              ref_words: 18273
+              year: 2026
+            jw_202610_dga:
+              bleu: 16.23
+              chrf: 50.38
+              length_ratio: 0.8
+              hyp_words: 15247
+              ref_words: 19401
               year: 2026
         udhr:
-          bleu: 5.79
-          chrf: 40.3
-          length_ratio: 0.9
+          bleu: 5.89
+          chrf: 40.71
+          length_ratio: 0.89
           documents: 1
           per_document:
             udhr_dga:
-              bleu: 5.79
-              chrf: 40.3
-              length_ratio: 0.902
-              hyp_words: 2307
+              bleu: 5.89
+              chrf: 40.71
+              length_ratio: 0.89
+              hyp_words: 2283
               ref_words: 2582
               year: 1948
 missing:
