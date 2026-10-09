@@ -104,37 +104,38 @@ Like the Citizens' Budget, whole documents are compared at corpus/document level
 | Source | <https://www.jw.org/> |
 | Domain | Religion / Community / Moral |
 | Years | 2026 |
-| Pairs | 10 document pairs: a Ghanaian-language edition + the English reference edition |
+| Pairs | 50 document pairs: the 5 newest issues, each a Ghanaian-language edition + the English reference edition |
 | Direction | Bidirectional (`to_en` and `from_en`) |
 
 The Watchtower Study Edition is published monthly and translated by human translators into hundreds of languages worldwide.
-Issue `w 202601` (January 2026) was selected as a recent, settled publication covering 10 Ghanaian languages.
+The 5 newest issues (`w 202606`–`w 202610`) were selected for each of 10 Ghanaian languages, giving 50 document pairs, all scored against the matching English reference edition.
 Because Watchtower PDFs feature non-standard font encodings for African characters (`ɛ`, `ɔ`), page-by-page vision OCR using Gemini is used to extract clean, diacritically accurate text chunks.
 Scored at document level against the English reference edition.
 
-| Language | iso | Words (approx) |
-|---|---|---|
-| Asante Twi | `twi_asante` | 13,335 |
-| Fante | `fante` | 14,464 |
-| Ewe | `ewe` | 13,442 |
-| Ga | `gaa` | 14,903 |
-| Dangme | `ada` | 18,071 |
-| Nzema | `nzi` | 12,709 |
-| Dagaare | `dga` | 15,791 |
-| Frafra | `gur` | 13,245 |
-| Sehwi | `sfw` | 13,286 |
-| Ahanta | `aha` | 10,897 |
-| *English (Reference)* | `eng` | 11,657 |
+| Language | iso |
+|---|---|
+| Asante Twi | `twi_asante` |
+| Fante | `fante` |
+| Ewe | `ewe` |
+| Ga | `gaa` |
+| Dangme | `ada` |
+| Nzema | `nzi` |
+| Dagaare | `dga` |
+| Frafra | `gur` |
+| Sehwi | `sfw` |
+| Ahanta | `aha` |
+| *English (Reference)* | `eng` |
 
 ### Where things are in this repo
 
 | What | Path |
 |---|---|
 | Download script | `scripts/fetch_jw.py` |
-| Source PDFs | `data/pdfs/jw_202601_<iso>.pdf` |
-| Extracted text | `data/text/jw_202601_<iso>/p*.txt` |
-| System translations | `translations/<model>/jw_202601_<iso>[.from_en].txt` |
-| Per-document scores | `translations/<model>/jw_202601_<iso>[.from_en].score.json` |
+| Selection manifest | `data/jw_selected.json` |
+| Source PDFs | `data/pdfs/jw_<issue>_<iso>.pdf` |
+| Extracted text | `data/text/jw_<issue>_<iso>/p*.txt` |
+| System translations | `translations/<model>/jw_<issue>_<iso>[.from_en].txt` |
+| Per-document scores | `translations/<model>/jw_<issue>_<iso>[.from_en].score.json` |
 
 ## Adding a dataset
 
