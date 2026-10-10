@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Document-level machine translation benchmark for Ghanaian languages. Models translate whole documents paragraph by paragraph and are scored with chrF2 against human translations, per dataset.">
+<meta name="description" content="Document-level machine translation benchmark for Ghanaian languages. Models translate whole documents paragraph by paragraph and are scored with chrF2 and BLEU against human translations, per dataset.">
 <title>nsanku MT Benchmark</title>
 <style>
 /* ====== Reset & Base  ====== */
@@ -207,7 +207,7 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
 <div class="container">
   <div class="site-head">
     <h1>nsanku MT Benchmark</h1>
-    <span class="tagline">Document-level machine translation &middot; Ghanaian languages &harr; English &middot; chrF2</span>
+    <span class="tagline">Document-level machine translation &middot; Ghanaian languages &harr; English &middot; chrF2 &amp; BLEU</span>
   </div>
 
   <div id="loading" class="loading">
@@ -225,13 +225,14 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
         <li><strong>Two directions, scored separately:</strong> <em>English &rarr; X</em> (the English edition is translated into the language and compared with
           the language edition) and <em>X &rarr; English</em> (the language edition is translated into English and compared with the English edition).
           Use the <em>Direction</em> selector (default: English &rarr; X). The two are never averaged together.</li>
-        <li><strong>chrF2</strong> (sacreBLEU) is computed with the whole document as a single segment
-          against the human English edition of the same document. Higher is better, and chrF is the single metric this leaderboard ranks by.</li>
+        <li><strong>chrF2 &amp; BLEU:</strong> <strong>chrF2</strong> (sacreBLEU) is computed with the whole document as a single segment
+          against the human English edition of the same document. Higher is better, and chrF is the primary metric this leaderboard ranks by.
+          <strong>BLEU</strong> (sacreBLEU, 13a) is also reported alongside it.</li>
         <li>Results are recorded <strong>per dataset</strong> (see the <em>Datasets</em> tab). Within a direction, a language's score is the
           mean of its per-dataset scores, so a new dataset never changes the numbers of the existing ones.</li>
         <li><strong>Length</strong> is output words / reference words. Values far from 1 usually mean untranslated
-          passes-through or padding, so read chrF together with it.</li>
-        <li>A system is only scored on the languages and directions it supports; unsupported ones are listed, not scored as zero. chrF2 is chosen over BLEU because it scores a low-resource <em>target</em> language less harshly: it works on characters, so rich morphology and spelling variation cost far less than they do for BLEU.</li>
+          passes-through or padding, so read scores together with it.</li>
+        <li>A system is only scored on the languages and directions it supports; unsupported ones are listed, not scored as zero. chrF2 is chosen as the primary ranking metric because it scores a low-resource <em>target</em> language less harshly: it works on characters, so rich morphology and spelling variation cost far less than they do for BLEU.</li>
       </ul>
       Text is extracted from the source PDFs page by page with Gemini (verbatim, paragraph-marked); see the dataset notes for details.
     </div>
@@ -273,13 +274,26 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
           <option value="llm">LLM-based</option>
           <option value="api">Hosted APIs</option>
         </select>
+        <label>Sort:</label>
+        <select id="per-sort">
+          <option value="chrf" selected>chrF (best first)</option>
+          <option value="bleu">BLEU (best first)</option>
+        </select>
       </div>
       <p id="per-lang-meta" class="intro"></p>
       <h3 style="margin-bottom:10px; font-size:0.95rem; color:var(--success)">&#10003; Scored</h3>
       <div class="table-wrap" style="margin-bottom:24px;">
         <table id="per-table"><thead id="per-thead"></thead><tbody id="per-body"></tbody></table>
       </div>
-      <h3 id="doc-title" style="margin-bottom:10px; font-size:0.95rem; color:var(--text-strong)">chrF by document</h3>
+      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
+        <h3 id="doc-title" style="margin:0; font-size:0.95rem; color:var(--text-strong)">chrF by document</h3>
+        <label style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:6px;">Metric:
+          <select id="doc-metric" style="padding:2px 8px; font-size:0.82rem; border-radius:4px; border:1px solid var(--border); background:var(--bg-card); color:var(--text);">
+            <option value="chrf" selected>chrF2</option>
+            <option value="bleu">BLEU</option>
+          </select>
+        </label>
+      </div>
       <div class="table-wrap" style="margin-bottom:24px;">
         <table id="doc-table"><thead id="doc-thead"></thead><tbody id="doc-body"></tbody></table>
       </div>
@@ -299,7 +313,7 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
         <table id="all-table">
           <thead><tr>
             <th data-sort="language">Language</th><th data-sort="name">Model</th><th>Track</th><th data-sort="dataset">Dataset</th>
-            <th data-sort="chrf">chrF</th><th data-sort="length_ratio">Length</th><th data-sort="documents">Docs</th>
+            <th data-sort="chrf">chrF</th><th data-sort="bleu">BLEU</th><th data-sort="length_ratio">Length</th><th data-sort="documents">Docs</th>
           </tr></thead>
           <tbody id="all-body"></tbody>
         </table>
@@ -319,7 +333,7 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
       <a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-asr-benchmark" target="_blank">nsanku ASR</a> &middot;
       <a href="https://huggingface.co/spaces/ghananlpcommunity/nsanku-tts-benchmark" target="_blank">nsanku TTS</a>
     </div>
-    <p>nsanku-MT benchmark &middot; document-level chrF2 &middot; Ghana NLP 2026</p>
+    <p>nsanku-MT benchmark &middot; document-level chrF2 &amp; BLEU &middot; Ghana NLP 2026</p>
   </div>
 </div>
 
@@ -351,6 +365,8 @@ function modelCell(name, id) {
 }
 function chrfColor(v) { return v >= 60 ? 'var(--success)' : v >= 45 ? 'var(--accent-hover)' : 'var(--warning)'; }
 function scoreCell(v) { return `<td class="score-num" style="color:${chrfColor(v)}">${fmt(v)}</td>`; }
+function bleuColor(v) { return v >= 30 ? 'var(--success)' : v >= 20 ? 'var(--accent-hover)' : 'var(--warning)'; }
+function bleuCell(v) { return `<td class="score-num" style="color:${bleuColor(v)}">${fmt(v)}</td>`; }
 
 const DIRS = ['from_en', 'to_en'];
 const DIR_LABEL = { from_en: 'English \u2192 X', to_en: 'X \u2192 English' };
@@ -362,7 +378,7 @@ function view(b, dir, ds) {
   const blk = (b.directions || {})[dir];
   if (!blk) return null;
   const v = ds === 'all' ? blk : ((blk.per_dataset || {})[ds] || null);
-  return v ? { ...b, chrf: v.chrf, length_ratio: v.length_ratio, documents: v.documents, blk } : null;
+  return v ? { ...b, bleu: v.bleu, chrf: v.chrf, length_ratio: v.length_ratio, documents: v.documents, blk } : null;
 }
 
 function buildRows() {
@@ -372,7 +388,7 @@ function buildRows() {
       for (const [dir, blk] of Object.entries(b.directions)) {
         for (const [ds, v] of Object.entries(blk.per_dataset)) {
           ROWS.push({ iso, language: doc.language, model: b.model, name: b.name, track: b.track, dir, dirlabel: DIR_LABEL[dir], dataset: ds,
-                      chrf: v.chrf, length_ratio: v.length_ratio, documents: v.documents });
+                      bleu: v.bleu, chrf: v.chrf, length_ratio: v.length_ratio, documents: v.documents });
         }
       }
     }
@@ -427,41 +443,43 @@ function renderGlobal() {
     const cands = doc.benchmarks.filter(b => track === 'All' || b.track === track).map(b => view(b, dir, ds)).filter(Boolean);
     if (!cands.length) continue;
     const best = cands.slice().sort((a, b) => b.chrf - a.chrf)[0];
-    const row = { iso, language: doc.language, name: best.name, model: best.model, chrf: best.chrf,
+    const row = { iso, language: doc.language, name: best.name, model: best.model, chrf: best.chrf, bleu: best.bleu,
                   length_ratio: best.length_ratio, scored: cands.length };
     for (const d of dsIds) { const v = view(best, dir, d); row['ds_' + d] = v ? v.chrf : null; }
     rows.push(row);
   }
   $('global-thead').innerHTML = '<tr><th>#</th><th data-sort="language">Language</th><th data-sort="name">Best model</th>' +
-    '<th data-sort="chrf">chrF</th><th data-sort="length_ratio">Length</th>' +
+    '<th data-sort="chrf">chrF</th><th data-sort="bleu">BLEU</th><th data-sort="length_ratio">Length</th>' +
     dsIds.map(d => `<th class="sep" data-sort="ds_${esc(d)}" title="chrF on ${esc(dsName(d))}">${esc(dsName(d))}</th>`).join('') +
     '<th data-sort="scored">Models</th></tr>';
   rows = sortRows(rows, 'global', 'chrf');
   $('global-body').innerHTML = rows.map((r, i) =>
     `<tr><td><span class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</span></td><td class="lang-cell">${esc(r.language)}</td>` +
-    `<td>${modelCell(r.name, r.model)}</td>${scoreCell(r.chrf)}<td>${fmt(r.length_ratio, 2)}</td>` +
+    `<td>${modelCell(r.name, r.model)}</td>${scoreCell(r.chrf)}${bleuCell(r.bleu)}<td>${fmt(r.length_ratio, 2)}</td>` +
     dsIds.map(d => `<td class="sep dom">${fmt(r['ds_' + d])}</td>`).join('') +
-    `<td class="dom">${r.scored}</td></tr>`).join('') || '<tr class="empty-row"><td colspan="8">No results for this filter</td></tr>';
+    `<td class="dom">${r.scored}</td></tr>`).join('') || '<tr class="empty-row"><td colspan="9">No results for this filter</td></tr>';
   attachSort('global-thead', 'global', renderGlobal);
 }
 
 // ====== Per-language ======
 function renderPer() {
   const iso = $('per-lang').value, dir = $('per-dir').value, ds = $('per-ds').value, track = $('per-track').value;
+  const sort = ($('per-sort') && $('per-sort').value) || 'chrf';
+  const docMetric = ($('doc-metric') && $('doc-metric').value) || 'chrf';
   const doc = S.languages[iso];
   if (!doc) return;
   const dsIds = doc.datasets;
   $('per-lang-meta').innerHTML = `${esc(doc.language)} &middot; ${esc(DIR_LABEL[dir])} &middot; datasets: ` +
     dsIds.map(d => `<span class="ds-pill">${esc(dsName(d))}</span>`).join('');
   let rows = doc.benchmarks.filter(b => track === 'All' || b.track === track).map(b => view(b, dir, ds)).filter(Boolean);
-  rows.sort((a, b) => b.chrf - a.chrf);
-  $('per-thead').innerHTML = '<tr><th>#</th><th>Model</th><th>Track</th><th>chrF</th><th>Length</th>' +
+  rows.sort((a, b) => (b[sort] ?? -1) - (a[sort] ?? -1));
+  $('per-thead').innerHTML = '<tr><th>#</th><th>Model</th><th>Track</th><th>chrF</th><th>BLEU</th><th>Length</th>' +
     dsIds.map(d => `<th class="sep">${esc(dsName(d))} chrF</th>`).join('') + '<th>Docs</th></tr>';
   $('per-body').innerHTML = rows.map((r, i) =>
     `<tr><td><span class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</span></td><td>${modelCell(r.name, r.model)}</td><td>${trackBadge(r.track)}</td>` +
-    `${scoreCell(r.chrf)}<td>${fmt(r.length_ratio, 2)}</td>` +
+    `${scoreCell(r.chrf)}${bleuCell(r.bleu)}<td>${fmt(r.length_ratio, 2)}</td>` +
     dsIds.map(d => { const v = view(r, dir, d); return `<td class="sep dom">${v ? fmt(v.chrf) : '\u2014'}</td>`; }).join('') +
-    `<td class="dom">${r.documents}</td></tr>`).join('') || `<tr class="empty-row"><td colspan="${dsIds.length + 6}">No results for this filter</td></tr>`;
+    `<td class="dom">${r.documents}</td></tr>`).join('') || `<tr class="empty-row"><td colspan="${dsIds.length + 7}">No results for this filter</td></tr>`;
 
   // per-document table: rows = documents, columns = models (this direction only)
   const docsMap = {};
@@ -476,9 +494,12 @@ function renderPer() {
   $('doc-thead').innerHTML = '<tr><th>Dataset</th><th>Document</th>' + mods.map(m => `<th>${esc(m.name)}</th>`).join('') + '</tr>';
   $('doc-body').innerHTML = Object.values(docsMap).sort((a, b) => a.id.localeCompare(b.id)).map(d =>
     `<tr><td>${esc(dsName(d.dataset))}</td><td class="lang-cell"><a href="${GH_TREE}data/text/${esc(d.id)}" target="_blank" title="Extracted text">${esc(doc.language)} ${esc(d.year)}</a></td>` +
-    mods.map(m => d.by[m.model] ? scoreCell(d.by[m.model].chrf) : '<td class="dom">\u2014</td>').join('') + '</tr>').join('') ||
+    mods.map(m => {
+      if (!d.by[m.model]) return '<td class="dom">\u2014</td>';
+      return docMetric === 'bleu' ? bleuCell(d.by[m.model].bleu) : scoreCell(d.by[m.model].chrf);
+    }).join('') + '</tr>').join('') ||
     '<tr class="empty-row"><td colspan="3">No results for this filter</td></tr>';
-  $('doc-title').textContent = `chrF by document (${DIR_LABEL[dir]})`;
+  $('doc-title').textContent = `${docMetric === 'bleu' ? 'BLEU' : 'chrF'} by document (${DIR_LABEL[dir]})`;
 
   $('per-missing').innerHTML = doc.missing.filter(m => m.direction === dir && (track === 'All' || (S.models[m.model] || {}).track === track)).map(m =>
     `<tr><td>${modelCell(m.name, m.model)}</td><td>${esc(DIR_LABEL[m.direction])}</td><td>${esc(m.reason)}</td></tr>`).join('') || '<tr class="empty-row"><td colspan="3">All systems scored</td></tr>';
@@ -493,7 +514,7 @@ function renderAll() {
   $('all-count').textContent = `${rows.length} rows`;
   $('all-body').innerHTML = rows.map(r =>
     `<tr><td class="lang-cell">${esc(r.language)}</td><td>${modelCell(r.name, r.model)}</td><td>${trackBadge(r.track)}</td>` +
-    `<td>${esc(dsName(r.dataset))}</td>${scoreCell(r.chrf)}<td>${fmt(r.length_ratio, 2)}</td><td class="dom">${r.documents}</td></tr>`).join('');
+    `<td>${esc(dsName(r.dataset))}</td>${scoreCell(r.chrf)}${bleuCell(r.bleu)}<td>${fmt(r.length_ratio, 2)}</td><td class="dom">${r.documents}</td></tr>`).join('');
   attachSort('all-table', 'all', renderAll);
 }
 
@@ -524,7 +545,7 @@ function initUI() {
   $('per-lang').innerHTML = Object.entries(S.languages).sort((a, b) => a[1].language.localeCompare(b[1].language))
     .map(([iso, l]) => `<option value="${iso}">${esc(l.language)}</option>`).join('');
   ['global-dir', 'global-ds', 'global-track'].forEach(id => $(id).addEventListener('change', renderGlobal));
-  ['per-lang', 'per-dir', 'per-ds', 'per-track'].forEach(id => $(id).addEventListener('change', renderPer));
+  ['per-lang', 'per-dir', 'per-ds', 'per-track', 'per-sort', 'doc-metric'].forEach(id => { const el = $(id); if (el) el.addEventListener('change', renderPer); });
   $('all-search').addEventListener('input', renderAll); $('all-dir').addEventListener('change', renderAll);
   document.querySelectorAll('.tab').forEach(tab => tab.addEventListener('click', () => {
     document.querySelectorAll('.tab, .tab-pane').forEach(e => e.classList.remove('active'));
