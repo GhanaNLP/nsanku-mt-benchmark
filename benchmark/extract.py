@@ -45,13 +45,13 @@ def render_page(pdf_path, index, dpi=150):
 FALLBACK_MODELS = ["gemini-3.7-flash", "gemini-3.5-flash", "gemini-2.5-flash"]
 
 
-def _gemini(png: bytes, model=None, retries=6):
+def _gemini(png: bytes, model=None, retries=6, prompt=PROMPT):
     model = model or config.GEMINI_EXTRACT_MODEL
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent"
     mime = "image/jpeg" if png.startswith(b"\xff\xd8\xff") else "image/png"
     body = {
         "contents": [{"role": "user", "parts": [
-            {"text": PROMPT},
+            {"text": prompt},
             {"inline_data": {"mime_type": mime, "data": base64.b64encode(png).decode()}},
         ]}],
         "generationConfig": {"temperature": 0, "maxOutputTokens": 16384,

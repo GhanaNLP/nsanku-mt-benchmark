@@ -16,6 +16,7 @@ per-dataset scores. Details, file locations and how to add a dataset: [`docs/dat
 | Dataset | Domain | Source | Pairs |
 |---|---|---|---|
 | `finance` | Citizens' Budget (Ministry of Finance, 2021–2023) | [mofep.gov.gh](https://mofep.gov.gh/publications/citizens-budget) | 18 documents, 7 languages |
+| `folktales` | Akan-Ashanti Folk-Tales (Rattray, 1930) | [archive.org](https://archive.org/details/akanashantifolkt0000ratt) | 75 tales, Asante Twi |
 
 ### finance: Citizens' Budget
 

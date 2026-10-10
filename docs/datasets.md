@@ -137,6 +137,54 @@ Scored at document level against the English reference edition.
 | System translations | `translations/<model>/jw_<issue>_<iso>[.from_en].txt` |
 | Per-document scores | `translations/<model>/jw_<issue>_<iso>[.from_en].score.json` |
 
+## folktales: Akan-Ashanti Folk-Tales
+
+| | |
+|---|---|
+| Publisher | R. S. Rattray, *Akan-Ashanti Folk-Tales* (Oxford, Clarendon Press, 1930) |
+| Source | <https://archive.org/details/akanashantifolkt0000ratt> |
+| Domain | Literature / Oral tradition (Anansesem: animal tales, origin tales, moral tales) |
+| Years | 1930 |
+| Pairs | 75 document pairs (one per tale), Asante Twi + English |
+| Direction | Bidirectional (`to_en` and `from_en`) |
+
+The book prints each tale twice, in parallel: the Asante Twi original (as told to and written down by
+Rattray) on the left-hand page and his English translation on the facing right-hand page. Tales start and
+end mid-page and run across several spreads, and the English runs ~1.6× longer than the Twi, so the
+two languages drift apart by up to a spread: **pages are never paired**. Instead each language is read
+as one continuous stream, paragraphs split by a page break or an illustration are re-joined, and the
+stream is cut into tales at their title headings (the opening formula *Ye' nse se, nse se o* / *We do
+not really mean …* goes with the tale it opens; the closing formula *M'anansesem a metooye yi …* /
+*This, my story …* with the tale it closes). Tale *i* in Twi is paired with tale *i* in English.
+
+Checks done by the build script: both languages yield exactly 75 tales; every tale start that has a page
+number in the book's contents matches it; English/Twi length ratios are 1.4–2.1 for every tale; no
+opening or closing formula appears anywhere but at a tale's edge. Illustration captions, page numbers
+and printer's marks are tagged by the OCR prompt and dropped.
+
+Notes and caveats:
+- The Twi uses Rattray's 1930 orthography (plain `e`/`o`, no `ɛ`/`ɔ`, apostrophes for elisions), not
+  modern standard Asante Twi; this disadvantages systems that only produce modern spelling in `from_en`.
+- The English is a close, fairly literal 1930 translation with bracketed glosses, e.g. "(his voice)".
+- In a few tales the closing formula is printed in one language only.
+- The book is public domain and has been online for years; it may appear in some systems' training data.
+
+| Language | iso | Words |
+|---|---|---|
+| Asante Twi | `twi_asante` | 45,686 |
+| *English (Reference)* | `eng` | 70,557 |
+
+### Where things are in this repo
+
+| What | Path |
+|---|---|
+| Build script (OCR + tale split) | `scripts/extract_folktales.py` |
+| Source PDF | `data/pdfs/akan_folktales.pdf` |
+| Tagged page OCR cache | `data/cache/folktales_tagged/p<NNN>.txt` |
+| Tale text | `data/text/folktale_<NN>_twi_asante/p001.txt`, `data/text/folktale_<NN>_eng/p001.txt` |
+| System translations | `translations/<model>/folktale_<NN>_twi_asante[.from_en].txt` |
+| Per-document scores | `translations/<model>/folktale_<NN>_twi_asante[.from_en].score.json` |
+
 ## Adding a dataset
 
 1. Add an entry to `data/datasets.json` (id, name, publisher, `source_url`, description, `info_doc`).

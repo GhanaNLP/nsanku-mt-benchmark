@@ -768,6 +768,681 @@
       "reference_id": "jw_202606_eng",
       "reference_pdf": "jw_202606_eng.pdf",
       "dataset": "jw"
+    },
+    {
+      "id": "folktale_01_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_01_eng",
+      "dataset": "folktales",
+      "title": "How it came about that Obonto Ya the minnow is always “walking” about aimlessly in the water"
+    },
+    {
+      "id": "folktale_02_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_02_eng",
+      "dataset": "folktales",
+      "title": "Mpitripi and Mpatrapa"
+    },
+    {
+      "id": "folktale_03_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_03_eng",
+      "dataset": "folktales",
+      "title": "How wisdom came among the tribe"
+    },
+    {
+      "id": "folktale_04_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_04_eng",
+      "dataset": "folktales",
+      "title": "We do not leave a child in an empty house"
+    },
+    {
+      "id": "folktale_05_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_05_eng",
+      "dataset": "folktales",
+      "title": "The vulture always sits among filth"
+    },
+    {
+      "id": "folktale_06_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_06_eng",
+      "dataset": "folktales",
+      "title": "If some one does good to you, show your thanks by doing him good in return"
+    },
+    {
+      "id": "folktale_07_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_07_eng",
+      "dataset": "folktales",
+      "title": "How the leopard’s body became spotted"
+    },
+    {
+      "id": "folktale_08_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_08_eng",
+      "dataset": "folktales",
+      "title": "How the Babadua reed got the joints (on its stalk)"
+    },
+    {
+      "id": "folktale_09_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_09_eng",
+      "dataset": "folktales",
+      "title": "How Okoto the crab got a shell, and Aberewa the old woman got white hair"
+    },
+    {
+      "id": "folktale_10_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_10_eng",
+      "dataset": "folktales",
+      "title": "How the neck of Anene the crow became white and his back became black"
+    },
+    {
+      "id": "folktale_11_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_11_eng",
+      "dataset": "folktales",
+      "title": "How Kwatima the ram came to get the name of Odwanini"
+    },
+    {
+      "id": "folktale_12_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_12_eng",
+      "dataset": "folktales",
+      "title": "How the hoe came to Ashanti"
+    },
+    {
+      "id": "folktale_13_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_13_eng",
+      "dataset": "folktales",
+      "title": "How Akokonini the cock got a pointed mouth"
+    },
+    {
+      "id": "folktale_14_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_14_eng",
+      "dataset": "folktales",
+      "title": "How the tail of Efuo the Black-Colobus monkey became white"
+    },
+    {
+      "id": "folktale_15_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_15_eng",
+      "dataset": "folktales",
+      "title": "How it came about that some people are good-looking, and others are not good-looking"
+    },
+    {
+      "id": "folktale_16_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_16_eng",
+      "dataset": "folktales",
+      "title": "Every girl should marry him to whom she is given in marriage"
+    },
+    {
+      "id": "folktale_17_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_17_eng",
+      "dataset": "folktales",
+      "title": "How it came about that the Sky-god’s stories came to be known as “Spider-stories”"
+    },
+    {
+      "id": "folktale_18_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_18_eng",
+      "dataset": "folktales",
+      "title": "How tale-bearing came into the tribe"
+    },
+    {
+      "id": "folktale_19_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_19_eng",
+      "dataset": "folktales",
+      "title": "How it came about that children were first whipped"
+    },
+    {
+      "id": "folktale_20_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_20_eng",
+      "dataset": "folktales",
+      "title": "How it came about that the hinder part of Kwaku Ananse became big, at the expense of his head, which became small"
+    },
+    {
+      "id": "folktale_21_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_21_eng",
+      "dataset": "folktales",
+      "title": "How Owea the tree-bear, Abosom-Akotere the chameleon, and Opatuo the owl came to get their distinctive cries"
+    },
+    {
+      "id": "folktale_22_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_22_eng",
+      "dataset": "folktales",
+      "title": "Men commit evil by night; children play by moonlight; matters in dispute are heard in the daytime"
+    },
+    {
+      "id": "folktale_23_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_23_eng",
+      "dataset": "folktales",
+      "title": "How it came about that many diseases came among the tribe"
+    },
+    {
+      "id": "folktale_24_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_24_eng",
+      "dataset": "folktales",
+      "title": "How it came about that hunters are poor"
+    },
+    {
+      "id": "folktale_25_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_25_eng",
+      "dataset": "folktales",
+      "title": "When some one spoils something (accidentally) belonging to you, do not accept payment for it"
+    },
+    {
+      "id": "folktale_26_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_26_eng",
+      "dataset": "folktales",
+      "title": "Why the Apupuo (fresh-water mussel), which made her rivers flow, itself lies on the river bank"
+    },
+    {
+      "id": "folktale_27_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_27_eng",
+      "dataset": "folktales",
+      "title": "In a tribe there is no person wholly devoid of sense"
+    },
+    {
+      "id": "folktale_28_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_28_eng",
+      "dataset": "folktales",
+      "title": "How it came about that the tail of the Oka fish is red, and the gills of the ’Kobo fish are striped"
+    },
+    {
+      "id": "folktale_29_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_29_eng",
+      "dataset": "folktales",
+      "title": "How some one got a wife (and also saved) his life by means of inter¬ preting symbols"
+    },
+    {
+      "id": "folktale_30_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_30_eng",
+      "dataset": "folktales",
+      "title": "How contradiction came among the tribe"
+    },
+    {
+      "id": "folktale_31_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_31_eng",
+      "dataset": "folktales",
+      "title": "How it came about that we shall always see Okra, the cat, lying on a velvet cushion, while ’Kraman, the dog, will sleep among the ashes of the kitchen fire"
+    },
+    {
+      "id": "folktale_32_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_32_eng",
+      "dataset": "folktales",
+      "title": "How the spider got a bald head"
+    },
+    {
+      "id": "folktale_33_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_33_eng",
+      "dataset": "folktales",
+      "title": "They say when you go elsewhere, return home quickly"
+    },
+    {
+      "id": "folktale_34_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_34_eng",
+      "dataset": "folktales",
+      "title": "How it came about that one person does not reveal the origin from which another person sprang"
+    },
+    {
+      "id": "folktale_35_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_35_eng",
+      "dataset": "folktales",
+      "title": "Why it is the elders say we should not repeat sleeping-mat confidences"
+    },
+    {
+      "id": "folktale_36_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_36_eng",
+      "dataset": "folktales",
+      "title": "How Kwaku Ananse (the spider) got Aso in marriage"
+    },
+    {
+      "id": "folktale_37_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_37_eng",
+      "dataset": "folktales",
+      "title": "Why Ananse the spider runs when he is on the surface of the water"
+    },
+    {
+      "id": "folktale_38_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_38_eng",
+      "dataset": "folktales",
+      "title": "The Elders say, “Be it your kinsman, or husband, or any one at all who has work to do, if he ask you, help him”"
+    },
+    {
+      "id": "folktale_39_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_39_eng",
+      "dataset": "folktales",
+      "title": "How the elephants came to go off to the long-grass-country"
+    },
+    {
+      "id": "folktale_40_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_40_eng",
+      "dataset": "folktales",
+      "title": "Wait there and you will see"
+    },
+    {
+      "id": "folktale_41_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_41_eng",
+      "dataset": "folktales",
+      "title": "If you are going anywhere, when your kinsman says he will accompany you, then go along with him"
+    },
+    {
+      "id": "folktale_42_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_42_eng",
+      "dataset": "folktales",
+      "title": "How it came about that Osebo the leopard and Adowa the antelope became friends"
+    },
+    {
+      "id": "folktale_43_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_43_eng",
+      "dataset": "folktales",
+      "title": "How it came about that when Nwansana the fly settles on Kraman the dog, he snaps at it, Kam! Kam!"
+    },
+    {
+      "id": "folktale_44_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_44_eng",
+      "dataset": "folktales",
+      "title": "How it came about that the parrot’s tail became red"
+    },
+    {
+      "id": "folktale_45_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_45_eng",
+      "dataset": "folktales",
+      "title": "When Kokosakyi the vulture speaks in allegories to Bonekyerefo the hyena, he understands him"
+    },
+    {
+      "id": "folktale_46_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_46_eng",
+      "dataset": "folktales",
+      "title": "No man should say, “This is the wife whom I love best”"
+    },
+    {
+      "id": "folktale_47_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_47_eng",
+      "dataset": "folktales",
+      "title": "How toothache and birds came into the tribe"
+    },
+    {
+      "id": "folktale_48_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_48_eng",
+      "dataset": "folktales",
+      "title": "How it came about that the elephant’s bottom became small"
+    },
+    {
+      "id": "folktale_49_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_49_eng",
+      "dataset": "folktales",
+      "title": "How it came about that co-wives do not use the same hearth-stones"
+    },
+    {
+      "id": "folktale_50_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_50_eng",
+      "dataset": "folktales",
+      "title": "How Abosom, the lesser-gods, came into the world"
+    },
+    {
+      "id": "folktale_51_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_51_eng",
+      "dataset": "folktales",
+      "title": "How it came about that Aturukuku, the turtle-dove, went to the Bush, and let Akoko the hen come to the house"
+    },
+    {
+      "id": "folktale_52_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_52_eng",
+      "dataset": "folktales",
+      "title": "How the Ntoro Aninie came into the tribe"
+    },
+    {
+      "id": "folktale_53_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_53_eng",
+      "dataset": "folktales",
+      "title": "How the Ekuona clan came into the tribe"
+    },
+    {
+      "id": "folktale_54_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_54_eng",
+      "dataset": "folktales",
+      "title": "How the interplay of friendship came into the tribe"
+    },
+    {
+      "id": "folktale_55_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_55_eng",
+      "dataset": "folktales",
+      "title": "How spear-grass came into the tribe"
+    },
+    {
+      "id": "folktale_56_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_56_eng",
+      "dataset": "folktales",
+      "title": "How it came about that men and the animals began to awake from sleep"
+    },
+    {
+      "id": "folktale_57_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_57_eng",
+      "dataset": "folktales",
+      "title": "Child-Kwasi-Gyinamoa"
+    },
+    {
+      "id": "folktale_58_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_58_eng",
+      "dataset": "folktales",
+      "title": "On any path, where you see that Osebo the leopard has scratched, there Adanko the hare has (already) passed"
+    },
+    {
+      "id": "folktale_59_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_59_eng",
+      "dataset": "folktales",
+      "title": "How it came about that ’Kraman, the dog, can never be cured of his thieving ways"
+    },
+    {
+      "id": "folktale_60_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_60_eng",
+      "dataset": "folktales",
+      "title": "How (the salutations) “Kuronto” and “Burn” came to be used"
+    },
+    {
+      "id": "folktale_61_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_61_eng",
+      "dataset": "folktales",
+      "title": "How it came about that when one goes into a room at night, it is dark"
+    },
+    {
+      "id": "folktale_62_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_62_eng",
+      "dataset": "folktales",
+      "title": "How divorce came into the tribe"
+    },
+    {
+      "id": "folktale_63_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_63_eng",
+      "dataset": "folktales",
+      "title": "How Abosom the lesser-gods came into the tribe"
+    },
+    {
+      "id": "folktale_64_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_64_eng",
+      "dataset": "folktales",
+      "title": "How it came about that Ananse the spider went up on the rafters"
+    },
+    {
+      "id": "folktale_65_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_65_eng",
+      "dataset": "folktales",
+      "title": "How Aketekyire the cricket got his teeth burned"
+    },
+    {
+      "id": "folktale_66_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_66_eng",
+      "dataset": "folktales",
+      "title": "Kokokyinaka the blue-crested turacou did not go to Ananse the spider for a loan"
+    },
+    {
+      "id": "folktale_67_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_67_eng",
+      "dataset": "folktales",
+      "title": "Ananse the spider said he was going in search of a fool, while all the time he himself was a fool"
+    },
+    {
+      "id": "folktale_68_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_68_eng",
+      "dataset": "folktales",
+      "title": "How Ananse became poor"
+    },
+    {
+      "id": "folktale_69_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_69_eng",
+      "dataset": "folktales",
+      "title": "How it came about that when one plants Nwiadowa, garden-eggs, they grow along the ground, while Nkuruma, the okro, stands up tall"
+    },
+    {
+      "id": "folktale_70_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_70_eng",
+      "dataset": "folktales",
+      "title": "A riddle"
+    },
+    {
+      "id": "folktale_71_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_71_eng",
+      "dataset": "folktales",
+      "title": "You arc as wonderful as Ananse the spider"
+    },
+    {
+      "id": "folktale_72_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_72_eng",
+      "dataset": "folktales",
+      "title": "There is nothing anywhere that we fear"
+    },
+    {
+      "id": "folktale_73_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_73_eng",
+      "dataset": "folktales",
+      "title": "We do not leave an elephant behind to go and throw a stone at Aserewa the wren"
+    },
+    {
+      "id": "folktale_74_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_74_eng",
+      "dataset": "folktales",
+      "title": "Kwamena, the tiered ant-hill, that stands within the buttress roots"
+    },
+    {
+      "id": "folktale_75_twi_asante",
+      "year": 1930,
+      "iso": "twi_asante",
+      "language": "Asante Twi",
+      "reference_id": "folktale_75_eng",
+      "dataset": "folktales",
+      "title": "How the Ntoro called Akyem Aboadee came into the tribe"
     }
   ]
 }

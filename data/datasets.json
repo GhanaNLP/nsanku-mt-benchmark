@@ -46,6 +46,21 @@
       "github_path": "data/documents.json",
       "text_path": "data/text/",
       "info_doc": "docs/datasets.md#jw-watchtower-study-edition"
+    },
+    {
+      "id": "folktales",
+      "name": "Akan-Ashanti Folk-Tales",
+      "domain": "Literature / Oral tradition",
+      "publisher": "R. S. Rattray (Oxford, Clarendon Press, 1930)",
+      "source_url": "https://archive.org/details/akanashantifolkt0000ratt",
+      "description": "75 Ashanti folk-tales printed in parallel: the Asante Twi original on the left-hand page and Rattray's English translation on the facing page. Each tale is one document pair, matched story to story (tales run across pages), scored at document level.",
+      "format": "Scanned PDF (extracted page by page with Gemini vision, re-joined across page breaks and split into tales at their titles)",
+      "years": [
+        1930
+      ],
+      "github_path": "data/documents.json",
+      "text_path": "data/text/",
+      "info_doc": "docs/datasets.md#folktales-akan-ashanti-folk-tales"
     }
   ]
 }
