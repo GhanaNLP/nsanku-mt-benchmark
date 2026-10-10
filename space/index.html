@@ -285,14 +285,22 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
       <div class="table-wrap" style="margin-bottom:24px;">
         <table id="per-table"><thead id="per-thead"></thead><tbody id="per-body"></tbody></table>
       </div>
-      <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:10px;">
-        <h3 id="doc-title" style="margin:0; font-size:0.95rem; color:var(--text-strong)">chrF by document</h3>
-        <label style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:6px;">Metric:
-          <select id="doc-metric" style="padding:2px 8px; font-size:0.82rem; border-radius:4px; border:1px solid var(--border); background:var(--bg-card); color:var(--text);">
-            <option value="chrf" selected>chrF2</option>
-            <option value="bleu">BLEU</option>
-          </select>
-        </label>
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:10px;">
+        <h3 id="doc-title" style="margin:0; font-size:0.95rem; color:var(--text-strong)">chrF2 by data source</h3>
+        <div style="display:flex; align-items:center; gap:12px; flex-wrap:wrap;">
+          <label style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:6px;">View:
+            <select id="doc-view" style="padding:2px 8px; font-size:0.82rem; border-radius:4px; border:1px solid var(--border); background:var(--bg-card); color:var(--text);">
+              <option value="datasource" selected>One line per data source</option>
+              <option value="document">Per-document breakdown</option>
+            </select>
+          </label>
+          <label style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:6px;">Metric:
+            <select id="doc-metric" style="padding:2px 8px; font-size:0.82rem; border-radius:4px; border:1px solid var(--border); background:var(--bg-card); color:var(--text);">
+              <option value="chrf" selected>chrF2</option>
+              <option value="bleu">BLEU</option>
+            </select>
+          </label>
+        </div>
       </div>
       <div class="table-wrap" style="margin-bottom:24px;">
         <table id="doc-table"><thead id="doc-thead"></thead><tbody id="doc-body"></tbody></table>
@@ -352,6 +360,17 @@ const $ = id => document.getElementById(id);
 const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmt = (v, d = 2) => (v === null || v === undefined || isNaN(v)) ? '—' : Number(v).toFixed(d);
 const dsName = id => (S.datasets[id] || {}).name || id;
+function docLabel(id, year) {
+  if (!id) return String(year || '—');
+  const mFolk = id.match(/folktale_(\d+)/);
+  if (mFolk) return `Tale ${parseInt(mFolk[1], 10)}`;
+  const mFin = id.match(/finance_(\d+)/);
+  if (mFin) return `${mFin[1]} Budget`;
+  const mJw = id.match(/jw_(\d{4})(\d{2})/);
+  if (mJw) return `Issue ${mJw[1]}-${mJw[2]}`;
+  if (id.startsWith('udhr')) return 'UDHR Charter';
+  return year ? `${year}` : id;
+}
 
 function trackBadge(t) {
   if (t === 'llm') return '<span class="badge badge-llm">LLM</span>';
@@ -481,25 +500,46 @@ function renderPer() {
     dsIds.map(d => { const v = view(r, dir, d); return `<td class="sep dom">${v ? fmt(v.chrf) : '\u2014'}</td>`; }).join('') +
     `<td class="dom">${r.documents}</td></tr>`).join('') || `<tr class="empty-row"><td colspan="${dsIds.length + 7}">No results for this filter</td></tr>`;
 
-  // per-document table: rows = documents, columns = models (this direction only)
-  const docsMap = {};
-  for (const b of doc.benchmarks) {
-    const blk = (b.directions || {})[dir]; if (!blk) continue;
-    for (const [d, v] of Object.entries(blk.per_dataset)) {
-      if (ds !== 'all' && d !== ds) continue;
-      for (const [id, x] of Object.entries(v.per_document)) { (docsMap[id] ||= { id, dataset: d, year: x.year, by: {} }).by[b.model] = x; }
-    }
-  }
   const mods = doc.benchmarks.filter(b => (track === 'All' || b.track === track) && (b.directions || {})[dir]);
-  $('doc-thead').innerHTML = '<tr><th>Dataset</th><th>Document</th>' + mods.map(m => `<th>${esc(m.name)}</th>`).join('') + '</tr>';
-  $('doc-body').innerHTML = Object.values(docsMap).sort((a, b) => a.id.localeCompare(b.id)).map(d =>
-    `<tr><td>${esc(dsName(d.dataset))}</td><td class="lang-cell"><a href="${GH_TREE}data/text/${esc(d.id)}" target="_blank" title="Extracted text">${esc(doc.language)} ${esc(d.year)}</a></td>` +
-    mods.map(m => {
-      if (!d.by[m.model]) return '<td class="dom">\u2014</td>';
-      return docMetric === 'bleu' ? bleuCell(d.by[m.model].bleu) : scoreCell(d.by[m.model].chrf);
-    }).join('') + '</tr>').join('') ||
-    '<tr class="empty-row"><td colspan="3">No results for this filter</td></tr>';
-  $('doc-title').textContent = `${docMetric === 'bleu' ? 'BLEU' : 'chrF'} by document (${DIR_LABEL[dir]})`;
+  const viewMode = ($('doc-view') && $('doc-view').value) || 'datasource';
+  const metricName = docMetric === 'bleu' ? 'BLEU' : 'chrF2';
+
+  if (viewMode === 'datasource') {
+    $('doc-title').textContent = `${metricName} by data source (${DIR_LABEL[dir]})`;
+    $('doc-thead').innerHTML = '<tr><th>Data Source</th><th>Documents</th>' + mods.map(m => `<th>${esc(m.name)}</th>`).join('') + '</tr>';
+    const activeDs = ds === 'all' ? dsIds : dsIds.filter(d => d === ds);
+    $('doc-body').innerHTML = activeDs.map(d => {
+      const nDocs = Math.max(...mods.map(m => {
+        const v = (m.directions[dir] && m.directions[dir].per_dataset) ? m.directions[dir].per_dataset[d] : null;
+        return v ? v.documents : 0;
+      }), 0);
+      return `<tr><td class="lang-cell"><strong>${esc(dsName(d))}</strong></td>` +
+        `<td class="dom">${nDocs || '—'} doc${nDocs === 1 ? '' : 's'}</td>` +
+        mods.map(m => {
+          const v = (m.directions[dir] && m.directions[dir].per_dataset) ? m.directions[dir].per_dataset[d] : null;
+          if (!v) return '<td class="dom">\u2014</td>';
+          return docMetric === 'bleu' ? bleuCell(v.bleu) : scoreCell(v.chrf);
+        }).join('') + '</tr>';
+    }).join('') || `<tr class="empty-row"><td colspan="${mods.length + 2}">No results for this filter</td></tr>`;
+  } else {
+    $('doc-title').textContent = `${metricName} by document (${DIR_LABEL[dir]})`;
+    const docsMap = {};
+    for (const b of doc.benchmarks) {
+      const blk = (b.directions || {})[dir]; if (!blk) continue;
+      for (const [d, v] of Object.entries(blk.per_dataset)) {
+        if (ds !== 'all' && d !== ds) continue;
+        for (const [id, x] of Object.entries(v.per_document)) { (docsMap[id] ||= { id, dataset: d, year: x.year, by: {} }).by[b.model] = x; }
+      }
+    }
+    $('doc-thead').innerHTML = '<tr><th>Data Source</th><th>Document</th>' + mods.map(m => `<th>${esc(m.name)}</th>`).join('') + '</tr>';
+    $('doc-body').innerHTML = Object.values(docsMap).sort((a, b) => a.id.localeCompare(b.id)).map(d =>
+      `<tr><td>${esc(dsName(d.dataset))}</td><td class="lang-cell"><a href="${GH_TREE}data/text/${esc(d.id)}" target="_blank" title="Extracted text">${esc(docLabel(d.id, d.year))}</a></td>` +
+      mods.map(m => {
+        if (!d.by[m.model]) return '<td class="dom">\u2014</td>';
+        return docMetric === 'bleu' ? bleuCell(d.by[m.model].bleu) : scoreCell(d.by[m.model].chrf);
+      }).join('') + '</tr>').join('') ||
+      `<tr class="empty-row"><td colspan="${mods.length + 2}">No results for this filter</td></tr>`;
+  }
 
   $('per-missing').innerHTML = doc.missing.filter(m => m.direction === dir && (track === 'All' || (S.models[m.model] || {}).track === track)).map(m =>
     `<tr><td>${modelCell(m.name, m.model)}</td><td>${esc(DIR_LABEL[m.direction])}</td><td>${esc(m.reason)}</td></tr>`).join('') || '<tr class="empty-row"><td colspan="3">All systems scored</td></tr>';
@@ -545,7 +585,7 @@ function initUI() {
   $('per-lang').innerHTML = Object.entries(S.languages).sort((a, b) => a[1].language.localeCompare(b[1].language))
     .map(([iso, l]) => `<option value="${iso}">${esc(l.language)}</option>`).join('');
   ['global-dir', 'global-ds', 'global-track'].forEach(id => $(id).addEventListener('change', renderGlobal));
-  ['per-lang', 'per-dir', 'per-ds', 'per-track', 'per-sort', 'doc-metric'].forEach(id => { const el = $(id); if (el) el.addEventListener('change', renderPer); });
+  ['per-lang', 'per-dir', 'per-ds', 'per-track', 'per-sort', 'doc-view', 'doc-metric'].forEach(id => { const el = $(id); if (el) el.addEventListener('change', renderPer); });
   $('all-search').addEventListener('input', renderAll); $('all-dir').addEventListener('change', renderAll);
   document.querySelectorAll('.tab').forEach(tab => tab.addEventListener('click', () => {
     document.querySelectorAll('.tab, .tab-pane').forEach(e => e.classList.remove('active'));
