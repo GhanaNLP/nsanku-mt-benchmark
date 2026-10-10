@@ -257,8 +257,22 @@ th.sep, td.sep { border-left: 2px solid var(--border); }
         </select>
       </div>
       <p class="intro">Best model per language, ranked by chrF2. The dataset columns show the chrF2 of that model on each dataset.</p>
-      <div class="table-wrap">
+      <div class="table-wrap" style="margin-bottom:32px;">
         <table id="global-table"><thead id="global-thead"></thead><tbody id="global-body"></tbody></table>
+      </div>
+
+      <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:10px; margin-bottom:10px;">
+        <h3 id="global-ds-title" style="margin:0; font-size:0.95rem; color:var(--text-strong)">Scores by data source (across languages)</h3>
+        <label style="font-size:0.85rem; color:var(--text-muted); display:flex; align-items:center; gap:6px;">Metric:
+          <select id="global-ds-metric" style="padding:2px 8px; font-size:0.82rem; border-radius:4px; border:1px solid var(--border); background:var(--bg-card); color:var(--text);">
+            <option value="chrf" selected>chrF2</option>
+            <option value="bleu">BLEU</option>
+          </select>
+        </label>
+      </div>
+      <p class="intro">Cross-language performance on each data source, with the highest-performing data source on top.</p>
+      <div class="table-wrap">
+        <table id="global-ds-table"><thead id="global-ds-thead"></thead><tbody id="global-ds-body"></tbody></table>
       </div>
     </div>
 
@@ -478,6 +492,109 @@ function renderGlobal() {
     dsIds.map(d => `<td class="sep dom">${fmt(r['ds_' + d])}</td>`).join('') +
     `<td class="dom">${r.scored}</td></tr>`).join('') || '<tr class="empty-row"><td colspan="9">No results for this filter</td></tr>';
   attachSort('global-thead', 'global', renderGlobal);
+  renderGlobalDs();
+}
+
+// ====== Global Data Source Table ======
+function renderGlobalDs() {
+  const dir = $('global-dir').value, track = $('global-track').value;
+  const dsMetric = ($('global-ds-metric') && $('global-ds-metric').value) || 'chrf';
+  const metricLabel = dsMetric === 'bleu' ? 'BLEU' : 'chrF2';
+  if ($('global-ds-title')) $('global-ds-title').textContent = `${metricLabel} by data source (across languages, ${DIR_LABEL[dir]})`;
+
+  const modelStats = {};
+  for (const doc of Object.values(S.languages)) {
+    for (const b of doc.benchmarks) {
+      if (track !== 'All' && b.track !== track) continue;
+      const blk = (b.directions || {})[dir];
+      if (!blk) continue;
+      if (!modelStats[b.model]) modelStats[b.model] = { model: b.model, name: b.name, track: b.track };
+    }
+  }
+  const mods = Object.values(modelStats).sort((a, b) => a.name.localeCompare(b.name));
+
+  let rows = [];
+  for (const [dsId, ds] of Object.entries(S.datasets)) {
+    const langsWithDs = Object.values(S.languages).filter(l => l.datasets.includes(dsId));
+    if (!langsWithDs.length) continue;
+
+    const byModel = {};
+    for (const l of langsWithDs) {
+      for (const b of l.benchmarks) {
+        if (track !== 'All' && b.track !== track) continue;
+        const blk = (b.directions || {})[dir];
+        if (!blk) continue;
+        const v = (blk.per_dataset || {})[dsId];
+        if (!v) continue;
+        (byModel[b.model] ||= { chrf: [], bleu: [] }).chrf.push(v.chrf);
+        byModel[b.model].bleu.push(v.bleu);
+      }
+    }
+
+    let bestModel = null, bestScore = -1;
+    const modelAvgs = {};
+    for (const [mId, s] of Object.entries(byModel)) {
+      const avgChrf = s.chrf.reduce((a, b) => a + b, 0) / s.chrf.length;
+      const avgBleu = s.bleu.reduce((a, b) => a + b, 0) / s.bleu.length;
+      modelAvgs[mId] = { avgChrf, avgBleu, nLangs: s.chrf.length };
+      const sc = dsMetric === 'bleu' ? avgBleu : avgChrf;
+      if (sc > bestScore) {
+        bestScore = sc;
+        const info = S.models[mId] || {};
+        bestModel = { id: mId, name: info.name || mId, track: info.track, avgChrf, avgBleu };
+      }
+    }
+
+    const allScores = Object.values(modelAvgs).map(x => dsMetric === 'bleu' ? x.avgBleu : x.avgChrf);
+    const dsAvg = allScores.length ? (allScores.reduce((a, b) => a + b, 0) / allScores.length) : -1;
+
+    const row = {
+      id: dsId,
+      name: ds.name,
+      domain: ds.domain,
+      languages: langsWithDs.length,
+      documents: ds.n_documents || 0,
+      bestName: bestModel ? bestModel.name : '—',
+      bestModelId: bestModel ? bestModel.id : '',
+      chrf: bestModel ? bestModel.avgChrf : null,
+      bleu: bestModel ? bestModel.avgBleu : null,
+      dsAvg,
+      modelAvgs
+    };
+    for (const m of mods) {
+      const ma = modelAvgs[m.model];
+      row['m_' + m.model] = ma ? (dsMetric === 'bleu' ? ma.avgBleu : ma.avgChrf) : null;
+      row['m_langs_' + m.model] = ma ? ma.nLangs : 0;
+    }
+    rows.push(row);
+  }
+
+  $('global-ds-thead').innerHTML = '<tr><th>#</th><th data-sort="name">Data Source</th><th data-sort="domain">Domain</th>' +
+    '<th data-sort="languages">Langs</th><th data-sort="documents">Docs</th>' +
+    '<th data-sort="bestName">Top system</th><th data-sort="chrf">Top chrF</th><th data-sort="bleu">Top BLEU</th>' +
+    mods.map(m => `<th class="sep" data-sort="m_${esc(m.model)}" title="${esc(m.name)}">${esc(m.name)}</th>`).join('') +
+    '</tr>';
+
+  rows = sortRows(rows, 'global_ds', dsMetric);
+  $('global-ds-body').innerHTML = rows.map((r, i) =>
+    `<tr><td><span class="rank ${i < 3 ? 'r' + (i + 1) : ''}">${i + 1}</span></td>` +
+    `<td class="lang-cell"><strong><a href="${GH}${esc((S.datasets[r.id] || {}).info_doc || 'docs/datasets.md')}" target="_blank">${esc(r.name)}</a></strong></td>` +
+    `<td class="dom">${esc(r.domain)}</td>` +
+    `<td class="dom">${r.languages} lang${r.languages === 1 ? '' : 's'}</td>` +
+    `<td class="dom">${r.documents} doc${r.documents === 1 ? '' : 's'}</td>` +
+    `<td>${r.bestModelId ? modelCell(r.bestName, r.bestModelId) : '—'}</td>` +
+    `${scoreCell(r.chrf)}${bleuCell(r.bleu)}` +
+    mods.map(m => {
+      const v = r['m_' + m.model];
+      const nl = r['m_langs_' + m.model];
+      if (v === null || v === undefined) return '<td class="sep dom">\u2014</td>';
+      const cell = dsMetric === 'bleu' ? bleuCell(v) : scoreCell(v);
+      return cell.replace('class="score-num"', `class="score-num sep" title="${esc(m.name)} on ${esc(r.name)}: ${fmt(v)} across ${nl} languages"`);
+    }).join('') +
+    '</tr>'
+  ).join('') || `<tr class="empty-row"><td colspan="${mods.length + 8}">No results for this filter</td></tr>`;
+
+  attachSort('global-ds-thead', 'global_ds', renderGlobalDs);
 }
 
 // ====== Per-language ======
@@ -598,7 +715,7 @@ function initUI() {
   ['global-dir', 'per-dir', 'all-dir'].forEach(id => dirOptions($(id)));
   $('per-lang').innerHTML = Object.entries(S.languages).sort((a, b) => a[1].language.localeCompare(b[1].language))
     .map(([iso, l]) => `<option value="${iso}">${esc(l.language)}</option>`).join('');
-  ['global-dir', 'global-ds', 'global-track'].forEach(id => $(id).addEventListener('change', renderGlobal));
+  ['global-dir', 'global-ds', 'global-track', 'global-ds-metric'].forEach(id => { const el = $(id); if (el) el.addEventListener('change', renderGlobal); });
   ['per-lang', 'per-dir', 'per-ds', 'per-track', 'per-sort', 'doc-view', 'doc-metric'].forEach(id => { const el = $(id); if (el) el.addEventListener('change', renderPer); });
   $('all-search').addEventListener('input', renderAll); $('all-dir').addEventListener('change', renderAll);
   document.querySelectorAll('.tab').forEach(tab => tab.addEventListener('click', () => {
