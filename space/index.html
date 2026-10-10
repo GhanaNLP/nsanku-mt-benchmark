@@ -508,7 +508,15 @@ function renderPer() {
     $('doc-title').textContent = `${metricName} by data source (${DIR_LABEL[dir]})`;
     $('doc-thead').innerHTML = '<tr><th>Data Source</th><th>Documents</th>' + mods.map(m => `<th>${esc(m.name)}</th>`).join('') + '</tr>';
     const activeDs = ds === 'all' ? dsIds : dsIds.filter(d => d === ds);
-    $('doc-body').innerHTML = activeDs.map(d => {
+    const scoreOfDs = d => {
+      const vals = mods.map(m => {
+        const v = (m.directions[dir] && m.directions[dir].per_dataset) ? m.directions[dir].per_dataset[d] : null;
+        return v ? (docMetric === 'bleu' ? v.bleu : v.chrf) : null;
+      }).filter(v => v !== null && !isNaN(v));
+      return vals.length ? (vals.reduce((a, b) => a + b, 0) / vals.length) : -1;
+    };
+    const sortedDs = activeDs.slice().sort((a, b) => scoreOfDs(b) - scoreOfDs(a));
+    $('doc-body').innerHTML = sortedDs.map(d => {
       const nDocs = Math.max(...mods.map(m => {
         const v = (m.directions[dir] && m.directions[dir].per_dataset) ? m.directions[dir].per_dataset[d] : null;
         return v ? v.documents : 0;
@@ -531,8 +539,14 @@ function renderPer() {
         for (const [id, x] of Object.entries(v.per_document)) { (docsMap[id] ||= { id, dataset: d, year: x.year, by: {} }).by[b.model] = x; }
       }
     }
+    const scoreOfDoc = d => {
+      const vals = mods.map(m => d.by[m.model] ? (docMetric === 'bleu' ? d.by[m.model].bleu : d.by[m.model].chrf) : null)
+                        .filter(v => v !== null && !isNaN(v));
+      return vals.length ? (vals.reduce((a, b) => a + b, 0) / vals.length) : -1;
+    };
+    const sortedDocs = Object.values(docsMap).sort((a, b) => scoreOfDoc(b) - scoreOfDoc(a));
     $('doc-thead').innerHTML = '<tr><th>Data Source</th><th>Document</th>' + mods.map(m => `<th>${esc(m.name)}</th>`).join('') + '</tr>';
-    $('doc-body').innerHTML = Object.values(docsMap).sort((a, b) => a.id.localeCompare(b.id)).map(d =>
+    $('doc-body').innerHTML = sortedDocs.map(d =>
       `<tr><td>${esc(dsName(d.dataset))}</td><td class="lang-cell"><a href="${GH_TREE}data/text/${esc(d.id)}" target="_blank" title="Extracted text">${esc(docLabel(d.id, d.year))}</a></td>` +
       mods.map(m => {
         if (!d.by[m.model]) return '<td class="dom">\u2014</td>';
