@@ -321,7 +321,15 @@ class TwiToolTranslatorMT(BaseMT):
         from twi_translate import TwiTranslator, OpenAIBackend, TwiLookup
         base_url = os.environ.get("TWI_TRANSLATOR_URL", "http://127.0.0.1:8300/v1")
         backend = OpenAIBackend(base_url, model="twi-translator")
-        self.translator = TwiTranslator(backend, TwiLookup())
+        if "expanded" in self.id:
+            dict_path = os.environ.get(
+                "EXPANDED_DICT_PATH",
+                "/mnt/volume_d2wey28/projects/twi-translation-tool-calling/repo/twi_translate/data/twi_dictionary_expanded.tsv.gz"
+            )
+            lookup = TwiLookup(path=dict_path)
+        else:
+            lookup = TwiLookup()
+        self.translator = TwiTranslator(backend, lookup)
 
     def translate_one(self, text, iso, direction="from_en"):
         if direction != "from_en":
@@ -359,6 +367,7 @@ class GemmaBaseMT(BaseMT):
 KINDS = {"Google/gemini-3.8-flash": GeminiMT, "KhayaAI/khaya-translate": KhayaMT,
          "Google/google-translate-free": GoogleFreeMT,
          "ghanaopenai/twi-translator-gemma4-31b": TwiToolTranslatorMT,
+         "ghanaopenai/twi-translator-gemma4-31b-expanded-dict": TwiToolTranslatorMT,
          "google/gemma-4-31B-it": GemmaBaseMT}
 
 
