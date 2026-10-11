@@ -124,6 +124,18 @@
         "from_en"
       ],
       "url": "https://huggingface.co/ghanaopenai/twi-translator-gemma4-31b"
+    },
+    {
+      "id": "google/gemma-4-31B-it",
+      "name": "Gemma 4 31B Instruct (Base)",
+      "kind": "llm",
+      "codes": {
+        "twi_asante": "Asante Twi"
+      },
+      "directions": [
+        "from_en"
+      ],
+      "url": "https://huggingface.co/google/gemma-4-31B-it"
     }
   ]
 }

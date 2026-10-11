@@ -330,9 +330,36 @@ class TwiToolTranslatorMT(BaseMT):
         return out["translation"]
 
 
+class GemmaBaseMT(BaseMT):
+    workers = 8
+    PROMPT = ("Translate the following English text into Asante Twi. Output ONLY the Asante Twi "
+              "translation of this text: no notes, no explanations, no quotes, no preamble. "
+              "Keep numbers, names, acronyms and any ' | ' table separators as they are.\n\n{text}")
+
+    def __init__(self, meta):
+        super().__init__(meta)
+        import os
+        from openai import OpenAI
+        base_url = os.environ.get("GEMMA_BASE_URL", "http://127.0.0.1:8300/v1")
+        self.client = OpenAI(base_url=base_url, api_key="EMPTY")
+        self.model = "gemma-4-31b-base"
+
+    def translate_one(self, text, iso, direction="from_en"):
+        if direction != "from_en":
+            raise NotImplementedError("Gemma base only tested on from_en")
+        resp = self.client.chat.completions.create(
+            model=self.model,
+            messages=[{"role": "user", "content": self.PROMPT.format(text=text)}],
+            temperature=0.0,
+            max_tokens=1024,
+        )
+        return (resp.choices[0].message.content or "").strip()
+
+
 KINDS = {"Google/gemini-3.8-flash": GeminiMT, "KhayaAI/khaya-translate": KhayaMT,
          "Google/google-translate-free": GoogleFreeMT,
-         "ghanaopenai/twi-translator-gemma4-31b": TwiToolTranslatorMT}
+         "ghanaopenai/twi-translator-gemma4-31b": TwiToolTranslatorMT,
+         "google/gemma-4-31B-it": GemmaBaseMT}
 
 
 def local_class(model_id):

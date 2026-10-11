@@ -8126,6 +8126,57 @@ benchmarks:
               hyp_words: 1913
               ref_words: 2098
               year: 1948
+- model: google/gemma-4-31B-it
+  name: Gemma 4 31B Instruct (Base)
+  track: llm
+  url: https://huggingface.co/google/gemma-4-31B-it
+  directions:
+    from_en:
+      bleu: 10.82
+      chrf: 43.97
+      length_ratio: 1.27
+      documents: 4
+      per_dataset:
+        finance:
+          bleu: 17.39
+          chrf: 45.97
+          length_ratio: 0.96
+          documents: 3
+          per_document:
+            finance_2021_twi_asante:
+              bleu: 18.16
+              chrf: 46.27
+              length_ratio: 0.95
+              hyp_words: 10461
+              ref_words: 11597
+              year: 2021
+            finance_2022_twi_asante:
+              bleu: 15.28
+              chrf: 44.3
+              length_ratio: 0.945
+              hyp_words: 11820
+              ref_words: 12941
+              year: 2022
+            finance_2023_twi_asante:
+              bleu: 18.73
+              chrf: 47.34
+              length_ratio: 0.997
+              hyp_words: 13614
+              ref_words: 13241
+              year: 2023
+        udhr:
+          bleu: 4.26
+          chrf: 41.97
+          length_ratio: 1.57
+          documents: 1
+          per_document:
+            udhr_twi_asante:
+              bleu: 4.26
+              chrf: 41.97
+              length_ratio: 1.566
+              hyp_words: 3480
+              ref_words: 2098
+              year: 1948
 - model: google/madlad400-10b-mt
   name: MADLAD-400 10B
   track: open
@@ -10615,5 +10666,9 @@ missing:
   reason: direction not supported
 - model: ghanaopenai/twi-translator-gemma4-31b
   name: Twi Translator (Gemma 4 31B + Tool Calling)
+  direction: to_en
+  reason: direction not supported
+- model: google/gemma-4-31B-it
+  name: Gemma 4 31B Instruct (Base)
   direction: to_en
   reason: direction not supported
