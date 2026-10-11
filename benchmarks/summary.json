@@ -117,6 +117,11 @@
    "name": "MADLAD-400 10B",
    "track": "open",
    "url": "https://huggingface.co/google/madlad400-10b-mt"
+  },
+  "ghanaopenai/twi-translator-gemma4-31b": {
+   "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+   "track": "llm",
+   "url": "https://huggingface.co/ghanaopenai/twi-translator-gemma4-31b"
   }
  },
  "languages": {
@@ -802,6 +807,18 @@
      "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
      "direction": "from_en",
      "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "from_en",
+     "reason": "language not supported"
     }
    ]
   },
@@ -1027,6 +1044,18 @@
     {
      "model": "google/madlad400-10b-mt",
      "name": "MADLAD-400 10B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
      "direction": "from_en",
      "reason": "language not supported"
     }
@@ -1365,6 +1394,18 @@
      "name": "MADLAD-400 10B",
      "direction": "from_en",
      "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "from_en",
+     "reason": "language not supported"
     }
    ]
   },
@@ -1623,6 +1664,18 @@
     {
      "model": "google/madlad400-10b-mt",
      "name": "MADLAD-400 10B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
      "direction": "from_en",
      "reason": "language not supported"
     }
@@ -3164,7 +3217,7 @@
         "finance": {
          "bleu": 22.12,
          "chrf": 59.98,
-         "length_ratio": 1.28,
+         "length_ratio": 1.27,
          "documents": 3,
          "per_document": {
           "finance_2021_ewe": {
@@ -3376,6 +3429,18 @@
     {
      "model": "mclanorjeff/NLLB-Twi-Human-Aligned",
      "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
      "direction": "from_en",
      "reason": "language not supported"
     }
@@ -3776,6 +3841,18 @@
     {
      "model": "google/madlad400-10b-mt",
      "name": "MADLAD-400 10B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
      "direction": "from_en",
      "reason": "language not supported"
     }
@@ -4463,6 +4540,18 @@
      "name": "MADLAD-400 10B",
      "direction": "from_en",
      "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "from_en",
+     "reason": "language not supported"
     }
    ]
   },
@@ -4673,6 +4762,18 @@
     {
      "model": "google/madlad400-10b-mt",
      "name": "MADLAD-400 10B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
      "direction": "from_en",
      "reason": "language not supported"
     }
@@ -5008,6 +5109,18 @@
     {
      "model": "google/madlad400-10b-mt",
      "name": "MADLAD-400 10B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
      "direction": "from_en",
      "reason": "language not supported"
     }
@@ -5743,6 +5856,18 @@
      "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
      "direction": "from_en",
      "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "from_en",
+     "reason": "language not supported"
     }
    ]
   },
@@ -5970,6 +6095,18 @@
      "name": "MADLAD-400 10B",
      "direction": "from_en",
      "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "from_en",
+     "reason": "language not supported"
     }
    ]
   },
@@ -6131,6 +6268,18 @@
     {
      "model": "google/madlad400-10b-mt",
      "name": "MADLAD-400 10B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
      "direction": "from_en",
      "reason": "language not supported"
     }
@@ -7586,7 +7735,7 @@
      "directions": {
       "to_en": {
        "bleu": 28.09,
-       "chrf": 59.88,
+       "chrf": 59.89,
        "length_ratio": 0.94,
        "documents": 84,
        "per_dataset": {
@@ -10385,7 +10534,7 @@
         "jw": {
          "bleu": 24.48,
          "chrf": 65.22,
-         "length_ratio": 1.16,
+         "length_ratio": 1.15,
          "documents": 5,
          "per_document": {
           "jw_202606_twi_asante": {
@@ -10450,7 +10599,7 @@
       },
       "from_en": {
        "bleu": 12.79,
-       "chrf": 49.91,
+       "chrf": 49.92,
        "length_ratio": 1.04,
        "documents": 84,
        "per_dataset": {
@@ -14017,6 +14166,70 @@
            "chrf": 50.47,
            "length_ratio": 0.956,
            "hyp_words": 2073,
+           "ref_words": 2098,
+           "year": 1948
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "track": "llm",
+     "url": "https://huggingface.co/ghanaopenai/twi-translator-gemma4-31b",
+     "directions": {
+      "from_en": {
+       "bleu": 6.57,
+       "chrf": 47.17,
+       "length_ratio": 1.55,
+       "documents": 4,
+       "per_dataset": {
+        "finance": {
+         "bleu": 8.6,
+         "chrf": 44.99,
+         "length_ratio": 2.21,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 14.67,
+           "chrf": 50.85,
+           "length_ratio": 1.124,
+           "hyp_words": 12711,
+           "ref_words": 11597,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 5.17,
+           "chrf": 41.65,
+           "length_ratio": 2.711,
+           "hyp_words": 10199,
+           "ref_words": 12941,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 5.95,
+           "chrf": 42.48,
+           "length_ratio": 2.8,
+           "hyp_words": 12743,
+           "ref_words": 13241,
+           "year": 2023
+          }
+         }
+        },
+        "udhr": {
+         "bleu": 4.55,
+         "chrf": 49.36,
+         "length_ratio": 0.9,
+         "documents": 1,
+         "per_document": {
+          "udhr_twi_asante": {
+           "bleu": 4.55,
+           "chrf": 49.36,
+           "length_ratio": 0.899,
+           "hyp_words": 1969,
            "ref_words": 2098,
            "year": 1948
           }
@@ -18329,6 +18542,12 @@
      "name": "NLLB-Twi Human-Aligned (600M + LoRA)",
      "direction": "from_en",
      "reason": "direction not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "to_en",
+     "reason": "direction not supported"
     }
    ]
   },
@@ -18490,6 +18709,18 @@
     {
      "model": "google/madlad400-10b-mt",
      "name": "MADLAD-400 10B",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/twi-translator-gemma4-31b",
+     "name": "Twi Translator (Gemma 4 31B + Tool Calling)",
      "direction": "from_en",
      "reason": "language not supported"
     }

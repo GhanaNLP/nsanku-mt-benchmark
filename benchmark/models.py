@@ -312,8 +312,27 @@ class MadladMT(HFSeq2SeqMT):
         return self._model.generate(**enc, num_beams=self.BEAMS, max_new_tokens=min(512, enc["input_ids"].shape[1] * 2 + 20))
 
 
+class TwiToolTranslatorMT(BaseMT):
+    workers = 8
+
+    def __init__(self, meta):
+        super().__init__(meta)
+        import os
+        from twi_translate import TwiTranslator, OpenAIBackend, TwiLookup
+        base_url = os.environ.get("TWI_TRANSLATOR_URL", "http://127.0.0.1:8300/v1")
+        backend = OpenAIBackend(base_url, model="twi-translator")
+        self.translator = TwiTranslator(backend, TwiLookup())
+
+    def translate_one(self, text, iso, direction="from_en"):
+        if direction != "from_en":
+            raise NotImplementedError("Twi translator only supports English -> Twi")
+        out = self.translator.translate(text)
+        return out["translation"]
+
+
 KINDS = {"Google/gemini-3.8-flash": GeminiMT, "KhayaAI/khaya-translate": KhayaMT,
-         "Google/google-translate-free": GoogleFreeMT}
+         "Google/google-translate-free": GoogleFreeMT,
+         "ghanaopenai/twi-translator-gemma4-31b": TwiToolTranslatorMT}
 
 
 def local_class(model_id):

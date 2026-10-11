@@ -591,3 +591,11 @@ missing:
   name: NLLB-Twi Human-Aligned (600M + LoRA)
   direction: from_en
   reason: language not supported
+- model: ghanaopenai/twi-translator-gemma4-31b
+  name: Twi Translator (Gemma 4 31B + Tool Calling)
+  direction: to_en
+  reason: language not supported
+- model: ghanaopenai/twi-translator-gemma4-31b
+  name: Twi Translator (Gemma 4 31B + Tool Calling)
+  direction: from_en
+  reason: language not supported
