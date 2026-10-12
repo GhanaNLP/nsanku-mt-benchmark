@@ -126,7 +126,7 @@
       "url": "https://huggingface.co/google/gemma-4-31B-it"
     },
     {
-      "id": "ghanaopenai/twi-translator-gemma4-e4b",
+      "id": "ghanaopenai/gloss-mt",
       "name": "GLOSS-MT (Gemma 4 E4B + Tool Calling)",
       "kind": "llm",
       "codes": {
@@ -135,7 +135,7 @@
       "directions": [
         "from_en"
       ],
-      "url": "https://huggingface.co/ghanaopenai/twi-translator-gemma4-e4b"
+      "url": "https://huggingface.co/ghanaopenai/gloss-mt"
     },
     {
       "id": "google/gemma-4-E4B-it",
@@ -150,7 +150,7 @@
       "url": "https://huggingface.co/google/gemma-4-E4B-it"
     },
     {
-      "id": "ghanaopenai/twi-translator-gemma4-e4b-expanded-dict",
+      "id": "ghanaopenai/gloss-mt-expanded-dict",
       "name": "GLOSS-MT (Gemma 4 E4B + Expanded Dict)",
       "kind": "llm",
       "codes": {
@@ -159,7 +159,7 @@
       "directions": [
         "from_en"
       ],
-      "url": "https://huggingface.co/ghanaopenai/twi-translator-gemma4-e4b"
+      "url": "https://huggingface.co/ghanaopenai/gloss-mt"
     }
   ]
 }

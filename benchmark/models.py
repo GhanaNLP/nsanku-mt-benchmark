@@ -366,10 +366,10 @@ class GemmaBaseMT(BaseMT):
 
 KINDS = {"Google/gemini-3.8-flash": GeminiMT, "KhayaAI/khaya-translate": KhayaMT,
          "Google/google-translate-free": GoogleFreeMT,
-         "ghanaopenai/twi-translator-gemma4-e4b": TwiToolTranslatorMT,
-         "ghanaopenai/twi-translator-gemma4-e4b-expanded-dict": TwiToolTranslatorMT,
+         "ghanaopenai/gloss-mt": TwiToolTranslatorMT,
+         "ghanaopenai/gloss-mt-expanded-dict": TwiToolTranslatorMT,
          "google/gemma-4-E4B-it": GemmaBaseMT,
-         "ghanaopenai/twi-translator-gemma4-31b-expanded-dict": TwiToolTranslatorMT,
+         "ghanaopenai/gloss-mt-expanded-dict": TwiToolTranslatorMT,
          "google/gemma-4-31B-it": GemmaBaseMT}
 
 
