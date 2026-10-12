@@ -557,11 +557,11 @@ missing:
   name: Gemma 4 31B Instruct (Base)
   direction: from_en
   reason: language not supported
-- model: ghanaopenai/twi-translator-gemma4-e4b
+- model: ghanaopenai/gloss-mt
   name: GLOSS-MT (Gemma 4 E4B + Tool Calling)
   direction: to_en
   reason: language not supported
-- model: ghanaopenai/twi-translator-gemma4-e4b
+- model: ghanaopenai/gloss-mt
   name: GLOSS-MT (Gemma 4 E4B + Tool Calling)
   direction: from_en
   reason: language not supported

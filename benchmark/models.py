@@ -359,7 +359,7 @@ class GemmaBaseMT(BaseMT):
             model=self.model,
             messages=[{"role": "user", "content": self.PROMPT.format(text=text)}],
             temperature=0.0,
-            max_tokens=4096,
+            max_tokens=512,
         )
         return (resp.choices[0].message.content or "").strip()
 
@@ -367,9 +367,7 @@ class GemmaBaseMT(BaseMT):
 KINDS = {"Google/gemini-3.8-flash": GeminiMT, "KhayaAI/khaya-translate": KhayaMT,
          "Google/google-translate-free": GoogleFreeMT,
          "ghanaopenai/gloss-mt": TwiToolTranslatorMT,
-         "ghanaopenai/gloss-mt-expanded-dict": TwiToolTranslatorMT,
          "google/gemma-4-E4B-it": GemmaBaseMT,
-         "ghanaopenai/gloss-mt-expanded-dict": TwiToolTranslatorMT,
          "google/gemma-4-31B-it": GemmaBaseMT}
 
 
