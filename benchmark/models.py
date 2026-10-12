@@ -188,7 +188,7 @@ class HFSeq2SeqMT(BaseMT):
     SENT_CHARS is split at sentence boundaries (only then); pieces are batched by length,
     translated with beam search and re-joined into the paragraph. Cached per paragraph.
     Subclasses provide _load(), _encode(texts, iso) and _generate(enc)."""
-    SENT_CHARS = 600
+    SENT_CHARS = 400
     BATCH_CHARS = 8000
     BEAMS = 4
 

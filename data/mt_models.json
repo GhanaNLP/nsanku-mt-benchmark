@@ -102,18 +102,6 @@
       "url": "https://huggingface.co/google/madlad400-3b-mt"
     },
     {
-      "id": "google/madlad400-10b-mt",
-      "name": "MADLAD-400 10B",
-      "kind": "open",
-      "codes": {
-        "twi_asante": "ak",
-        "ewe": "ee",
-        "ada": "ada",
-        "nzi": "nzi"
-      },
-      "url": "https://huggingface.co/google/madlad400-10b-mt"
-    },
-    {
       "id": "google/gemma-4-31B-it",
       "name": "Gemma 4 31B Instruct (Base)",
       "kind": "llm",
