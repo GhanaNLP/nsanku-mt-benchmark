@@ -1272,7 +1272,7 @@ benchmarks:
         finance:
           bleu: 22.12
           chrf: 59.98
-          length_ratio: 1.27
+          length_ratio: 1.28
           documents: 3
           per_document:
             finance_2021_ewe:
@@ -1446,27 +1446,27 @@ missing:
   name: NLLB-Twi Human-Aligned (600M + LoRA)
   direction: from_en
   reason: language not supported
-- model: ghanaopenai/twi-translator-gemma4-31b
-  name: Twi Translator (Gemma 4 31B + Tool Calling)
-  direction: to_en
-  reason: language not supported
-- model: ghanaopenai/twi-translator-gemma4-31b
-  name: Twi Translator (Gemma 4 31B + Tool Calling)
-  direction: from_en
-  reason: language not supported
-- model: ghanaopenai/twi-translator-gemma4-31b-expanded-dict
-  name: Twi Translator (Gemma 4 31B + Expanded Dict)
-  direction: to_en
-  reason: language not supported
-- model: ghanaopenai/twi-translator-gemma4-31b-expanded-dict
-  name: Twi Translator (Gemma 4 31B + Expanded Dict)
-  direction: from_en
-  reason: language not supported
 - model: google/gemma-4-31B-it
   name: Gemma 4 31B Instruct (Base)
   direction: to_en
   reason: language not supported
 - model: google/gemma-4-31B-it
   name: Gemma 4 31B Instruct (Base)
+  direction: from_en
+  reason: language not supported
+- model: ghanaopenai/twi-translator-gemma4-e4b
+  name: GLOSS-MT (Gemma 4 E4B + Tool Calling)
+  direction: to_en
+  reason: language not supported
+- model: ghanaopenai/twi-translator-gemma4-e4b
+  name: GLOSS-MT (Gemma 4 E4B + Tool Calling)
+  direction: from_en
+  reason: language not supported
+- model: google/gemma-4-E4B-it
+  name: Gemma 4 E4B Instruct (Base)
+  direction: to_en
+  reason: language not supported
+- model: google/gemma-4-E4B-it
+  name: Gemma 4 E4B Instruct (Base)
   direction: from_en
   reason: language not supported

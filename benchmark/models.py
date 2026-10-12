@@ -15,7 +15,7 @@ from . import config
 
 DIRECTIONS = ["to_en", "from_en"]  # <language> -> English, English -> <language>
 HAS_LETTER = re.compile(r"[^\W\d_]", re.UNICODE)
-MAX_CHARS = 2500  # a single "paragraph" longer than this is split at sentence boundaries
+MAX_CHARS = 400  # a single "paragraph" longer than this is split at sentence boundaries
 
 
 def split_long(text, limit=MAX_CHARS):
@@ -320,7 +320,7 @@ class TwiToolTranslatorMT(BaseMT):
         import os
         from twi_translate import TwiTranslator, OpenAIBackend, TwiLookup
         base_url = os.environ.get("TWI_TRANSLATOR_URL", "http://127.0.0.1:8300/v1")
-        backend = OpenAIBackend(base_url, model="twi-translator")
+        backend = OpenAIBackend(base_url, model="twi-translator", max_tokens=4096)
         if "expanded" in self.id:
             dict_path = os.environ.get(
                 "EXPANDED_DICT_PATH",
@@ -366,7 +366,8 @@ class GemmaBaseMT(BaseMT):
 
 KINDS = {"Google/gemini-3.8-flash": GeminiMT, "KhayaAI/khaya-translate": KhayaMT,
          "Google/google-translate-free": GoogleFreeMT,
-         "ghanaopenai/twi-translator-gemma4-31b": TwiToolTranslatorMT,
+         "ghanaopenai/twi-translator-gemma4-e4b": TwiToolTranslatorMT,
+         "google/gemma-4-E4B-it": GemmaBaseMT,
          "ghanaopenai/twi-translator-gemma4-31b-expanded-dict": TwiToolTranslatorMT,
          "google/gemma-4-31B-it": GemmaBaseMT}
 
