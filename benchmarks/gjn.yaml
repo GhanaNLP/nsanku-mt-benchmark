@@ -144,14 +144,6 @@ missing:
   name: MADLAD-400 3B
   direction: from_en
   reason: language not supported
-- model: google/madlad400-10b-mt
-  name: MADLAD-400 10B
-  direction: to_en
-  reason: language not supported
-- model: google/madlad400-10b-mt
-  name: MADLAD-400 10B
-  direction: from_en
-  reason: language not supported
 - model: google/gemma-4-31B-it
   name: Gemma 4 31B Instruct (Base)
   direction: to_en
