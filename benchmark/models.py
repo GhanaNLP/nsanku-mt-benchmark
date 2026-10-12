@@ -350,7 +350,7 @@ class GemmaBaseMT(BaseMT):
         from openai import OpenAI
         base_url = os.environ.get("GEMMA_BASE_URL", "http://127.0.0.1:8300/v1")
         self.client = OpenAI(base_url=base_url, api_key="EMPTY")
-        self.model = "gemma-4-31b-base"
+        self.model = os.environ.get("GEMMA_MODEL_NAME", self.id)
 
     def translate_one(self, text, iso, direction="from_en"):
         if direction != "from_en":
@@ -359,7 +359,7 @@ class GemmaBaseMT(BaseMT):
             model=self.model,
             messages=[{"role": "user", "content": self.PROMPT.format(text=text)}],
             temperature=0.0,
-            max_tokens=1024,
+            max_tokens=4096,
         )
         return (resp.choices[0].message.content or "").strip()
 
