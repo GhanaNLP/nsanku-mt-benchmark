@@ -364,9 +364,49 @@ class GemmaBaseMT(BaseMT):
         return (resp.choices[0].message.content or "").strip()
 
 
+class GlossMTSeq2SeqMT(BaseMT):
+    """GLOSS-MT with a fine-tuned NLLB-200 3.3B (LoRA, merged) instead of an LLM with tool calls.
+    Same dictionary step as GLOSS-MT, as a fixed pipeline (twi_translate.seq2seq): each piece's
+    spaCy noun phrases are looked up in the GLOSS-MT dictionary and replaced in place by their Twi
+    translation, then the model translates the mixed text. English -> Twi only. Pieces follow the
+    open seq2seq models here (paragraphs over 400 characters split at sentence boundaries,
+    beam 4, bf16); all uncached pieces of a document go to the GPU in one batched call.
+    Model path: GLOSS_MT_NLLB_PATH; twi_translate must be importable (gloss-mt repo on PYTHONPATH)."""
+    BEAMS = 4
+
+    def __init__(self, meta):
+        super().__init__(meta)
+        self._tr = None
+
+    def _load(self):
+        if self._tr is None:
+            import os
+            from twi_translate.seq2seq import Seq2SeqTranslator
+            path = os.environ.get("GLOSS_MT_NLLB_PATH", "/mnt/volume_d2wey28/projects/twi-translation-tool-calling/"
+                                  "checkpoints/nllb-3.3b-twi-lora/best-merged")
+            self._tr = Seq2SeqTranslator(path, num_beams=self.BEAMS, batch_size=16)
+
+    def translate(self, paras, iso, direction="from_en"):
+        if direction != "from_en":
+            raise NotImplementedError("GLOSS-MT translates English -> Twi only")
+        tag = self._tag(iso, direction)
+        unique = list(dict.fromkeys(p for p in paras if HAS_LETTER.search(p)))
+        todo = [p for p in unique if not self._cache_file(tag, p).exists()]
+        pieces = list(dict.fromkeys(x for p in todo for x in split_long(p, HFSeq2SeqMT.SENT_CHARS)))
+        if pieces:
+            self._load()
+            out = {x: " ".join(r["translation"].split()) for x, r in zip(pieces, self._tr.translate_many(pieces))}
+            for p in todo:
+                res = " ".join(out[x] for x in split_long(p, HFSeq2SeqMT.SENT_CHARS))
+                self._cache_file(tag, p).write_text(res, encoding="utf-8")
+        result = {p: self._cache_file(tag, p).read_text(encoding="utf-8") for p in unique}
+        return [result.get(p, p) for p in paras]
+
+
 KINDS = {"Google/gemini-3.8-flash": GeminiMT, "KhayaAI/khaya-translate": KhayaMT,
          "Google/google-translate-free": GoogleFreeMT,
          "ghanaopenai/gloss-mt": TwiToolTranslatorMT,
+         "ghanaopenai/gloss-mt-nllb-3.3b": GlossMTSeq2SeqMT,
          "google/gemma-4-E4B-it": GemmaBaseMT,
          "google/gemma-4-31B-it": GemmaBaseMT}
 
