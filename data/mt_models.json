@@ -102,6 +102,18 @@
       "url": "https://huggingface.co/google/madlad400-3b-mt"
     },
     {
+      "id": "Helsinki-NLP/opus-mt-en-tw",
+      "name": "OPUS-MT en-tw (Marian)",
+      "kind": "open",
+      "codes": {
+        "twi_asante": "tw"
+      },
+      "directions": [
+        "from_en"
+      ],
+      "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-tw"
+    },
+    {
       "id": "google/gemma-4-31B-it",
       "name": "Gemma 4 31B Instruct (Base)",
       "kind": "llm",

@@ -312,6 +312,22 @@ class MadladMT(HFSeq2SeqMT):
         return self._model.generate(**enc, num_beams=self.BEAMS, max_new_tokens=min(512, enc["input_ids"].shape[1] * 2 + 20))
 
 
+class MarianMT(HFSeq2SeqMT):
+    """Helsinki-NLP OPUS-MT (MarianMT): one model per language pair, no language tags, so the
+    pair is fixed by the checkpoint (opus-mt-en-tw: English -> Twi only). Small (~75M), run in fp32."""
+    def _load(self):
+        if getattr(self, "_model", None) is None:
+            from transformers import AutoTokenizer, MarianMTModel
+            self._tok = AutoTokenizer.from_pretrained(self.id)
+            self._model = MarianMTModel.from_pretrained(self.id).to("cuda").eval()
+
+    def _encode(self, texts, iso, direction):
+        return self._tok(texts, return_tensors="pt", padding=True, truncation=True, max_length=512).to("cuda")
+
+    def _generate(self, enc, iso, direction):
+        return self._model.generate(**enc, num_beams=self.BEAMS, max_new_tokens=min(512, enc["input_ids"].shape[1] * 2 + 20))
+
+
 class TwiToolTranslatorMT(BaseMT):
     workers = 8
 
@@ -416,6 +432,8 @@ def local_class(model_id):
         return NllbMT
     if model_id.startswith("google/madlad"):
         return MadladMT
+    if model_id.startswith("Helsinki-NLP/opus-mt"):
+        return MarianMT
     if "NLLB" in model_id:
         return NllbLoraMT
     raise KeyError(model_id)

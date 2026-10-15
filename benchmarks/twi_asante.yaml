@@ -9944,6 +9944,629 @@ benchmarks:
               hyp_words: 3480
               ref_words: 2098
               year: 1948
+- model: Helsinki-NLP/opus-mt-en-tw
+  name: OPUS-MT en-tw (Marian)
+  track: open
+  url: https://huggingface.co/Helsinki-NLP/opus-mt-en-tw
+  directions:
+    from_en:
+      bleu: 9.71
+      chrf: 42.52
+      length_ratio: 0.86
+      documents: 84
+      per_dataset:
+        finance:
+          bleu: 12.38
+          chrf: 37.78
+          length_ratio: 0.85
+          documents: 3
+          per_document:
+            finance_2021_twi_asante:
+              bleu: 13.99
+              chrf: 39.48
+              length_ratio: 1.012
+              hyp_words: 9130
+              ref_words: 11597
+              year: 2021
+            finance_2022_twi_asante:
+              bleu: 10.42
+              chrf: 35.84
+              length_ratio: 0.773
+              hyp_words: 8935
+              ref_words: 12941
+              year: 2022
+            finance_2023_twi_asante:
+              bleu: 12.72
+              chrf: 38.03
+              length_ratio: 0.773
+              hyp_words: 10011
+              ref_words: 13241
+              year: 2023
+        folktales:
+          bleu: 3.3
+          chrf: 30.53
+          length_ratio: 1.09
+          documents: 75
+          per_document:
+            folktale_01_twi_asante:
+              bleu: 1.02
+              chrf: 29.49
+              length_ratio: 1.532
+              hyp_words: 271
+              ref_words: 189
+              year: 1930
+            folktale_02_twi_asante:
+              bleu: 1.37
+              chrf: 27.89
+              length_ratio: 1.188
+              hyp_words: 157
+              ref_words: 130
+              year: 1930
+            folktale_03_twi_asante:
+              bleu: 2.16
+              chrf: 33.92
+              length_ratio: 1.217
+              hyp_words: 300
+              ref_words: 230
+              year: 1930
+            folktale_04_twi_asante:
+              bleu: 3.64
+              chrf: 31.44
+              length_ratio: 1.222
+              hyp_words: 1470
+              ref_words: 1110
+              year: 1930
+            folktale_05_twi_asante:
+              bleu: 1.74
+              chrf: 26.54
+              length_ratio: 1.131
+              hyp_words: 424
+              ref_words: 362
+              year: 1930
+            folktale_06_twi_asante:
+              bleu: 3.69
+              chrf: 32.57
+              length_ratio: 1.048
+              hyp_words: 686
+              ref_words: 611
+              year: 1930
+            folktale_07_twi_asante:
+              bleu: 3.0
+              chrf: 31.45
+              length_ratio: 1.186
+              hyp_words: 896
+              ref_words: 744
+              year: 1930
+            folktale_08_twi_asante:
+              bleu: 2.31
+              chrf: 34.4
+              length_ratio: 1.13
+              hyp_words: 715
+              ref_words: 603
+              year: 1930
+            folktale_09_twi_asante:
+              bleu: 6.06
+              chrf: 30.02
+              length_ratio: 0.912
+              hyp_words: 850
+              ref_words: 836
+              year: 1930
+            folktale_10_twi_asante:
+              bleu: 3.8
+              chrf: 29.42
+              length_ratio: 1.038
+              hyp_words: 598
+              ref_words: 542
+              year: 1930
+            folktale_11_twi_asante:
+              bleu: 2.76
+              chrf: 31.44
+              length_ratio: 0.979
+              hyp_words: 817
+              ref_words: 793
+              year: 1930
+            folktale_12_twi_asante:
+              bleu: 1.15
+              chrf: 38.12
+              length_ratio: 1.392
+              hyp_words: 299
+              ref_words: 210
+              year: 1930
+            folktale_13_twi_asante:
+              bleu: 2.28
+              chrf: 27.12
+              length_ratio: 1.024
+              hyp_words: 263
+              ref_words: 248
+              year: 1930
+            folktale_14_twi_asante:
+              bleu: 3.51
+              chrf: 28.66
+              length_ratio: 1.006
+              hyp_words: 519
+              ref_words: 493
+              year: 1930
+            folktale_15_twi_asante:
+              bleu: 4.69
+              chrf: 32.08
+              length_ratio: 1.198
+              hyp_words: 860
+              ref_words: 658
+              year: 1930
+            folktale_16_twi_asante:
+              bleu: 4.59
+              chrf: 30.61
+              length_ratio: 0.946
+              hyp_words: 437
+              ref_words: 449
+              year: 1930
+            folktale_17_twi_asante:
+              bleu: 3.63
+              chrf: 32.12
+              length_ratio: 0.998
+              hyp_words: 1019
+              ref_words: 942
+              year: 1930
+            folktale_18_twi_asante:
+              bleu: 3.36
+              chrf: 27.86
+              length_ratio: 0.805
+              hyp_words: 641
+              ref_words: 705
+              year: 1930
+            folktale_19_twi_asante:
+              bleu: 1.64
+              chrf: 27.27
+              length_ratio: 0.882
+              hyp_words: 744
+              ref_words: 747
+              year: 1930
+            folktale_20_twi_asante:
+              bleu: 3.31
+              chrf: 28.87
+              length_ratio: 1.051
+              hyp_words: 650
+              ref_words: 607
+              year: 1930
+            folktale_21_twi_asante:
+              bleu: 1.69
+              chrf: 27.02
+              length_ratio: 1.508
+              hyp_words: 225
+              ref_words: 148
+              year: 1930
+            folktale_22_twi_asante:
+              bleu: 5.08
+              chrf: 34.91
+              length_ratio: 0.952
+              hyp_words: 1052
+              ref_words: 1068
+              year: 1930
+            folktale_23_twi_asante:
+              bleu: 2.94
+              chrf: 31.54
+              length_ratio: 1.127
+              hyp_words: 652
+              ref_words: 575
+              year: 1930
+            folktale_24_twi_asante:
+              bleu: 6.8
+              chrf: 36.74
+              length_ratio: 1.092
+              hyp_words: 1438
+              ref_words: 1241
+              year: 1930
+            folktale_25_twi_asante:
+              bleu: 1.74
+              chrf: 30.34
+              length_ratio: 1.361
+              hyp_words: 1313
+              ref_words: 907
+              year: 1930
+            folktale_26_twi_asante:
+              bleu: 2.25
+              chrf: 33.44
+              length_ratio: 1.398
+              hyp_words: 498
+              ref_words: 331
+              year: 1930
+            folktale_27_twi_asante:
+              bleu: 1.77
+              chrf: 33.33
+              length_ratio: 1.336
+              hyp_words: 737
+              ref_words: 523
+              year: 1930
+            folktale_28_twi_asante:
+              bleu: 6.72
+              chrf: 37.32
+              length_ratio: 1.239
+              hyp_words: 633
+              ref_words: 499
+              year: 1930
+            folktale_29_twi_asante:
+              bleu: 3.71
+              chrf: 32.69
+              length_ratio: 1.134
+              hyp_words: 750
+              ref_words: 622
+              year: 1930
+            folktale_30_twi_asante:
+              bleu: 2.1
+              chrf: 30.64
+              length_ratio: 1.054
+              hyp_words: 759
+              ref_words: 675
+              year: 1930
+            folktale_31_twi_asante:
+              bleu: 4.47
+              chrf: 35.45
+              length_ratio: 1.008
+              hyp_words: 1887
+              ref_words: 1719
+              year: 1930
+            folktale_32_twi_asante:
+              bleu: 2.9
+              chrf: 29.96
+              length_ratio: 1.068
+              hyp_words: 594
+              ref_words: 505
+              year: 1930
+            folktale_33_twi_asante:
+              bleu: 2.0
+              chrf: 30.99
+              length_ratio: 1.146
+              hyp_words: 363
+              ref_words: 298
+              year: 1930
+            folktale_34_twi_asante:
+              bleu: 4.19
+              chrf: 33.86
+              length_ratio: 1.146
+              hyp_words: 1007
+              ref_words: 842
+              year: 1930
+            folktale_35_twi_asante:
+              bleu: 1.84
+              chrf: 32.05
+              length_ratio: 1.154
+              hyp_words: 757
+              ref_words: 620
+              year: 1930
+            folktale_36_twi_asante:
+              bleu: 3.61
+              chrf: 30.63
+              length_ratio: 0.898
+              hyp_words: 997
+              ref_words: 1024
+              year: 1930
+            folktale_37_twi_asante:
+              bleu: 2.75
+              chrf: 29.47
+              length_ratio: 1.017
+              hyp_words: 645
+              ref_words: 556
+              year: 1930
+            folktale_38_twi_asante:
+              bleu: 3.04
+              chrf: 30.69
+              length_ratio: 1.18
+              hyp_words: 760
+              ref_words: 594
+              year: 1930
+            folktale_39_twi_asante:
+              bleu: 3.21
+              chrf: 29.47
+              length_ratio: 1.019
+              hyp_words: 1104
+              ref_words: 1007
+              year: 1930
+            folktale_40_twi_asante:
+              bleu: 5.84
+              chrf: 30.74
+              length_ratio: 1.057
+              hyp_words: 553
+              ref_words: 478
+              year: 1930
+            folktale_41_twi_asante:
+              bleu: 1.82
+              chrf: 27.25
+              length_ratio: 0.855
+              hyp_words: 833
+              ref_words: 869
+              year: 1930
+            folktale_42_twi_asante:
+              bleu: 3.11
+              chrf: 32.13
+              length_ratio: 0.906
+              hyp_words: 1279
+              ref_words: 1312
+              year: 1930
+            folktale_43_twi_asante:
+              bleu: 1.95
+              chrf: 29.29
+              length_ratio: 1.083
+              hyp_words: 690
+              ref_words: 625
+              year: 1930
+            folktale_44_twi_asante:
+              bleu: 1.88
+              chrf: 28.99
+              length_ratio: 1.014
+              hyp_words: 609
+              ref_words: 532
+              year: 1930
+            folktale_45_twi_asante:
+              bleu: 2.17
+              chrf: 27.6
+              length_ratio: 1.112
+              hyp_words: 403
+              ref_words: 337
+              year: 1930
+            folktale_46_twi_asante:
+              bleu: 14.12
+              chrf: 37.06
+              length_ratio: 1.174
+              hyp_words: 308
+              ref_words: 256
+              year: 1930
+            folktale_47_twi_asante:
+              bleu: 7.91
+              chrf: 32.11
+              length_ratio: 1.073
+              hyp_words: 571
+              ref_words: 524
+              year: 1930
+            folktale_48_twi_asante:
+              bleu: 1.41
+              chrf: 28.29
+              length_ratio: 1.259
+              hyp_words: 735
+              ref_words: 522
+              year: 1930
+            folktale_49_twi_asante:
+              bleu: 2.98
+              chrf: 34.32
+              length_ratio: 1.239
+              hyp_words: 675
+              ref_words: 502
+              year: 1930
+            folktale_50_twi_asante:
+              bleu: 3.26
+              chrf: 31.36
+              length_ratio: 0.959
+              hyp_words: 1635
+              ref_words: 1531
+              year: 1930
+            folktale_51_twi_asante:
+              bleu: 5.01
+              chrf: 32.17
+              length_ratio: 1.182
+              hyp_words: 624
+              ref_words: 506
+              year: 1930
+            folktale_52_twi_asante:
+              bleu: 3.65
+              chrf: 32.17
+              length_ratio: 1.097
+              hyp_words: 731
+              ref_words: 643
+              year: 1930
+            folktale_53_twi_asante:
+              bleu: 1.72
+              chrf: 31.46
+              length_ratio: 0.93
+              hyp_words: 558
+              ref_words: 551
+              year: 1930
+            folktale_54_twi_asante:
+              bleu: 3.82
+              chrf: 31.18
+              length_ratio: 0.89
+              hyp_words: 908
+              ref_words: 965
+              year: 1930
+            folktale_55_twi_asante:
+              bleu: 3.11
+              chrf: 29.77
+              length_ratio: 0.881
+              hyp_words: 1144
+              ref_words: 1155
+              year: 1930
+            folktale_56_twi_asante:
+              bleu: 1.55
+              chrf: 26.28
+              length_ratio: 0.811
+              hyp_words: 221
+              ref_words: 237
+              year: 1930
+            folktale_57_twi_asante:
+              bleu: 2.65
+              chrf: 29.9
+              length_ratio: 0.864
+              hyp_words: 1146
+              ref_words: 1202
+              year: 1930
+            folktale_58_twi_asante:
+              bleu: 4.53
+              chrf: 29.47
+              length_ratio: 1.026
+              hyp_words: 743
+              ref_words: 690
+              year: 1930
+            folktale_59_twi_asante:
+              bleu: 3.92
+              chrf: 32.1
+              length_ratio: 1.057
+              hyp_words: 778
+              ref_words: 698
+              year: 1930
+            folktale_60_twi_asante:
+              bleu: 5.79
+              chrf: 28.35
+              length_ratio: 1.043
+              hyp_words: 255
+              ref_words: 237
+              year: 1930
+            folktale_61_twi_asante:
+              bleu: 2.84
+              chrf: 33.19
+              length_ratio: 1.111
+              hyp_words: 1255
+              ref_words: 1081
+              year: 1930
+            folktale_62_twi_asante:
+              bleu: 4.83
+              chrf: 34.12
+              length_ratio: 1.145
+              hyp_words: 776
+              ref_words: 645
+              year: 1930
+            folktale_63_twi_asante:
+              bleu: 2.41
+              chrf: 31.62
+              length_ratio: 0.925
+              hyp_words: 407
+              ref_words: 437
+              year: 1930
+            folktale_64_twi_asante:
+              bleu: 5.32
+              chrf: 31.03
+              length_ratio: 1.241
+              hyp_words: 440
+              ref_words: 327
+              year: 1930
+            folktale_65_twi_asante:
+              bleu: 1.76
+              chrf: 21.85
+              length_ratio: 1.199
+              hyp_words: 185
+              ref_words: 148
+              year: 1930
+            folktale_66_twi_asante:
+              bleu: 2.16
+              chrf: 27.84
+              length_ratio: 1.287
+              hyp_words: 218
+              ref_words: 160
+              year: 1930
+            folktale_67_twi_asante:
+              bleu: 1.83
+              chrf: 24.92
+              length_ratio: 0.756
+              hyp_words: 505
+              ref_words: 630
+              year: 1930
+            folktale_68_twi_asante:
+              bleu: 2.44
+              chrf: 25.98
+              length_ratio: 0.797
+              hyp_words: 723
+              ref_words: 846
+              year: 1930
+            folktale_69_twi_asante:
+              bleu: 1.61
+              chrf: 23.56
+              length_ratio: 0.955
+              hyp_words: 233
+              ref_words: 226
+              year: 1930
+            folktale_70_twi_asante:
+              bleu: 2.1
+              chrf: 25.26
+              length_ratio: 1.129
+              hyp_words: 168
+              ref_words: 140
+              year: 1930
+            folktale_71_twi_asante:
+              bleu: 3.19
+              chrf: 28.16
+              length_ratio: 1.322
+              hyp_words: 551
+              ref_words: 386
+              year: 1930
+            folktale_72_twi_asante:
+              bleu: 1.61
+              chrf: 22.02
+              length_ratio: 0.716
+              hyp_words: 248
+              ref_words: 327
+              year: 1930
+            folktale_73_twi_asante:
+              bleu: 4.55
+              chrf: 30.78
+              length_ratio: 1.112
+              hyp_words: 476
+              ref_words: 422
+              year: 1930
+            folktale_74_twi_asante:
+              bleu: 2.79
+              chrf: 35.0
+              length_ratio: 1.517
+              hyp_words: 376
+              ref_words: 246
+              year: 1930
+            folktale_75_twi_asante:
+              bleu: 3.21
+              chrf: 30.55
+              length_ratio: 1.134
+              hyp_words: 411
+              ref_words: 330
+              year: 1930
+        jw:
+          bleu: 18.87
+          chrf: 54.23
+          length_ratio: 0.67
+          documents: 5
+          per_document:
+            jw_202606_twi_asante:
+              bleu: 20.71
+              chrf: 56.34
+              length_ratio: 0.693
+              hyp_words: 10583
+              ref_words: 14580
+              year: 2026
+            jw_202607_twi_asante:
+              bleu: 17.2
+              chrf: 52.52
+              length_ratio: 0.65
+              hyp_words: 9947
+              ref_words: 14637
+              year: 2026
+            jw_202608_twi_asante:
+              bleu: 19.9
+              chrf: 55.28
+              length_ratio: 0.692
+              hyp_words: 10193
+              ref_words: 14064
+              year: 2026
+            jw_202609_twi_asante:
+              bleu: 19.21
+              chrf: 53.98
+              length_ratio: 0.663
+              hyp_words: 9873
+              ref_words: 14226
+              year: 2026
+            jw_202610_twi_asante:
+              bleu: 17.32
+              chrf: 53.01
+              length_ratio: 0.667
+              hyp_words: 10376
+              ref_words: 14754
+              year: 2026
+        udhr:
+          bleu: 4.29
+          chrf: 47.52
+          length_ratio: 0.83
+          documents: 1
+          per_document:
+            udhr_twi_asante:
+              bleu: 4.29
+              chrf: 47.52
+              length_ratio: 0.829
+              hyp_words: 1785
+              ref_words: 2098
+              year: 1948
 - model: google/madlad400-3b-mt
   name: MADLAD-400 3B
   track: open
@@ -11812,6 +12435,10 @@ missing:
 - model: mclanorjeff/NLLB-Twi-Human-Aligned
   name: NLLB-Twi Human-Aligned (600M + LoRA)
   direction: from_en
+  reason: direction not supported
+- model: Helsinki-NLP/opus-mt-en-tw
+  name: OPUS-MT en-tw (Marian)
+  direction: to_en
   reason: direction not supported
 - model: google/gemma-4-31B-it
   name: Gemma 4 31B Instruct (Base)
