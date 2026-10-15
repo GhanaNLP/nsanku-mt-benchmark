@@ -1093,7 +1093,7 @@ benchmarks:
         finance:
           bleu: 22.12
           chrf: 59.98
-          length_ratio: 1.28
+          length_ratio: 1.27
           documents: 3
           per_document:
             finance_2021_ewe:

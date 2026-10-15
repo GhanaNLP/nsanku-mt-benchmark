@@ -383,7 +383,7 @@ class GlossMTSeq2SeqMT(BaseMT):
             import os
             from twi_translate.seq2seq import Seq2SeqTranslator
             path = os.environ.get("GLOSS_MT_NLLB_PATH", "/mnt/volume_d2wey28/projects/twi-translation-tool-calling/"
-                                  "checkpoints/nllb-3.3b-twi-lora/best-merged")
+                                  "checkpoints/nllb-3.3b-twi/final")
             self._tr = Seq2SeqTranslator(path, num_beams=self.BEAMS, batch_size=16)
 
     def translate(self, paras, iso, direction="from_en"):
