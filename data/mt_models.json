@@ -114,18 +114,6 @@
       "url": "https://huggingface.co/Helsinki-NLP/opus-mt-en-tw"
     },
     {
-      "id": "google/gemma-4-31B-it",
-      "name": "Gemma 4 31B Instruct (Base)",
-      "kind": "llm",
-      "codes": {
-        "twi_asante": "Asante Twi"
-      },
-      "directions": [
-        "from_en"
-      ],
-      "url": "https://huggingface.co/google/gemma-4-31B-it"
-    },
-    {
       "id": "ghanaopenai/gloss-mt-nllb-3.3b",
       "name": "GLOSS-MT (NLLB-200 3.3B + Glossary)",
       "kind": "open",

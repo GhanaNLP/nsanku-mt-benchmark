@@ -549,14 +549,6 @@ missing:
   name: OPUS-MT en-tw (Marian)
   direction: from_en
   reason: language not supported
-- model: google/gemma-4-31B-it
-  name: Gemma 4 31B Instruct (Base)
-  direction: to_en
-  reason: language not supported
-- model: google/gemma-4-31B-it
-  name: Gemma 4 31B Instruct (Base)
-  direction: from_en
-  reason: language not supported
 - model: ghanaopenai/gloss-mt-nllb-3.3b
   name: GLOSS-MT (NLLB-200 3.3B + Glossary)
   direction: to_en

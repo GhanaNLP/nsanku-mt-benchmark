@@ -328,32 +328,6 @@ class MarianMT(HFSeq2SeqMT):
         return self._model.generate(**enc, num_beams=self.BEAMS, max_new_tokens=min(512, enc["input_ids"].shape[1] * 2 + 20))
 
 
-class GemmaBaseMT(BaseMT):
-    workers = 8
-    PROMPT = ("Translate the following English text into Asante Twi. Output ONLY the Asante Twi "
-              "translation of this text: no notes, no explanations, no quotes, no preamble. "
-              "Keep numbers, names, acronyms and any ' | ' table separators as they are.\n\n{text}")
-
-    def __init__(self, meta):
-        super().__init__(meta)
-        import os
-        from openai import OpenAI
-        base_url = os.environ.get("GEMMA_BASE_URL", "http://127.0.0.1:8300/v1")
-        self.client = OpenAI(base_url=base_url, api_key="EMPTY")
-        self.model = os.environ.get("GEMMA_MODEL_NAME", self.id)
-
-    def translate_one(self, text, iso, direction="from_en"):
-        if direction != "from_en":
-            raise NotImplementedError("Gemma base only tested on from_en")
-        resp = self.client.chat.completions.create(
-            model=self.model,
-            messages=[{"role": "user", "content": self.PROMPT.format(text=text)}],
-            temperature=0.0,
-            max_tokens=512,
-        )
-        return (resp.choices[0].message.content or "").strip()
-
-
 class GlossMTSeq2SeqMT(BaseMT):
     """GLOSS-MT with a fine-tuned NLLB-200 3.3B (LoRA, merged). The GLOSS-MT dictionary step
     is a fixed pipeline (twi_translate.seq2seq): each piece's
@@ -453,8 +427,7 @@ KINDS = {"Google/gemini-3.8-flash": GeminiMT, "KhayaAI/khaya-translate": KhayaMT
          "ghanaopenai/gloss-mt-translategemma-4b": GlossMTTranslateGemmaMT,
          "ghanaopenai/gloss-mt-opus-mt-en-tw": GlossMTOpusMT,
          "ghanaopenai/gloss-mt-nllb-1.3b": GlossMTNLLB13BMT,
-         "ghanaopenai/gloss-mt-nllb-600m": GlossMTNLLB600MMT,
-         "google/gemma-4-31B-it": GemmaBaseMT}
+         "ghanaopenai/gloss-mt-nllb-600m": GlossMTNLLB600MMT}
 
 
 def local_class(model_id):
