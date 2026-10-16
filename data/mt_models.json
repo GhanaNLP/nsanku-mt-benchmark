@@ -174,6 +174,18 @@
       "url": "https://huggingface.co/ghanaopenai/gloss-mt-opus-mt-en-tw"
     },
     {
+      "id": "ghanaopenai/gloss-mt-nllb-1.3b",
+      "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+      "kind": "open",
+      "codes": {
+        "twi_asante": "twi_Latn"
+      },
+      "directions": [
+        "from_en"
+      ],
+      "url": "https://huggingface.co/ghanaopenai/gloss-mt-nllb-1.3b"
+    },
+    {
       "id": "google/gemma-4-E4B-it",
       "name": "Gemma 4 E4B Instruct (Base)",
       "kind": "llm",

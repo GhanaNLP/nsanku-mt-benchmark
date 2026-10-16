@@ -447,12 +447,26 @@ class GlossMTOpusMT(GlossMTSeq2SeqMT):
             self._tr = Seq2SeqTranslator(path, num_beams=self.BEAMS, batch_size=16)
 
 
+class GlossMTNLLB13BMT(GlossMTSeq2SeqMT):
+    """GLOSS-MT with a full fine-tune of facebook/nllb-200-1.3B: the same dictionary step, pieces
+    and beam search as GlossMTSeq2SeqMT. Model path: GLOSS_MT_NLLB_1_3B_PATH."""
+
+    def _load(self):
+        if self._tr is None:
+            import os
+            from twi_translate.seq2seq import Seq2SeqTranslator
+            path = os.environ.get("GLOSS_MT_NLLB_1_3B_PATH", "/mnt/volume_d2wey28/projects/twi-translation-tool-calling/"
+                                  "checkpoints/nllb-1.3b-twi/final")
+            self._tr = Seq2SeqTranslator(path, num_beams=self.BEAMS, batch_size=16)
+
+
 KINDS = {"Google/gemini-3.8-flash": GeminiMT, "KhayaAI/khaya-translate": KhayaMT,
          "Google/google-translate-free": GoogleFreeMT,
          "ghanaopenai/gloss-mt": TwiToolTranslatorMT,
          "ghanaopenai/gloss-mt-nllb-3.3b": GlossMTSeq2SeqMT,
          "ghanaopenai/gloss-mt-translategemma-4b": GlossMTTranslateGemmaMT,
          "ghanaopenai/gloss-mt-opus-mt-en-tw": GlossMTOpusMT,
+         "ghanaopenai/gloss-mt-nllb-1.3b": GlossMTNLLB13BMT,
          "google/gemma-4-E4B-it": GemmaBaseMT,
          "google/gemma-4-31B-it": GemmaBaseMT}
 

@@ -1,0 +1,7 @@
+{
+ "bleu": 6.81,
+ "chrf": 36.58,
+ "length_ratio": 1.269,
+ "hyp_words": 713,
+ "ref_words": 542
+}

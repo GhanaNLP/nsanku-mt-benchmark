@@ -133,6 +133,21 @@
    "track": "open",
    "url": "https://huggingface.co/ghanaopenai/gloss-mt-nllb-3.3b"
   },
+  "ghanaopenai/gloss-mt-translategemma-4b": {
+   "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+   "track": "open",
+   "url": "https://huggingface.co/ghanaopenai/gloss-mt-translategemma-4b"
+  },
+  "ghanaopenai/gloss-mt-opus-mt-en-tw": {
+   "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+   "track": "open",
+   "url": "https://huggingface.co/ghanaopenai/gloss-mt-opus-mt-en-tw"
+  },
+  "ghanaopenai/gloss-mt-nllb-1.3b": {
+   "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+   "track": "open",
+   "url": "https://huggingface.co/ghanaopenai/gloss-mt-nllb-1.3b"
+  },
   "google/gemma-4-E4B-it": {
    "name": "Gemma 4 E4B Instruct (Base)",
    "track": "llm",
@@ -672,6 +687,42 @@
      "reason": "language not supported"
     },
     {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
      "model": "google/gemma-4-E4B-it",
      "name": "Gemma 4 E4B Instruct (Base)",
      "direction": "to_en",
@@ -943,6 +994,42 @@
     {
      "model": "ghanaopenai/gloss-mt-nllb-3.3b",
      "name": "GLOSS-MT (NLLB-200 3.3B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
      "direction": "from_en",
      "reason": "language not supported"
     },
@@ -1331,6 +1418,42 @@
      "reason": "language not supported"
     },
     {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
      "model": "google/gemma-4-E4B-it",
      "name": "Gemma 4 E4B Instruct (Base)",
      "direction": "to_en",
@@ -1635,6 +1758,42 @@
     {
      "model": "ghanaopenai/gloss-mt-nllb-3.3b",
      "name": "GLOSS-MT (NLLB-200 3.3B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
      "direction": "from_en",
      "reason": "language not supported"
     },
@@ -2972,7 +3131,7 @@
         "finance": {
          "bleu": 22.12,
          "chrf": 59.98,
-         "length_ratio": 1.27,
+         "length_ratio": 1.28,
          "documents": 3,
          "per_document": {
           "finance_2021_ewe": {
@@ -3232,6 +3391,42 @@
     {
      "model": "ghanaopenai/gloss-mt-nllb-3.3b",
      "name": "GLOSS-MT (NLLB-200 3.3B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
      "direction": "from_en",
      "reason": "language not supported"
     },
@@ -3680,6 +3875,42 @@
     {
      "model": "ghanaopenai/gloss-mt-nllb-3.3b",
      "name": "GLOSS-MT (NLLB-200 3.3B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
      "direction": "from_en",
      "reason": "language not supported"
     },
@@ -4417,6 +4648,42 @@
      "reason": "language not supported"
     },
     {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
      "model": "google/gemma-4-E4B-it",
      "name": "Gemma 4 E4B Instruct (Base)",
      "direction": "to_en",
@@ -4673,6 +4940,42 @@
     {
      "model": "ghanaopenai/gloss-mt-nllb-3.3b",
      "name": "GLOSS-MT (NLLB-200 3.3B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
      "direction": "from_en",
      "reason": "language not supported"
     },
@@ -5056,6 +5359,42 @@
     {
      "model": "ghanaopenai/gloss-mt-nllb-3.3b",
      "name": "GLOSS-MT (NLLB-200 3.3B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
      "direction": "from_en",
      "reason": "language not supported"
     },
@@ -5637,6 +5976,42 @@
      "reason": "language not supported"
     },
     {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
      "model": "google/gemma-4-E4B-it",
      "name": "Gemma 4 E4B Instruct (Base)",
      "direction": "to_en",
@@ -5912,6 +6287,42 @@
      "reason": "language not supported"
     },
     {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
      "model": "google/gemma-4-E4B-it",
      "name": "Gemma 4 E4B Instruct (Base)",
      "direction": "to_en",
@@ -6119,6 +6530,42 @@
     {
      "model": "ghanaopenai/gloss-mt-nllb-3.3b",
      "name": "GLOSS-MT (NLLB-200 3.3B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
      "direction": "from_en",
      "reason": "language not supported"
     },
@@ -7586,7 +8033,7 @@
      "directions": {
       "to_en": {
        "bleu": 28.09,
-       "chrf": 59.89,
+       "chrf": 59.88,
        "length_ratio": 0.94,
        "documents": 84,
        "per_dataset": {
@@ -10451,6 +10898,726 @@
      }
     },
     {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "track": "open",
+     "url": "https://huggingface.co/ghanaopenai/gloss-mt-nllb-1.3b",
+     "directions": {
+      "from_en": {
+       "bleu": 12.82,
+       "chrf": 50.27,
+       "length_ratio": 0.99,
+       "documents": 84,
+       "per_dataset": {
+        "finance": {
+         "bleu": 16.01,
+         "chrf": 49.41,
+         "length_ratio": 0.82,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 16.83,
+           "chrf": 50.35,
+           "length_ratio": 0.852,
+           "hyp_words": 9169,
+           "ref_words": 11597,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 13.74,
+           "chrf": 47.4,
+           "length_ratio": 0.796,
+           "hyp_words": 9656,
+           "ref_words": 12941,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 17.45,
+           "chrf": 50.48,
+           "length_ratio": 0.822,
+           "hyp_words": 10950,
+           "ref_words": 13241,
+           "year": 2023
+          }
+         }
+        },
+        "folktales": {
+         "bleu": 5.53,
+         "chrf": 36.51,
+         "length_ratio": 1.39,
+         "documents": 75,
+         "per_document": {
+          "folktale_01_twi_asante": {
+           "bleu": 1.02,
+           "chrf": 29.66,
+           "length_ratio": 1.451,
+           "hyp_words": 266,
+           "ref_words": 189,
+           "year": 1930
+          },
+          "folktale_02_twi_asante": {
+           "bleu": 2.75,
+           "chrf": 41.14,
+           "length_ratio": 1.448,
+           "hyp_words": 191,
+           "ref_words": 130,
+           "year": 1930
+          },
+          "folktale_03_twi_asante": {
+           "bleu": 3.01,
+           "chrf": 21.53,
+           "length_ratio": 1.395,
+           "hyp_words": 335,
+           "ref_words": 230,
+           "year": 1930
+          },
+          "folktale_04_twi_asante": {
+           "bleu": 4.01,
+           "chrf": 36.17,
+           "length_ratio": 1.479,
+           "hyp_words": 1738,
+           "ref_words": 1110,
+           "year": 1930
+          },
+          "folktale_05_twi_asante": {
+           "bleu": 2.63,
+           "chrf": 29.59,
+           "length_ratio": 1.455,
+           "hyp_words": 545,
+           "ref_words": 362,
+           "year": 1930
+          },
+          "folktale_06_twi_asante": {
+           "bleu": 4.22,
+           "chrf": 37.57,
+           "length_ratio": 1.441,
+           "hyp_words": 921,
+           "ref_words": 611,
+           "year": 1930
+          },
+          "folktale_07_twi_asante": {
+           "bleu": 5.84,
+           "chrf": 37.47,
+           "length_ratio": 1.582,
+           "hyp_words": 1181,
+           "ref_words": 744,
+           "year": 1930
+          },
+          "folktale_08_twi_asante": {
+           "bleu": 2.04,
+           "chrf": 36.11,
+           "length_ratio": 1.379,
+           "hyp_words": 847,
+           "ref_words": 603,
+           "year": 1930
+          },
+          "folktale_09_twi_asante": {
+           "bleu": 8.57,
+           "chrf": 37.69,
+           "length_ratio": 1.333,
+           "hyp_words": 1216,
+           "ref_words": 836,
+           "year": 1930
+          },
+          "folktale_10_twi_asante": {
+           "bleu": 6.81,
+           "chrf": 36.58,
+           "length_ratio": 1.269,
+           "hyp_words": 713,
+           "ref_words": 542,
+           "year": 1930
+          },
+          "folktale_11_twi_asante": {
+           "bleu": 6.68,
+           "chrf": 37.67,
+           "length_ratio": 1.377,
+           "hyp_words": 1125,
+           "ref_words": 793,
+           "year": 1930
+          },
+          "folktale_12_twi_asante": {
+           "bleu": 14.36,
+           "chrf": 44.73,
+           "length_ratio": 1.287,
+           "hyp_words": 266,
+           "ref_words": 210,
+           "year": 1930
+          },
+          "folktale_13_twi_asante": {
+           "bleu": 2.58,
+           "chrf": 35.2,
+           "length_ratio": 1.454,
+           "hyp_words": 366,
+           "ref_words": 248,
+           "year": 1930
+          },
+          "folktale_14_twi_asante": {
+           "bleu": 3.59,
+           "chrf": 32.56,
+           "length_ratio": 1.345,
+           "hyp_words": 693,
+           "ref_words": 493,
+           "year": 1930
+          },
+          "folktale_15_twi_asante": {
+           "bleu": 7.0,
+           "chrf": 34.91,
+           "length_ratio": 1.231,
+           "hyp_words": 874,
+           "ref_words": 658,
+           "year": 1930
+          },
+          "folktale_16_twi_asante": {
+           "bleu": 5.92,
+           "chrf": 37.61,
+           "length_ratio": 1.313,
+           "hyp_words": 611,
+           "ref_words": 449,
+           "year": 1930
+          },
+          "folktale_17_twi_asante": {
+           "bleu": 7.0,
+           "chrf": 40.24,
+           "length_ratio": 1.478,
+           "hyp_words": 1452,
+           "ref_words": 942,
+           "year": 1930
+          },
+          "folktale_18_twi_asante": {
+           "bleu": 4.56,
+           "chrf": 32.94,
+           "length_ratio": 1.234,
+           "hyp_words": 948,
+           "ref_words": 705,
+           "year": 1930
+          },
+          "folktale_19_twi_asante": {
+           "bleu": 3.09,
+           "chrf": 37.18,
+           "length_ratio": 1.36,
+           "hyp_words": 1104,
+           "ref_words": 747,
+           "year": 1930
+          },
+          "folktale_20_twi_asante": {
+           "bleu": 5.55,
+           "chrf": 34.57,
+           "length_ratio": 1.277,
+           "hyp_words": 784,
+           "ref_words": 607,
+           "year": 1930
+          },
+          "folktale_21_twi_asante": {
+           "bleu": 5.35,
+           "chrf": 33.3,
+           "length_ratio": 1.538,
+           "hyp_words": 230,
+           "ref_words": 148,
+           "year": 1930
+          },
+          "folktale_22_twi_asante": {
+           "bleu": 10.95,
+           "chrf": 41.92,
+           "length_ratio": 1.2,
+           "hyp_words": 1313,
+           "ref_words": 1068,
+           "year": 1930
+          },
+          "folktale_23_twi_asante": {
+           "bleu": 3.83,
+           "chrf": 39.98,
+           "length_ratio": 1.397,
+           "hyp_words": 814,
+           "ref_words": 575,
+           "year": 1930
+          },
+          "folktale_24_twi_asante": {
+           "bleu": 10.08,
+           "chrf": 41.42,
+           "length_ratio": 1.311,
+           "hyp_words": 1689,
+           "ref_words": 1241,
+           "year": 1930
+          },
+          "folktale_25_twi_asante": {
+           "bleu": 4.66,
+           "chrf": 36.33,
+           "length_ratio": 1.516,
+           "hyp_words": 1426,
+           "ref_words": 907,
+           "year": 1930
+          },
+          "folktale_26_twi_asante": {
+           "bleu": 5.36,
+           "chrf": 36.47,
+           "length_ratio": 1.54,
+           "hyp_words": 532,
+           "ref_words": 331,
+           "year": 1930
+          },
+          "folktale_27_twi_asante": {
+           "bleu": 4.55,
+           "chrf": 37.55,
+           "length_ratio": 1.569,
+           "hyp_words": 856,
+           "ref_words": 523,
+           "year": 1930
+          },
+          "folktale_28_twi_asante": {
+           "bleu": 8.6,
+           "chrf": 40.67,
+           "length_ratio": 1.331,
+           "hyp_words": 656,
+           "ref_words": 499,
+           "year": 1930
+          },
+          "folktale_29_twi_asante": {
+           "bleu": 5.21,
+           "chrf": 36.4,
+           "length_ratio": 1.364,
+           "hyp_words": 900,
+           "ref_words": 622,
+           "year": 1930
+          },
+          "folktale_30_twi_asante": {
+           "bleu": 4.32,
+           "chrf": 36.23,
+           "length_ratio": 1.495,
+           "hyp_words": 1096,
+           "ref_words": 675,
+           "year": 1930
+          },
+          "folktale_31_twi_asante": {
+           "bleu": 5.1,
+           "chrf": 39.35,
+           "length_ratio": 1.451,
+           "hyp_words": 2657,
+           "ref_words": 1719,
+           "year": 1930
+          },
+          "folktale_32_twi_asante": {
+           "bleu": 5.7,
+           "chrf": 37.59,
+           "length_ratio": 1.475,
+           "hyp_words": 770,
+           "ref_words": 505,
+           "year": 1930
+          },
+          "folktale_33_twi_asante": {
+           "bleu": 6.93,
+           "chrf": 35.01,
+           "length_ratio": 1.56,
+           "hyp_words": 456,
+           "ref_words": 298,
+           "year": 1930
+          },
+          "folktale_34_twi_asante": {
+           "bleu": 4.15,
+           "chrf": 36.84,
+           "length_ratio": 1.336,
+           "hyp_words": 1167,
+           "ref_words": 842,
+           "year": 1930
+          },
+          "folktale_35_twi_asante": {
+           "bleu": 3.26,
+           "chrf": 37.97,
+           "length_ratio": 1.443,
+           "hyp_words": 935,
+           "ref_words": 620,
+           "year": 1930
+          },
+          "folktale_36_twi_asante": {
+           "bleu": 6.91,
+           "chrf": 41.49,
+           "length_ratio": 1.404,
+           "hyp_words": 1486,
+           "ref_words": 1024,
+           "year": 1930
+          },
+          "folktale_37_twi_asante": {
+           "bleu": 4.68,
+           "chrf": 38.13,
+           "length_ratio": 1.349,
+           "hyp_words": 814,
+           "ref_words": 556,
+           "year": 1930
+          },
+          "folktale_38_twi_asante": {
+           "bleu": 4.36,
+           "chrf": 35.03,
+           "length_ratio": 1.472,
+           "hyp_words": 878,
+           "ref_words": 594,
+           "year": 1930
+          },
+          "folktale_39_twi_asante": {
+           "bleu": 7.83,
+           "chrf": 39.21,
+           "length_ratio": 1.442,
+           "hyp_words": 1528,
+           "ref_words": 1007,
+           "year": 1930
+          },
+          "folktale_40_twi_asante": {
+           "bleu": 4.74,
+           "chrf": 34.09,
+           "length_ratio": 1.309,
+           "hyp_words": 675,
+           "ref_words": 478,
+           "year": 1930
+          },
+          "folktale_41_twi_asante": {
+           "bleu": 4.59,
+           "chrf": 32.99,
+           "length_ratio": 1.326,
+           "hyp_words": 1260,
+           "ref_words": 869,
+           "year": 1930
+          },
+          "folktale_42_twi_asante": {
+           "bleu": 5.92,
+           "chrf": 38.9,
+           "length_ratio": 1.466,
+           "hyp_words": 2024,
+           "ref_words": 1312,
+           "year": 1930
+          },
+          "folktale_43_twi_asante": {
+           "bleu": 13.77,
+           "chrf": 36.94,
+           "length_ratio": 1.35,
+           "hyp_words": 865,
+           "ref_words": 625,
+           "year": 1930
+          },
+          "folktale_44_twi_asante": {
+           "bleu": 3.85,
+           "chrf": 32.58,
+           "length_ratio": 1.414,
+           "hyp_words": 833,
+           "ref_words": 532,
+           "year": 1930
+          },
+          "folktale_45_twi_asante": {
+           "bleu": 2.62,
+           "chrf": 30.61,
+           "length_ratio": 1.443,
+           "hyp_words": 515,
+           "ref_words": 337,
+           "year": 1930
+          },
+          "folktale_46_twi_asante": {
+           "bleu": 14.78,
+           "chrf": 40.39,
+           "length_ratio": 1.349,
+           "hyp_words": 349,
+           "ref_words": 256,
+           "year": 1930
+          },
+          "folktale_47_twi_asante": {
+           "bleu": 9.29,
+           "chrf": 37.39,
+           "length_ratio": 1.305,
+           "hyp_words": 691,
+           "ref_words": 524,
+           "year": 1930
+          },
+          "folktale_48_twi_asante": {
+           "bleu": 7.13,
+           "chrf": 39.23,
+           "length_ratio": 1.387,
+           "hyp_words": 767,
+           "ref_words": 522,
+           "year": 1930
+          },
+          "folktale_49_twi_asante": {
+           "bleu": 6.16,
+           "chrf": 36.22,
+           "length_ratio": 1.312,
+           "hyp_words": 701,
+           "ref_words": 502,
+           "year": 1930
+          },
+          "folktale_50_twi_asante": {
+           "bleu": 6.77,
+           "chrf": 38.99,
+           "length_ratio": 1.37,
+           "hyp_words": 2248,
+           "ref_words": 1531,
+           "year": 1930
+          },
+          "folktale_51_twi_asante": {
+           "bleu": 5.13,
+           "chrf": 36.84,
+           "length_ratio": 1.428,
+           "hyp_words": 745,
+           "ref_words": 506,
+           "year": 1930
+          },
+          "folktale_52_twi_asante": {
+           "bleu": 3.85,
+           "chrf": 36.13,
+           "length_ratio": 1.434,
+           "hyp_words": 935,
+           "ref_words": 643,
+           "year": 1930
+          },
+          "folktale_53_twi_asante": {
+           "bleu": 3.98,
+           "chrf": 38.39,
+           "length_ratio": 1.345,
+           "hyp_words": 788,
+           "ref_words": 551,
+           "year": 1930
+          },
+          "folktale_54_twi_asante": {
+           "bleu": 4.78,
+           "chrf": 35.46,
+           "length_ratio": 1.23,
+           "hyp_words": 1233,
+           "ref_words": 965,
+           "year": 1930
+          },
+          "folktale_55_twi_asante": {
+           "bleu": 6.81,
+           "chrf": 40.16,
+           "length_ratio": 1.35,
+           "hyp_words": 1710,
+           "ref_words": 1155,
+           "year": 1930
+          },
+          "folktale_56_twi_asante": {
+           "bleu": 5.53,
+           "chrf": 33.92,
+           "length_ratio": 1.267,
+           "hyp_words": 337,
+           "ref_words": 237,
+           "year": 1930
+          },
+          "folktale_57_twi_asante": {
+           "bleu": 5.44,
+           "chrf": 39.15,
+           "length_ratio": 1.276,
+           "hyp_words": 1642,
+           "ref_words": 1202,
+           "year": 1930
+          },
+          "folktale_58_twi_asante": {
+           "bleu": 2.83,
+           "chrf": 34.18,
+           "length_ratio": 1.394,
+           "hyp_words": 992,
+           "ref_words": 690,
+           "year": 1930
+          },
+          "folktale_59_twi_asante": {
+           "bleu": 4.31,
+           "chrf": 36.05,
+           "length_ratio": 1.448,
+           "hyp_words": 1022,
+           "ref_words": 698,
+           "year": 1930
+          },
+          "folktale_60_twi_asante": {
+           "bleu": 6.9,
+           "chrf": 32.88,
+           "length_ratio": 1.48,
+           "hyp_words": 346,
+           "ref_words": 237,
+           "year": 1930
+          },
+          "folktale_61_twi_asante": {
+           "bleu": 3.67,
+           "chrf": 36.19,
+           "length_ratio": 1.434,
+           "hyp_words": 1607,
+           "ref_words": 1081,
+           "year": 1930
+          },
+          "folktale_62_twi_asante": {
+           "bleu": 5.48,
+           "chrf": 38.33,
+           "length_ratio": 1.369,
+           "hyp_words": 911,
+           "ref_words": 645,
+           "year": 1930
+          },
+          "folktale_63_twi_asante": {
+           "bleu": 6.3,
+           "chrf": 37.29,
+           "length_ratio": 1.327,
+           "hyp_words": 580,
+           "ref_words": 437,
+           "year": 1930
+          },
+          "folktale_64_twi_asante": {
+           "bleu": 5.62,
+           "chrf": 40.08,
+           "length_ratio": 1.492,
+           "hyp_words": 523,
+           "ref_words": 327,
+           "year": 1930
+          },
+          "folktale_65_twi_asante": {
+           "bleu": 1.89,
+           "chrf": 32.81,
+           "length_ratio": 1.478,
+           "hyp_words": 224,
+           "ref_words": 148,
+           "year": 1930
+          },
+          "folktale_66_twi_asante": {
+           "bleu": 2.5,
+           "chrf": 36.01,
+           "length_ratio": 1.52,
+           "hyp_words": 254,
+           "ref_words": 160,
+           "year": 1930
+          },
+          "folktale_67_twi_asante": {
+           "bleu": 5.31,
+           "chrf": 37.71,
+           "length_ratio": 1.301,
+           "hyp_words": 882,
+           "ref_words": 630,
+           "year": 1930
+          },
+          "folktale_68_twi_asante": {
+           "bleu": 5.15,
+           "chrf": 37.94,
+           "length_ratio": 1.329,
+           "hyp_words": 1191,
+           "ref_words": 846,
+           "year": 1930
+          },
+          "folktale_69_twi_asante": {
+           "bleu": 2.5,
+           "chrf": 31.73,
+           "length_ratio": 1.392,
+           "hyp_words": 323,
+           "ref_words": 226,
+           "year": 1930
+          },
+          "folktale_70_twi_asante": {
+           "bleu": 6.84,
+           "chrf": 32.49,
+           "length_ratio": 1.247,
+           "hyp_words": 179,
+           "ref_words": 140,
+           "year": 1930
+          },
+          "folktale_71_twi_asante": {
+           "bleu": 4.25,
+           "chrf": 37.61,
+           "length_ratio": 1.485,
+           "hyp_words": 579,
+           "ref_words": 386,
+           "year": 1930
+          },
+          "folktale_72_twi_asante": {
+           "bleu": 3.25,
+           "chrf": 32.48,
+           "length_ratio": 1.345,
+           "hyp_words": 454,
+           "ref_words": 327,
+           "year": 1930
+          },
+          "folktale_73_twi_asante": {
+           "bleu": 8.08,
+           "chrf": 39.55,
+           "length_ratio": 1.287,
+           "hyp_words": 548,
+           "ref_words": 422,
+           "year": 1930
+          },
+          "folktale_74_twi_asante": {
+           "bleu": 6.05,
+           "chrf": 38.44,
+           "length_ratio": 1.523,
+           "hyp_words": 372,
+           "ref_words": 246,
+           "year": 1930
+          },
+          "folktale_75_twi_asante": {
+           "bleu": 5.68,
+           "chrf": 36.04,
+           "length_ratio": 1.455,
+           "hyp_words": 512,
+           "ref_words": 330,
+           "year": 1930
+          }
+         }
+        },
+        "jw": {
+         "bleu": 23.7,
+         "chrf": 63.66,
+         "length_ratio": 0.9,
+         "documents": 5,
+         "per_document": {
+          "jw_202606_twi_asante": {
+           "bleu": 23.9,
+           "chrf": 64.22,
+           "length_ratio": 0.915,
+           "hyp_words": 13619,
+           "ref_words": 14580,
+           "year": 2026
+          },
+          "jw_202607_twi_asante": {
+           "bleu": 22.27,
+           "chrf": 62.64,
+           "length_ratio": 0.868,
+           "hyp_words": 13014,
+           "ref_words": 14637,
+           "year": 2026
+          },
+          "jw_202608_twi_asante": {
+           "bleu": 25.76,
+           "chrf": 65.0,
+           "length_ratio": 0.915,
+           "hyp_words": 13156,
+           "ref_words": 14064,
+           "year": 2026
+          },
+          "jw_202609_twi_asante": {
+           "bleu": 24.62,
+           "chrf": 63.22,
+           "length_ratio": 0.901,
+           "hyp_words": 13032,
+           "ref_words": 14226,
+           "year": 2026
+          },
+          "jw_202610_twi_asante": {
+           "bleu": 21.93,
+           "chrf": 63.2,
+           "length_ratio": 0.892,
+           "hyp_words": 13507,
+           "ref_words": 14754,
+           "year": 2026
+          }
+         }
+        },
+        "udhr": {
+         "bleu": 6.06,
+         "chrf": 51.51,
+         "length_ratio": 0.87,
+         "documents": 1,
+         "per_document": {
+          "udhr_twi_asante": {
+           "bleu": 6.06,
+           "chrf": 51.51,
+           "length_ratio": 0.866,
+           "hyp_words": 1882,
+           "ref_words": 2098,
+           "year": 1948
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
      "model": "KhayaAI/khaya-translate",
      "name": "Khaya AI",
      "track": "api",
@@ -11105,7 +12272,7 @@
         "jw": {
          "bleu": 24.48,
          "chrf": 65.22,
-         "length_ratio": 1.15,
+         "length_ratio": 1.16,
          "documents": 5,
          "per_document": {
           "jw_202606_twi_asante": {
@@ -11170,7 +12337,7 @@
       },
       "from_en": {
        "bleu": 12.79,
-       "chrf": 49.92,
+       "chrf": 49.91,
        "length_ratio": 1.04,
        "documents": 84,
        "per_dataset": {
@@ -11883,6 +13050,726 @@
      }
     },
     {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "track": "open",
+     "url": "https://huggingface.co/ghanaopenai/gloss-mt-translategemma-4b",
+     "directions": {
+      "from_en": {
+       "bleu": 12.24,
+       "chrf": 49.81,
+       "length_ratio": 1.06,
+       "documents": 84,
+       "per_dataset": {
+        "finance": {
+         "bleu": 16.4,
+         "chrf": 50.03,
+         "length_ratio": 0.88,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 17.09,
+           "chrf": 50.6,
+           "length_ratio": 0.895,
+           "hyp_words": 9761,
+           "ref_words": 11597,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 14.69,
+           "chrf": 48.45,
+           "length_ratio": 0.869,
+           "hyp_words": 10674,
+           "ref_words": 12941,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 17.43,
+           "chrf": 51.03,
+           "length_ratio": 0.871,
+           "hyp_words": 11611,
+           "ref_words": 13241,
+           "year": 2023
+          }
+         }
+        },
+        "folktales": {
+         "bleu": 5.22,
+         "chrf": 35.48,
+         "length_ratio": 1.55,
+         "documents": 75,
+         "per_document": {
+          "folktale_01_twi_asante": {
+           "bleu": 0.99,
+           "chrf": 29.12,
+           "length_ratio": 1.62,
+           "hyp_words": 298,
+           "ref_words": 189,
+           "year": 1930
+          },
+          "folktale_02_twi_asante": {
+           "bleu": 2.2,
+           "chrf": 40.35,
+           "length_ratio": 1.618,
+           "hyp_words": 206,
+           "ref_words": 130,
+           "year": 1930
+          },
+          "folktale_03_twi_asante": {
+           "bleu": 3.11,
+           "chrf": 36.87,
+           "length_ratio": 1.525,
+           "hyp_words": 362,
+           "ref_words": 230,
+           "year": 1930
+          },
+          "folktale_04_twi_asante": {
+           "bleu": 4.64,
+           "chrf": 35.89,
+           "length_ratio": 1.46,
+           "hyp_words": 1731,
+           "ref_words": 1110,
+           "year": 1930
+          },
+          "folktale_05_twi_asante": {
+           "bleu": 2.67,
+           "chrf": 28.32,
+           "length_ratio": 1.409,
+           "hyp_words": 519,
+           "ref_words": 362,
+           "year": 1930
+          },
+          "folktale_06_twi_asante": {
+           "bleu": 4.26,
+           "chrf": 36.95,
+           "length_ratio": 1.421,
+           "hyp_words": 896,
+           "ref_words": 611,
+           "year": 1930
+          },
+          "folktale_07_twi_asante": {
+           "bleu": 5.46,
+           "chrf": 37.94,
+           "length_ratio": 1.608,
+           "hyp_words": 1191,
+           "ref_words": 744,
+           "year": 1930
+          },
+          "folktale_08_twi_asante": {
+           "bleu": 2.63,
+           "chrf": 36.34,
+           "length_ratio": 1.397,
+           "hyp_words": 850,
+           "ref_words": 603,
+           "year": 1930
+          },
+          "folktale_09_twi_asante": {
+           "bleu": 6.77,
+           "chrf": 33.18,
+           "length_ratio": 1.702,
+           "hyp_words": 1661,
+           "ref_words": 836,
+           "year": 1930
+          },
+          "folktale_10_twi_asante": {
+           "bleu": 6.35,
+           "chrf": 33.87,
+           "length_ratio": 1.264,
+           "hyp_words": 702,
+           "ref_words": 542,
+           "year": 1930
+          },
+          "folktale_11_twi_asante": {
+           "bleu": 5.04,
+           "chrf": 34.71,
+           "length_ratio": 1.736,
+           "hyp_words": 1368,
+           "ref_words": 793,
+           "year": 1930
+          },
+          "folktale_12_twi_asante": {
+           "bleu": 14.43,
+           "chrf": 44.3,
+           "length_ratio": 1.343,
+           "hyp_words": 279,
+           "ref_words": 210,
+           "year": 1930
+          },
+          "folktale_13_twi_asante": {
+           "bleu": 1.9,
+           "chrf": 33.67,
+           "length_ratio": 1.494,
+           "hyp_words": 373,
+           "ref_words": 248,
+           "year": 1930
+          },
+          "folktale_14_twi_asante": {
+           "bleu": 4.77,
+           "chrf": 33.43,
+           "length_ratio": 1.444,
+           "hyp_words": 741,
+           "ref_words": 493,
+           "year": 1930
+          },
+          "folktale_15_twi_asante": {
+           "bleu": 3.96,
+           "chrf": 31.91,
+           "length_ratio": 1.257,
+           "hyp_words": 886,
+           "ref_words": 658,
+           "year": 1930
+          },
+          "folktale_16_twi_asante": {
+           "bleu": 6.03,
+           "chrf": 37.4,
+           "length_ratio": 1.311,
+           "hyp_words": 603,
+           "ref_words": 449,
+           "year": 1930
+          },
+          "folktale_17_twi_asante": {
+           "bleu": 7.35,
+           "chrf": 39.63,
+           "length_ratio": 1.512,
+           "hyp_words": 1490,
+           "ref_words": 942,
+           "year": 1930
+          },
+          "folktale_18_twi_asante": {
+           "bleu": 3.1,
+           "chrf": 31.8,
+           "length_ratio": 1.307,
+           "hyp_words": 1014,
+           "ref_words": 705,
+           "year": 1930
+          },
+          "folktale_19_twi_asante": {
+           "bleu": 2.19,
+           "chrf": 30.43,
+           "length_ratio": 2.26,
+           "hyp_words": 2042,
+           "ref_words": 747,
+           "year": 1930
+          },
+          "folktale_20_twi_asante": {
+           "bleu": 3.25,
+           "chrf": 30.9,
+           "length_ratio": 2.08,
+           "hyp_words": 1405,
+           "ref_words": 607,
+           "year": 1930
+          },
+          "folktale_21_twi_asante": {
+           "bleu": 5.75,
+           "chrf": 32.2,
+           "length_ratio": 1.67,
+           "hyp_words": 252,
+           "ref_words": 148,
+           "year": 1930
+          },
+          "folktale_22_twi_asante": {
+           "bleu": 10.2,
+           "chrf": 41.05,
+           "length_ratio": 1.246,
+           "hyp_words": 1369,
+           "ref_words": 1068,
+           "year": 1930
+          },
+          "folktale_23_twi_asante": {
+           "bleu": 4.79,
+           "chrf": 39.71,
+           "length_ratio": 1.404,
+           "hyp_words": 805,
+           "ref_words": 575,
+           "year": 1930
+          },
+          "folktale_24_twi_asante": {
+           "bleu": 9.23,
+           "chrf": 40.44,
+           "length_ratio": 1.324,
+           "hyp_words": 1706,
+           "ref_words": 1241,
+           "year": 1930
+          },
+          "folktale_25_twi_asante": {
+           "bleu": 3.59,
+           "chrf": 33.04,
+           "length_ratio": 2.097,
+           "hyp_words": 1950,
+           "ref_words": 907,
+           "year": 1930
+          },
+          "folktale_26_twi_asante": {
+           "bleu": 5.56,
+           "chrf": 36.24,
+           "length_ratio": 1.542,
+           "hyp_words": 532,
+           "ref_words": 331,
+           "year": 1930
+          },
+          "folktale_27_twi_asante": {
+           "bleu": 4.14,
+           "chrf": 36.37,
+           "length_ratio": 1.748,
+           "hyp_words": 955,
+           "ref_words": 523,
+           "year": 1930
+          },
+          "folktale_28_twi_asante": {
+           "bleu": 7.91,
+           "chrf": 39.88,
+           "length_ratio": 1.384,
+           "hyp_words": 678,
+           "ref_words": 499,
+           "year": 1930
+          },
+          "folktale_29_twi_asante": {
+           "bleu": 3.08,
+           "chrf": 32.84,
+           "length_ratio": 2.118,
+           "hyp_words": 1338,
+           "ref_words": 622,
+           "year": 1930
+          },
+          "folktale_30_twi_asante": {
+           "bleu": 3.74,
+           "chrf": 36.26,
+           "length_ratio": 1.562,
+           "hyp_words": 1149,
+           "ref_words": 675,
+           "year": 1930
+          },
+          "folktale_31_twi_asante": {
+           "bleu": 4.99,
+           "chrf": 38.69,
+           "length_ratio": 1.477,
+           "hyp_words": 2704,
+           "ref_words": 1719,
+           "year": 1930
+          },
+          "folktale_32_twi_asante": {
+           "bleu": 6.69,
+           "chrf": 38.04,
+           "length_ratio": 1.574,
+           "hyp_words": 813,
+           "ref_words": 505,
+           "year": 1930
+          },
+          "folktale_33_twi_asante": {
+           "bleu": 8.8,
+           "chrf": 35.47,
+           "length_ratio": 1.588,
+           "hyp_words": 463,
+           "ref_words": 298,
+           "year": 1930
+          },
+          "folktale_34_twi_asante": {
+           "bleu": 4.28,
+           "chrf": 36.68,
+           "length_ratio": 1.404,
+           "hyp_words": 1220,
+           "ref_words": 842,
+           "year": 1930
+          },
+          "folktale_35_twi_asante": {
+           "bleu": 2.92,
+           "chrf": 32.36,
+           "length_ratio": 2.062,
+           "hyp_words": 1380,
+           "ref_words": 620,
+           "year": 1930
+          },
+          "folktale_36_twi_asante": {
+           "bleu": 6.51,
+           "chrf": 37.97,
+           "length_ratio": 1.401,
+           "hyp_words": 1469,
+           "ref_words": 1024,
+           "year": 1930
+          },
+          "folktale_37_twi_asante": {
+           "bleu": 5.11,
+           "chrf": 37.5,
+           "length_ratio": 1.354,
+           "hyp_words": 815,
+           "ref_words": 556,
+           "year": 1930
+          },
+          "folktale_38_twi_asante": {
+           "bleu": 4.14,
+           "chrf": 31.97,
+           "length_ratio": 1.917,
+           "hyp_words": 1244,
+           "ref_words": 594,
+           "year": 1930
+          },
+          "folktale_39_twi_asante": {
+           "bleu": 6.45,
+           "chrf": 38.0,
+           "length_ratio": 1.455,
+           "hyp_words": 1537,
+           "ref_words": 1007,
+           "year": 1930
+          },
+          "folktale_40_twi_asante": {
+           "bleu": 4.83,
+           "chrf": 33.39,
+           "length_ratio": 1.368,
+           "hyp_words": 709,
+           "ref_words": 478,
+           "year": 1930
+          },
+          "folktale_41_twi_asante": {
+           "bleu": 5.1,
+           "chrf": 33.04,
+           "length_ratio": 1.365,
+           "hyp_words": 1292,
+           "ref_words": 869,
+           "year": 1930
+          },
+          "folktale_42_twi_asante": {
+           "bleu": 4.93,
+           "chrf": 34.4,
+           "length_ratio": 1.974,
+           "hyp_words": 2905,
+           "ref_words": 1312,
+           "year": 1930
+          },
+          "folktale_43_twi_asante": {
+           "bleu": 13.95,
+           "chrf": 35.8,
+           "length_ratio": 1.342,
+           "hyp_words": 851,
+           "ref_words": 625,
+           "year": 1930
+          },
+          "folktale_44_twi_asante": {
+           "bleu": 4.03,
+           "chrf": 31.34,
+           "length_ratio": 1.479,
+           "hyp_words": 867,
+           "ref_words": 532,
+           "year": 1930
+          },
+          "folktale_45_twi_asante": {
+           "bleu": 4.47,
+           "chrf": 29.68,
+           "length_ratio": 1.487,
+           "hyp_words": 532,
+           "ref_words": 337,
+           "year": 1930
+          },
+          "folktale_46_twi_asante": {
+           "bleu": 15.6,
+           "chrf": 41.52,
+           "length_ratio": 1.403,
+           "hyp_words": 359,
+           "ref_words": 256,
+           "year": 1930
+          },
+          "folktale_47_twi_asante": {
+           "bleu": 4.83,
+           "chrf": 33.55,
+           "length_ratio": 2.273,
+           "hyp_words": 1295,
+           "ref_words": 524,
+           "year": 1930
+          },
+          "folktale_48_twi_asante": {
+           "bleu": 8.65,
+           "chrf": 40.81,
+           "length_ratio": 1.427,
+           "hyp_words": 788,
+           "ref_words": 522,
+           "year": 1930
+          },
+          "folktale_49_twi_asante": {
+           "bleu": 5.61,
+           "chrf": 32.77,
+           "length_ratio": 1.815,
+           "hyp_words": 1031,
+           "ref_words": 502,
+           "year": 1930
+          },
+          "folktale_50_twi_asante": {
+           "bleu": 6.6,
+           "chrf": 37.66,
+           "length_ratio": 1.427,
+           "hyp_words": 2319,
+           "ref_words": 1531,
+           "year": 1930
+          },
+          "folktale_51_twi_asante": {
+           "bleu": 4.77,
+           "chrf": 36.54,
+           "length_ratio": 1.458,
+           "hyp_words": 767,
+           "ref_words": 506,
+           "year": 1930
+          },
+          "folktale_52_twi_asante": {
+           "bleu": 2.34,
+           "chrf": 35.07,
+           "length_ratio": 1.516,
+           "hyp_words": 1001,
+           "ref_words": 643,
+           "year": 1930
+          },
+          "folktale_53_twi_asante": {
+           "bleu": 2.39,
+           "chrf": 34.98,
+           "length_ratio": 2.179,
+           "hyp_words": 1227,
+           "ref_words": 551,
+           "year": 1930
+          },
+          "folktale_54_twi_asante": {
+           "bleu": 5.3,
+           "chrf": 34.59,
+           "length_ratio": 1.232,
+           "hyp_words": 1242,
+           "ref_words": 965,
+           "year": 1930
+          },
+          "folktale_55_twi_asante": {
+           "bleu": 5.3,
+           "chrf": 37.82,
+           "length_ratio": 1.67,
+           "hyp_words": 2216,
+           "ref_words": 1155,
+           "year": 1930
+          },
+          "folktale_56_twi_asante": {
+           "bleu": 4.41,
+           "chrf": 33.52,
+           "length_ratio": 1.333,
+           "hyp_words": 353,
+           "ref_words": 237,
+           "year": 1930
+          },
+          "folktale_57_twi_asante": {
+           "bleu": 5.39,
+           "chrf": 38.62,
+           "length_ratio": 1.299,
+           "hyp_words": 1667,
+           "ref_words": 1202,
+           "year": 1930
+          },
+          "folktale_58_twi_asante": {
+           "bleu": 2.9,
+           "chrf": 34.34,
+           "length_ratio": 1.484,
+           "hyp_words": 1063,
+           "ref_words": 690,
+           "year": 1930
+          },
+          "folktale_59_twi_asante": {
+           "bleu": 4.66,
+           "chrf": 35.74,
+           "length_ratio": 1.516,
+           "hyp_words": 1083,
+           "ref_words": 698,
+           "year": 1930
+          },
+          "folktale_60_twi_asante": {
+           "bleu": 6.74,
+           "chrf": 34.0,
+           "length_ratio": 1.53,
+           "hyp_words": 359,
+           "ref_words": 237,
+           "year": 1930
+          },
+          "folktale_61_twi_asante": {
+           "bleu": 3.38,
+           "chrf": 34.86,
+           "length_ratio": 1.49,
+           "hyp_words": 1667,
+           "ref_words": 1081,
+           "year": 1930
+          },
+          "folktale_62_twi_asante": {
+           "bleu": 6.19,
+           "chrf": 39.51,
+           "length_ratio": 1.43,
+           "hyp_words": 955,
+           "ref_words": 645,
+           "year": 1930
+          },
+          "folktale_63_twi_asante": {
+           "bleu": 7.44,
+           "chrf": 36.42,
+           "length_ratio": 1.316,
+           "hyp_words": 580,
+           "ref_words": 437,
+           "year": 1930
+          },
+          "folktale_64_twi_asante": {
+           "bleu": 5.73,
+           "chrf": 39.6,
+           "length_ratio": 1.524,
+           "hyp_words": 522,
+           "ref_words": 327,
+           "year": 1930
+          },
+          "folktale_65_twi_asante": {
+           "bleu": 2.62,
+           "chrf": 32.61,
+           "length_ratio": 1.538,
+           "hyp_words": 228,
+           "ref_words": 148,
+           "year": 1930
+          },
+          "folktale_66_twi_asante": {
+           "bleu": 3.29,
+           "chrf": 35.87,
+           "length_ratio": 1.554,
+           "hyp_words": 258,
+           "ref_words": 160,
+           "year": 1930
+          },
+          "folktale_67_twi_asante": {
+           "bleu": 5.4,
+           "chrf": 37.65,
+           "length_ratio": 1.367,
+           "hyp_words": 910,
+           "ref_words": 630,
+           "year": 1930
+          },
+          "folktale_68_twi_asante": {
+           "bleu": 6.33,
+           "chrf": 38.18,
+           "length_ratio": 1.338,
+           "hyp_words": 1183,
+           "ref_words": 846,
+           "year": 1930
+          },
+          "folktale_69_twi_asante": {
+           "bleu": 2.36,
+           "chrf": 30.73,
+           "length_ratio": 1.481,
+           "hyp_words": 341,
+           "ref_words": 226,
+           "year": 1930
+          },
+          "folktale_70_twi_asante": {
+           "bleu": 5.31,
+           "chrf": 32.86,
+           "length_ratio": 1.343,
+           "hyp_words": 192,
+           "ref_words": 140,
+           "year": 1930
+          },
+          "folktale_71_twi_asante": {
+           "bleu": 4.56,
+           "chrf": 36.21,
+           "length_ratio": 1.489,
+           "hyp_words": 578,
+           "ref_words": 386,
+           "year": 1930
+          },
+          "folktale_72_twi_asante": {
+           "bleu": 1.62,
+           "chrf": 27.16,
+           "length_ratio": 2.475,
+           "hyp_words": 842,
+           "ref_words": 327,
+           "year": 1930
+          },
+          "folktale_73_twi_asante": {
+           "bleu": 8.22,
+           "chrf": 39.35,
+           "length_ratio": 1.344,
+           "hyp_words": 570,
+           "ref_words": 422,
+           "year": 1930
+          },
+          "folktale_74_twi_asante": {
+           "bleu": 3.98,
+           "chrf": 35.36,
+           "length_ratio": 1.544,
+           "hyp_words": 374,
+           "ref_words": 246,
+           "year": 1930
+          },
+          "folktale_75_twi_asante": {
+           "bleu": 3.52,
+           "chrf": 33.99,
+           "length_ratio": 1.578,
+           "hyp_words": 551,
+           "ref_words": 330,
+           "year": 1930
+          }
+         }
+        },
+        "jw": {
+         "bleu": 22.58,
+         "chrf": 62.54,
+         "length_ratio": 0.96,
+         "documents": 5,
+         "per_document": {
+          "jw_202606_twi_asante": {
+           "bleu": 22.17,
+           "chrf": 62.37,
+           "length_ratio": 1.002,
+           "hyp_words": 14689,
+           "ref_words": 14580,
+           "year": 2026
+          },
+          "jw_202607_twi_asante": {
+           "bleu": 21.44,
+           "chrf": 61.69,
+           "length_ratio": 0.94,
+           "hyp_words": 14014,
+           "ref_words": 14637,
+           "year": 2026
+          },
+          "jw_202608_twi_asante": {
+           "bleu": 24.03,
+           "chrf": 63.38,
+           "length_ratio": 0.951,
+           "hyp_words": 13530,
+           "ref_words": 14064,
+           "year": 2026
+          },
+          "jw_202609_twi_asante": {
+           "bleu": 23.52,
+           "chrf": 62.59,
+           "length_ratio": 0.948,
+           "hyp_words": 13614,
+           "ref_words": 14226,
+           "year": 2026
+          },
+          "jw_202610_twi_asante": {
+           "bleu": 21.74,
+           "chrf": 62.69,
+           "length_ratio": 0.943,
+           "hyp_words": 14098,
+           "ref_words": 14754,
+           "year": 2026
+          }
+         }
+        },
+        "udhr": {
+         "bleu": 4.77,
+         "chrf": 51.19,
+         "length_ratio": 0.86,
+         "documents": 1,
+         "per_document": {
+          "udhr_twi_asante": {
+           "bleu": 4.77,
+           "chrf": 51.19,
+           "length_ratio": 0.86,
+           "hyp_words": 1850,
+           "ref_words": 2098,
+           "year": 1948
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
      "model": "ghanaopenai/gloss-mt",
      "name": "GLOSS-MT (Gemma 4 E4B + Tool Calling)",
      "track": "llm",
@@ -11891,7 +13778,7 @@
       "from_en": {
        "bleu": 11.45,
        "chrf": 49.75,
-       "length_ratio": 1.2,
+       "length_ratio": 1.19,
        "documents": 84,
        "per_dataset": {
         "finance": {
@@ -12593,6 +14480,726 @@
            "chrf": 50.8,
            "length_ratio": 0.947,
            "hyp_words": 2064,
+           "ref_words": 2098,
+           "year": 1948
+          }
+         }
+        }
+       }
+      }
+     }
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "track": "open",
+     "url": "https://huggingface.co/ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "directions": {
+      "from_en": {
+       "bleu": 10.91,
+       "chrf": 48.0,
+       "length_ratio": 0.97,
+       "documents": 84,
+       "per_dataset": {
+        "finance": {
+         "bleu": 14.38,
+         "chrf": 46.13,
+         "length_ratio": 0.77,
+         "documents": 3,
+         "per_document": {
+          "finance_2021_twi_asante": {
+           "bleu": 14.86,
+           "chrf": 45.74,
+           "length_ratio": 0.769,
+           "hyp_words": 8017,
+           "ref_words": 11597,
+           "year": 2021
+          },
+          "finance_2022_twi_asante": {
+           "bleu": 12.35,
+           "chrf": 44.78,
+           "length_ratio": 0.756,
+           "hyp_words": 9066,
+           "ref_words": 12941,
+           "year": 2022
+          },
+          "finance_2023_twi_asante": {
+           "bleu": 15.93,
+           "chrf": 47.87,
+           "length_ratio": 0.793,
+           "hyp_words": 10481,
+           "ref_words": 13241,
+           "year": 2023
+          }
+         }
+        },
+        "folktales": {
+         "bleu": 4.13,
+         "chrf": 35.15,
+         "length_ratio": 1.4,
+         "documents": 75,
+         "per_document": {
+          "folktale_01_twi_asante": {
+           "bleu": 1.03,
+           "chrf": 28.48,
+           "length_ratio": 1.574,
+           "hyp_words": 288,
+           "ref_words": 189,
+           "year": 1930
+          },
+          "folktale_02_twi_asante": {
+           "bleu": 1.64,
+           "chrf": 35.93,
+           "length_ratio": 1.624,
+           "hyp_words": 222,
+           "ref_words": 130,
+           "year": 1930
+          },
+          "folktale_03_twi_asante": {
+           "bleu": 3.36,
+           "chrf": 38.42,
+           "length_ratio": 1.538,
+           "hyp_words": 371,
+           "ref_words": 230,
+           "year": 1930
+          },
+          "folktale_04_twi_asante": {
+           "bleu": 3.03,
+           "chrf": 34.32,
+           "length_ratio": 1.494,
+           "hyp_words": 1789,
+           "ref_words": 1110,
+           "year": 1930
+          },
+          "folktale_05_twi_asante": {
+           "bleu": 2.48,
+           "chrf": 28.25,
+           "length_ratio": 1.44,
+           "hyp_words": 534,
+           "ref_words": 362,
+           "year": 1930
+          },
+          "folktale_06_twi_asante": {
+           "bleu": 3.42,
+           "chrf": 35.84,
+           "length_ratio": 1.422,
+           "hyp_words": 900,
+           "ref_words": 611,
+           "year": 1930
+          },
+          "folktale_07_twi_asante": {
+           "bleu": 2.12,
+           "chrf": 35.23,
+           "length_ratio": 1.551,
+           "hyp_words": 1163,
+           "ref_words": 744,
+           "year": 1930
+          },
+          "folktale_08_twi_asante": {
+           "bleu": 1.95,
+           "chrf": 36.01,
+           "length_ratio": 1.387,
+           "hyp_words": 853,
+           "ref_words": 603,
+           "year": 1930
+          },
+          "folktale_09_twi_asante": {
+           "bleu": 7.09,
+           "chrf": 36.11,
+           "length_ratio": 1.32,
+           "hyp_words": 1207,
+           "ref_words": 836,
+           "year": 1930
+          },
+          "folktale_10_twi_asante": {
+           "bleu": 4.51,
+           "chrf": 32.42,
+           "length_ratio": 1.276,
+           "hyp_words": 715,
+           "ref_words": 542,
+           "year": 1930
+          },
+          "folktale_11_twi_asante": {
+           "bleu": 6.3,
+           "chrf": 37.25,
+           "length_ratio": 1.411,
+           "hyp_words": 1160,
+           "ref_words": 793,
+           "year": 1930
+          },
+          "folktale_12_twi_asante": {
+           "bleu": 2.79,
+           "chrf": 38.89,
+           "length_ratio": 1.336,
+           "hyp_words": 268,
+           "ref_words": 210,
+           "year": 1930
+          },
+          "folktale_13_twi_asante": {
+           "bleu": 2.49,
+           "chrf": 32.68,
+           "length_ratio": 1.47,
+           "hyp_words": 361,
+           "ref_words": 248,
+           "year": 1930
+          },
+          "folktale_14_twi_asante": {
+           "bleu": 3.57,
+           "chrf": 31.44,
+           "length_ratio": 1.258,
+           "hyp_words": 644,
+           "ref_words": 493,
+           "year": 1930
+          },
+          "folktale_15_twi_asante": {
+           "bleu": 3.28,
+           "chrf": 32.21,
+           "length_ratio": 1.246,
+           "hyp_words": 885,
+           "ref_words": 658,
+           "year": 1930
+          },
+          "folktale_16_twi_asante": {
+           "bleu": 4.74,
+           "chrf": 33.79,
+           "length_ratio": 1.286,
+           "hyp_words": 608,
+           "ref_words": 449,
+           "year": 1930
+          },
+          "folktale_17_twi_asante": {
+           "bleu": 5.66,
+           "chrf": 38.51,
+           "length_ratio": 1.439,
+           "hyp_words": 1413,
+           "ref_words": 942,
+           "year": 1930
+          },
+          "folktale_18_twi_asante": {
+           "bleu": 2.94,
+           "chrf": 31.78,
+           "length_ratio": 1.244,
+           "hyp_words": 958,
+           "ref_words": 705,
+           "year": 1930
+          },
+          "folktale_19_twi_asante": {
+           "bleu": 3.53,
+           "chrf": 36.33,
+           "length_ratio": 1.247,
+           "hyp_words": 1022,
+           "ref_words": 747,
+           "year": 1930
+          },
+          "folktale_20_twi_asante": {
+           "bleu": 3.95,
+           "chrf": 34.74,
+           "length_ratio": 1.325,
+           "hyp_words": 824,
+           "ref_words": 607,
+           "year": 1930
+          },
+          "folktale_21_twi_asante": {
+           "bleu": 5.0,
+           "chrf": 30.44,
+           "length_ratio": 1.411,
+           "hyp_words": 217,
+           "ref_words": 148,
+           "year": 1930
+          },
+          "folktale_22_twi_asante": {
+           "bleu": 7.41,
+           "chrf": 40.34,
+           "length_ratio": 1.234,
+           "hyp_words": 1354,
+           "ref_words": 1068,
+           "year": 1930
+          },
+          "folktale_23_twi_asante": {
+           "bleu": 1.79,
+           "chrf": 34.73,
+           "length_ratio": 1.408,
+           "hyp_words": 815,
+           "ref_words": 575,
+           "year": 1930
+          },
+          "folktale_24_twi_asante": {
+           "bleu": 7.98,
+           "chrf": 39.21,
+           "length_ratio": 1.256,
+           "hyp_words": 1624,
+           "ref_words": 1241,
+           "year": 1930
+          },
+          "folktale_25_twi_asante": {
+           "bleu": 3.51,
+           "chrf": 34.54,
+           "length_ratio": 1.591,
+           "hyp_words": 1491,
+           "ref_words": 907,
+           "year": 1930
+          },
+          "folktale_26_twi_asante": {
+           "bleu": 1.88,
+           "chrf": 34.57,
+           "length_ratio": 1.595,
+           "hyp_words": 551,
+           "ref_words": 331,
+           "year": 1930
+          },
+          "folktale_27_twi_asante": {
+           "bleu": 2.75,
+           "chrf": 35.77,
+           "length_ratio": 1.583,
+           "hyp_words": 860,
+           "ref_words": 523,
+           "year": 1930
+          },
+          "folktale_28_twi_asante": {
+           "bleu": 4.68,
+           "chrf": 38.84,
+           "length_ratio": 1.384,
+           "hyp_words": 679,
+           "ref_words": 499,
+           "year": 1930
+          },
+          "folktale_29_twi_asante": {
+           "bleu": 3.04,
+           "chrf": 35.57,
+           "length_ratio": 1.383,
+           "hyp_words": 913,
+           "ref_words": 622,
+           "year": 1930
+          },
+          "folktale_30_twi_asante": {
+           "bleu": 2.69,
+           "chrf": 34.87,
+           "length_ratio": 1.489,
+           "hyp_words": 1083,
+           "ref_words": 675,
+           "year": 1930
+          },
+          "folktale_31_twi_asante": {
+           "bleu": 4.27,
+           "chrf": 39.19,
+           "length_ratio": 1.453,
+           "hyp_words": 2681,
+           "ref_words": 1719,
+           "year": 1930
+          },
+          "folktale_32_twi_asante": {
+           "bleu": 4.87,
+           "chrf": 37.84,
+           "length_ratio": 1.524,
+           "hyp_words": 801,
+           "ref_words": 505,
+           "year": 1930
+          },
+          "folktale_33_twi_asante": {
+           "bleu": 6.47,
+           "chrf": 33.88,
+           "length_ratio": 1.516,
+           "hyp_words": 451,
+           "ref_words": 298,
+           "year": 1930
+          },
+          "folktale_34_twi_asante": {
+           "bleu": 3.71,
+           "chrf": 35.29,
+           "length_ratio": 1.396,
+           "hyp_words": 1217,
+           "ref_words": 842,
+           "year": 1930
+          },
+          "folktale_35_twi_asante": {
+           "bleu": 3.56,
+           "chrf": 37.11,
+           "length_ratio": 1.408,
+           "hyp_words": 909,
+           "ref_words": 620,
+           "year": 1930
+          },
+          "folktale_36_twi_asante": {
+           "bleu": 6.15,
+           "chrf": 40.68,
+           "length_ratio": 1.413,
+           "hyp_words": 1517,
+           "ref_words": 1024,
+           "year": 1930
+          },
+          "folktale_37_twi_asante": {
+           "bleu": 3.11,
+           "chrf": 37.98,
+           "length_ratio": 1.318,
+           "hyp_words": 797,
+           "ref_words": 556,
+           "year": 1930
+          },
+          "folktale_38_twi_asante": {
+           "bleu": 4.24,
+           "chrf": 34.24,
+           "length_ratio": 1.504,
+           "hyp_words": 901,
+           "ref_words": 594,
+           "year": 1930
+          },
+          "folktale_39_twi_asante": {
+           "bleu": 5.52,
+           "chrf": 38.55,
+           "length_ratio": 1.447,
+           "hyp_words": 1530,
+           "ref_words": 1007,
+           "year": 1930
+          },
+          "folktale_40_twi_asante": {
+           "bleu": 4.62,
+           "chrf": 33.94,
+           "length_ratio": 1.383,
+           "hyp_words": 712,
+           "ref_words": 478,
+           "year": 1930
+          },
+          "folktale_41_twi_asante": {
+           "bleu": 2.89,
+           "chrf": 31.24,
+           "length_ratio": 1.182,
+           "hyp_words": 1130,
+           "ref_words": 869,
+           "year": 1930
+          },
+          "folktale_42_twi_asante": {
+           "bleu": 4.73,
+           "chrf": 38.07,
+           "length_ratio": 1.481,
+           "hyp_words": 2054,
+           "ref_words": 1312,
+           "year": 1930
+          },
+          "folktale_43_twi_asante": {
+           "bleu": 8.29,
+           "chrf": 35.95,
+           "length_ratio": 1.434,
+           "hyp_words": 927,
+           "ref_words": 625,
+           "year": 1930
+          },
+          "folktale_44_twi_asante": {
+           "bleu": 2.88,
+           "chrf": 30.98,
+           "length_ratio": 1.288,
+           "hyp_words": 762,
+           "ref_words": 532,
+           "year": 1930
+          },
+          "folktale_45_twi_asante": {
+           "bleu": 4.44,
+           "chrf": 30.26,
+           "length_ratio": 1.493,
+           "hyp_words": 537,
+           "ref_words": 337,
+           "year": 1930
+          },
+          "folktale_46_twi_asante": {
+           "bleu": 11.1,
+           "chrf": 37.53,
+           "length_ratio": 1.266,
+           "hyp_words": 324,
+           "ref_words": 256,
+           "year": 1930
+          },
+          "folktale_47_twi_asante": {
+           "bleu": 6.63,
+           "chrf": 36.08,
+           "length_ratio": 1.264,
+           "hyp_words": 660,
+           "ref_words": 524,
+           "year": 1930
+          },
+          "folktale_48_twi_asante": {
+           "bleu": 2.36,
+           "chrf": 36.6,
+           "length_ratio": 1.457,
+           "hyp_words": 799,
+           "ref_words": 522,
+           "year": 1930
+          },
+          "folktale_49_twi_asante": {
+           "bleu": 3.83,
+           "chrf": 35.56,
+           "length_ratio": 1.351,
+           "hyp_words": 718,
+           "ref_words": 502,
+           "year": 1930
+          },
+          "folktale_50_twi_asante": {
+           "bleu": 6.68,
+           "chrf": 38.29,
+           "length_ratio": 1.416,
+           "hyp_words": 2314,
+           "ref_words": 1531,
+           "year": 1930
+          },
+          "folktale_51_twi_asante": {
+           "bleu": 3.91,
+           "chrf": 35.24,
+           "length_ratio": 1.42,
+           "hyp_words": 735,
+           "ref_words": 506,
+           "year": 1930
+          },
+          "folktale_52_twi_asante": {
+           "bleu": 2.25,
+           "chrf": 34.57,
+           "length_ratio": 1.453,
+           "hyp_words": 955,
+           "ref_words": 643,
+           "year": 1930
+          },
+          "folktale_53_twi_asante": {
+           "bleu": 3.28,
+           "chrf": 36.39,
+           "length_ratio": 1.321,
+           "hyp_words": 779,
+           "ref_words": 551,
+           "year": 1930
+          },
+          "folktale_54_twi_asante": {
+           "bleu": 3.73,
+           "chrf": 35.53,
+           "length_ratio": 1.244,
+           "hyp_words": 1258,
+           "ref_words": 965,
+           "year": 1930
+          },
+          "folktale_55_twi_asante": {
+           "bleu": 5.93,
+           "chrf": 39.59,
+           "length_ratio": 1.28,
+           "hyp_words": 1620,
+           "ref_words": 1155,
+           "year": 1930
+          },
+          "folktale_56_twi_asante": {
+           "bleu": 4.7,
+           "chrf": 33.71,
+           "length_ratio": 1.339,
+           "hyp_words": 351,
+           "ref_words": 237,
+           "year": 1930
+          },
+          "folktale_57_twi_asante": {
+           "bleu": 4.04,
+           "chrf": 35.08,
+           "length_ratio": 1.181,
+           "hyp_words": 1520,
+           "ref_words": 1202,
+           "year": 1930
+          },
+          "folktale_58_twi_asante": {
+           "bleu": 3.47,
+           "chrf": 33.25,
+           "length_ratio": 1.448,
+           "hyp_words": 1029,
+           "ref_words": 690,
+           "year": 1930
+          },
+          "folktale_59_twi_asante": {
+           "bleu": 3.66,
+           "chrf": 35.82,
+           "length_ratio": 1.527,
+           "hyp_words": 1092,
+           "ref_words": 698,
+           "year": 1930
+          },
+          "folktale_60_twi_asante": {
+           "bleu": 5.44,
+           "chrf": 32.53,
+           "length_ratio": 1.579,
+           "hyp_words": 371,
+           "ref_words": 237,
+           "year": 1930
+          },
+          "folktale_61_twi_asante": {
+           "bleu": 3.43,
+           "chrf": 35.23,
+           "length_ratio": 1.366,
+           "hyp_words": 1534,
+           "ref_words": 1081,
+           "year": 1930
+          },
+          "folktale_62_twi_asante": {
+           "bleu": 5.15,
+           "chrf": 38.45,
+           "length_ratio": 1.448,
+           "hyp_words": 970,
+           "ref_words": 645,
+           "year": 1930
+          },
+          "folktale_63_twi_asante": {
+           "bleu": 3.83,
+           "chrf": 35.62,
+           "length_ratio": 1.3,
+           "hyp_words": 573,
+           "ref_words": 437,
+           "year": 1930
+          },
+          "folktale_64_twi_asante": {
+           "bleu": 5.74,
+           "chrf": 36.65,
+           "length_ratio": 1.271,
+           "hyp_words": 437,
+           "ref_words": 327,
+           "year": 1930
+          },
+          "folktale_65_twi_asante": {
+           "bleu": 1.24,
+           "chrf": 32.71,
+           "length_ratio": 1.554,
+           "hyp_words": 233,
+           "ref_words": 148,
+           "year": 1930
+          },
+          "folktale_66_twi_asante": {
+           "bleu": 2.04,
+           "chrf": 31.76,
+           "length_ratio": 1.485,
+           "hyp_words": 248,
+           "ref_words": 160,
+           "year": 1930
+          },
+          "folktale_67_twi_asante": {
+           "bleu": 5.14,
+           "chrf": 36.64,
+           "length_ratio": 1.355,
+           "hyp_words": 907,
+           "ref_words": 630,
+           "year": 1930
+          },
+          "folktale_68_twi_asante": {
+           "bleu": 4.48,
+           "chrf": 36.87,
+           "length_ratio": 1.347,
+           "hyp_words": 1195,
+           "ref_words": 846,
+           "year": 1930
+          },
+          "folktale_69_twi_asante": {
+           "bleu": 2.03,
+           "chrf": 29.02,
+           "length_ratio": 1.426,
+           "hyp_words": 333,
+           "ref_words": 226,
+           "year": 1930
+          },
+          "folktale_70_twi_asante": {
+           "bleu": 4.13,
+           "chrf": 30.17,
+           "length_ratio": 1.371,
+           "hyp_words": 198,
+           "ref_words": 140,
+           "year": 1930
+          },
+          "folktale_71_twi_asante": {
+           "bleu": 4.21,
+           "chrf": 35.55,
+           "length_ratio": 1.46,
+           "hyp_words": 577,
+           "ref_words": 386,
+           "year": 1930
+          },
+          "folktale_72_twi_asante": {
+           "bleu": 2.11,
+           "chrf": 30.96,
+           "length_ratio": 1.409,
+           "hyp_words": 480,
+           "ref_words": 327,
+           "year": 1930
+          },
+          "folktale_73_twi_asante": {
+           "bleu": 6.94,
+           "chrf": 37.16,
+           "length_ratio": 1.34,
+           "hyp_words": 572,
+           "ref_words": 422,
+           "year": 1930
+          },
+          "folktale_74_twi_asante": {
+           "bleu": 2.75,
+           "chrf": 35.96,
+           "length_ratio": 1.601,
+           "hyp_words": 391,
+           "ref_words": 246,
+           "year": 1930
+          },
+          "folktale_75_twi_asante": {
+           "bleu": 5.19,
+           "chrf": 35.0,
+           "length_ratio": 1.511,
+           "hyp_words": 530,
+           "ref_words": 330,
+           "year": 1930
+          }
+         }
+        },
+        "jw": {
+         "bleu": 19.61,
+         "chrf": 60.62,
+         "length_ratio": 0.87,
+         "documents": 5,
+         "per_document": {
+          "jw_202606_twi_asante": {
+           "bleu": 19.67,
+           "chrf": 61.03,
+           "length_ratio": 0.878,
+           "hyp_words": 13088,
+           "ref_words": 14580,
+           "year": 2026
+          },
+          "jw_202607_twi_asante": {
+           "bleu": 18.62,
+           "chrf": 59.98,
+           "length_ratio": 0.855,
+           "hyp_words": 12853,
+           "ref_words": 14637,
+           "year": 2026
+          },
+          "jw_202608_twi_asante": {
+           "bleu": 20.97,
+           "chrf": 61.36,
+           "length_ratio": 0.878,
+           "hyp_words": 12610,
+           "ref_words": 14064,
+           "year": 2026
+          },
+          "jw_202609_twi_asante": {
+           "bleu": 20.64,
+           "chrf": 60.83,
+           "length_ratio": 0.884,
+           "hyp_words": 12870,
+           "ref_words": 14226,
+           "year": 2026
+          },
+          "jw_202610_twi_asante": {
+           "bleu": 18.15,
+           "chrf": 59.9,
+           "length_ratio": 0.85,
+           "hyp_words": 12845,
+           "ref_words": 14754,
+           "year": 2026
+          }
+         }
+        },
+        "udhr": {
+         "bleu": 5.54,
+         "chrf": 50.09,
+         "length_ratio": 0.84,
+         "documents": 1,
+         "per_document": {
+          "udhr_twi_asante": {
+           "bleu": 5.54,
+           "chrf": 50.09,
+           "length_ratio": 0.836,
+           "hyp_words": 1813,
            "ref_words": 2098,
            "year": 1948
           }
@@ -20523,6 +23130,24 @@
      "reason": "direction not supported"
     },
     {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "to_en",
+     "reason": "direction not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "to_en",
+     "reason": "direction not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "to_en",
+     "reason": "direction not supported"
+    },
+    {
      "model": "google/gemma-4-E4B-it",
      "name": "Gemma 4 E4B Instruct (Base)",
      "direction": "to_en",
@@ -20724,6 +23349,42 @@
     {
      "model": "ghanaopenai/gloss-mt-nllb-3.3b",
      "name": "GLOSS-MT (NLLB-200 3.3B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-translategemma-4b",
+     "name": "GLOSS-MT (TranslateGemma 4B + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-opus-mt-en-tw",
+     "name": "GLOSS-MT (OPUS-MT en-tw + Glossary)",
+     "direction": "from_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
+     "direction": "to_en",
+     "reason": "language not supported"
+    },
+    {
+     "model": "ghanaopenai/gloss-mt-nllb-1.3b",
+     "name": "GLOSS-MT (NLLB-200 1.3B + Glossary)",
      "direction": "from_en",
      "reason": "language not supported"
     },
