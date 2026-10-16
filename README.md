@@ -75,6 +75,8 @@ language, and read the length ratio alongside.
 | NLLB-200 600M (distilled), 1.3B, 3.3B | Open | local GPU | Twi, Ewe | beam 4, bf16 |
 | NLLB-Twi Human-Aligned | Open | local GPU, [QLoRA adapter](https://huggingface.co/mclanorjeff/NLLB-Twi-Human-Aligned) on NLLB-600M | Twi | X → English only (no English → X score); model-card recipe (`src_lang="aka_GH"`, 5 beams) |
 | GLOSS-MT (NLLB-200 3.3B + Glossary) | Open | local GPU, [NLLB-200 3.3B fine-tuned with LoRA (merged)](https://huggingface.co/ghanaopenai/gloss-mt-nllb-3.3b), pipeline from [gloss-mt](https://github.com/GhanaOpenAI/gloss-mt) | Twi | English → X only; dictionary phrases pretranslated in place before translation, beam 4, bf16 |
+| GLOSS-MT (TranslateGemma 4B + Glossary) | Open | local GPU, [TranslateGemma 4B](https://huggingface.co/google/translategemma-4b-it) with a LoRA adapter, same pipeline | Twi | English → X only; same dictionary step, greedy decoding, bf16 |
+| GLOSS-MT (OPUS-MT en-tw + Glossary) | Open | local GPU, [OPUS-MT en-tw](https://huggingface.co/Helsinki-NLP/opus-mt-en-tw) fully fine-tuned, same pipeline | Twi | English → X only; same dictionary step, beam 4 |
 | MADLAD-400 3B, 10B | Open | local GPU | Twi, Ewe, Dangme, Nzema | `<2en>` / `<2xx>` target tags; no source tag, so coverage is inferred from its target-tag inventory |
 | OPUS-MT en-tw | Open | local GPU, [Helsinki-NLP/opus-mt-en-tw](https://huggingface.co/Helsinki-NLP/opus-mt-en-tw) (MarianMT, ~75M) | Twi | English → X only (one model per language pair); beam 4, fp32 |
 
