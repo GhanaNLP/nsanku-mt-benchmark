@@ -419,10 +419,40 @@ class GlossMTSeq2SeqMT(BaseMT):
         return [result.get(p, p) for p in paras]
 
 
+class GlossMTTranslateGemmaMT(GlossMTSeq2SeqMT):
+    """GLOSS-MT with a LoRA fine-tune of google/translategemma-4b-it: the same dictionary step and
+    pieces as GlossMTSeq2SeqMT, translated by TranslateGemma (twi_translate.translategemma, greedy).
+    Adapter path: GLOSS_MT_TRANSLATEGEMMA_ADAPTER."""
+
+    def _load(self):
+        if self._tr is None:
+            import os
+            from twi_translate.translategemma import TranslateGemmaTranslator
+            adapter = os.environ.get("GLOSS_MT_TRANSLATEGEMMA_ADAPTER",
+                                     "/mnt/volume_d2wey28/projects/twi-translation-tool-calling/"
+                                     "checkpoints/translategemma-4b-twi/adapter")
+            self._tr = TranslateGemmaTranslator("google/translategemma-4b-it", adapter=adapter, batch_size=16)
+
+
+class GlossMTOpusMT(GlossMTSeq2SeqMT):
+    """GLOSS-MT with a full fine-tune of Helsinki-NLP/opus-mt-en-tw (Marian): the same dictionary
+    step, pieces and beam search as GlossMTSeq2SeqMT. Model path: GLOSS_MT_OPUS_PATH."""
+
+    def _load(self):
+        if self._tr is None:
+            import os
+            from twi_translate.seq2seq import Seq2SeqTranslator
+            path = os.environ.get("GLOSS_MT_OPUS_PATH", "/mnt/volume_d2wey28/projects/twi-translation-tool-calling/"
+                                  "checkpoints/opus-mt-en-tw-twi/final")
+            self._tr = Seq2SeqTranslator(path, num_beams=self.BEAMS, batch_size=16)
+
+
 KINDS = {"Google/gemini-3.8-flash": GeminiMT, "KhayaAI/khaya-translate": KhayaMT,
          "Google/google-translate-free": GoogleFreeMT,
          "ghanaopenai/gloss-mt": TwiToolTranslatorMT,
          "ghanaopenai/gloss-mt-nllb-3.3b": GlossMTSeq2SeqMT,
+         "ghanaopenai/gloss-mt-translategemma-4b": GlossMTTranslateGemmaMT,
+         "ghanaopenai/gloss-mt-opus-mt-en-tw": GlossMTOpusMT,
          "google/gemma-4-E4B-it": GemmaBaseMT,
          "google/gemma-4-31B-it": GemmaBaseMT}
 
