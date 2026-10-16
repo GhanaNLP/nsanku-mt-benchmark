@@ -328,32 +328,6 @@ class MarianMT(HFSeq2SeqMT):
         return self._model.generate(**enc, num_beams=self.BEAMS, max_new_tokens=min(512, enc["input_ids"].shape[1] * 2 + 20))
 
 
-class TwiToolTranslatorMT(BaseMT):
-    workers = 8
-
-    def __init__(self, meta):
-        super().__init__(meta)
-        import os
-        from twi_translate import TwiTranslator, OpenAIBackend, TwiLookup
-        base_url = os.environ.get("TWI_TRANSLATOR_URL", "http://127.0.0.1:8300/v1")
-        backend = OpenAIBackend(base_url, model="twi-translator", max_tokens=4096)
-        if "expanded" in self.id:
-            dict_path = os.environ.get(
-                "EXPANDED_DICT_PATH",
-                "/mnt/volume_d2wey28/projects/twi-translation-tool-calling/repo/twi_translate/data/twi_dictionary_expanded.tsv.gz"
-            )
-            lookup = TwiLookup(path=dict_path)
-        else:
-            lookup = TwiLookup()
-        self.translator = TwiTranslator(backend, lookup)
-
-    def translate_one(self, text, iso, direction="from_en"):
-        if direction != "from_en":
-            raise NotImplementedError("Twi translator only supports English -> Twi")
-        out = self.translator.translate(text)
-        return out["translation"]
-
-
 class GemmaBaseMT(BaseMT):
     workers = 8
     PROMPT = ("Translate the following English text into Asante Twi. Output ONLY the Asante Twi "
@@ -381,8 +355,8 @@ class GemmaBaseMT(BaseMT):
 
 
 class GlossMTSeq2SeqMT(BaseMT):
-    """GLOSS-MT with a fine-tuned NLLB-200 3.3B (LoRA, merged) instead of an LLM with tool calls.
-    Same dictionary step as GLOSS-MT, as a fixed pipeline (twi_translate.seq2seq): each piece's
+    """GLOSS-MT with a fine-tuned NLLB-200 3.3B (LoRA, merged). The GLOSS-MT dictionary step
+    is a fixed pipeline (twi_translate.seq2seq): each piece's
     spaCy noun phrases are looked up in the GLOSS-MT dictionary and replaced in place by their Twi
     translation, then the model translates the mixed text. English -> Twi only. Pieces follow the
     open seq2seq models here (paragraphs over 400 characters split at sentence boundaries,
@@ -460,14 +434,26 @@ class GlossMTNLLB13BMT(GlossMTSeq2SeqMT):
             self._tr = Seq2SeqTranslator(path, num_beams=self.BEAMS, batch_size=16)
 
 
+class GlossMTNLLB600MMT(GlossMTSeq2SeqMT):
+    """GLOSS-MT with a full fine-tune of facebook/nllb-200-distilled-600M: the same dictionary step,
+    pieces and beam search as GlossMTSeq2SeqMT. Model path: GLOSS_MT_NLLB_600M_PATH."""
+
+    def _load(self):
+        if self._tr is None:
+            import os
+            from twi_translate.seq2seq import Seq2SeqTranslator
+            path = os.environ.get("GLOSS_MT_NLLB_600M_PATH", "/mnt/volume_d2wey28/projects/twi-translation-tool-calling/"
+                                  "checkpoints/nllb-600m-twi/final")
+            self._tr = Seq2SeqTranslator(path, num_beams=self.BEAMS, batch_size=16)
+
+
 KINDS = {"Google/gemini-3.8-flash": GeminiMT, "KhayaAI/khaya-translate": KhayaMT,
          "Google/google-translate-free": GoogleFreeMT,
-         "ghanaopenai/gloss-mt": TwiToolTranslatorMT,
          "ghanaopenai/gloss-mt-nllb-3.3b": GlossMTSeq2SeqMT,
          "ghanaopenai/gloss-mt-translategemma-4b": GlossMTTranslateGemmaMT,
          "ghanaopenai/gloss-mt-opus-mt-en-tw": GlossMTOpusMT,
          "ghanaopenai/gloss-mt-nllb-1.3b": GlossMTNLLB13BMT,
-         "google/gemma-4-E4B-it": GemmaBaseMT,
+         "ghanaopenai/gloss-mt-nllb-600m": GlossMTNLLB600MMT,
          "google/gemma-4-31B-it": GemmaBaseMT}
 
 

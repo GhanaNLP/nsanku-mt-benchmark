@@ -1283,14 +1283,6 @@ missing:
   name: Gemma 4 31B Instruct (Base)
   direction: from_en
   reason: language not supported
-- model: ghanaopenai/gloss-mt
-  name: GLOSS-MT (Gemma 4 E4B + Tool Calling)
-  direction: to_en
-  reason: language not supported
-- model: ghanaopenai/gloss-mt
-  name: GLOSS-MT (Gemma 4 E4B + Tool Calling)
-  direction: from_en
-  reason: language not supported
 - model: ghanaopenai/gloss-mt-nllb-3.3b
   name: GLOSS-MT (NLLB-200 3.3B + Glossary)
   direction: to_en
@@ -1323,11 +1315,11 @@ missing:
   name: GLOSS-MT (NLLB-200 1.3B + Glossary)
   direction: from_en
   reason: language not supported
-- model: google/gemma-4-E4B-it
-  name: Gemma 4 E4B Instruct (Base)
+- model: ghanaopenai/gloss-mt-nllb-600m
+  name: GLOSS-MT (NLLB-200 600M + Glossary)
   direction: to_en
   reason: language not supported
-- model: google/gemma-4-E4B-it
-  name: Gemma 4 E4B Instruct (Base)
+- model: ghanaopenai/gloss-mt-nllb-600m
+  name: GLOSS-MT (NLLB-200 600M + Glossary)
   direction: from_en
   reason: language not supported
